@@ -1068,6 +1068,11 @@ public class VerticalScrollElement extends Element {
     this.dragHeight = this.rangeMax - this.rangeMin;
   }
 
+  public void resize(float x, float y, float h){
+	  this.pos.set(x, y);
+	  this.dim.y = h;
+  }
+
   public void mousePressed(){
     if(this.mousePressIsWithinBorder()){
       // User clicked element

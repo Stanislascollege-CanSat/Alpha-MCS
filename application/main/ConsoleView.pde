@@ -87,6 +87,11 @@ public class ConsoleView extends ViewController {
     this.autoScrollTickBox.setValue(false);
   }
 
+  public void viewResizeTriggered(){
+	this.messageViewHeight = this.dim.y - 80;
+	this.scrollBar.resize(this.pos.x + this.dim.x - 10, this.pos.y + this.messageViewHeight/2, this.messageViewHeight);
+  }
+
   public void show(){
 
     this.calculatedMessageHeight = 0;
