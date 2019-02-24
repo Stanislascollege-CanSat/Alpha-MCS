@@ -8,6 +8,7 @@ public interface AppController_Interface {
   public void show();
 
   public void addView(ViewController v);
+  public void exitApplication();
   public void resize();
   public void mousePressed();
   public void mouseReleased();
@@ -27,6 +28,8 @@ public class AppController implements AppController_Interface {
 
   private StartupView startupView;
   private SetupView setupView;
+
+  
 
   public AppController(PApplet environment){
     this.mainJavaEnvironment = environment;
@@ -66,6 +69,10 @@ public class AppController implements AppController_Interface {
     this.viewControllers.add(v);
   }
 
+  public void exitApplication(){
+    exit();
+  }
+
   public void mousePressed(){
     for(ViewController v : this.viewControllers){
       if(v.visible && v.userInteractionEnabled){
@@ -92,6 +99,9 @@ public class AppController implements AppController_Interface {
   }
 
   public void keyPressed(char k, int c){
+    if(k == '1' && CTRL_PRESSED){
+      this.exitApplication();
+    }
     for(ViewController v : this.viewControllers){
       if(v.visible){
         v.keyPressed(k, c);
@@ -141,29 +151,14 @@ public class AppController implements AppController_Interface {
   }
 
   public void runMissionSetup() throws IOException{
-    println(this.setupView.getSelectedSerialPort());
-    println(this.setupView.getSelectedSerialBaud());
-    println(this.setupView.getSelectedMissionPath());
-    println(this.setupView.getSelectedMissionIdentifier());
-    println(this.setupView.getSelectedDoConsoleLogFile());
-    println(this.setupView.getSelectedDoCSVDataFile());
+    // println(this.setupView.getSelectedSerialPort());
+    // println(this.setupView.getSelectedSerialBaud());
+    // println(this.setupView.getSelectedMissionPath());
+    // println(this.setupView.getSelectedMissionIdentifier());
+    // println(this.setupView.getSelectedDoConsoleLogFile());
+    // println(this.setupView.getSelectedDoCSVDataFile());
 
-    FileWriter test = new FileWriter(this.setupView.getSelectedMissionPath() + "/DataOutputFile.alphamissiondata");
-    test.write("%LOCAL_TIME:" + str(hour()) + str(minute()) + str(second()) + "\n");
-    test.write("\n\n\n");
-    test.write("@MISSION[" + this.setupView.getSelectedMissionIdentifier() + "]...\n");
-    test.write("!OS_NAME:macOS,12.14,MacBook_Pro2014\n");
-    test.write("!PROCESSING_INFO:v3.5.3\n");
-    test.write("-----\n");
-    test.write("!serial_info:\n");
-    test.write(".\t@SERIALPORT[" + this.setupView.getSelectedSerialPort() + "]\n");
-    test.write(".\t@SERIALBAUDRATE[" + str(this.setupView.getSelectedSerialBaud()) + "]\n");
-    test.write("!add_info:\n");
-    test.write(".\t$CREATE[alphaidentifiers.writetofile.consolelog]:" + (this.setupView.getSelectedDoConsoleLogFile() ? "y" : "n") + "\n");
-    test.write(".\t$CREATE[alphaidentifiers.writetofile.csvdata]:" + (this.setupView.getSelectedDoCSVDataFile() ? "y" : "n") + "\n");
-    test.write("...");
 
-    test.close();
 
     //println(loadStrings(this.setupView.getSelectedMissionPath() + "/test.txt"));
 

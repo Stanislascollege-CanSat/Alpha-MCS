@@ -23,6 +23,8 @@ public boolean CTRL_PRESSED;
 AppController appController;
 //StartupView startupView;
 
+// PImage mouse_pointer_img;
+
 public void settings(){
   //size(1000, 700, P3D);
   fullScreen(P3D);
@@ -40,6 +42,10 @@ public void setup(){
   h = height;
   minWidth = 600;
   minHeight = 500;
+
+  // Cursor settings
+  // mouse_pointer_img = loadImage("MousePointer.png");
+  // cursor(mouse_pointer_img, 2, 13);
 
   // Load fonts
   fonts = new HashMap<String, HashMap<String, PFont>>();
