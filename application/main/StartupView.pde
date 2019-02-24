@@ -5,6 +5,7 @@
 public class StartupView extends ViewController {
   public SpaceAnimation spaceAnimation;
   public TextButtonElement button;
+  public ButtonElement shortCut;
 
   public StartupView(AppController a, float x, float y, float w, float h){
     super(a, x, y, w, h);
@@ -15,11 +16,25 @@ public class StartupView extends ViewController {
       }
     };
 
+    this.shortCut = new ButtonElement(this.appController, this, this.dim.x/2 - 50, this.dim.y/2 + 130, 100, "Short Cut"){
+      public void clickEvent(){
+        try{
+          this.appController.runMissionSetup();
+        }catch(IOException e){
+          println("Something went wrong when trying to write to file.");
+        }catch(Exception e){
+          println("Something unidentifiable went wrong.");
+        }
+      }
+    };
+
     this.elements.add(this.button);
+    this.elements.add(this.shortCut);
   }
 
   public void viewResizeTriggered(){
     this.button.resize(this.dim.x/2-50, this.dim.y/2 + 100, 100);
+    this.shortCut.resize(this.dim.x/2 - 50, this.dim.y/2 + 130, 100);
   }
 
   public void show(){

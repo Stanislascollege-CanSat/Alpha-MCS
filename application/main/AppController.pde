@@ -29,7 +29,10 @@ public class AppController implements AppController_Interface {
   private StartupView startupView;
   private SetupView setupView;
 
-  
+  // ------- MISSION VIEWS --------- //
+  private ViewSelectorView viewSelectorView;
+
+  private ConsoleView overviewConsoleView;
 
   public AppController(PApplet environment){
     this.mainJavaEnvironment = environment;
@@ -43,8 +46,16 @@ public class AppController implements AppController_Interface {
     this.setupView = new SetupView(this, 0, 0, width, height);
     this.setupView.visible = false;
 
+    this.viewSelectorView = new ViewSelectorView(this, 0, 0, width, 50);
+    this.viewSelectorView.visible = false;
+
+    this.overviewConsoleView = new ConsoleView(this, 0, 50, 400, height - 50);
+    this.overviewConsoleView.visible = false;
+
     this.viewControllers.add(this.startupView);
     this.viewControllers.add(this.setupView);
+    this.viewControllers.add(this.viewSelectorView);
+    this.viewControllers.add(this.overviewConsoleView);
   }
 
   public void show(){
@@ -63,6 +74,8 @@ public class AppController implements AppController_Interface {
   public void resize(){
     this.startupView.resize(0, 0, width, height);
     this.setupView.resize(0, 0, width, height);
+    this.viewSelectorView.resize(0, 0, width, 50);
+    this.overviewConsoleView.resize(0, 50, 400, height - 50);
   }
 
   public void addView(ViewController v){
@@ -125,28 +138,27 @@ public class AppController implements AppController_Interface {
     }
   }
 
+  private void blockInteraction(){
+    for(ViewController v : this.viewControllers){
+      v.userInteractionEnabled = false;
+    }
+    for(ViewController v : this.viewControllers){
+      v.visible = false;
+    }
+  }
+
 
 
 
 
 
   public void displaySetupScheme(){
-    for(ViewController v : this.viewControllers){
-      v.userInteractionEnabled = false;
-    }
-    for(ViewController v : this.viewControllers){
-      v.visible = false;
-    }
+    this.blockInteraction();
     this.setupView.visible = true;
   }
 
   public void displayStartupScheme(){
-    for(ViewController v : this.viewControllers){
-      v.userInteractionEnabled = false;
-    }
-    for(ViewController v : this.viewControllers){
-      v.visible = false;
-    }
+    this.blockInteraction();
     this.startupView.visible = true;
   }
 
@@ -158,10 +170,25 @@ public class AppController implements AppController_Interface {
     // println(this.setupView.getSelectedDoConsoleLogFile());
     // println(this.setupView.getSelectedDoCSVDataFile());
 
+    this.blockInteraction();
+    this.viewSelectorView.visible = true;
+  }
 
+  // ------------------ VIEW SWITCH METHODS ------------------------ //
 
-    //println(loadStrings(this.setupView.getSelectedMissionPath() + "/test.txt"));
+  public void switchViewToOverview(){
+    this.blockInteraction();
+    this.viewSelectorView.enableAllButtons();
+    this.viewSelectorView.visible = true;
+    this.overviewConsoleView.visible = true;
+    this.viewSelectorView.disableOverviewButton();
+  }
 
+  public void switchViewToExample(){
+    this.blockInteraction();
+    this.viewSelectorView.enableAllButtons();
+    this.viewSelectorView.visible = true;
+    this.viewSelectorView.disableExampleButton();
   }
 
 

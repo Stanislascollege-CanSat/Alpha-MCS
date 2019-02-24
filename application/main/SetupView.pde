@@ -54,27 +54,27 @@ public class SetupView extends ViewController {
     };
 
     // Main elements
-    this.serialConnectionLabel = new TextElement(this.appController, this, this.pos.x + this.dim.x/2 - 210, this.pos.y + 200, 200, "Serial connection:", RIGHT);
-    this.missionFolderLabel = new TextElement(this.appController, this, this.pos.x + this.dim.x/2 - 210, this.pos.y + 280, 200, "Mission folder:", RIGHT);
-    this.missionIdentifierLabel = new TextElement(this.appController, this, this.pos.x + this.dim.x/2 - 210, this.pos.y + 320, 200, "Mission identifier:", RIGHT);
+    this.serialConnectionLabel = new TextElement(this.appController, this, this.dim.x/2 - 210, 200, 200, "Serial connection:", RIGHT);
+    this.missionFolderLabel = new TextElement(this.appController, this, this.dim.x/2 - 210, 280, 200, "Mission folder:", RIGHT);
+    this.missionIdentifierLabel = new TextElement(this.appController, this, this.dim.x/2 - 210, 320, 200, "Mission identifier:", RIGHT);
 
-    this.serialPortSelect = new SelectionElement(this.appController, this, this.pos.x + this.dim.x/2 + 10, this.pos.y + 200, 100);
-    this.serialBaudSelect = new SelectionElement(this.appController, this, this.pos.x + this.dim.x/2 + 10, this.pos.y + 240, 100);
+    this.serialPortSelect = new SelectionElement(this.appController, this, this.dim.x/2 + 10, 200, 100);
+    this.serialBaudSelect = new SelectionElement(this.appController, this, this.dim.x/2 + 10, 240, 100);
 
-    this.dataOutputFolderButton = new UtilityButtonElement(this.appController, this, this.pos.x + this.dim.x/2 + 10, this.pos.y + 280){
+    this.dataOutputFolderButton = new UtilityButtonElement(this.appController, this, this.dim.x/2 + 10, 280){
       public void clickEvent(){
         SetupView_ask_folder_MissionData();
       }
     };
-    this.dataOutputFolderName = new TextElement(this.appController, this, this.pos.x + this.dim.x/2 + 30, this.pos.y + 280, 500, "", LEFT);
+    this.dataOutputFolderName = new TextElement(this.appController, this, this.dim.x/2 + 30, 280, 500, "", LEFT);
 
-    this.missionIdentifierInput = new LineInputElement(this.appController, this, this.pos.x + this.dim.x/2 + 10, this.pos.y + 320, 200);
+    this.missionIdentifierInput = new LineInputElement(this.appController, this, this.dim.x/2 + 10, 320, 200);
 
-    this.consoleLogFileTickBox = new TickBoxElement(this.appController, this, this.pos.x + this.dim.x/2 - 100, this.pos.y + 400);
-    this.consoleLogFileTBLabel = new TextElement(this.appController, this, this.pos.x + this.dim.x/2 - 80, this.pos.y + 400, 300, "Create console-log file", LEFT);
+    this.consoleLogFileTickBox = new TickBoxElement(this.appController, this, this.dim.x/2 - 100, 400);
+    this.consoleLogFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 400, 300, "Create console-log file", LEFT);
 
-    this.csvDataFileTickBox = new TickBoxElement(this.appController, this, this.pos.x + this.dim.x/2 - 100, this.pos.y + 440);
-    this.csvDataFileTBLabel = new TextElement(this.appController, this, this.pos.x + this.dim.x/2 - 80, this.pos.y + 440, 300, "Create CSV data-output file", LEFT);
+    this.csvDataFileTickBox = new TickBoxElement(this.appController, this, this.dim.x/2 - 100, 440);
+    this.csvDataFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 440, 300, "Create CSV data-output file", LEFT);
 
     this.elements.add(this.backButton);
     this.elements.add(this.continueButton);
@@ -158,23 +158,23 @@ public class SetupView extends ViewController {
     this.backButton.resize(this.dim.x/2 - 70, this.dim.y - 40, 60);
     this.continueButton.resize(this.dim.x/2 + 10, this.dim.y - 40, 100);
 
-    this.serialConnectionLabel.resize(this.pos.x + this.dim.x/2 - 210, this.pos.y + 200, 200);
-    this.missionFolderLabel.resize(this.pos.x + this.dim.x/2 - 210, this.pos.y + 280, 200);
-    this.missionIdentifierLabel.resize(this.pos.x + this.dim.x/2 - 210, this.pos.y + 320, 200);
+    this.serialConnectionLabel.resize(this.dim.x/2 - 210, 200, 200);
+    this.missionFolderLabel.resize(this.dim.x/2 - 210, 280, 200);
+    this.missionIdentifierLabel.resize(this.dim.x/2 - 210, 320, 200);
 
-    this.serialPortSelect.resize(this.pos.x + this.dim.x/2 + 10, this.pos.y + 200, 100);
-    this.serialBaudSelect.resize(this.pos.x + this.dim.x/2 + 10, this.pos.y + 240, 100);
+    this.serialPortSelect.resize(this.dim.x/2 + 10, 200, 100);
+    this.serialBaudSelect.resize(this.dim.x/2 + 10, 240, 100);
 
-    this.dataOutputFolderButton.resize(this.pos.x + this.dim.x/2 + 10, this.pos.y + 280);
-    this.dataOutputFolderName.resize(this.pos.x + this.dim.x/2 + 30, this.pos.y + 280, 500);
+    this.dataOutputFolderButton.resize(this.dim.x/2 + 10, 280);
+    this.dataOutputFolderName.resize(this.dim.x/2 + 30, 280, 500);
 
-    this.missionIdentifierInput.resize(this.pos.x + this.dim.x/2 + 10, this.pos.y + 320, 200);
+    this.missionIdentifierInput.resize(this.dim.x/2 + 10, 320, 200);
 
-    this.consoleLogFileTickBox.resize(this.pos.x + this.dim.x/2 - 100, this.pos.y + 400);
-    this.consoleLogFileTBLabel.resize(this.pos.x + this.dim.x/2 - 80, this.pos.y + 400, 300);
+    this.consoleLogFileTickBox.resize(this.dim.x/2 - 100, 400);
+    this.consoleLogFileTBLabel.resize(this.dim.x/2 - 80, 400, 300);
 
-    this.csvDataFileTickBox.resize(this.pos.x + this.dim.x/2 - 100, this.pos.y + 440);
-    this.csvDataFileTBLabel.resize(this.pos.x + this.dim.x/2 - 80, this.pos.y + 440, 300);
+    this.csvDataFileTickBox.resize(this.dim.x/2 - 100, 440);
+    this.csvDataFileTBLabel.resize(this.dim.x/2 - 80, 440, 300);
   }
 
   public void show(){

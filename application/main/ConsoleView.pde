@@ -24,21 +24,21 @@ public class ConsoleView extends ViewController {
 
     this.messageViewHeight = this.dim.y - 80;
 
-    this.scrollBar = new VerticalScrollElement(this.appController, this, this.pos.x + this.dim.x - 10, this.pos.y + this.messageViewHeight/2, this.messageViewHeight, 0, this.messageViewHeight);
+    this.scrollBar = new VerticalScrollElement(this.appController, this, this.dim.x - 10, this.messageViewHeight/2, this.messageViewHeight, 0, this.messageViewHeight);
 
 
     this.messages = new ArrayList<ConsoleMessageElement>();
 
     this.messagesToLog = new ArrayList<String[]>();
 
-    this.autoScrollTickBox = new TickBoxElement(this.appController, this, this.pos.x + 15, this.pos.y + this.dim.y - 20);
+    this.autoScrollTickBox = new TickBoxElement(this.appController, this, 15, this.dim.y - 20);
     this.autoScrollTickBox.setValue(true);
 
-    this.autoScrollLabel = new TextElement(this.appController, this, this.pos.x + 30, this.pos.y + this.dim.y - 20, 200, "Autoscroll", LEFT);
+    this.autoScrollLabel = new TextElement(this.appController, this, 30, this.dim.y - 20, 200, "Autoscroll", LEFT);
 
-    this.commandInput = new LineInputElement(this.appController, this, this.pos.x + 10, this.pos.y + this.dim.y - 55, this.dim.x - 20){
+    this.commandInput = new LineInputElement(this.appController, this, 10, this.dim.y - 55, this.dim.x - 20){
       public void enterEvent(){
-        
+
         this.reset();
       }
     };
@@ -60,7 +60,7 @@ public class ConsoleView extends ViewController {
   private void arrangeMessages(){
     this.calculatedMessageHeight = 0;
     for(ConsoleMessageElement e : this.messages){
-      e.resize(this.pos.x + (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, this.calculatedMessageHeight + 5 + e.dim.y/2 - this.scrollBar.getMinimumValue());
+      e.resize((this.dim.x - 10)/2 - (this.messageWidth - 20)/2, this.calculatedMessageHeight + 5 + e.dim.y/2 - this.scrollBar.getMinimumValue());
       this.calculatedMessageHeight += 5 + e.dim.y;
     }
     this.calculatedMessageHeight += 5;
@@ -159,6 +159,7 @@ public class ConsoleView extends ViewController {
 
 
     stroke(0);
+    strokeWeight(1);
     noFill();
 
     rectMode(CORNER);
@@ -172,11 +173,11 @@ public class ConsoleView extends ViewController {
 
     stroke(0);
     strokeWeight(1);
-    line(this.pos.x + (this.dim.x - 10)/2 - (this.messageWidth - 20)/6 - 15, this.pos.y, this.pos.x + (this.dim.x - 10)/2 - (this.messageWidth - 20)/6 - 15, this.pos.y + this.messageViewHeight);
-    line(this.pos.x, this.pos.y + this.messageViewHeight, this.pos.x + this.dim.x, this.pos.y + this.messageViewHeight);
+    line((this.dim.x - 10)/2 - (this.messageWidth - 20)/6 - 15, 0, (this.dim.x - 10)/2 - (this.messageWidth - 20)/6 - 15, this.messageViewHeight);
+    line(0, this.messageViewHeight, this.dim.x, this.messageViewHeight);
     noStroke();
     fill(255);
-    rect(this.pos.x, this.pos.y + this.messageViewHeight, this.dim.x, this.dim.y - this.messageViewHeight);
+    rect(0, this.messageViewHeight, this.dim.x, this.dim.y - this.messageViewHeight);
 
     for(Element e : this.elements){
         e.show();
