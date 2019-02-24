@@ -264,6 +264,15 @@ public class TickBoxElement extends Element {
     return this.ticked;
   }
 
+  public void resize(float x, float y, float size){
+    this.pos.set(x, y);
+    this.dim.set(size, size);
+  }
+
+  public void resize(float x, float y){
+    this.resize(x, y, this.dim.x);
+  }
+
   public void show(){
     stroke(56, 132, 255);
     strokeWeight(2);

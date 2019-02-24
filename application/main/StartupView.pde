@@ -6,8 +6,6 @@ public class StartupView extends ViewController {
   public SpaceAnimation spaceAnimation;
   public TextButtonElement button;
 
-  public ButtonElement elementTestButton;
-
   public StartupView(AppController a, float x, float y, float w, float h){
     super(a, x, y, w, h);
     this.spaceAnimation = new SpaceAnimation();
@@ -17,19 +15,11 @@ public class StartupView extends ViewController {
       }
     };
 
-    this.elementTestButton = new ButtonElement(this.appController, this, this.dim.x - 155, this.dim.y - 50, 120, "Test Elements"){
-      public void clickEvent(){
-        this.appController.openElementTestView();
-      }
-    };
-
     this.elements.add(this.button);
-    this.elements.add(this.elementTestButton);
   }
 
   public void viewResizeTriggered(){
     this.button.resize(this.dim.x/2-50, this.dim.y/2 + 100, 100);
-    this.elementTestButton.resize(this.dim.x - 155, this.dim.y - 50, 120);
   }
 
   public void show(){

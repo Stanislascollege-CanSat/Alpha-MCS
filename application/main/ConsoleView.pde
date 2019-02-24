@@ -38,7 +38,7 @@ public class ConsoleView extends ViewController {
 
     this.commandInput = new LineInputElement(this.appController, this, this.pos.x + 10, this.pos.y + this.dim.y - 55, this.dim.x - 20){
       public void enterEvent(){
-        this.appController.logMessage(this.getValue());
+        
         this.reset();
       }
     };
@@ -132,13 +132,17 @@ public class ConsoleView extends ViewController {
     this.autoScrollTickBox.setValue(false);
   }
 
-  public void viewResizeTriggered(){
-    this.messageWidth = (this.dim.x > 400) ? 400 : this.dim.x;
-	  this.messageViewHeight = this.dim.y - 80;
-	  this.scrollBar.resize(this.pos.x + this.dim.x - 10, this.pos.y + this.messageViewHeight/2, this.messageViewHeight);
-    this.commandInput.resize(this.pos.x + 10, this.pos.y + this.dim.y - 55, this.dim.x - 20);
-    this.arrangeMessages();
-  }
+  // public void viewResizeTriggered(){
+  //   this.messageWidth = (this.dim.x > 400) ? 400 : this.dim.x;
+	//   this.messageViewHeight = this.dim.y - 80;
+	//   this.scrollBar.resize(this.pos.x + this.dim.x - 10, this.pos.y + this.messageViewHeight/2, this.messageViewHeight);
+  //   this.commandInput.resize(this.pos.x + 10, this.pos.y + this.dim.y - 55, this.dim.x - 20);
+  //   this.autoScrollTickBox.resize(this.pos.x + 15, this.pos.y + this.dim.y - 20);
+  //   this.autoScrollLabel.resize(this.pos.x + 30, this.pos.y + this.dim.y - 20, 200);
+  //   for(ConsoleMessageElement e : this.messages){
+  //     e.setScrollContainer(this.pos.y, this.pos.y + this.messageViewHeight);
+  //   }
+  // }
 
   public void show(){
 
