@@ -40,10 +40,10 @@ public class AppController implements AppController_Interface {
     this.setupView = new SetupView(this, 0, 0, width, height);
     this.setupView.visible = false;
 
-    this.elementTestView = new ElementTestView(this, 400, 0, width-400, height);
+    this.elementTestView = new ElementTestView(this, 600, 0, width-600, height);
     this.elementTestView.visible = false;
 
-    this.testConsoleView = new ConsoleView(this, 0, 0, 400, height);
+    this.testConsoleView = new ConsoleView(this, 0, 0, 600, height);
     this.testConsoleView.visible = false;
 
     this.viewControllers.add(this.startupView);
@@ -125,7 +125,7 @@ public class AppController implements AppController_Interface {
     }
   }
 
-  
+
 
 
 
@@ -162,7 +162,7 @@ public class AppController implements AppController_Interface {
       v.visible = false;
     }
     this.testConsoleView.visible = true;
-    this.elementTestView.visible = true;
+    //this.elementTestView.visible = true;
   }
 
   public void closeElementTestView(){
@@ -176,6 +176,6 @@ public class AppController implements AppController_Interface {
   }
 
   public void logMessage(String msg){
-    this.testConsoleView.addMessage(msg);
+    this.testConsoleView.logMessage(msg);
   }
 }

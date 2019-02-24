@@ -104,6 +104,8 @@ public class ConsoleMessageElement extends Element {
       this.backgroundColor = color(255, 233, 0);
     }else if(c == "red"){
       this.backgroundColor = color(255, 0, 0);
+    }else if(c == "orange"){
+      this.backgroundColor = color(244, 185, 66);
     }
   }
 
