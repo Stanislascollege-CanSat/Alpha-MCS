@@ -2,14 +2,11 @@
 // Processing 3.4
 // Rens Dur (Project Bèta)
 
-import java.util.*;
-
 public class ConsoleView extends ViewController {
   public VerticalScrollElement scrollBar;
   public ArrayList<ConsoleMessageElement> messages;
 
   public ArrayList<String[]> messagesToLog;
-  public ArrayList<Integer> messagesToRemove;
 
   public TickBoxElement autoScrollTickBox;
   public TextElement autoScrollLabel;
@@ -33,7 +30,6 @@ public class ConsoleView extends ViewController {
     this.messages = new ArrayList<ConsoleMessageElement>();
 
     this.messagesToLog = new ArrayList<String[]>();
-    this.messagesToRemove = new ArrayList<Integer>();
 
     this.autoScrollTickBox = new TickBoxElement(this.appController, this, 15, this.dim.y - 20);
     this.autoScrollTickBox.setValue(true);
@@ -44,7 +40,8 @@ public class ConsoleView extends ViewController {
       public void enterEvent(){
         String[] parse = this.appController.parseCommand(this.getValue());
         if(parse.length > 0){
-          this.appController.runCommand(parse[0], Arrays.copyOfRange(parse, 1, parse.length));
+          String c = parse[0];
+          
         }
         this.reset();
       }
@@ -73,7 +70,6 @@ public class ConsoleView extends ViewController {
       this.calculatedMessageHeight += 5 + e.dim.y;
     }
     this.calculatedMessageHeight += 5;
-    this.scrollBar.setExtremes(0, this.messageViewHeight);
     if(this.calculatedMessageHeight > this.messageViewHeight){
       // Now messages start to fall outside of the visible field
       this.scrollBar.setExtremes(0, this.calculatedMessageHeight);
@@ -89,32 +85,16 @@ public class ConsoleView extends ViewController {
   private void addMessage(String msg, String type){
     if(type == "warning"){
       this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "yellow"));
-      this.messages.get(this.messages.size() - 1).setTitle("WARNING");
-    }else if(type == "unknown_command"){
-      this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "yellow"));
-      this.messages.get(this.messages.size() - 1).setTitle("UNKNOWN COMMAND");
     }else if(type == "error"){
       this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "red"));
-      this.messages.get(this.messages.size() - 1).setTitle("ERROR");
     }else if(type == "serial"){
       this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "orange"));
-      this.messages.get(this.messages.size() - 1).setTitle("SERIAL");
     }else{
       this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg));
-      this.messages.get(this.messages.size() - 1).setTitle("MESSAGE");
     }
     this.messages.get(this.messages.size() - 1).setScrollContainer(0, this.messageViewHeight);
+    this.elements.add(this.messages.get(this.messages.size() - 1));
     this.arrangeMessages();
-  }
-
-  private void removeMessage(int id){
-    if(id >= 0 && id < this.messages.size()){
-      this.messages.remove(id);
-    }
-  }
-
-  public void deleteMessage(int id){
-    this.messagesToRemove.add(id);
   }
 
   public void logMessage(String msg){
@@ -149,14 +129,6 @@ public class ConsoleView extends ViewController {
     }
   }
 
-  public void logSpecial(String msg, String id){
-    if(msg.length() > 0 && id.length() > 0){
-      this.messagesToLog.add(new String[2]);
-      this.messagesToLog.get(this.messagesToLog.size() - 1)[0] = msg;
-      this.messagesToLog.get(this.messagesToLog.size() - 1)[1] = id;
-    }
-  }
-
 
 
 
@@ -175,8 +147,8 @@ public class ConsoleView extends ViewController {
     this.autoScrollLabel.resize(30, this.dim.y - 20, 200);
     for(ConsoleMessageElement e : this.messages){
       e.setScrollContainer(0, this.messageViewHeight);
-    };
-    this.autoScrollTickBox.setValue(true);
+    }
+    this.scrollBar.setExtremes(0, this.messageViewHeight);
     this.arrangeMessages();
   }
 
@@ -187,18 +159,10 @@ public class ConsoleView extends ViewController {
       this.messagesToLog.remove(0);
     }
 
-    while(this.messagesToRemove.size() > 0){
-      this.removeMessage(this.messagesToRemove.get(0));
-      this.messagesToRemove.remove(0);
-      this.arrangeMessages();
-    }
-
     this.calculatedMessageHeight = 0;
-    for(int i = 0; i < this.messages.size(); ++i){
-      this.messages.get(i).resize((this.dim.x - 10)/2 - (this.messageWidth - 20)/2, this.calculatedMessageHeight + 5 + this.messages.get(i).dim.y/2 - this.scrollBar.getMinimumValue());
-      this.calculatedMessageHeight += 5 + this.messages.get(i).dim.y;
-
-      this.messages.get(i).setId(i);
+    for(ConsoleMessageElement e : this.messages){
+      e.resize((this.dim.x - 10)/2 - (this.messageWidth - 20)/2, this.calculatedMessageHeight + 5 + e.dim.y/2 - this.scrollBar.getMinimumValue());
+      this.calculatedMessageHeight += 5 + e.dim.y;
     }
 
 
@@ -224,11 +188,7 @@ public class ConsoleView extends ViewController {
     rect(0, this.messageViewHeight, this.dim.x, this.dim.y - this.messageViewHeight);
 
     for(Element e : this.elements){
-      e.show();
-    }
-
-    for(ConsoleMessageElement e : this.messages){
-      e.show();
+        e.show();
     }
 
     //
@@ -237,111 +197,5 @@ public class ConsoleView extends ViewController {
 
 
     translate(-this.pos.x, -this.pos.y);
-  }
-
-  public void mousePressed(){
-    this.elementFilter.clear();
-    for(int i = 0; i < this.elements.size(); ++i){
-      if(this.elements.get(i).mousePressIsWithinBorder()){
-        this.elementFilter.add(i);
-      }
-    }
-    int biggest = -1;
-    int index = -1;
-    for(int i : this.elementFilter){
-      if(this.elements.get(i).layer > biggest){
-        biggest = this.elements.get(i).layer;
-        index = i;
-      }
-    }
-    if(index > -1){
-      this.elements.get(index).mousePressed();
-    }
-    for(int i = 0; i < this.elements.size(); ++i){
-      if(i != index){
-        this.elements.get(i).deselect();
-      }
-    }
-
-    // message elements
-
-    this.elementFilter.clear();
-    for(int i = 0; i < this.messages.size(); ++i){
-      if(this.messages.get(i).mousePressIsWithinBorder()){
-        this.elementFilter.add(i);
-      }
-    }
-    biggest = -1;
-    index = -1;
-    for(int i : this.elementFilter){
-      if(this.messages.get(i).layer > biggest){
-        biggest = this.messages.get(i).layer;
-        index = i;
-      }
-    }
-    if(index > -1){
-      this.messages.get(index).mousePressed();
-    }
-    for(int i = 0; i < this.messages.size(); ++i){
-      if(i != index){
-        this.messages.get(i).deselect();
-      }
-    }
-  }
-
-  public void mouseReleased(){
-    for(Element e : this.elements){
-      e.mouseReleased();
-    }
-  }
-
-  public void mouseWheel(float count){
-    if(mouseX >= this.pos.x && mouseX <= this.pos.x + this.dim.x && mouseY >= this.pos.y && mouseY <= this.pos.y + this.dim.y){
-      this.mouseScrolled(count);
-    }
-    for(Element e : this.elements){
-      if(e.mousePressIsWithinBorder()){
-        e.mouseWheel(count);
-      }
-    }
-  }
-
-  public void keyPressed(char k, int c){
-    for(Element e : this.elements){
-      if(e.selected){
-        e.keyPressed(k, c);
-      }
-    }
-    for(ConsoleMessageElement e : this.messages){
-      if(e.selected){
-        e.keyPressed(k, c);
-      }
-    }
-  }
-
-  public void keyTyped(char k){
-    for(Element e : this.elements){
-      if(e.selected){
-        e.keyTyped(k);
-      }
-    }
-    for(ConsoleMessageElement e : this.messages){
-      if(e.selected){
-        e.keyTyped(k);
-      }
-    }
-  }
-
-  public void keyReleased(){
-    for(Element e : this.elements){
-      if(e.selected){
-        e.keyReleased();
-      }
-    }
-    for(ConsoleMessageElement e : this.messages){
-      if(e.selected){
-        e.keyReleased();
-      }
-    }
   }
 }

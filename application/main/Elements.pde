@@ -49,6 +49,15 @@ public class Element implements Element_Interface {
     this.selected = false;
   }
 
+  public void disable(){
+    this.disabled = true;
+    this.deselect();
+  }
+
+  public void enable(){
+    this.disabled = false;
+  }
+
   public void drawSelectionOutline(){
     stroke(0, 0, 255, 100);
     strokeWeight(1);
@@ -185,6 +194,9 @@ public class ButtonElement extends Element {
     strokeWeight(1);
     if(this.disabled){
       fill(150);
+      if(this.selected){
+        this.selected = false;
+      }
     }else{
       fill(0);
     }
@@ -1146,15 +1158,16 @@ public class VerticalScrollElement extends Element {
     rect(this.pos.x, this.pos.y - this.dim.y/2 + (this.rangeMin/(this.max - this.min))*this.dim.y, this.dim.x, ((this.rangeMax - this.rangeMin)/(this.max - this.min))*this.dim.y);
 
     if(this.isDragged){
-      this.rangeMin = this.min + ((mouseY - (this.pos.y - this.dim.y/2))/this.dim.y)*(this.max - this.min) - this.dragHeight/2;
+      this.rangeMin = this.min + ((mouseY - (this.viewController.pos.y + this.pos.y - this.dim.y/2))/this.dim.y)*(this.max - this.min) - this.dragHeight/2;
       this.rangeMax = this.rangeMin + this.dragHeight;
-      if(this.rangeMin < this.min){
-        this.rangeMin = this.min;
-        this.rangeMax = this.rangeMin + this.dragHeight;
-      }else if(this.rangeMax > this.max){
-        this.rangeMax = this.max;
-        this.rangeMin = this.rangeMax - this.dragHeight;
-      }
+    }
+
+    if(this.rangeMin < this.min){
+      this.rangeMin = this.min;
+      this.rangeMax = this.rangeMin + this.dragHeight;
+    }else if(this.rangeMax > this.max){
+      this.rangeMax = this.max;
+      this.rangeMin = this.rangeMax - this.dragHeight;
     }
 
   }

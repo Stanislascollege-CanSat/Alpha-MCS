@@ -35,8 +35,12 @@ public class ConsoleMessageElement extends Element {
   public float scrollContainerMax;
   public boolean isLayerShift;
 
+  public int consoleViewList_ID;
+
   public ConsoleMessageElement(AppController a, ViewController v, float x, float y, float w, int hours, int mins, int secs, String msg){
     super(a, v, x, y, w, 30);
+
+    this.consoleViewList_ID = -1;
 
     this.isInsideScrollContainer = false;
 
@@ -109,6 +113,10 @@ public class ConsoleMessageElement extends Element {
     }
   }
 
+  public void setId(int id){
+    this.consoleViewList_ID = id;
+  }
+
   public void setScrollContainer(float scrlMin, float scrlMax){
     this.scrollContainerMin = scrlMin;
     this.scrollContainerMax = scrlMax;
@@ -153,7 +161,7 @@ public class ConsoleMessageElement extends Element {
         this.isLayerShift = true;
         translate(0, 0, -1);
       }
-      if(this.pos.y + this.dim.y/2 >= this.viewController.pos.y && this.pos.y - this.dim.y/2 <= this.viewController.pos.y + this.viewController.dim.y){
+      if(this.pos.y + this.dim.y/2 >= 0 && this.pos.y - this.dim.y/2 <= this.viewController.dim.y){
         stroke(0);
         strokeWeight(1);
         fill(0);
@@ -187,6 +195,15 @@ public class ConsoleMessageElement extends Element {
         this.isLayerShift = false;
         translate(0, 0, 1);
       }
+    }
+  }
+
+
+
+  public void keyPressed(char k, int c){
+    if(c == BACKSPACE && CTRL_PRESSED){
+      this.deselect();
+      this.appController.deleteMessageFromConsole(this.consoleViewList_ID);
     }
   }
 }

@@ -7,7 +7,9 @@ public class ViewSelectorView extends ViewController {
   public ButtonElement exitButton;
 
   public ButtonElement overviewButton;
-  public ButtonElement exampleButton;
+  public ButtonElement consoleButton;
+
+  public String currentViewIdentifier;
 
 
   public ViewSelectorView(AppController a, float x, float y, float w, float h){
@@ -27,41 +29,41 @@ public class ViewSelectorView extends ViewController {
       }
     };
 
-    this.exampleButton = new ButtonElement(this.appController, this, 200, 25, 100, "Other"){
+    this.consoleButton = new ButtonElement(this.appController, this, 200, 25, 100, "Console"){
       public void clickEvent(){
-        this.appController.switchViewToExample();
+        this.appController.switchViewToConsole();
       }
     };
 
     this.elements.add(this.exitButton);
     this.elements.add(this.overviewButton);
-    this.elements.add(this.exampleButton);
+    this.elements.add(this.consoleButton);
   }
 
   public void viewResizeTriggered(){
-    this.exitButton.resize(10, 25, 100);
+    this.exitButton.resize(10, 25, 60);
     this.overviewButton.resize(90, 25, 100);
-    this.exampleButton.resize(200, 25, 100);
+    this.consoleButton.resize(200, 25, 100);
   }
 
   public void enableAllButtons(){
-    this.overviewButton.disabled = false;
-    this.exampleButton.disabled = false;
+    this.overviewButton.enable();
+    this.consoleButton.enable();
   }
 
   public void disableOverviewButton(){
-    this.overviewButton.disabled = true;
+    this.overviewButton.disable();
   }
 
-  public void disableExampleButton(){
-    this.exampleButton.disabled = true;
+  public void disableConsoleButton(){
+    this.consoleButton.disable();
   }
 
   public void show(){
-    // noStroke();
-    // fill(0);
-    // rectMode(CORNER);
-    // rect(this.pos.x, this.pos.y, this.dim.x, this.dim.y);
+    noStroke();
+    fill(255);
+    rectMode(CORNER);
+    rect(this.pos.x, this.pos.y, this.dim.x, this.dim.y);
 
     stroke(150);
     strokeWeight(1);

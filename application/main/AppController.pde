@@ -75,7 +75,11 @@ public class AppController implements AppController_Interface {
     this.startupView.resize(0, 0, width, height);
     this.setupView.resize(0, 0, width, height);
     this.viewSelectorView.resize(0, 0, width, 50);
-    this.overviewConsoleView.resize(0, 50, 400, height - 50);
+    if(this.viewSelectorView.currentViewIdentifier.equals("overview")){
+      this.overviewConsoleView.resize(0, 50, 400, height - 50);
+    }else if(this.viewSelectorView.currentViewIdentifier.equals("console")){
+      this.overviewConsoleView.resize(0, 50, width, height - 50);
+    }
   }
 
   public void addView(ViewController v){
@@ -172,6 +176,39 @@ public class AppController implements AppController_Interface {
 
     this.blockInteraction();
     this.viewSelectorView.visible = true;
+    this.switchViewToOverview();
+  }
+
+  // ------------------ CONSOLE COMMANDS --------------------------- //
+
+  public String[] parseCommand(String input){
+    String[] output = input.trim().split("\\s+");
+    return output;
+  }
+
+  public void runCommand(String command, String[] args){
+    if(command.equals("log")){
+      if(args.length > 0){
+        String msg = "";
+        for(int i = 1; i < args.length; ++i){
+          msg += args[i];
+          msg += " ";
+        }
+        if(args[0].equals("msg")){
+          this.overviewConsoleView.logMessage(msg);
+        }else if(args[0].equals("wrn")){
+          this.overviewConsoleView.logWarning(msg);
+        }else if(args[0].equals("err")){
+          this.overviewConsoleView.logError(msg);
+        }
+      }
+    }else{
+      this.overviewConsoleView.logSpecial("'" + command + "'", "unknown_command");
+    }
+  }
+
+  public void deleteMessageFromConsole(int id){
+    this.overviewConsoleView.deleteMessage(id);
   }
 
   // ------------------ VIEW SWITCH METHODS ------------------------ //
@@ -180,15 +217,20 @@ public class AppController implements AppController_Interface {
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
+    this.overviewConsoleView.resize(0, 50, 400, height - 50);
     this.overviewConsoleView.visible = true;
     this.viewSelectorView.disableOverviewButton();
+    this.viewSelectorView.currentViewIdentifier = "overview";
   }
 
-  public void switchViewToExample(){
+  public void switchViewToConsole(){
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
-    this.viewSelectorView.disableExampleButton();
+    this.overviewConsoleView.resize(0, 50, width, height - 50);
+    this.overviewConsoleView.visible = true;
+    this.viewSelectorView.disableConsoleButton();
+    this.viewSelectorView.currentViewIdentifier = "console";
   }
 
 
