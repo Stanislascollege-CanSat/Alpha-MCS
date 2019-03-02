@@ -26,8 +26,8 @@ AppController appController;
 // PImage mouse_pointer_img;
 
 public void settings(){
-  size(1000, 700, P3D);
-  //fullScreen(P3D);
+  //size(1000, 700, P3D);
+  fullScreen(P3D);
   pixelDensity(displayDensity());
   //smooth(8);
 }

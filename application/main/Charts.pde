@@ -51,7 +51,7 @@ public class Chart implements Chart_Interface {
   public ChartRange yRange;
   public PVector pos;
   public PVector dim;
-  public ArrayList<ArrayList<PVector>> dataSets;
+  public ArrayList<DataSet> dataSets;
   public color[] colorList;
   public String title;
   public String Xquantity;
@@ -64,25 +64,31 @@ public class Chart implements Chart_Interface {
     this.yRange = yR;
     this.pos = new PVector(x, y);
     this.dim = new PVector(w, h);
-    this.dataSets = new ArrayList<ArrayList<PVector>>();
-    this.colorList = new color[5];
-    this.colorList[0] = color(56, 132, 255);
-    this.colorList[1] = color(244, 66, 66);
-    this.colorList[2] = color(113, 244, 65);
-    this.colorList[3] = color(244, 184, 65);
-    this.colorList[4] = color(145, 65, 244);
+    this.dataSets = new ArrayList<DataSet>();
+    this.colorList = new color[7];
+    this.colorList[0] = color(255,   0,   0);
+    this.colorList[1] = color(  0, 255,   0);
+    this.colorList[2] = color(  0,   0, 255);
+    this.colorList[3] = color(255,   0, 233);
+    this.colorList[4] = color(255, 174,   0);
+    this.colorList[5] = color(203,   0, 255);
+    this.colorList[6] = color(  0,   0,   0);
+//    this.colorList[] = color(, , );
+//    this.colorList[] = color(, , );
+//    this.colorList[] = color(, , );
+//    this.colorList[] = color(, , );
+//    this.colorList[] = color(, , );
+//    this.colorList[] = color(, , );
 
     this.title = title;
     this.Xquantity = Xq;
     this.Xunit = Xu;
     this.Yquantity = Yq;
     this.Yunit = Yu;
+  }
 
-    ArrayList<PVector> test = new ArrayList<PVector>();
-    for(float angle = 0; angle <= 1000; angle += 0.001){
-      test.add(new PVector(angle, log10(angle)));
-    }
-    this.dataSets.add(test);
+  public void addDataSet(DataSet a){
+    this.dataSets.add(a);
   }
 
 
@@ -173,14 +179,17 @@ public class Chart implements Chart_Interface {
 
     strokeWeight(2);
     noFill();
+    textFont(fonts.get("SF").get("Regular"));
+    textAlign(LEFT);
 
     int colorScheme = 0;
+    int dataSetNumber = 0;
 
     if(colorScheme < this.colorList.length){
       stroke(this.colorList[colorScheme]);
     }
 
-    for(ArrayList<PVector> l : this.dataSets){
+    for(DataSet l : this.dataSets){
 
 
       beginShape();
@@ -192,27 +201,36 @@ public class Chart implements Chart_Interface {
       }
       for(int i = 0; i < l.size(); i += increment){
         if(i < l.size()){
-          if(l.get(i).x >= this.xRange.min && l.get(i).x <= this.xRange.max && l.get(i).y >= this.yRange.min && l.get(i).y <= this.yRange.max){
+          if(l.getDataAt(i).getXFloat() >= this.xRange.min && l.getDataAt(i).getXFloat() <= this.xRange.max && l.getDataAt(i).getYFloat() >= this.yRange.min && l.getDataAt(i).getYFloat() <= this.yRange.max){
             vertex(
-              map(l.get(i).x, this.xRange.min, this.xRange.max, this.pos.x, this.pos.x + this.dim.x),
-              map(l.get(i).y, this.yRange.min, this.yRange.max, this.pos.y + this.dim.y/2, this.pos.y - this.dim.y/2)
+              map(l.getDataAt(i).getXFloat(), this.xRange.min, this.xRange.max, this.pos.x, this.pos.x + this.dim.x),
+              map(l.getDataAt(i).getYFloat(), this.yRange.min, this.yRange.max, this.pos.y + this.dim.y/2, this.pos.y - this.dim.y/2)
             );
           }
-          if(l.get(i).y < this.yRange.min || l.get(i).y > this.yRange.max){
+          if(l.getDataAt(i).getYFloat() < this.yRange.min || l.getDataAt(i).getYFloat() > this.yRange.max){
             endShape();
             beginShape();
           }
         }
       }
       endShape();
+      
+      fill(this.colorList[colorScheme]);
+      text(l.getQuantity(), this.pos.x + 5, this.pos.y - this.dim.y/2 + 15 + 15*dataSetNumber);
+      noFill();
+      
 
 
       colorScheme++;
+      dataSetNumber++;
       if(colorScheme >= this.colorList.length){
         colorScheme = 0;
       }
       stroke(this.colorList[colorScheme]);
     }
+    
+    
+    
 
     //
     // OUTER BORDER

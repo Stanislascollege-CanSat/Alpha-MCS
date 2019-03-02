@@ -14,6 +14,8 @@ public class ConsoleView extends ViewController {
   public TickBoxElement autoScrollTickBox;
   public TextElement autoScrollLabel;
 
+  public ButtonElement clearMessagesButton;
+
   public LineInputElement commandInput;
 
   public float calculatedMessageHeight;
@@ -23,7 +25,7 @@ public class ConsoleView extends ViewController {
   public ConsoleView(AppController a, float x, float y, float w, float h){
     super(a, x, y, w, h);
 
-    this.messageWidth = (this.dim.x > 400) ? 400 : this.dim.x;
+    this.messageWidth = (this.dim.x > 600) ? 600 : this.dim.x;
 
     this.messageViewHeight = this.dim.y - 80;
 
@@ -40,6 +42,12 @@ public class ConsoleView extends ViewController {
 
     this.autoScrollLabel = new TextElement(this.appController, this, 30, this.dim.y - 20, 200, "Autoscroll", LEFT);
 
+    this.clearMessagesButton = new ButtonElement(this.appController, this, this.dim.x - 65, this.dim.y - 20, 50, "Clear"){
+      public void clickEvent(){
+        this.appController.clearConsoleMessages();
+      }
+    };
+
     this.commandInput = new LineInputElement(this.appController, this, 10, this.dim.y - 55, this.dim.x - 20){
       public void enterEvent(){
         String[] parse = this.appController.parseCommand(this.getValue());
@@ -55,16 +63,18 @@ public class ConsoleView extends ViewController {
     this.elements.add(this.scrollBar);
     this.elements.add(this.autoScrollTickBox);
     this.elements.add(this.autoScrollLabel);
+    this.elements.add(this.clearMessagesButton);
     this.elements.add(this.commandInput);
 
-    this.addMessage("First message", "error");
-    for(int i = 0; i < 100; ++i){
-      this.addMessage("This is a message", "message");
-    }
-    this.addMessage("Last message", "error");
+    // this.addMessage("First message", "error");
+    // for(int i = 0; i < 100; ++i){
+    //   this.addMessage("This is a message", "message");
+    // }
+    // this.addMessage("Last message", "error");
 
 
   }
+
 
   private void arrangeMessages(){
     this.calculatedMessageHeight = 0;
@@ -87,24 +97,46 @@ public class ConsoleView extends ViewController {
   }
 
   private void addMessage(String msg, String type){
-    if(type == "warning"){
-      this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "yellow"));
-      this.messages.get(this.messages.size() - 1).setTitle("WARNING");
-    }else if(type == "unknown_command"){
-      this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "yellow"));
-      this.messages.get(this.messages.size() - 1).setTitle("UNKNOWN COMMAND");
-    }else if(type == "error"){
-      this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "red"));
-      this.messages.get(this.messages.size() - 1).setTitle("ERROR");
-    }else if(type == "serial"){
-      this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "orange"));
-      this.messages.get(this.messages.size() - 1).setTitle("SERIAL");
-    }else{
-      this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg));
-      this.messages.get(this.messages.size() - 1).setTitle("MESSAGE");
-    }
-    this.messages.get(this.messages.size() - 1).setScrollContainer(0, this.messageViewHeight);
-    this.arrangeMessages();
+	switch(type) {
+	case "warning":
+	  this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "yellow"));
+	  this.messages.get(this.messages.size() - 1).setTitle("WARNING");
+	  break;
+	case "unknown_command":
+	  this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "yellow"));
+	  this.messages.get(this.messages.size() - 1).setTitle("UNKNOWN COMMAND");
+	  break;
+	case "syntax_error":
+	  this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "yellow"));
+	  this.messages.get(this.messages.size() - 1).setTitle("SYNTAX ERROR");
+	  break;
+	case "error":
+	  this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "red"));
+	  this.messages.get(this.messages.size() - 1).setTitle("ERROR");
+	  break;
+	case "serial":
+	  this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "orange"));
+	  this.messages.get(this.messages.size() - 1).setTitle("SERIAL");
+	  break;
+	case "setup":
+	  this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, color(66, 241, 244)));
+	  this.messages.get(this.messages.size() - 1).setTitle("SETUP MESSAGE");
+	  break;
+	case "response":
+	  this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "blue"));
+	  this.messages.get(this.messages.size() - 1).setTitle("RESPONSE");
+	  break;
+	case "help":
+	  this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg, "blue"));
+	  this.messages.get(this.messages.size() - 1).setTitle("HELP");
+	  break;
+	default:
+	  this.messages.add(new ConsoleMessageElement(this.appController, this, (this.dim.x - 10)/2 - (this.messageWidth - 20)/2, 0, this.messageWidth - 20, hour(), minute(), second(), msg));
+	  this.messages.get(this.messages.size() - 1).setTitle("MESSAGE");
+	  break;
+	}
+	this.messages.get(this.messages.size() - 1).setScrollContainer(0, this.messageViewHeight);
+	this.arrangeMessages();
   }
 
   private void removeMessage(int id){
@@ -115,6 +147,14 @@ public class ConsoleView extends ViewController {
 
   public void deleteMessage(int id){
     this.messagesToRemove.add(id);
+  }
+
+  public void clearMessages(){
+    for(ConsoleMessageElement e : this.messages){
+      e.deselect();
+    }
+    this.messages.clear();
+    this.arrangeMessages();
   }
 
   public void logMessage(String msg){
@@ -149,6 +189,18 @@ public class ConsoleView extends ViewController {
     }
   }
 
+  public void logSetup(String msg){
+    this.logSpecial(msg, "setup");
+  }
+  
+  public void logResponse(String msg) {
+	  this.logSpecial(msg,  "response");
+  }
+  
+  public void logHelp(String msg) {
+	  this.logSpecial(msg, "help");
+  }
+
   public void logSpecial(String msg, String id){
     if(msg.length() > 0 && id.length() > 0){
       this.messagesToLog.add(new String[2]);
@@ -173,9 +225,11 @@ public class ConsoleView extends ViewController {
     this.commandInput.resize(10, this.dim.y - 55, this.dim.x - 20);
     this.autoScrollTickBox.resize(15, this.dim.y - 20);
     this.autoScrollLabel.resize(30, this.dim.y - 20, 200);
+    this.clearMessagesButton.resize(this.dim.x - 65, this.dim.y - 20, 50);
     for(ConsoleMessageElement e : this.messages){
       e.setScrollContainer(0, this.messageViewHeight);
     };
+    this.scrollBar.setCurrentPosition(0, this.messageViewHeight);
     this.autoScrollTickBox.setValue(true);
     this.arrangeMessages();
   }
@@ -291,6 +345,10 @@ public class ConsoleView extends ViewController {
 
   public void mouseReleased(){
     for(Element e : this.elements){
+      e.mouseReleased();
+    }
+
+    for(ConsoleMessageElement e : this.messages){
       e.mouseReleased();
     }
   }

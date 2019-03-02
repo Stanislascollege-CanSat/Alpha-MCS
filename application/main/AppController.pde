@@ -3,6 +3,7 @@
 // Rens Dur (Project Bèta)
 
 import java.io.FileWriter;
+import java.lang.Math;
 
 public interface AppController_Interface {
   public void show();
@@ -26,15 +27,33 @@ public class AppController implements AppController_Interface {
 
   private SerialController serialController;
 
+
   private StartupView startupView;
   private SetupView setupView;
 
   // ------- MISSION VIEWS --------- //
   private ViewSelectorView viewSelectorView;
 
+  private View_MissionStart view_MissionStart;
+  private View_MissionInfo view_MissionInfo;
+  private View_FlightPath view_FlightPath;
+
   private ConsoleView overviewConsoleView;
 
+
+  private DataSet testDataSet;
+  private DataSet testDerivDataSet;
+
   public AppController(PApplet environment){
+    this.testDataSet = new DataSet("Velocity");
+
+    for(double i = -10; i <= 10; i += 0.01){
+      this.testDataSet.addDataPoint(new DataPoint(i, 5*Math.sin(i)));
+    }
+
+    this.testDerivDataSet = this.testDataSet.calcDerivative();
+
+
     this.mainJavaEnvironment = environment;
 
     this.viewControllers = new ArrayList<ViewController>();
@@ -46,15 +65,32 @@ public class AppController implements AppController_Interface {
     this.setupView = new SetupView(this, 0, 0, width, height);
     this.setupView.visible = false;
 
-    this.viewSelectorView = new ViewSelectorView(this, 0, 0, width, 50);
+    this.viewSelectorView = new ViewSelectorView(this, 0, 0, width, 80);
     this.viewSelectorView.visible = false;
 
-    this.overviewConsoleView = new ConsoleView(this, 0, 50, 400, height - 50);
+    this.view_MissionStart = new View_MissionStart(this, 0, 80, width, height - 80);
+    this.view_MissionStart.visible = false;
+
+    this.view_MissionInfo = new View_MissionInfo(this, 0, 80, width, height - 80);
+    this.view_MissionInfo.visible = false;
+
+    this.view_MissionInfo.testChart.addDataSet(this.testDataSet);
+    this.view_MissionInfo.testChart.addDataSet(this.testDerivDataSet);
+    this.view_MissionInfo.testChart.addDataSet(this.testDerivDataSet.calcDerivative());
+    this.view_MissionInfo.testChart.addDataSet(this.testDerivDataSet.calcDerivative().calcDerivative());
+    
+    this.view_FlightPath = new View_FlightPath(this, 0, 80, width, height - 80);
+    this.view_FlightPath.visible = false;
+
+    this.overviewConsoleView = new ConsoleView(this, 0, 80, 500, height - 80);
     this.overviewConsoleView.visible = false;
 
     this.viewControllers.add(this.startupView);
     this.viewControllers.add(this.setupView);
     this.viewControllers.add(this.viewSelectorView);
+    this.viewControllers.add(this.view_MissionStart);
+    this.viewControllers.add(this.view_MissionInfo);
+    this.viewControllers.add(this.view_FlightPath);
     this.viewControllers.add(this.overviewConsoleView);
   }
 
@@ -74,11 +110,14 @@ public class AppController implements AppController_Interface {
   public void resize(){
     this.startupView.resize(0, 0, width, height);
     this.setupView.resize(0, 0, width, height);
-    this.viewSelectorView.resize(0, 0, width, 50);
+    this.viewSelectorView.resize(0, 0, width, 80);
+    this.view_MissionStart.resize(0, 80, width, height - 80);
+    this.view_MissionInfo.resize(0, 80, width, height - 80);
+    this.view_FlightPath.resize(0, 80, width, height - 80);
     if(this.viewSelectorView.currentViewIdentifier.equals("overview")){
-      this.overviewConsoleView.resize(0, 50, 400, height - 50);
+      this.overviewConsoleView.resize(0, 80, 500, height - 80);
     }else if(this.viewSelectorView.currentViewIdentifier.equals("console")){
-      this.overviewConsoleView.resize(0, 50, width, height - 50);
+      this.overviewConsoleView.resize(0, 80, width, height - 80);
     }
   }
 
@@ -173,10 +212,29 @@ public class AppController implements AppController_Interface {
     // println(this.setupView.getSelectedMissionIdentifier());
     // println(this.setupView.getSelectedDoConsoleLogFile());
     // println(this.setupView.getSelectedDoCSVDataFile());
+	  
+	MissionSettings.set(
+		this.setupView.getSelectedSerialPort(),
+		int(this.setupView.getSelectedSerialBaud()),
+		this.setupView.getSelectedMissionPath(),
+		this.setupView.getSelectedMissionIdentifier(),
+		this.setupView.getSelectedDoConsoleLogFile(),
+		this.setupView.getSelectedDoCSVDataFile()
+	);
+
+    
+
+    this.overviewConsoleView.logSetup("Serial port:\n    " + this.setupView.getSelectedSerialPort());
+    this.overviewConsoleView.logSetup("Serial baud-rate:\n    " + this.setupView.getSelectedSerialBaud());
+    this.overviewConsoleView.logSetup("Mission folder:\n    " + this.setupView.getSelectedMissionPath());
+    this.overviewConsoleView.logSetup("Mission identifier:\n    " + this.setupView.getSelectedMissionIdentifier());
+    this.overviewConsoleView.logSetup("Create console log file:\n    " + (this.setupView.getSelectedDoConsoleLogFile() ? "YES" : "NO"));
+    this.overviewConsoleView.logSetup("Create CSV data output file:\n    " + (this.setupView.getSelectedDoCSVDataFile() ? "YES" : "NO"));
+
 
     this.blockInteraction();
     this.viewSelectorView.visible = true;
-    this.switchViewToOverview();
+    this.view_MissionStart.visible = true;
   }
 
   // ------------------ CONSOLE COMMANDS --------------------------- //
@@ -187,39 +245,172 @@ public class AppController implements AppController_Interface {
   }
 
   public void runCommand(String command, String[] args){
-    if(command.equals("log")){
-      if(args.length > 0){
-        String msg = "";
-        for(int i = 1; i < args.length; ++i){
-          msg += args[i];
-          msg += " ";
-        }
-        if(args[0].equals("msg")){
-          this.overviewConsoleView.logMessage(msg);
-        }else if(args[0].equals("wrn")){
-          this.overviewConsoleView.logWarning(msg);
-        }else if(args[0].equals("err")){
-          this.overviewConsoleView.logError(msg);
-        }
-      }
-    }else{
-      this.overviewConsoleView.logSpecial("'" + command + "'", "unknown_command");
-    }
+	  if(ActionRequest.anyRequestOpen() && !(command.equals("confirm"))) {
+		  ActionRequest.denyAll();
+		  this.overviewConsoleView.logResponse("All requests denied.");
+	  }
+	  switch(command) {
+	  	case "log":
+	      if(args.length > 0){
+	        String msg = "";
+	        for(int i = 1; i < args.length; ++i){
+	          msg += args[i];
+	          msg += " ";
+	        }
+	        if(args[0].equals("msg")){
+	          this.overviewConsoleView.logMessage(msg);
+	        }else if(args[0].equals("wrn")){
+	          this.overviewConsoleView.logWarning(msg);
+	        }else if(args[0].equals("err")){
+	          this.overviewConsoleView.logError(msg);
+	        }else{
+	          String argslist = "";
+	          for(int i = 0; i < args.length; ++i){
+	            argslist += "\n[" + str(i) + "]->" + args[i];
+	          }
+	          this.overviewConsoleView.logSpecial("Command: '" + command + "'\nArguments:" + argslist + "\n\nShould be:\n" + command + " <msg,wrn,err> <text>", "syntax_error");
+	          argslist = null;
+	        }
+	        msg = null;
+	      }else{
+	        String argslist = "";
+	        for(int i = 0; i < args.length; ++i){
+	          argslist += "\n[" + str(i) + "]->" + args[i];
+	        }
+	        this.overviewConsoleView.logSpecial("Command: '" + command + "'\nArguments:" + argslist + "\n\nShould be:\n" + command + " <msg,wrn,err> <text>", "syntax_error");
+	        argslist = null;
+	      }
+	      break;
+	  	case "print":
+	      if(args.length > 0){
+	        String msg = "";
+	        for(int i = 0; i < args.length; ++i){
+	          msg += args[i];
+	          msg += " ";
+	        }
+	        this.overviewConsoleView.logMessage(msg);
+	      }else{
+	        String argslist = "";
+	        for(int i = 0; i < args.length; ++i){
+	          argslist += "\n[" + str(i) + "]->" + args[i];
+	        }
+	        this.overviewConsoleView.logSpecial("Command: '" + command + "'\nArguments:" + argslist + "\n\nShould be:\n" + command + " <text>", "syntax_error");
+	        argslist = null;
+	      }
+	      break;
+	  	case "clear":
+	      this.overviewConsoleView.logResponse("Do you want to clear the console?\n\nType: confirm / deny");
+	      ActionRequest.clearConsole = true;
+	      break;
+	  	case "exit":
+	      this.overviewConsoleView.logResponse("Do you want to exit Alpha?\n\nType: confirm / deny");
+	      ActionRequest.exitAlpha = true;
+	      break;
+	  	case "getMissionSetting":
+		    if(args.length == 1){
+		    	switch(args[0]) {
+		  	    	case "serialPort":
+		  	    		this.overviewConsoleView.logResponse(MissionSettings.getSerialPort());
+		  	    		break;
+		  	    	case "serialBaudRate":
+		  	    		this.overviewConsoleView.logResponse(Integer.toString(MissionSettings.getSerialBaudRate()));
+		  	    		break;
+		  	    	case "missionFolder":
+		  	    		this.overviewConsoleView.logResponse(MissionSettings.getOutputFolderPath());
+		  	    		break;
+		  	    	case "missionIdentifier":
+		  	    		this.overviewConsoleView.logResponse(MissionSettings.getMissionIdentifier());
+		  	    		break;
+		  	    	case "createConsoleLogFile":
+		  	    		this.overviewConsoleView.logResponse(Boolean.toString(MissionSettings.getCreateConsoleLogFile()));
+		  	    		break;
+		  	    	case "createCSVDataOutputFile":
+		  	    		this.overviewConsoleView.logResponse(Boolean.toString(MissionSettings.getCreateCSVDataOutputFile()));
+		  	    		break;
+		  	    	default:
+		  	    		this.overviewConsoleView.logSpecial("getInfo::" + args[0] + " does not exist.", "syntax_error");
+		  	    		break;
+		    	}
+		    }
+		    break;
+	  	case "help":
+	  		if(args.length == 1) {
+	  			switch(args[0]) {
+	  				case "log":
+	  					this.overviewConsoleView.logHelp("-> log <msg,wrn,err> <text>");
+	  					break;
+	  				case "print":
+	  					this.overviewConsoleView.logHelp("-> print <text>");
+	  					break;
+	  				case "clear":
+	  					this.overviewConsoleView.logHelp("-> clear\n\nConfirmation needed");
+	  					break;
+		            case "exit":
+		                this.overviewConsoleView.logHelp("-> exit\n\nConfirmation needed");
+		                break;
+	  				case "getMissionSetting":
+	  					this.overviewConsoleView.logHelp("-> getMissionSetting <setting_name>\n   setting_name options:\n   - serialPort\n   - serialBaudRate\n   - missionFolder\n   - missionIdentifier\n   - createConsoleLogFile\n   - createCSVDataOutputFile\n");
+	  					break;
+	  				default:
+	  					this.overviewConsoleView.logSpecial("Command '" + args[0] + "' not found.", "syntax_error");
+	  			}
+	  		}else {
+	  			this.overviewConsoleView.logSpecial("help <command_name>\nType 'list' for list of commands.", "syntax_error");
+	  		}
+	  		break;
+	  	case "list":
+	  		this.overviewConsoleView.logResponse("List of commands:\n\nlog\nprint\nclear\nexit\ngetMissionSetting");
+	  		break;
+	  	case "confirm":
+	  		if(ActionRequest.clearConsole) {
+	  			this.overviewConsoleView.clearMessages();
+	  		}
+	  		if(ActionRequest.exitAlpha) {
+	  			this.exitApplication();
+	  		}
+	  		ActionRequest.denyAll();
+	  		break;
+	  	case "deny":
+	  		ActionRequest.denyAll();
+	  		this.overviewConsoleView.logResponse("All requests denied.");
+	  		break;
+	    default:
+	    	this.overviewConsoleView.logSpecial("'" + command + "'", "unknown_command");
+	  }
   }
 
   public void deleteMessageFromConsole(int id){
     this.overviewConsoleView.deleteMessage(id);
   }
 
+  public void clearConsoleMessages(){
+    this.overviewConsoleView.clearMessages();
+  }
+
   // ------------------ VIEW SWITCH METHODS ------------------------ //
+
+  public void switchViewToMissionInfo(){
+    this.blockInteraction();
+    this.viewSelectorView.enableAllButtons();
+    this.viewSelectorView.visible = true;
+    this.view_MissionInfo.visible = true;
+    this.viewSelectorView.currentViewIdentifier = "missionInfo";
+  }
+  
+  public void switchViewToFlightPath() {
+	this.blockInteraction();
+    this.viewSelectorView.enableAllButtons();
+    this.viewSelectorView.visible = true;
+    this.view_FlightPath.visible = true;
+    this.viewSelectorView.currentViewIdentifier = "flightPath";
+  }
 
   public void switchViewToOverview(){
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
-    this.overviewConsoleView.resize(0, 50, 400, height - 50);
+    this.overviewConsoleView.resize(0, 80, 500, height - 80);
     this.overviewConsoleView.visible = true;
-    this.viewSelectorView.disableOverviewButton();
     this.viewSelectorView.currentViewIdentifier = "overview";
   }
 
@@ -227,11 +418,14 @@ public class AppController implements AppController_Interface {
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
-    this.overviewConsoleView.resize(0, 50, width, height - 50);
+    this.overviewConsoleView.resize(0, 80, width, height - 80);
     this.overviewConsoleView.visible = true;
-    this.viewSelectorView.disableConsoleButton();
     this.viewSelectorView.currentViewIdentifier = "console";
   }
+
+  // ------------------ DIALOG WINDOWS ----------------------------- //
+
+
 
 
 

@@ -24,3 +24,24 @@ final public float logBase(float a, float g){
 final public float ln(float a){
   return log(a)/log(e);
 }
+
+
+final public double log10(double a){
+  return (double)log10((float)a);
+}
+
+final public double log20(double a){
+  return (double)log20((float)a);
+}
+
+final public double log50(double a){
+  return (double)log50((float)a);
+}
+
+final public double logBase(double a, double g){
+  return (double)logBase((float)a, (float)g);
+}
+
+final public double ln(double a){
+  return (double)ln((float)a);
+}

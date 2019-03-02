@@ -1174,3 +1174,116 @@ public class VerticalScrollElement extends Element {
 
 
 }
+
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+public class HorizontalScrollElement extends Element {
+  public float min; // Minimum rangeMin
+  public float max; // Maximum rangeMax
+  public float rangeMin; // Current rangeMin
+  public float rangeMax; // Current rangeMax
+  public boolean isDragged;
+  public float dragHeight;
+
+
+  public HorizontalScrollElement(AppController a, ViewController v, float x, float y, float w, float min, float max){
+    super(a, v, x, y, w, 10);
+
+    if(max > min){
+      this.min = min;
+      this.max = max;
+      this.rangeMin = this.min;
+      this.rangeMax = this.max;
+    }
+
+    this.isDragged = false;
+    this.dragHeight = this.rangeMax - this.rangeMin;
+  }
+
+  public void resize(float x, float y, float w){
+	  this.pos.set(x, y);
+	  this.dim.x = w;
+  }
+
+  public void mousePressed(){
+    if(this.mousePressIsWithinBorder()){
+      // User clicked element
+      this.isDragged = true;
+      this.dragHeight = this.rangeMax - this.rangeMin;
+      this.clickEvent();
+      this.mouseHeld = true;
+      this.select();
+    }
+  }
+
+  public void mouseReleased(){
+    this.isDragged = false;
+    this.mouseHeld = false;
+  }
+
+  public void setExtremes(float min, float max){
+    if(max > min){
+      this.min = min;
+      this.max = max;
+    }
+  }
+
+  public void setCurrentPosition(float minVisible, float maxVisible){
+    if(maxVisible > minVisible){
+      this.rangeMin = minVisible;
+      this.rangeMax = maxVisible;
+    }
+  }
+
+  public float getMinimumValue(){
+    return this.rangeMin;
+  }
+
+  public void addScroll(float count){
+    this.dragHeight = this.rangeMax - this.rangeMin;
+    this.rangeMin += count;
+    this.rangeMax = this.rangeMin + this.dragHeight;
+    if(this.rangeMin < this.min){
+      this.rangeMin = this.min;
+      this.rangeMax = this.rangeMin + this.dragHeight;
+    }else if(this.rangeMax > this.max){
+      this.rangeMax = this.max;
+      this.rangeMin = this.rangeMax - this.dragHeight;
+    }
+  }
+
+  public void show(){
+    noStroke();
+    fill(230);
+    rectMode(CORNER);
+    rect(this.pos.x, this.pos.y - this.dim.y/2, this.dim.x, this.dim.y);
+
+    if(this.mouseHeld){
+      stroke(0);
+      strokeWeight(1);
+      fill(0);
+    }else{
+      noStroke();
+      fill(200);
+    }
+    //rect(this.pos.x, this.pos.y - this.dim.y/2 + (this.rangeMin/(this.max - this.min))*this.dim.y, this.dim.x, ((this.rangeMax - this.rangeMin)/(this.max - this.min))*this.dim.y);
+    rect(this.pos.x + (this.rangeMin/(this.max - this.min))*this.dim.x, this.pos.y - this.dim.y/2, ((this.rangeMax - this.rangeMin)/(this.max - this.min))*this.dim.x, this.dim.y);
+
+    if(this.isDragged){
+      this.rangeMin = this.min + ((mouseX - (this.viewController.pos.x + this.pos.x))/this.dim.x)*(this.max - this.min) - this.dragHeight/2;
+      this.rangeMax = this.rangeMin + this.dragHeight;
+    }
+
+    if(this.rangeMin < this.min){
+      this.rangeMin = this.min;
+      this.rangeMax = this.rangeMin + this.dragHeight;
+    }else if(this.rangeMax > this.max){
+      this.rangeMax = this.max;
+      this.rangeMin = this.rangeMax - this.dragHeight;
+    }
+
+  }
+
+
+}
