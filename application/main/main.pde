@@ -3,6 +3,11 @@
 // Rens Dur (Project Bèta)
 
 import java.util.Map;
+import processing.opengl.PGL;
+import processing.opengl.PJOGL;
+
+PImage appIcon;
+
 import static javax.swing.JOptionPane.*;
 
 public boolean completedStartup;
@@ -30,11 +35,14 @@ public void settings(){
   //fullScreen(P3D);
   pixelDensity(displayDensity());
   //smooth(8);
+  PJOGL.setIcon("1024x1024.png");
 }
 
 public void setup(){
   surface.setTitle("Mission Control Software");
-  surface.setResizable(true);
+//  surface.setResizable(true);
+//  appIcon = loadImage("icon1000.png");
+//  surface.setIcon(appIcon);
   background(200);
 
   // Frame components
