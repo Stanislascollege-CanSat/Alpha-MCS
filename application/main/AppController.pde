@@ -245,7 +245,7 @@ public class AppController implements AppController_Interface {
   }
 
   public void runCommand(String command, String[] args){
-	  if(ActionRequest.anyRequestOpen() && !(command.equals("confirm"))) {
+	  if(ActionRequest.anyRequestOpen() && !(command.equals("confirm") || command.equals("deny"))) {
 		  ActionRequest.denyAll();
 		  this.overviewConsoleView.logResponse("All requests denied.");
 	  }

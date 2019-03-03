@@ -1127,6 +1127,10 @@ public class VerticalScrollElement extends Element {
   public float getMinimumValue(){
     return this.rangeMin;
   }
+  
+  public float getMaximumValue() {
+    return this.rangeMax;
+  }
 
   public void addScroll(float count){
     this.dragHeight = this.rangeMax - this.rangeMin;
@@ -1238,6 +1242,10 @@ public class HorizontalScrollElement extends Element {
 
   public float getMinimumValue(){
     return this.rangeMin;
+  }
+  
+  public float getMaximumValue() {
+	  return this.rangeMax;
   }
 
   public void addScroll(float count){

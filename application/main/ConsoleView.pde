@@ -90,8 +90,13 @@ public class ConsoleView extends ViewController {
       if(this.autoScrollTickBox.getValue()){
         this.scrollBar.setCurrentPosition(this.calculatedMessageHeight - this.messageViewHeight, this.calculatedMessageHeight);
       }else{
-
+    	 this.scrollBar.setCurrentPosition(this.scrollBar.getMinimumValue(), this.scrollBar.getMinimumValue() + this.messageViewHeight);
+    	 if(this.scrollBar.getMaximumValue() > this.calculatedMessageHeight) {
+    		 this.scrollBar.setCurrentPosition(this.calculatedMessageHeight - this.messageViewHeight, this.calculatedMessageHeight);
+    	 }
       }
+    }else {
+        this.scrollBar.setCurrentPosition(0, this.messageViewHeight);
     }
 
   }
@@ -229,8 +234,8 @@ public class ConsoleView extends ViewController {
     for(ConsoleMessageElement e : this.messages){
       e.setScrollContainer(0, this.messageViewHeight);
     };
-    this.scrollBar.setCurrentPosition(0, this.messageViewHeight);
-    this.autoScrollTickBox.setValue(true);
+    //this.scrollBar.setCurrentPosition(0, this.messageViewHeight);
+    //this.autoScrollTickBox.setValue(true);
     this.arrangeMessages();
   }
 
