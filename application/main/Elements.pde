@@ -1287,3 +1287,37 @@ public class HorizontalScrollElement extends Element {
 
 
 }
+
+
+// ------------------------------------------------------------------------------- //
+
+
+public class SliderElement extends Element {
+	public boolean vertical;
+	
+	public Range range;
+	public float currentPos;
+	
+	public SliderElement(AppController a, ViewController v, float x, float y, float size, String orient, Range r) {
+		super(a, v, x, y, 0, 0);
+		
+		this.vertical = false;
+		if(orient == "vertical") {
+			this.vertical = true;
+		}
+		
+		if(this.vertical) {
+			this.resize(x, y, 10, size);
+		}else {
+			this.resize(x, y, size, 10);
+		}
+		
+		// Determined the orientation of the slider
+		
+		this.range = r;
+		
+		this.currentPos = this.range.min;
+	}
+	
+	
+}
