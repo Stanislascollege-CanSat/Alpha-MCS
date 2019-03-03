@@ -29,7 +29,7 @@ public class StartupView extends ViewController {
     };
 
     this.elements.add(this.button);
-    this.elements.add(this.shortCut);
+    //this.elements.add(this.shortCut);
   }
 
   public void viewResizeTriggered(){

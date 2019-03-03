@@ -106,7 +106,7 @@ public class AppController implements AppController_Interface {
     if(SerialController.available()) {
     	for(String s : SerialController.getReceived()) {
     		this.overviewConsoleView.logSerial(s);
-    		//DataDecoder.addData(s);
+    		DataDecoder.addData(s);
     		if(this.serial_receive_file_opened) {
     			try{
 	              this.serial_receive_file.write(s);
@@ -118,8 +118,6 @@ public class AppController implements AppController_Interface {
     		}
     	}
     }
-    
-    DataDecoder.update();
     
     strokeWeight(1);
     fill(0);
@@ -161,17 +159,12 @@ public class AppController implements AppController_Interface {
 	if(this.decoded_data_file_opened) {
 		try {
 			for(MeasuredDataPoint p : DataDecoder.getDecodedData()) {
-				this.decoded_data_file.write("\n{\n");
-				for(String k : p.getMap().keySet()) {
-					this.decoded_data_file.write(k + ": " + Double.toString(p.getMap().get(k)) + "\n");
+				this.decoded_data_file.write("\n{");
+				for(String key : p.getMap()) {
+					this.decoded_data_file.write(p.getMap().get(key));
 				}
 				this.decoded_data_file.write("}");
 			}
-			this.decoded_data_file.close();
-		}catch(IOException e) {
-			
-		}catch(Exception e) {
-			
 		}
 	}
 	
@@ -286,7 +279,6 @@ public class AppController implements AppController_Interface {
     
     this.decoded_data_file = new FileWriter(MissionSettings.getOutputFolderPath() + "/decoded_data.txt");
     this.decoded_data_file_opened = true;
-    this.decoded_data_file.write("test");
 
 
     this.blockInteraction();

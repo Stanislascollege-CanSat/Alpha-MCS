@@ -97,7 +97,7 @@ public class SetupView extends ViewController {
     this.elements.add(this.csvDataFileTBLabel);
 
     // Setting default values
-    for(String s : this.appController.serialController.getPortsList()){
+    for(String s : SerialController.getAvailablePorts()){
       this.serialPortSelect.addOption(s);
     }
 
