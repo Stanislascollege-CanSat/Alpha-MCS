@@ -22,7 +22,11 @@ public class MeasuredDataPoint {
 	}
 	
 	public MeasuredDataPoint copy() {
-		return new MeasuredDataPoint(new HashMap<String, Double>(this.data));
+		MeasuredDataPoint clone = new MeasuredDataPoint();
+		for(String k : this.data.keySet()) {
+			clone.addQuantity(k, this.data.get(k));
+		}
+		return clone;
 	}
 	
 	public Map<String, Double> getMap(){
