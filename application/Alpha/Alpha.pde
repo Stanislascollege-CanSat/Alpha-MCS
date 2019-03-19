@@ -40,7 +40,9 @@ public void settings(){
   size(1000, 700, P3D);
   //fullScreen(P3D);
   pixelDensity(displayDensity());
-  //smooth(8);
+  if(displayDensity() < 2) {
+	  smooth(4);
+  }
   PJOGL.setIcon("1024x1024.png");
 }
 
