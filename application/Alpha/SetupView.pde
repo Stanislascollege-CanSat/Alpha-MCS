@@ -24,6 +24,8 @@ public class SetupView extends ViewController {
   public TickBoxElement consoleLogFileTickBox;
   public TickBoxElement csvDataFileTickBox;
 
+  public SmartSelectionElement testInputElement;
+
   // Data
   String absoluteMissionPath;
 
@@ -76,6 +78,10 @@ public class SetupView extends ViewController {
     this.csvDataFileTickBox = new TickBoxElement(this.appController, this, this.dim.x/2 - 100, 440);
     this.csvDataFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 440, 300, "Create CSV data-output file", LEFT);
 
+
+    this.testInputElement = new SmartSelectionElement(this.appController, this, 100, 100, 200);
+
+
     this.elements.add(this.backButton);
     this.elements.add(this.continueButton);
 
@@ -95,6 +101,8 @@ public class SetupView extends ViewController {
     this.elements.add(this.consoleLogFileTBLabel);
     this.elements.add(this.csvDataFileTickBox);
     this.elements.add(this.csvDataFileTBLabel);
+
+    this.elements.add(this.testInputElement);
 
     // Setting default values
     for(String s : SerialController.getAvailablePorts()){

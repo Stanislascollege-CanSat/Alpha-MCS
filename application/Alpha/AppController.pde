@@ -119,11 +119,13 @@ public class AppController implements AppController_Interface {
     
     DataDecoder.update();
     
-    strokeWeight(1);
-    fill(0);
-    textAlign(LEFT);
-    textFont(fonts.get("SF").get("Regular"));
-    text(int(frameRate), 10, 20);
+    if(frameRate < 45){
+	    strokeWeight(1);
+	    fill(0);
+	    textAlign(LEFT);
+	    textFont(fonts.get("SF").get("Regular"));
+	    text(int(frameRate), 10, 20);
+	}
   }
 
   public void resize(){
