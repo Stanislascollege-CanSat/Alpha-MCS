@@ -9,6 +9,7 @@ import processing.opengl.PGL;
 import processing.opengl.PJOGL;
 
 PImage appIcon;
+PImage MOUSEPOINTER_arrow;
 
 import static javax.swing.JOptionPane.*;
 
@@ -52,6 +53,9 @@ public void setup(){
 //  appIcon = loadImage("icon1000.png");
 //  surface.setIcon(appIcon);
   background(200);
+  
+  MOUSEPOINTER_arrow = loadImage("arrow.png");
+  MOUSEPOINTER_arrow.resize(30, 30);
 
   // Frame components
   w = width;
@@ -62,8 +66,6 @@ public void setup(){
   // Cursor settings
    //mouse_pointer_img = loadImage("MousePointer.png");
    //cursor(mouse_pointer_img, 2, 13);
-   
-  //cursor();
 
   // Load fonts
   fonts = new HashMap<String, HashMap<String, PFont>>();
@@ -139,6 +141,7 @@ public void setup(){
 public void draw(){
   if(!completedStartup){
     //showMessageDialog(null, "This application is still being developed. Some functions might not work.", "Work in progress", WARNING_MESSAGE);
+    cursor(MOUSEPOINTER_arrow, 1, 1);
     completedStartup = true;
   }else{
 
