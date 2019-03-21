@@ -8,9 +8,10 @@ import java.util.Date;
 import processing.opengl.PGL;
 import processing.opengl.PJOGL;
 
-PImage appIcon;
-PImage MOUSEPOINTER_arrow;
-PImage MOUSEPOINTER_text;
+public PImage appIcon;
+public PImage MOUSEPOINTER_arrow;
+public PImage MOUSEPOINTER_text;
+public String CURRENT_MOUSEPOINTER;
 
 import static javax.swing.JOptionPane.*;
 
@@ -60,6 +61,8 @@ public void setup(){
   
   MOUSEPOINTER_text = loadImage("text.png");
   MOUSEPOINTER_text.resize(12, 20);
+  
+  CURRENT_MOUSEPOINTER = "";
 
   // Frame components
   w = width;
@@ -143,11 +146,17 @@ public void setup(){
 }
 
 public final void setMousePointerToARROW(){
-  cursor(MOUSEPOINTER_arrow, 1, 1);
+  if(!(CURRENT_MOUSEPOINTER.equals("ARROW"))){
+    cursor(MOUSEPOINTER_arrow, 1, 1);
+    CURRENT_MOUSEPOINTER = "ARROW";
+  }
 }
 
 public final void setMousePointerToTEXT(){
-  cursor(MOUSEPOINTER_text, 6, 10);
+  if(!(CURRENT_MOUSEPOINTER.equals("TEXT"))){
+    cursor(MOUSEPOINTER_text, 6, 10);
+    CURRENT_MOUSEPOINTER = "TEXT";
+  }
 }
 
 public void draw(){

@@ -767,6 +767,12 @@ public class NewLineInputElement extends Element {
 
   public void show(){
 
+    if(this.mousePressIsWithinBorder()){
+      setMousePointerToTEXT();
+    }else{
+      setMousePointerToARROW();
+    }
+
     // stroke(0);
     // strokeWeight(1);
     // line(this.pos.x, this.pos.y + this.dim.y/2, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2);
@@ -1036,6 +1042,17 @@ public class SmartSelectionElement extends NewLineInputElement {
   }
 
   public void show(){
+
+    if(mouseX >= this.viewController.pos.x + this.pos.x &&
+      mouseX <= this.viewController.pos.x + this.pos.x + this.dim.x &&
+      mouseY >= this.viewController.pos.y + this.pos.y - this.dim.y/2 &&
+      mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y/2){
+      // user hovers element
+      setMousePointerToTEXT();
+    }else{
+      setMousePointerToARROW();
+    }
+
 
     // stroke(0);
     // strokeWeight(1);
