@@ -10,6 +10,7 @@ import processing.opengl.PJOGL;
 
 PImage appIcon;
 PImage MOUSEPOINTER_arrow;
+PImage MOUSEPOINTER_text;
 
 import static javax.swing.JOptionPane.*;
 
@@ -55,7 +56,10 @@ public void setup(){
   background(200);
   
   MOUSEPOINTER_arrow = loadImage("arrow.png");
-  MOUSEPOINTER_arrow.resize(30, 30);
+  MOUSEPOINTER_arrow.resize(25, 25);
+  
+  MOUSEPOINTER_text = loadImage("text.png");
+  MOUSEPOINTER_text.resize(12, 20);
 
   // Frame components
   w = width;
@@ -138,10 +142,18 @@ public void setup(){
 
 }
 
+public final void setMousePointerToARROW(){
+  cursor(MOUSEPOINTER_arrow, 1, 1);
+}
+
+public final void setMousePointerToTEXT(){
+  cursor(MOUSEPOINTER_text, 6, 10);
+}
+
 public void draw(){
   if(!completedStartup){
     //showMessageDialog(null, "This application is still being developed. Some functions might not work.", "Work in progress", WARNING_MESSAGE);
-    cursor(MOUSEPOINTER_arrow, 1, 1);
+    setMousePointerToARROW();
     completedStartup = true;
   }else{
 
