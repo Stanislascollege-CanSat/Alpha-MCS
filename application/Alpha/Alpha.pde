@@ -37,11 +37,11 @@ public Calendar CALENDAR;
 public String[] DAYS;
 
 public void settings(){
-  size(1000, 700, P3D);
-  //fullScreen(P3D);
+  //size(1000, 700, P3D);
+  fullScreen(P3D);
   pixelDensity(displayDensity());
   if(displayDensity() < 2) {
-	  smooth(4);
+	  smooth(8);
   }
   PJOGL.setIcon("1024x1024.png");
 }
@@ -62,6 +62,8 @@ public void setup(){
   // Cursor settings
    //mouse_pointer_img = loadImage("MousePointer.png");
    //cursor(mouse_pointer_img, 2, 13);
+   
+  //cursor();
 
   // Load fonts
   fonts = new HashMap<String, HashMap<String, PFont>>();
