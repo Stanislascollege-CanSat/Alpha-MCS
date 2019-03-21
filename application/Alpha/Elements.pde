@@ -3,6 +3,7 @@
 // Rens Dur (Project Bèta)
 
 public final float defaultNewElementHeight = 30;
+public final float defaultNewElementAdditiveHeight = 20;
 public final color elementColor_Blue = color(56, 132, 255);
 
 
@@ -760,7 +761,7 @@ public class NewLineInputElement extends Element {
     this.stdFont = fonts.get("SF").get("Light");
   }
 
-  public void setPlaceHolder(String s){
+  public void setPlaceholder(String s){
     this.placeHolder = s;
   }
 
@@ -1009,8 +1010,8 @@ public class SmartSelectionElement extends NewLineInputElement {
   public SmartSelectionElement(AppController a, ViewController v, float x, float y, float w){
     super(a, v, x, y, w);
     this.options = new ArrayList<String>();
-    for(int i = 1000; i <= 1000000; i += 1000){
-      this.options.add(str(i));
+    for(int i = 1400; i < 2400; ++i){
+      this.options.add("/dev/cu.usbmodem" + str(i));
     }
     this.optionFilter = new ArrayList<String>();
     this.filterBuffer = "";
@@ -1025,6 +1026,7 @@ public class SmartSelectionElement extends NewLineInputElement {
   public void select(){
     this.selected = true;
     this.layer = 1;
+    this.contentEdited();
   }
 
   public void deselect(){
@@ -1039,10 +1041,11 @@ public class SmartSelectionElement extends NewLineInputElement {
     // strokeWeight(1);
     // line(this.pos.x, this.pos.y + this.dim.y/2, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2);
 
-    if(this.selected && this.text.size() > 0){
-      translate(0, 0, 2);
-      noStroke();
-      fill(230);
+    if(this.selected){
+      translate(0, 0, 1);
+      stroke(0);
+      strokeWeight(1);
+      fill(255);
       rectMode(CORNER);
       rect(this.pos.x, this.pos.y - this.dim.y/2, this.dim.x, this.dim.y);
     }
@@ -1138,21 +1141,31 @@ public class SmartSelectionElement extends NewLineInputElement {
     // PART BELONGING TO SMART SELECTION ELEMENT
     //
 
-    if(this.selected && this.text.size() > 0){
+    if(this.selected){
       float y = 0;
-      noStroke();
+      stroke(0);
+      strokeWeight(1);
       rectMode(CORNER);
       textFont(this.stdFont);
       textAlign(LEFT);
       for(String s : this.optionFilter){
-        fill(230);
-        rect(this.pos.x, this.pos.y + this.dim.y/2 + y, this.dim.x, defaultNewElementHeight);
-        fill(0);
-        text(s, this.pos.x + 2, this.pos.y + this.dim.y/2 + y + defaultNewElementHeight/2 + 6);
-        y += defaultNewElementHeight;
+        if(this.viewController.pos.y + this.pos.y + this.dim.y/2 + y <= height){
+          noStroke();
+          fill(255);
+          rect(this.pos.x, this.pos.y + this.dim.y/2 + y, this.dim.x, defaultNewElementAdditiveHeight);
+
+          stroke(0);
+          line(this.pos.x, this.pos.y + this.dim.y/2 + y, this.pos.x, this.pos.y + this.dim.y/2 + y + defaultNewElementAdditiveHeight);
+          line(this.pos.x + this.dim.x, this.pos.y + this.dim.y/2 + y, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2 + y + defaultNewElementAdditiveHeight);
+
+          fill(0);
+          text(s, this.pos.x + 2, this.pos.y + this.dim.y/2 + y + defaultNewElementAdditiveHeight/2 + 6);
+        }
+        y += defaultNewElementAdditiveHeight;
       }
+      line(this.pos.x, this.pos.y + this.dim.y/2 + y, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2 + y);
       this.dimY_options = this.dim.y + y;
-      translate(0, 0, -2);
+      translate(0, 0, -1);
     }else{
       this.dimY_options = this.dim.y;
     }
@@ -1164,7 +1177,7 @@ public class SmartSelectionElement extends NewLineInputElement {
   }
 
   public void contentEdited(){
-    if(this.text.size() > 0){
+    //if(this.text.size() > 0){
       // user has made request for suggestion
       String userInput = "";
       for(char c : this.text){
@@ -1178,14 +1191,55 @@ public class SmartSelectionElement extends NewLineInputElement {
         }
       }
       //printArray(this.optionFilter);
-      for(int i = this.optionFilter.size() - 1; i >= 0; --i){
-        if(!(userInput.equals(this.optionFilter.get(i).substring(0, userInput.length())))){
-          this.optionFilter.remove(i);
+      if(userInput.length() > 0){
+        for(int i = this.optionFilter.size() - 1; i >= 0; --i){
+          if(!(userInput.equals(this.optionFilter.get(i).substring(0, userInput.length())))){
+            this.optionFilter.remove(i);
+          }
         }
       }
 
       //printArray(this.optionFilter);
+    //}
+  }
+
+  public void keyPressed(char k, int c){
+    this.cursorBlinkCount = 0;
+    this.cursorBlinkOn = true;
+    if(k == BACKSPACE){
+      this.backspaceTriggered();
+      this.backspaceStillPressed = true;
+    }else if(k == ENTER || k == RETURN){
+      this.enterEvent();
+    }else if(c == LEFT){
+      if(this.cursorPos > 0){
+        this.cursorPos--;
+        if(this.cursorPos < this.beginTextDisplay){
+          // cursor out of field <--
+          this.beginTextDisplay = this.cursorPos;
+          this.arrangeString();
+        }
+
+      }
+      this.arrowStillPressed = true;
+      this.arrowDirection = false;
+    }else if(c == RIGHT){
+      if(this.cursorPos < this.text.size()){
+        this.cursorPos++;
+        this.arrangeString();
+      }else if(this.cursorPos == this.text.size() && this.optionFilter.size() > 0 && this.text.size() > 0){
+        this.text.clear();
+        for(int j = 0; j < this.optionFilter.get(0).length(); ++j){
+          this.text.add(this.optionFilter.get(0).charAt(j));
+        }
+        this.cursorPos = this.text.size();
+        this.arrangeString();
+        this.contentEdited();
+      }
+      this.arrowStillPressed = true;
+      this.arrowDirection = true;
     }
+    this.contentEdited();
   }
 
   public boolean mousePressIsWithinBorder(){
@@ -1223,8 +1277,8 @@ public class SmartSelectionElement extends NewLineInputElement {
         // option pressed
         int selected = 0;
         for(int i = 0; i < this.optionFilter.size(); ++i){
-          if(mouseY >= this.viewController.pos.y + this.pos.y + this.dim.y/2 + defaultNewElementHeight * i &&
-             mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y/2 + defaultNewElementHeight * (i+1)){
+          if(mouseY >= this.viewController.pos.y + this.pos.y + this.dim.y/2 + defaultNewElementAdditiveHeight * i &&
+             mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y/2 + defaultNewElementAdditiveHeight * (i+1)){
             selected = i;
             this.text.clear();
             for(int j = 0; j < this.optionFilter.get(i).length(); ++j){
