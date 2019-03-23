@@ -761,16 +761,37 @@ public class NewLineInputElement extends Element {
     this.stdFont = fonts.get("SF").get("Light");
   }
 
+  public void resize(float x, float y, float w){
+    this.pos.set(x, y);
+    this.dim.set(w, defaultNewElementHeight);
+  }
+
   public void setPlaceholder(String s){
     this.placeHolder = s;
+  }
+
+  public String getValue(){
+    String output = "";
+    for(char i : this.text){
+      output += i;
+    }
+    return output;
+  }
+
+  public void setValue(String v){
+    this.text.clear();
+    for(int i = 0; i < v.length(); ++i){
+      this.text.add(v.charAt(i));
+    }
+    this.cursorPos = this.text.size();
+    this.arrangeString();
+    this.contentEdited();
   }
 
   public void show(){
 
     if(this.mousePressIsWithinBorder()){
-      setMousePointerToTEXT();
-    }else{
-      setMousePointerToARROW();
+      SET_MOUSEPOINTER_TEXT = true;
     }
 
     // stroke(0);
@@ -1012,17 +1033,23 @@ public class SmartSelectionElement extends NewLineInputElement {
   public String filterBuffer;
   public PFont boldFont;
   public float dimY_options;
+  public boolean superStrict;
 
   public SmartSelectionElement(AppController a, ViewController v, float x, float y, float w){
     super(a, v, x, y, w);
     this.options = new ArrayList<String>();
-    for(int i = 1400; i < 2400; ++i){
-      this.options.add("/dev/cu.usbmodem" + str(i));
-    }
+    // for(int i = 1400; i < 2400; ++i){
+    //   this.options.add("/dev/cu.usbmodem" + str(i));
+    // }
     this.optionFilter = new ArrayList<String>();
     this.filterBuffer = "";
     this.boldFont = fonts.get("SF").get("Bold");
     this.dimY_options = this.dim.y;
+    this.superStrict = false;
+  }
+
+  public void setStrict(boolean s){
+    this.superStrict = s;
   }
 
   public void addOption(String s){
@@ -1048,9 +1075,7 @@ public class SmartSelectionElement extends NewLineInputElement {
       mouseY >= this.viewController.pos.y + this.pos.y - this.dim.y/2 &&
       mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y/2){
       // user hovers element
-      setMousePointerToTEXT();
-    }else{
-      setMousePointerToARROW();
+      SET_MOUSEPOINTER_TEXT = true;
     }
 
 
@@ -1213,6 +1238,13 @@ public class SmartSelectionElement extends NewLineInputElement {
           if(!(userInput.equals(this.optionFilter.get(i).substring(0, userInput.length())))){
             this.optionFilter.remove(i);
           }
+        }
+      }
+
+      if(this.superStrict){
+        if(this.optionFilter.size() == 0){
+          this.cursorPos = this.text.size();
+          this.backspaceTriggered();
         }
       }
 
@@ -1734,6 +1766,14 @@ public class VerticalScrollElement extends Element {
   
   public float getMaximumValue() {
     return this.rangeMax;
+  }
+
+  public boolean isAtTop(){
+    return (this.rangeMin == this.min);
+  }
+
+  public boolean isAtBottom(){
+    return (this.rangeMax == this.max);
   }
 
   public void addScroll(float count){

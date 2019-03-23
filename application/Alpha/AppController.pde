@@ -95,10 +95,16 @@ public class AppController implements AppController_Interface {
   }
 
   public void show(){
+  	SET_MOUSEPOINTER_TEXT = false;
     for(ViewController v : this.viewControllers){
       if(v.visible){
         v.show();
       }
+    }
+    if(SET_MOUSEPOINTER_TEXT){
+    	setMousePointerToTEXT();
+    }else{
+    	setMousePointerToARROW();
     }
     
     if(SerialController.available()) {

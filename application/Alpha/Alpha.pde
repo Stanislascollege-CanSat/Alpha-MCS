@@ -12,6 +12,7 @@ public PImage appIcon;
 public PImage MOUSEPOINTER_arrow;
 public PImage MOUSEPOINTER_text;
 public String CURRENT_MOUSEPOINTER;
+public boolean SET_MOUSEPOINTER_TEXT;
 
 import static javax.swing.JOptionPane.*;
 
@@ -63,6 +64,8 @@ public void setup(){
   MOUSEPOINTER_text.resize(12, 20);
   
   CURRENT_MOUSEPOINTER = "";
+  
+  SET_MOUSEPOINTER_TEXT = false;
 
   // Frame components
   w = width;
@@ -154,8 +157,9 @@ public final void setMousePointerToARROW(){
 
 public final void setMousePointerToTEXT(){
   if(!(CURRENT_MOUSEPOINTER.equals("TEXT"))){
-    cursor(MOUSEPOINTER_text, 6, 10);
+    // cursor(MOUSEPOINTER_text, 6, 10);
     CURRENT_MOUSEPOINTER = "TEXT";
+    cursor(TEXT);
   }
 }
 

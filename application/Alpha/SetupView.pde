@@ -13,19 +13,16 @@ public class SetupView extends ViewController {
   public TextElement consoleLogFileTBLabel;
   public TextElement csvDataFileTBLabel;
 
-  public SelectionElement serialPortSelect;
-  public SelectionElement serialBaudSelect;
+  public SmartSelectionElement serialPortSelect;
+  public SmartSelectionElement serialBaudSelect;
 
   public UtilityButtonElement dataOutputFolderButton;
   public TextElement dataOutputFolderName;
 
-  public LineInputElement missionIdentifierInput;
+  public NewLineInputElement missionIdentifierInput;
 
   public TickBoxElement consoleLogFileTickBox;
   public TickBoxElement csvDataFileTickBox;
-
-  public SmartSelectionElement testInputElement;
-  public NewLineInputElement testInputElement2;
 
   // Data
   String absoluteMissionPath;
@@ -61,8 +58,12 @@ public class SetupView extends ViewController {
     this.missionFolderLabel = new TextElement(this.appController, this, this.dim.x/2 - 210, 280, 200, "Mission folder:", RIGHT);
     this.missionIdentifierLabel = new TextElement(this.appController, this, this.dim.x/2 - 210, 320, 200, "Mission identifier:", RIGHT);
 
-    this.serialPortSelect = new SelectionElement(this.appController, this, this.dim.x/2 + 10, 200, 100);
-    this.serialBaudSelect = new SelectionElement(this.appController, this, this.dim.x/2 + 10, 240, 100);
+    this.serialPortSelect = new SmartSelectionElement(this.appController, this, this.dim.x/2 + 10, 200, 250);
+    this.serialPortSelect.setPlaceholder("Serial port");
+    this.serialPortSelect.setStrict(true);
+    this.serialBaudSelect = new SmartSelectionElement(this.appController, this, this.dim.x/2 + 10, 240, 150);
+    this.serialBaudSelect.setPlaceholder("Baud rate");
+    this.serialBaudSelect.setStrict(true);
 
     this.dataOutputFolderButton = new UtilityButtonElement(this.appController, this, this.dim.x/2 + 10, 280){
       public void clickEvent(){
@@ -71,19 +72,13 @@ public class SetupView extends ViewController {
     };
     this.dataOutputFolderName = new TextElement(this.appController, this, this.dim.x/2 + 30, 280, 500, "", LEFT);
 
-    this.missionIdentifierInput = new LineInputElement(this.appController, this, this.dim.x/2 + 10, 320, 200);
+    this.missionIdentifierInput = new NewLineInputElement(this.appController, this, this.dim.x/2 + 10, 320, 200);
 
     this.consoleLogFileTickBox = new TickBoxElement(this.appController, this, this.dim.x/2 - 100, 400);
     this.consoleLogFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 400, 300, "Create console-log file", LEFT);
 
     this.csvDataFileTickBox = new TickBoxElement(this.appController, this, this.dim.x/2 - 100, 440);
     this.csvDataFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 440, 300, "Create CSV data-output file", LEFT);
-
-
-    this.testInputElement = new SmartSelectionElement(this.appController, this, 100, 100, 200);
-    this.testInputElement.setPlaceholder("Smart Selection");
-    this.testInputElement2 = new NewLineInputElement(this.appController, this, 100, 200, 200);
-    this.testInputElement2.setPlaceholder("New line-input");
 
 
     this.elements.add(this.backButton);
@@ -105,9 +100,6 @@ public class SetupView extends ViewController {
     this.elements.add(this.consoleLogFileTBLabel);
     this.elements.add(this.csvDataFileTickBox);
     this.elements.add(this.csvDataFileTBLabel);
-
-    this.elements.add(this.testInputElement);
-    this.elements.add(this.testInputElement2);
 
     // Setting default values
     for(String s : SerialController.getAvailablePorts()){

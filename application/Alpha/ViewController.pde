@@ -35,6 +35,8 @@ public class ViewController implements ViewController_Interface {
     this.elementFilter = new ArrayList<Integer>();
   }
 
+  public void universalMethod(String func){}
+
   public void viewResizeTriggered(){}
 
   public void resize(float x, float y, float w, float h){

@@ -8,6 +8,14 @@ public class View_DataCharts extends ViewController {
 	public VerticalScrollElement scrollBar;
 	public ArrayList<Chart> charts;
 
+  public ButtonElement selectMuDataButton;
+  public ButtonElement selectBetaDataButton;
+  public ButtonElement selectRhoDataButton;
+  public float selectButtonWidth;
+
+  public Chart chart_acceleration;
+  public Chart chart_velocity;
+
 
   public View_DataCharts(AppController a, float x, float y, float w, float h){
     super(a, x, y, w, h);
@@ -15,34 +23,36 @@ public class View_DataCharts extends ViewController {
     this.scrollBar = new VerticalScrollElement(this.appController, this, this.dim.x - 10, this.dim.y/2, this.dim.y, 0, this.dim.y);
     
     this.charts = new ArrayList<Chart>();
+
+    this.selectButtonWidth = 200;
+    this.selectBetaDataButton = new ButtonElement(this.appController, this, this.dim.x/2 - this.selectButtonWidth * 1.5 - 5, 20, this.selectButtonWidth, "Bèta data");
+    this.selectMuDataButton = new ButtonElement(this.appController, this, this.dim.x/2 - this.selectButtonWidth/2, 20, this.selectButtonWidth, "Mu data");
+    this.selectRhoDataButton = new ButtonElement(this.appController, this, this.dim.x/2 + this.selectButtonWidth/2 + 5, 20, this.selectButtonWidth, "Rho data");
     
-    this.charts.add(new Chart(100, 200, this.dim.x - 210, 300, new ChartRange(0, 500), new ChartRange(-20, 20), "Acceleration", "Time", "s", "Acceleration", "m/s/s"));
-    //DataSetDeposit.acceleration.addDataPoint(new DataPoint(0,0));
-    this.charts.get(0).addDataSet(DataSetDeposit.mu_accX);
-    this.charts.get(0).addDataSet(DataSetDeposit.mu_accY);
-    this.charts.get(0).addDataSet(DataSetDeposit.mu_accZ);
-    this.charts.add(new Chart(100, 200, this.dim.x - 210, 300, new ChartRange(0, 500), new ChartRange(-20, 20), "Gyroscope", "Time", "s", "Speed", "deg/s"));
-    this.charts.get(1).addDataSet(DataSetDeposit.mu_gyroX);
-    this.charts.get(1).addDataSet(DataSetDeposit.mu_gyroY);
-    this.charts.get(1).addDataSet(DataSetDeposit.mu_gyroZ);
-    this.charts.add(new Chart(100, 200, this.dim.x - 210, 300, new ChartRange(0, 500), new ChartRange(25865, 25885), "Height", "Time", "s", "Height", "m"));
-    this.charts.get(2).addDataSet(DataSetDeposit.mu_altitude);
+    this.chart_acceleration = new Chart(0, 0, 0, 500, new ChartRange(0, 100), new ChartRange(-15, 15), "Acceleration", "Time", "s", "Acceleration", "m/s/s");
+    this.chart_velocity = new Chart(0, 0, 0, 500, new ChartRange(0, 100), new ChartRange(-50, 50), "Velocity", "Time", "s", "Velocity", "m/s");
+
+    this.charts.add(chart_acceleration);
+    this.charts.add(chart_velocity);
     
     this.viewResizeTriggered();
     
     this.elements.add(this.scrollBar);
+    this.elements.add(this.selectMuDataButton);
+    this.elements.add(this.selectBetaDataButton);
+    this.elements.add(this.selectRhoDataButton);
   }
   
   public void viewResizeTriggered(){
 	  this.scrollBar.resize(this.dim.x - 10, this.dim.y/2, this.dim.y);
 	  
 	  
-	  float y = 200;
+	  float y = 100;
 	  for(Chart c : this.charts) {
-		  c.resize(100, y, this.dim.x - 210, c.dim.y);
+		  c.resize(100, y + c.dim.y/2, this.dim.x - 210, c.dim.y);
 		  y += c.dim.y + 100;
 	  }
-	  y -= 200;
+	  y -= 50;
 	  if(y > this.dim.y) {
 		  this.scrollBar.setExtremes(0, y);
 		  this.scrollBar.setCurrentPosition(0, this.dim.y);
@@ -60,7 +70,7 @@ public class View_DataCharts extends ViewController {
     // Begin Content
     //
     
-    this.scrollBar.show();
+    //this.scrollBar.show();
     
     translate(0, -this.scrollBar.getMinimumValue(), -1);
 

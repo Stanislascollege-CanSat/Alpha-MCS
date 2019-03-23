@@ -220,8 +220,11 @@ public class ConsoleView extends ViewController {
 
   public void mouseScrolled(float count){
     this.scrollBar.addScroll(count);
-    if(count > 18) {
+    if(abs(count) > 18) {
     	this.autoScrollTickBox.setValue(false);
+    }
+    if(this.scrollBar.isAtBottom()){
+      this.autoScrollTickBox.setValue(true);
     }
   }
 
