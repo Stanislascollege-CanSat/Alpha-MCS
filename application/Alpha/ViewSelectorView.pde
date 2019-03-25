@@ -10,6 +10,8 @@ public class ViewSelectorView extends ViewController {
   public float viewWidth;
 
   public ButtonElement exitButton;
+  public ButtonElement setupButton;
+  public ButtonElement forceDeployButton;
 
   public ButtonElement missionInfoButton;
   public ButtonElement overviewButton;
@@ -40,6 +42,18 @@ public class ViewSelectorView extends ViewController {
     };
     this.exitButton.setStrokeColor(color(255, 0, 0));
     this.exitButton.setSuggested(true);
+
+    this.setupButton = new ButtonElement(this.appController, this, 70, 15, 60, 20, "Setup"){
+
+    };
+    this.setupButton.setStrokeColor(color(255, 233, 0));
+    this.setupButton.setSuggested(true);
+
+    this.forceDeployButton = new ButtonElement(this.appController, this, 150, 15, 140, 20, "Force Deploy View"){
+      public void clickEvent(){
+        this.appController.switchViewToForceDeploy();
+      }
+    };
 
     this.missionInfoButton = new ButtonElement(this.appController, this, 0, 0, 120, "Mission info"){
       public void clickEvent(){
@@ -91,6 +105,7 @@ public class ViewSelectorView extends ViewController {
     };
 
     this.elements.add(this.exitButton);
+    this.elements.add(this.setupButton);
     this.elements.add(this.scrollBar);
     this.viewButtons.add(this.missionInfoButton);
     this.viewButtons.add(this.overviewButton);
@@ -109,6 +124,12 @@ public class ViewSelectorView extends ViewController {
     	this.viewWidth = b;
     	this.scrollBar.setExtremes(0, this.viewWidth);
     	this.scrollBar.setCurrentPosition(0, this.dim.x);
+    }
+  }
+
+  public void universalMethod(String func){
+    if(func.equals("AddForceDeployButton")){
+      this.elements.add(this.forceDeployButton);
     }
   }
 

@@ -39,6 +39,8 @@ public class ViewController implements ViewController_Interface {
 
   public void viewResizeTriggered(){}
 
+  public void blockInteraction(){}
+
   public void resize(float x, float y, float w, float h){
     this.pos.set(x, y);
     this.dim.set(w, h);

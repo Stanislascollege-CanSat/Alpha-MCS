@@ -38,6 +38,8 @@ public class AppController implements AppController_Interface {
   private View_DataCharts view_DataCharts;
   private View_BabyCanInfo view_BabyCanInfo;
   private View_MotherCanInfo view_MotherCanInfo;
+  private View_ForceDeploy view_forceDeploy;
+  private View_UniversalText view_universalText;
 
   private ConsoleView overviewConsoleView;
   
@@ -77,6 +79,12 @@ public class AppController implements AppController_Interface {
     this.view_MotherCanInfo = new View_MotherCanInfo(this, 0, 80, width, height - 80);
     this.view_MotherCanInfo.visible = false;
 
+    this.view_forceDeploy = new View_ForceDeploy(this, 0, 80, width, height - 80);
+    this.view_forceDeploy.visible = false;
+
+    this.view_universalText = new View_UniversalText(this, 0, 80, width, height - 80);
+    this.view_universalText.visible = false;
+
     this.overviewConsoleView = new ConsoleView(this, 0, 80, 500, height - 80);
     this.overviewConsoleView.visible = false;
 
@@ -89,6 +97,8 @@ public class AppController implements AppController_Interface {
     this.viewControllers.add(this.view_DataCharts);
     this.viewControllers.add(this.view_BabyCanInfo);
     this.viewControllers.add(this.view_MotherCanInfo);
+    this.viewControllers.add(this.view_forceDeploy);
+    this.viewControllers.add(this.view_universalText);
     this.viewControllers.add(this.overviewConsoleView);
     
     DataDecoder.init();
@@ -149,6 +159,8 @@ public class AppController implements AppController_Interface {
     this.view_DataCharts.resize(0, 80, width, height - 80);
     this.view_BabyCanInfo.resize(0, 80, width, height - 80);
     this.view_MotherCanInfo.resize(0, 80, width, height - 80);
+    this.view_forceDeploy.resize(0, 80, width, height - 80);
+    this.view_universalText.resize(0, 80, width, height - 80);
   }
 
   public void addView(ViewController v){
@@ -268,6 +280,7 @@ public class AppController implements AppController_Interface {
     }
     for(ViewController v : this.viewControllers){
       v.visible = false;
+      v.blockInteraction();
     }
   }
 
@@ -428,6 +441,9 @@ public class AppController implements AppController_Interface {
 	  			this.overviewConsoleView.logSpecial("send <text>", "syntax_error");
 	  		}
 	  		break;
+  		case "forceDeploy":
+  			this.switchViewToForceDeploy();
+  			break;
 	  	case "help":
 	  		if(args.length == 1) {
 	  			switch(args[0]) {
@@ -544,6 +560,34 @@ public class AppController implements AppController_Interface {
     this.view_MotherCanInfo.visible = true;
     this.viewSelectorView.currentViewIdentifier = "motherCanInfo";
   }
+
+  public void switchViewToForceDeploy(){
+    this.blockInteraction();
+    this.viewSelectorView.enableAllButtons();
+    this.viewSelectorView.visible = true;
+    this.view_forceDeploy.visible = true;
+    this.viewSelectorView.currentViewIdentifier = "forceDeploy";
+    this.mouseReleased();
+  }
+
+  public void displayUniversalMessage(String t, String s){
+  	this.blockInteraction();
+    this.viewSelectorView.enableAllButtons();
+    this.viewSelectorView.visible = true;
+    this.view_universalText.setMessage(t, s);
+    this.view_universalText.visible = true;
+    this.viewSelectorView.currentViewIdentifier = "universalText";
+    this.mouseReleased();
+  }
+
+  // ------------------ PUSH UNIVERSAL FUNCTIONS TO VIEW-SELECTOR-VIEW ------------------- //
+
+  public void viewSelectorMethod(String func){
+  	this.viewSelectorView.universalMethod(func);
+  }
+
+
+
 
   // ------------------ DIALOG WINDOWS ----------------------------- //
 

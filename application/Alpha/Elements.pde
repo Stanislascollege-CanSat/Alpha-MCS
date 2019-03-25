@@ -764,6 +764,7 @@ public class NewLineInputElement extends Element {
   public void resize(float x, float y, float w){
     this.pos.set(x, y);
     this.dim.set(w, defaultNewElementHeight);
+    this.arrangeString();
   }
 
   public void setPlaceholder(String s){
@@ -786,6 +787,17 @@ public class NewLineInputElement extends Element {
     this.cursorPos = this.text.size();
     this.arrangeString();
     this.contentEdited();
+  }
+
+  public void reset(){
+    this.cursorPos = 0;
+    this.text.clear();
+    this.arrangeString();
+    this.contentEdited();
+  }
+
+  public void setTextFont(PFont f){
+    this.stdFont = f;
   }
 
   public void show(){
