@@ -6,6 +6,11 @@ public final float defaultNewElementHeight = 30;
 public final float defaultNewElementAdditiveHeight = 20;
 public final color elementColor_Blue = color(56, 132, 255);
 
+public enum ElementOrient {
+  HORIZONTAL,
+  VERTICAL
+}
+
 
 
 public interface Element_Interface {
@@ -333,6 +338,31 @@ public class TickBoxElement extends Element {
 }
 
 //-----------------------------------------------------------------------------------------------------------------//
+
+public class BooleanElement extends TickBoxElement {
+  public BooleanElement(AppController a, ViewController v, float x, float y){
+    super(a, v, x, y, 0);
+    this.dim.x = 35;
+    this.dim.y = 20;
+  }
+
+  public void show(){
+    noStroke();
+    fill((this.mouseHeld ? 150 : 200));
+    ellipse(this.pos.x + this.dim.y/2, this.pos.y, this.dim.y, this.dim.y);
+    ellipse(this.pos.x + this.dim.x - this.dim.y/2, this.pos.y, this.dim.y, this.dim.y);
+    rectMode(CORNER);
+    rect(this.pos.x + this.dim.y/2, this.pos.y - this.dim.y/2, this.dim.x - this.dim.y, this.dim.y);
+    fill(elementColor_Blue);
+    ellipse(this.pos.x + (this.ticked ? (this.dim.x - this.dim.y/2) : (this.dim.y/2)), this.pos.y, this.dim.y, this.dim.y);
+  }
+}
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------//
+
 
 public class TextElement extends ButtonElement {
   public int alignment;
@@ -1984,4 +2014,181 @@ public class SliderElement extends Element {
 	}
 	
 	
+}
+
+
+
+// -------------------------------------------------------------------------------------------------------------------- //
+
+public class SmartSliderElement extends Element {
+  public ElementOrient orientation;
+  public Range range;
+  public float lowerValue;
+  public float upperValue;
+  public float ballSize;
+  public boolean grub;
+  public boolean leftGrub;
+
+  public SmartSliderElement(AppController a, ViewController v, float x, float y, ElementOrient o, float size, float min, float max){
+    super(a, v, x, y, (o == ElementOrient.HORIZONTAL ? size : 10), (o == ElementOrient.HORIZONTAL ? 10 : size));
+    this.orientation = o;
+    this.range = new Range(min, max);
+    this.lowerValue = this.range.min;
+    this.upperValue = this.range.max;
+    this.ballSize = 20;
+  }
+
+  public Range getValue(){
+    return new Range(this.lowerValue, this.upperValue);
+  }
+
+  public void setValue(float min, float max){
+    if((max > min) && (min >= this.range.min) && (max <= this.range.max)){
+      this.lowerValue = min;
+      this.upperValue = max;
+    }
+  }
+
+  public void resize(float x, float y, float size){
+    this.pos.set(x, y);
+    if(this.orientation == ElementOrient.HORIZONTAL){
+      this.dim.x = size;
+    }else if(this.orientation == ElementOrient.VERTICAL){
+      this.dim.y = size;
+    }
+  }
+
+  public void show(){
+    if(this.orientation == ElementOrient.HORIZONTAL){
+      stroke(0);
+      strokeWeight(2);
+      line(this.pos.x, this.pos.y, this.pos.x + this.dim.x, this.pos.y);
+      noStroke();
+      fill(elementColor_Blue);
+      translate(0, 0, 1);
+      ellipse(this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y, this.ballSize, this.ballSize);
+      ellipse(this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y, this.ballSize, this.ballSize);
+      translate(0, 0, -1);
+
+      if(this.grub){
+        textFont(fonts.get("SF").get("Regular 6"));
+        textAlign(CENTER);
+        fill(0);
+        if(this.leftGrub){
+          this.lowerValue = map(mouseX - this.viewController.pos.x - this.pos.x, 0, this.dim.x, this.range.min, this.range.max);
+          if(this.lowerValue < this.range.min){
+            this.lowerValue = this.range.min;
+          }
+          if(this.lowerValue >= this.upperValue - (this.range.max - this.range.min)/1000){
+            this.lowerValue = this.upperValue - (this.range.max - this.range.min)/1000;
+          }
+        }else{
+          this.upperValue = map(mouseX - this.viewController.pos.x - this.pos.x, 0, this.dim.x, this.range.min, this.range.max);
+          if(this.upperValue > this.range.max){
+            this.upperValue = this.range.max;
+          }
+          if(this.upperValue <= this.lowerValue + (this.range.max - this.range.min)/1000){
+            this.upperValue = this.lowerValue + (this.range.max - this.range.min)/1000;
+          }
+        }
+        text(this.lowerValue, this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y + this.ballSize);
+        text(this.upperValue, this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y + this.ballSize);
+      }
+
+
+    }else if(this.orientation == ElementOrient.VERTICAL){
+      stroke(0);
+      strokeWeight(2);
+      line(this.pos.x, this.pos.y, this.pos.x, this.pos.y + this.dim.y);
+      noStroke();
+      fill(elementColor_Blue);
+      ellipse(this.pos.x, this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y), this.ballSize, this.ballSize);
+      ellipse(this.pos.x, this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y), this.ballSize, this.ballSize);
+
+      if(this.grub){
+        textFont(fonts.get("SF").get("Regular 6"));
+        textAlign(LEFT);
+        fill(0);
+        if(this.leftGrub){
+          this.lowerValue = map(mouseY - this.viewController.pos.y - this.pos.y, 0, this.dim.y, this.range.min, this.range.max);
+          if(this.lowerValue < this.range.min){
+            this.lowerValue = this.range.min;
+          }
+          if(this.lowerValue >= this.upperValue - (this.range.max - this.range.min)/1000){
+            this.lowerValue = this.upperValue - (this.range.max - this.range.min)/1000;
+          }
+        }else{
+          this.upperValue = map(mouseY - this.viewController.pos.y - this.pos.y, 0, this.dim.y, this.range.min, this.range.max);
+          if(this.upperValue > this.range.max){
+            this.upperValue = this.range.max;
+          }
+          if(this.upperValue <= this.lowerValue + (this.range.max - this.range.min)/1000){
+            this.upperValue = this.lowerValue + (this.range.max - this.range.min)/1000;
+          }
+        }
+        text(this.lowerValue, this.pos.x + this.ballSize, this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y));
+        text(this.upperValue, this.pos.x + this.ballSize, this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y));
+      }
+    }
+  }
+
+  public boolean mousePressIsWithinBorder(){
+    if(this.orientation == ElementOrient.HORIZONTAL){
+      if(mouseX >= this.viewController.pos.x + this.pos.x - this.ballSize/2 &&
+        mouseX <= this.viewController.pos.x + this.pos.x + this.dim.x + this.ballSize/2 &&
+        mouseY >= this.viewController.pos.y + this.pos.y - this.ballSize/2 &&
+        mouseY <= this.viewController.pos.y + this.pos.y + this.ballSize/2){
+        // User clicked element
+        return true;
+      }
+    }else if(this.orientation == ElementOrient.VERTICAL){
+      if(mouseX >= this.viewController.pos.x + this.pos.x - this.ballSize/2 &&
+        mouseX <= this.viewController.pos.x + this.pos.x + this.ballSize/2 &&
+        mouseY >= this.viewController.pos.y + this.pos.y - this.ballSize/2 &&
+        mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y + this.ballSize/2){
+        // User clicked element
+        return true;
+      }
+    }
+    return false;
+  }
+
+  public void mousePressed(){
+    if(this.mousePressIsWithinBorder()){
+      // User clicked element
+      if(!this.disabled){
+        this.clickEvent();
+        this.mouseHeld = true;
+        this.select();
+        if(this.orientation == ElementOrient.HORIZONTAL){
+          if(mouseX >= this.viewController.pos.x + this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x) - this.ballSize/2 &&
+              mouseX <= this.viewController.pos.x + this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = true;
+          }else if(mouseX >= this.viewController.pos.x + this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x) - this.ballSize/2 &&
+              mouseX <= this.viewController.pos.x + this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = false;
+          }
+        }else if(this.orientation == ElementOrient.VERTICAL){
+          if(mouseY >= this.viewController.pos.y + this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y) - this.ballSize/2 &&
+              mouseY <= this.viewController.pos.y + this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = true;
+          }else if(mouseY >= this.viewController.pos.y + this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y) - this.ballSize/2 &&
+              mouseY <= this.viewController.pos.y + this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = false;
+          }
+        }
+      }
+    }
+  }
+
+  public void mouseReleased(){
+    this.mouseHeld = false;
+    this.grub = false;
+  }
+
+
 }

@@ -30,6 +30,11 @@ public class View_ForceDeploy extends ViewController {
     this.onceClosed = false;
   }
 
+  public void viewResizeTriggered(){
+    this.denyButton.resize(this.dim.x/3 - 100, this.dim.y/2 + 100, 200, 150);
+    this.confirmButton.resize(2*this.dim.x/3 - 100, this.dim.y/2 + 100, 200, 150);
+  }
+
   public void blockInteraction(){
     if(this.onceShown && !this.onceClosed){
         this.onceClosed = true;
