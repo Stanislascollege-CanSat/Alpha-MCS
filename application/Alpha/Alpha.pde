@@ -41,8 +41,8 @@ public Calendar CALENDAR;
 public String[] DAYS;
 
 public void settings(){
-  //size(1000, 700, P3D);
-  fullScreen(P3D);
+  size(1000, 700, P3D);
+  //fullScreen(P3D);
   pixelDensity(displayDensity());
   if(displayDensity() < 2) {
 	  smooth(8);
@@ -70,8 +70,8 @@ public void setup(){
   // Frame components
   w = width;
   h = height;
-  minWidth = 600;
-  minHeight = 500;
+  minWidth = 800;
+  minHeight = 700;
 
   // Cursor settings
    //mouse_pointer_img = loadImage("MousePointer.png");
