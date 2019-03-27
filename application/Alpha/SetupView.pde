@@ -77,10 +77,10 @@ public class SetupView extends ViewController {
     this.missionIdentifierInput = new NewLineInputElement(this.appController, this, this.dim.x/2 + 10, 320, 200);
 
     this.consoleLogFileTickBox = new TickBoxElement(this.appController, this, this.dim.x/2 - 100, 400);
-    this.consoleLogFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 400, 300, "Create console-log file", LEFT);
+    this.consoleLogFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 400, 300, "Create console-log file", RIGHT);
 
     this.csvDataFileTickBox = new TickBoxElement(this.appController, this, this.dim.x/2 - 100, 440);
-    this.csvDataFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 440, 300, "Create CSV data-output file", LEFT);
+    this.csvDataFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 440, 300, "Create CSV data-output file", RIGHT);
 
     this.testSlider = new SmartSliderElement(this.appController, this, 100, 100, ElementOrient.VERTICAL, 200, 0, 100);
 

@@ -56,7 +56,7 @@ public class View_DataCharts extends ViewController {
     };
 
 
-    this.horizontalSlider = new SmartSliderElement(this.appController, this, 100, 50, ElementOrient.HORIZONTAL, this.dim.x - 210, 0, 1000);
+    this.horizontalSlider = new SmartSliderElement(this.appController, this, 100, 50, ElementOrient.HORIZONTAL, this.dim.x - 210, 0, 10000);
     this.horizontalSlider.setValue(0, 100);
 
     // creating charts
@@ -211,7 +211,10 @@ public class View_DataCharts extends ViewController {
     noStroke();
     fill(255);
     rectMode(CORNER);
-    rect(0, 0, this.dim.x, 80);
+    rect(0, 0, this.dim.x - 10, 80);
+    stroke(0);
+    strokeWeight(1);
+    line(0, 80, this.dim.x - 10, 80);
 
 
     for(Element e : this.elements){
@@ -229,10 +232,12 @@ public class View_DataCharts extends ViewController {
   
   public void mouseScrolled(float count){
     int selectedGraph = -1;
-    for(int i = 0; i < this.charts.size(); ++i){
-      if((mouseX >= this.charts.get(i).pos.x) && (mouseX <= this.charts.get(i).pos.x + this.charts.get(i).dim.x) && 
-        ((mouseY + this.scrollBar.getMinimumValue()) >= this.charts.get(i).pos.y - this.charts.get(i).dim.y/2) && ((mouseY + this.scrollBar.getMinimumValue()) <= (this.charts.get(i).pos.y + this.charts.get(i).dim.y/2))){
-          selectedGraph = i;
+    if(ALT_PRESSED){
+      for(int i = 0; i < this.charts.size(); ++i){
+        if((mouseX >= this.charts.get(i).pos.x) && (mouseX <= this.charts.get(i).pos.x + this.charts.get(i).dim.x) && 
+          ((mouseY + this.scrollBar.getMinimumValue()) >= this.charts.get(i).pos.y - this.charts.get(i).dim.y/2) && ((mouseY + this.scrollBar.getMinimumValue()) <= (this.charts.get(i).pos.y + this.charts.get(i).dim.y/2))){
+            selectedGraph = i;
+        }
       }
     }
     if(selectedGraph >= 0){

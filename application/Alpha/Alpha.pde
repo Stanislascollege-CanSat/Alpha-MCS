@@ -31,7 +31,7 @@ public boolean ALT_PRESSED;
 public boolean CTRL_PRESSED;
 
 // Application components
-AppController appController;
+public AppController appController;
 //StartupView startupView;
 
  //PImage mouse_pointer_img;

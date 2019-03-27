@@ -131,8 +131,8 @@ public class DataDecoder {
 											readingName = false;
 											if(readArg.length() > 0){
 												readArgs.add(readArg);
+												readArg = "";
 											}
-											readArg = "";
 										}else{
 											if(readingName){
 												readFunction += readValue.charAt(j);
@@ -141,12 +141,9 @@ public class DataDecoder {
 											}
 										}
 									}
-									if(readArg.length() > 0){
-										readArgs.add(readArg);
-									}
 									if(readFunction.equals("LOG")){
 										for(String s : readArgs){
-											MessageLogBuffer.addSerial(s);
+											
 										}
 									}
 								}else if(readQuantity.charAt(0) == 'S' && readQuantity.length() == 3) {
