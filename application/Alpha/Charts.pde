@@ -116,6 +116,12 @@ public class Chart implements Chart_Interface {
     this.yRange = yR;
   }
 
+  public void addScroll(float count){
+    count = -count/100*(this.yRange.max - this.yRange.min);
+    this.yRange.min += count;
+    this.yRange.max += count;
+  }
+
 
 
   public void show(){

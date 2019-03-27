@@ -228,7 +228,18 @@ public class View_DataCharts extends ViewController {
   }
   
   public void mouseScrolled(float count){
-    this.scrollBar.addScroll(count);
+    int selectedGraph = -1;
+    for(int i = 0; i < this.charts.size(); ++i){
+      if((mouseX >= this.charts.get(i).pos.x) && (mouseX <= this.charts.get(i).pos.x + this.charts.get(i).dim.x) && 
+        ((mouseY + this.scrollBar.getMinimumValue()) >= this.charts.get(i).pos.y - this.charts.get(i).dim.y/2) && ((mouseY + this.scrollBar.getMinimumValue()) <= (this.charts.get(i).pos.y + this.charts.get(i).dim.y/2))){
+          selectedGraph = i;
+      }
+    }
+    if(selectedGraph >= 0){
+      this.charts.get(selectedGraph).addScroll(count);
+    }else{
+      this.scrollBar.addScroll(count);
+    }
   }
 
 
