@@ -28,6 +28,9 @@ public class DataDecoder {
 
 	private static boolean initialized = false;
 
+	public static boolean askDeployPermissionRequested = false;
+	public static boolean notifyBabyCansRequested = false;
+
 	public static void init() {
 		availableQuantities.put("GT", "GPSTime");
 		availableQuantities.put("TS", "Time since startup");
@@ -57,6 +60,8 @@ public class DataDecoder {
 		availableQuantities.put("BV", "Battery voltage");
 
 		availableStatusIdentifiers.put("SBT", "Booted");
+		availableStatusIdentifiers.put("SFM", "Flight-mode");
+		availableStatusIdentifiers.put("SDP", "Deployed");
 		availableStatusIdentifiers.put("SRC", "RadioConnection");
 
 		for(String k : availableStatusIdentifiers.keySet()) {
@@ -77,6 +82,7 @@ public class DataDecoder {
 	}
 
 	public static void update() {
+    try{
 		if(initialized) {
 			for(int a = 0; a < data.length(); ++a) {
 				char i = data.charAt(a);
@@ -122,24 +128,73 @@ public class DataDecoder {
 									selectedCan = Integer.valueOf(readValue);
 								}else if(readQuantity.equals("F")) {
 									// Function called
-
+									String readFunction = "";
+									String readArg = "";
+									boolean readingName = true;
+									ArrayList<String> readArgs = new ArrayList<String>();
+									for(int j = 0; j < readValue.length(); ++j){
+										if(readValue.charAt(j) == ','){
+											readingName = false;
+											if(readArg.length() > 0){
+												readArgs.add(readArg);
+											}
+											readArg = "";
+										}else{
+											if(readingName){
+												readFunction += readValue.charAt(j);
+											}else{
+												readArg += readValue.charAt(j);
+											}
+										}
+									}
+									if(readArg.length() > 0){
+										readArgs.add(readArg);
+									}
+									if(readFunction.equals("LOG")){
+										for(String s : readArgs){
+											MessageLogBuffer.addSerial(s);
+										}
+									}else if(readFunction.equals("ASK")){
+										askDeployPermissionRequested = true;
+									}
 								}else if(readQuantity.charAt(0) == 'S' && readQuantity.length() == 3) {
 									// Status update called
 									if(!(availableStatusIdentifiers.get(readQuantity) == null)) {
 										switch(selectedCan) {
 											case 3:
 												//MOTHERCAN
+												//MessageLogBuffer.addSerial(readQuantity + ": " + readValue);
 												if(readQuantity.equals("SBT")) {
 													DataSetDeposit.mu_bootState = Integer.valueOf(readValue);
+												}else if(readQuantity.equals("SFM")){
+													//System.out.println(readValue);
+													DataSetDeposit.mu_flightMode = Integer.valueOf(readValue);
+												}else if(readQuantity.equals("SDP")){
+													if(Integer.valueOf(readValue) == 0){
+														DataSetDeposit.mu_babyCansDeployed = false;
+													}else{
+														DataSetDeposit.mu_babyCansDeployed = true;
+														notifyBabyCansRequested = true;
+													}
 												}
 												break;
 											case 4:
 												//BETA
-
+												if(readQuantity.equals("SBT")) {
+													DataSetDeposit.beta_bootState = Integer.valueOf(readValue);
+												}else if(readQuantity.equals("SFM")){
+													//System.out.println(readValue);
+													DataSetDeposit.beta_flightMode = Integer.valueOf(readValue);
+												}
 												break;
 											case 5:
 												//RHO
-
+												if(readQuantity.equals("SBT")) {
+													DataSetDeposit.rho_bootState = Integer.valueOf(readValue);
+												}else if(readQuantity.equals("SFM")){
+													//System.out.println(readValue);
+													DataSetDeposit.rho_flightMode = Integer.valueOf(readValue);
+												}
 												break;
 										}
 									}
@@ -179,6 +234,7 @@ public class DataDecoder {
 			}
 			data = "";
 		}
+    }catch(Exception e){}
 	}
 
 	public static ArrayList<MeasuredDataPoint> getDecodedMotherData(){
@@ -195,6 +251,18 @@ public class DataDecoder {
 
 	private static void pushDataToDataSetDeposit(MeasuredDataPoint p) {
 		switch(selectedCan) {
+			case 1:
+				if(!(p.get("Time since startup") == null)) {
+					p.addQuantity("Time since startup", p.get("Time since startup")/1000.0);
+					if(!(p.get("Radio RSSI") == null)){DataSetDeposit.groundStation_RSSI = p.get("Radio RSSI");}
+				}
+				break;
+			case 2:
+				if(!(p.get("Time since startup") == null)) {
+					p.addQuantity("Time since startup", p.get("Time since startup")/1000.0);
+					if(!(p.get("Radio RSSI") == null)){DataSetDeposit.groundStation_RSSI = p.get("Radio RSSI");}
+				}
+				break;
 			case 3:
 				//MOTHERCAN
 				if(!(p.get("Time since startup") == null)) {

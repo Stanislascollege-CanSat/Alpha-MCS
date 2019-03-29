@@ -19,27 +19,44 @@ public static class SerialController {
 		return Serial.list();
 	}
 	
-	public static void open(PApplet javaEnvironment, String portName, int baudRate) {
-		if(isOpen && !(serialCom == null)) {
-			serialCom.stop();
-			serialCom = null;
-			isOpen = false;
-		}
-		if(portName.length() > 0 && baudRate >= 300) {
-			serialCom = new Serial(javaEnvironment, portName, baudRate);
-			isOpen = true;
+	public static boolean open(PApplet javaEnvironment, String portName, int baudRate) {
+		try{
+			if(isOpen && !(serialCom == null)) {
+				serialCom.stop();
+				serialCom = null;
+				isOpen = false;
+			}
+			if(portName.length() > 0 && baudRate >= 300) {
+				serialCom = new Serial(javaEnvironment, portName, baudRate);
+				isOpen = true;
+        return true;
+			}else{
+        return false;
+      }
+		}catch(Exception e){
+			return false;
 		}
 	}
 	
-	public static void close() {
-		if(isOpen) {
-			serialCom.stop();
+	public static boolean close() {
+		try{
+			if(isOpen) {
+				serialCom.stop();
+			}
+			return true;
+		}catch(Exception e){
+			return false;
 		}
 	}
 	
-	public static void send(String s) {
-		if(isOpen) {
-			serialCom.write(s);
+	public static boolean send(String s) {
+		try{
+			if(isOpen) {
+				serialCom.write(s);
+			}
+			return true;
+		}catch(Exception e){
+			return false;
 		}
 	}
 	

@@ -2,6 +2,17 @@
 // Processing 3.4
 // Rens Dur (Project Bèta)
 
+public final float defaultNewElementHeight = 30;
+public final float defaultNewElementAdditiveHeight = 20;
+public final color elementColor_Blue = color(56, 132, 255);
+
+public enum ElementOrient {
+  HORIZONTAL,
+  VERTICAL
+}
+
+
+
 public interface Element_Interface {
   public void select();
   public void deselect();
@@ -327,6 +338,31 @@ public class TickBoxElement extends Element {
 }
 
 //-----------------------------------------------------------------------------------------------------------------//
+
+public class BooleanElement extends TickBoxElement {
+  public BooleanElement(AppController a, ViewController v, float x, float y){
+    super(a, v, x, y, 0);
+    this.dim.x = 35;
+    this.dim.y = 20;
+  }
+
+  public void show(){
+    noStroke();
+    fill((this.mouseHeld ? 150 : 200));
+    ellipse(this.pos.x + this.dim.y/2, this.pos.y, this.dim.y, this.dim.y);
+    ellipse(this.pos.x + this.dim.x - this.dim.y/2, this.pos.y, this.dim.y, this.dim.y);
+    rectMode(CORNER);
+    rect(this.pos.x + this.dim.y/2, this.pos.y - this.dim.y/2, this.dim.x - this.dim.y, this.dim.y);
+    fill(elementColor_Blue);
+    ellipse(this.pos.x + (this.ticked ? (this.dim.x - this.dim.y/2) : (this.dim.y/2)), this.pos.y, this.dim.y, this.dim.y);
+  }
+}
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------//
+
 
 public class TextElement extends ButtonElement {
   public int alignment;
@@ -718,6 +754,648 @@ public class IntegerLineInputElement extends NumberLineInputElement {
 
 //-----------------------------------------------------------------------------------------------------------------//
 
+public class NewLineInputElement extends Element {
+  public int cursorPos;
+  public boolean cursorBlinkOn;
+  public float cursorBlinkCount;
+  public int beginTextDisplay, endTextDisplay;
+  public ArrayList<Character> text;
+  public String displayText;
+  public String placeHolder;
+  public boolean backspaceStillPressed;
+  public int backspaceCount;
+  public boolean arrowStillPressed;
+  public int arrowCount;
+  public int arrowFrequencyCount;
+  public boolean arrowDirection;
+  public PFont stdFont;
+
+
+
+  public NewLineInputElement(AppController a, ViewController v, float x, float y, float w){
+    super(a, v, x, y, w, defaultNewElementHeight);
+    this.cursorPos = 0;
+    this.cursorBlinkOn = true;
+    this.cursorBlinkCount = 0;
+    this.beginTextDisplay = 0;
+    this.endTextDisplay = 0;
+    this.text = new ArrayList<Character>();
+    this.displayText = "";
+    this.placeHolder = "Type here";
+    this.backspaceStillPressed = false;
+    this.backspaceCount = 0;
+    this.arrowStillPressed = false;
+    this.arrowCount = 0;
+    this.arrowFrequencyCount = 0;
+    this.arrowDirection = false;
+    this.stdFont = fonts.get("SF").get("Light");
+  }
+
+  public void resize(float x, float y, float w){
+    this.pos.set(x, y);
+    this.dim.set(w, defaultNewElementHeight);
+    this.arrangeString();
+  }
+
+  public void setPlaceholder(String s){
+    this.placeHolder = s;
+  }
+
+  public String getValue(){
+    String output = "";
+    for(char i : this.text){
+      output += i;
+    }
+    return output;
+  }
+
+  public void setValue(String v){
+    this.text.clear();
+    for(int i = 0; i < v.length(); ++i){
+      this.text.add(v.charAt(i));
+    }
+    this.cursorPos = this.text.size();
+    this.arrangeString();
+    this.contentEdited();
+  }
+
+  public void reset(){
+    this.cursorPos = 0;
+    this.text.clear();
+    this.arrangeString();
+    this.contentEdited();
+  }
+
+  public void setTextFont(PFont f){
+    this.stdFont = f;
+  }
+
+  public void show(){
+
+    if(this.mousePressIsWithinBorder()){
+      SET_MOUSEPOINTER_TEXT = true;
+    }
+
+    // stroke(0);
+    // strokeWeight(1);
+    // line(this.pos.x, this.pos.y + this.dim.y/2, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2);
+
+    // SHOWING CONTENTS
+    textFont(this.stdFont);
+    textAlign(LEFT);
+
+    if(this.displayText.length() > 0){
+      stroke(0);
+      fill(0);
+      text(this.displayText, this.pos.x + 2, this.pos.y + 6);
+    }else{
+      stroke(180);
+      fill(180);
+      text(this.placeHolder, this.pos.x + 2, this.pos.y + 6);
+    }
+
+    if(this.selected && this.cursorBlinkOn){
+      stroke(0);
+      strokeWeight(1);
+      line(this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2, this.pos.y - this.dim.y/2.3, this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2, this.pos.y + this.dim.y/2.3);
+    }
+
+
+
+
+
+
+    if(this.selected){
+      this.cursorBlinkCount += 1/frameRate;
+      if(this.cursorBlinkCount > 0.5){
+        this.cursorBlinkOn = !this.cursorBlinkOn;
+        this.cursorBlinkCount = 0;
+      }
+    }else{
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+    }
+
+    //update text input
+    if(this.backspaceStillPressed){
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+      this.backspaceCount++;
+    }
+
+    if(this.backspaceCount >= frameRate/2){
+      this.backspaceTriggered();
+    }
+
+    if(this.arrowStillPressed){
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+      this.arrowCount++;
+      this.arrowFrequencyCount++;
+    }
+    if(this.arrowCount >= frameRate/2){
+      if(this.arrowFrequencyCount > frameRate/10){
+        if(this.arrowDirection == false){
+          // LEFT
+          if(this.cursorPos > 0){
+            this.cursorPos--;
+            if(this.cursorPos < this.beginTextDisplay){
+              // cursor out of field <--
+              this.beginTextDisplay = this.cursorPos;
+              this.arrangeString();
+            }
+
+          }
+        }else{
+          // RIGHT
+          if(this.cursorPos < this.text.size()){
+            this.cursorPos++;
+            this.arrangeString();
+          }
+        }
+        this.arrowFrequencyCount = 0;
+      }
+    }
+  }
+
+  public void enterEvent(){}
+
+  public void arrangeString(){
+    // constructing displayText
+    this.displayText = "";
+    for(int i = this.beginTextDisplay; i < this.text.size(); ++i){
+      this.displayText += this.text.get(i);
+    }
+
+    textFont(this.stdFont);
+    this.endTextDisplay = this.text.size();
+    while(textWidth(this.displayText) > this.dim.x - 4){
+      if(this.endTextDisplay > this.cursorPos){
+        this.displayText = this.displayText.substring(0, this.displayText.length() - 1);
+        this.endTextDisplay--;
+      }else{
+        // cursor left visible field
+        this.beginTextDisplay++;
+        this.displayText = "";
+        for(int i = this.beginTextDisplay; i < this.cursorPos; ++i){
+          this.displayText += this.text.get(i);
+        }
+      }
+    }
+  }
+
+  public void contentEdited(){}
+
+  public void keyPressed(char k, int c){
+    this.cursorBlinkCount = 0;
+    this.cursorBlinkOn = true;
+    if(k == BACKSPACE){
+      this.backspaceTriggered();
+      this.backspaceStillPressed = true;
+    }else if(k == ENTER || k == RETURN){
+      this.enterEvent();
+    }else if(c == LEFT){
+      if(this.cursorPos > 0){
+        this.cursorPos--;
+        if(this.cursorPos < this.beginTextDisplay){
+          // cursor out of field <--
+          this.beginTextDisplay = this.cursorPos;
+          this.arrangeString();
+        }
+
+      }
+      this.arrowStillPressed = true;
+      this.arrowDirection = false;
+    }else if(c == RIGHT){
+      if(this.cursorPos < this.text.size()){
+        this.cursorPos++;
+        this.arrangeString();
+      }
+      this.arrowStillPressed = true;
+      this.arrowDirection = true;
+    }
+    this.contentEdited();
+  }
+
+  public void keyReleased(){
+    this.backspaceStillPressed = false;
+    this.backspaceCount = 0;
+    this.arrowStillPressed = false;
+    this.arrowCount = 0;
+    this.arrowFrequencyCount = 0;
+  }
+
+  public void backspaceTriggered(){
+    this.cursorBlinkCount = 0;
+    this.cursorBlinkOn = true;
+    // handle backspace event
+    if(this.cursorPos > 0){
+      this.text.remove(this.cursorPos - 1);
+      this.cursorPos--;
+      if(this.cursorPos < this.beginTextDisplay){
+        // cursor out of field <--
+        this.beginTextDisplay = this.cursorPos;
+      }
+      this.arrangeString();
+      textFont(this.stdFont);
+      if(textWidth(this.displayText) < this.dim.x - 4){
+        this.beginTextDisplay = 0;
+        this.arrangeString();
+      }
+    }
+    this.contentEdited();
+  }
+
+  public void keyTyped(char k){
+    this.cursorBlinkCount = 0;
+    this.cursorBlinkOn = true;
+    if(this.cursorPos == this.text.size()){
+      // cursor is at end of string
+      this.text.add(k);
+      this.cursorPos++;
+      this.displayText = "";
+      for(int i = this.beginTextDisplay; i < this.text.size(); ++i){
+        this.displayText += this.text.get(i);
+      }
+      textFont(this.stdFont);
+      while(textWidth(this.displayText) > this.dim.x - 4){
+        // cursor went out of visible field.
+        this.beginTextDisplay++;
+        this.displayText = "";
+        for(int i = this.beginTextDisplay; i < this.text.size(); ++i){
+          this.displayText += this.text.get(i);
+        }
+      }
+    }else{
+      // cursor is not at end of string
+      this.text.add(this.cursorPos, k);
+      this.cursorPos++;
+
+      this.arrangeString();
+    }
+    this.contentEdited();
+  }
+
+  public void mousePressed(){
+    if(this.mousePressIsWithinBorder()){
+      // User clicked element
+      if(!this.disabled){
+        this.clickEvent();
+        this.mouseHeld = true;
+        this.select();
+
+        //this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2
+
+        textFont(this.stdFont);
+        int closest = 0;
+        float smallestDistance = width;
+        for(int i = 0; i <= this.displayText.length(); ++i){
+          if(abs(mouseX - (this.viewController.pos.x + this.pos.x + textWidth(this.displayText.substring(0, i)) + 2)) < smallestDistance){
+            closest = i;
+            smallestDistance = abs(mouseX - (this.viewController.pos.x + this.pos.x + textWidth(this.displayText.substring(0, i)) + 2));
+          }
+        }
+        this.cursorPos = this.beginTextDisplay + closest;
+      }
+    }
+  }
+
+
+
+  
+
+
+}
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+public class SmartSelectionElement extends NewLineInputElement {
+  public ArrayList<String> options;
+  public ArrayList<String> optionFilter;
+  public String filterBuffer;
+  public PFont boldFont;
+  public float dimY_options;
+  public boolean superStrict;
+
+  public SmartSelectionElement(AppController a, ViewController v, float x, float y, float w){
+    super(a, v, x, y, w);
+    this.options = new ArrayList<String>();
+    // for(int i = 1400; i < 2400; ++i){
+    //   this.options.add("/dev/cu.usbmodem" + str(i));
+    // }
+    this.optionFilter = new ArrayList<String>();
+    this.filterBuffer = "";
+    this.boldFont = fonts.get("SF").get("Bold");
+    this.dimY_options = this.dim.y;
+    this.superStrict = false;
+  }
+
+  public void setStrict(boolean s){
+    this.superStrict = s;
+  }
+
+  public void addOption(String s){
+    this.options.add(s);
+  }
+
+  public void select(){
+    this.selected = true;
+    this.layer = 1;
+    this.contentEdited();
+  }
+
+  public void deselect(){
+    this.selected = false;
+    this.layer = 0;
+    this.dimY_options = this.dim.y;
+  }
+
+  public void show(){
+
+    if(mouseX >= this.viewController.pos.x + this.pos.x &&
+      mouseX <= this.viewController.pos.x + this.pos.x + this.dim.x &&
+      mouseY >= this.viewController.pos.y + this.pos.y - this.dim.y/2 &&
+      mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y/2){
+      // user hovers element
+      SET_MOUSEPOINTER_TEXT = true;
+    }
+
+
+    // stroke(0);
+    // strokeWeight(1);
+    // line(this.pos.x, this.pos.y + this.dim.y/2, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2);
+
+    if(this.selected){
+      translate(0, 0, 1);
+      stroke(0);
+      strokeWeight(1);
+      fill(255);
+      rectMode(CORNER);
+      rect(this.pos.x, this.pos.y - this.dim.y/2, this.dim.x, this.dim.y);
+    }
+
+    // SHOWING CONTENTS
+    // if(this.optionFilter.size() > 0 || this.displayText.length() == 0){
+    //   textFont(this.stdFont);
+    // }else{
+    //   textFont(this.boldFont);
+    // }
+    textFont(this.stdFont);
+    textAlign(LEFT);
+
+    if(this.selected && this.displayText.length() > 0 && this.optionFilter.size() > 0){
+      fill(180);
+      text(this.optionFilter.get(0), this.pos.x + 2, this.pos.y + 6);
+    }
+
+    if(this.displayText.length() > 0){
+      stroke(0);
+      fill(0);
+      text(this.displayText, this.pos.x + 2, this.pos.y + 6);
+    }else{
+      stroke(180);
+      fill(180);
+      text(this.placeHolder, this.pos.x + 2, this.pos.y + 6);
+    }
+
+    if(this.selected && this.cursorBlinkOn){
+      stroke(0);
+      strokeWeight(1);
+      line(this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2, this.pos.y - this.dim.y/2.3, this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2, this.pos.y + this.dim.y/2.3);
+    }
+
+
+
+
+
+
+    if(this.selected){
+      this.cursorBlinkCount += 1/frameRate;
+      if(this.cursorBlinkCount > 0.5){
+        this.cursorBlinkOn = !this.cursorBlinkOn;
+        this.cursorBlinkCount = 0;
+      }
+    }else{
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+    }
+
+    //update text input
+    if(this.backspaceStillPressed){
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+      this.backspaceCount++;
+    }
+
+    if(this.backspaceCount >= frameRate/2){
+      this.backspaceTriggered();
+    }
+
+    if(this.arrowStillPressed){
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+      this.arrowCount++;
+      this.arrowFrequencyCount++;
+    }
+    if(this.arrowCount >= frameRate/2){
+      if(this.arrowFrequencyCount > frameRate/10){
+        if(this.arrowDirection == false){
+          // LEFT
+          if(this.cursorPos > 0){
+            this.cursorPos--;
+            if(this.cursorPos < this.beginTextDisplay){
+              // cursor out of field <--
+              this.beginTextDisplay = this.cursorPos;
+              this.arrangeString();
+            }
+
+          }
+        }else{
+          // RIGHT
+          if(this.cursorPos < this.text.size()){
+            this.cursorPos++;
+            this.arrangeString();
+          }
+        }
+        this.arrowFrequencyCount = 0;
+      }
+    }
+
+    //
+    // PART BELONGING TO SMART SELECTION ELEMENT
+    //
+
+    if(this.selected){
+      float y = 0;
+      stroke(0);
+      strokeWeight(1);
+      rectMode(CORNER);
+      textFont(this.stdFont);
+      textAlign(LEFT);
+      for(String s : this.optionFilter){
+        if(this.viewController.pos.y + this.pos.y + this.dim.y/2 + y <= height){
+          noStroke();
+          fill(255);
+          rect(this.pos.x, this.pos.y + this.dim.y/2 + y, this.dim.x, defaultNewElementAdditiveHeight);
+
+          stroke(0);
+          line(this.pos.x, this.pos.y + this.dim.y/2 + y, this.pos.x, this.pos.y + this.dim.y/2 + y + defaultNewElementAdditiveHeight);
+          line(this.pos.x + this.dim.x, this.pos.y + this.dim.y/2 + y, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2 + y + defaultNewElementAdditiveHeight);
+
+          fill(0);
+          text(s, this.pos.x + 2, this.pos.y + this.dim.y/2 + y + defaultNewElementAdditiveHeight/2 + 6);
+        }
+        y += defaultNewElementAdditiveHeight;
+      }
+      line(this.pos.x, this.pos.y + this.dim.y/2 + y, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2 + y);
+      this.dimY_options = this.dim.y + y;
+      translate(0, 0, -1);
+    }else{
+      this.dimY_options = this.dim.y;
+    }
+
+
+
+
+
+  }
+
+  public void contentEdited(){
+    //if(this.text.size() > 0){
+      // user has made request for suggestion
+      String userInput = "";
+      for(char c : this.text){
+        userInput += c;
+      }
+
+      this.optionFilter.clear();
+      for(String s : this.options){
+        if(s.length() >= userInput.length()){
+          this.optionFilter.add(s);
+        }
+      }
+      //printArray(this.optionFilter);
+      if(userInput.length() > 0){
+        for(int i = this.optionFilter.size() - 1; i >= 0; --i){
+          if(!(userInput.equals(this.optionFilter.get(i).substring(0, userInput.length())))){
+            this.optionFilter.remove(i);
+          }
+        }
+      }
+
+      if(this.superStrict){
+        if(this.optionFilter.size() == 0){
+          this.cursorPos = this.text.size();
+          this.backspaceTriggered();
+        }
+      }
+
+      //printArray(this.optionFilter);
+    //}
+  }
+
+  public void keyPressed(char k, int c){
+    this.cursorBlinkCount = 0;
+    this.cursorBlinkOn = true;
+    if(k == BACKSPACE){
+      this.backspaceTriggered();
+      this.backspaceStillPressed = true;
+    }else if(k == ENTER || k == RETURN){
+      this.enterEvent();
+    }else if(c == LEFT){
+      if(this.cursorPos > 0){
+        this.cursorPos--;
+        if(this.cursorPos < this.beginTextDisplay){
+          // cursor out of field <--
+          this.beginTextDisplay = this.cursorPos;
+          this.arrangeString();
+        }
+
+      }
+      this.arrowStillPressed = true;
+      this.arrowDirection = false;
+    }else if(c == RIGHT){
+      if(this.cursorPos < this.text.size()){
+        this.cursorPos++;
+        this.arrangeString();
+      }else if(this.cursorPos == this.text.size() && this.optionFilter.size() > 0 && this.text.size() > 0){
+        this.text.clear();
+        for(int j = 0; j < this.optionFilter.get(0).length(); ++j){
+          this.text.add(this.optionFilter.get(0).charAt(j));
+        }
+        this.cursorPos = this.text.size();
+        this.arrangeString();
+        this.contentEdited();
+      }
+      this.arrowStillPressed = true;
+      this.arrowDirection = true;
+    }
+    this.contentEdited();
+  }
+
+  public boolean mousePressIsWithinBorder(){
+    if(mouseX >= this.viewController.pos.x + this.pos.x &&
+      mouseX <= this.viewController.pos.x + this.pos.x + this.dim.x &&
+      mouseY >= this.viewController.pos.y + this.pos.y - this.dim.y/2 &&
+      mouseY <= this.viewController.pos.y + this.pos.y - this.dim.y/2 + this.dimY_options){
+      // User clicked element
+      return true;
+    }
+    return false;
+  }
+
+  public void mousePressed(){
+    if(this.mousePressIsWithinBorder()){
+      // User clicked element
+      if(!this.disabled && ( mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y/2 )){
+        this.clickEvent();
+        this.mouseHeld = true;
+        this.select();
+
+        //this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2
+
+        textFont(this.stdFont);
+        int closest = 0;
+        float smallestDistance = width;
+        for(int i = 0; i <= this.displayText.length(); ++i){
+          if(abs(mouseX - (this.viewController.pos.x + this.pos.x + textWidth(this.displayText.substring(0, i)) + 2)) < smallestDistance){
+            closest = i;
+            smallestDistance = abs(mouseX - (this.viewController.pos.x + this.pos.x + textWidth(this.displayText.substring(0, i)) + 2));
+          }
+        }
+        this.cursorPos = this.beginTextDisplay + closest;
+      }else if(!this.disabled){
+        // option pressed
+        int selected = 0;
+        for(int i = 0; i < this.optionFilter.size(); ++i){
+          if(mouseY >= this.viewController.pos.y + this.pos.y + this.dim.y/2 + defaultNewElementAdditiveHeight * i &&
+             mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y/2 + defaultNewElementAdditiveHeight * (i+1)){
+            selected = i;
+            this.text.clear();
+            for(int j = 0; j < this.optionFilter.get(i).length(); ++j){
+              this.text.add(this.optionFilter.get(i).charAt(j));
+            }
+            this.cursorPos = this.text.size();
+            this.arrangeString();
+            this.contentEdited();
+            this.deselect();
+            break;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+}
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------//
 public class SelectionElement extends Element {
   public ArrayList<String> options;
   public int sel;
@@ -1132,6 +1810,14 @@ public class VerticalScrollElement extends Element {
     return this.rangeMax;
   }
 
+  public boolean isAtTop(){
+    return (this.rangeMin == this.min);
+  }
+
+  public boolean isAtBottom(){
+    return (this.rangeMax == this.max);
+  }
+
   public void addScroll(float count){
     this.dragHeight = this.rangeMax - this.rangeMin;
     this.rangeMin += count;
@@ -1328,4 +2014,181 @@ public class SliderElement extends Element {
 	}
 	
 	
+}
+
+
+
+// -------------------------------------------------------------------------------------------------------------------- //
+
+public class SmartSliderElement extends Element {
+  public ElementOrient orientation;
+  public Range range;
+  public float lowerValue;
+  public float upperValue;
+  public float ballSize;
+  public boolean grub;
+  public boolean leftGrub;
+
+  public SmartSliderElement(AppController a, ViewController v, float x, float y, ElementOrient o, float size, float min, float max){
+    super(a, v, x, y, (o == ElementOrient.HORIZONTAL ? size : 10), (o == ElementOrient.HORIZONTAL ? 10 : size));
+    this.orientation = o;
+    this.range = new Range(min, max);
+    this.lowerValue = this.range.min;
+    this.upperValue = this.range.max;
+    this.ballSize = 20;
+  }
+
+  public Range getValue(){
+    return new Range(this.lowerValue, this.upperValue);
+  }
+
+  public void setValue(float min, float max){
+    if((max > min) && (min >= this.range.min) && (max <= this.range.max)){
+      this.lowerValue = min;
+      this.upperValue = max;
+    }
+  }
+
+  public void resize(float x, float y, float size){
+    this.pos.set(x, y);
+    if(this.orientation == ElementOrient.HORIZONTAL){
+      this.dim.x = size;
+    }else if(this.orientation == ElementOrient.VERTICAL){
+      this.dim.y = size;
+    }
+  }
+
+  public void show(){
+    if(this.orientation == ElementOrient.HORIZONTAL){
+      stroke(0);
+      strokeWeight(2);
+      line(this.pos.x, this.pos.y, this.pos.x + this.dim.x, this.pos.y);
+      noStroke();
+      fill(elementColor_Blue);
+      translate(0, 0, 1);
+      ellipse(this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y, this.ballSize, this.ballSize);
+      ellipse(this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y, this.ballSize, this.ballSize);
+      translate(0, 0, -1);
+
+      if(this.grub){
+        textFont(fonts.get("SF").get("Regular 6"));
+        textAlign(CENTER);
+        fill(0);
+        if(this.leftGrub){
+          this.lowerValue = map(mouseX - this.viewController.pos.x - this.pos.x, 0, this.dim.x, this.range.min, this.range.max);
+          if(this.lowerValue < this.range.min){
+            this.lowerValue = this.range.min;
+          }
+          if(this.lowerValue >= this.upperValue - (this.range.max - this.range.min)/1000){
+            this.lowerValue = this.upperValue - (this.range.max - this.range.min)/1000;
+          }
+        }else{
+          this.upperValue = map(mouseX - this.viewController.pos.x - this.pos.x, 0, this.dim.x, this.range.min, this.range.max);
+          if(this.upperValue > this.range.max){
+            this.upperValue = this.range.max;
+          }
+          if(this.upperValue <= this.lowerValue + (this.range.max - this.range.min)/1000){
+            this.upperValue = this.lowerValue + (this.range.max - this.range.min)/1000;
+          }
+        }
+        text(this.lowerValue, this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y + this.ballSize);
+        text(this.upperValue, this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y + this.ballSize);
+      }
+
+
+    }else if(this.orientation == ElementOrient.VERTICAL){
+      stroke(0);
+      strokeWeight(2);
+      line(this.pos.x, this.pos.y, this.pos.x, this.pos.y + this.dim.y);
+      noStroke();
+      fill(elementColor_Blue);
+      ellipse(this.pos.x, this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y), this.ballSize, this.ballSize);
+      ellipse(this.pos.x, this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y), this.ballSize, this.ballSize);
+
+      if(this.grub){
+        textFont(fonts.get("SF").get("Regular 6"));
+        textAlign(LEFT);
+        fill(0);
+        if(this.leftGrub){
+          this.lowerValue = map(mouseY - this.viewController.pos.y - this.pos.y, 0, this.dim.y, this.range.min, this.range.max);
+          if(this.lowerValue < this.range.min){
+            this.lowerValue = this.range.min;
+          }
+          if(this.lowerValue >= this.upperValue - (this.range.max - this.range.min)/1000){
+            this.lowerValue = this.upperValue - (this.range.max - this.range.min)/1000;
+          }
+        }else{
+          this.upperValue = map(mouseY - this.viewController.pos.y - this.pos.y, 0, this.dim.y, this.range.min, this.range.max);
+          if(this.upperValue > this.range.max){
+            this.upperValue = this.range.max;
+          }
+          if(this.upperValue <= this.lowerValue + (this.range.max - this.range.min)/1000){
+            this.upperValue = this.lowerValue + (this.range.max - this.range.min)/1000;
+          }
+        }
+        text(this.lowerValue, this.pos.x + this.ballSize, this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y));
+        text(this.upperValue, this.pos.x + this.ballSize, this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y));
+      }
+    }
+  }
+
+  public boolean mousePressIsWithinBorder(){
+    if(this.orientation == ElementOrient.HORIZONTAL){
+      if(mouseX >= this.viewController.pos.x + this.pos.x - this.ballSize/2 &&
+        mouseX <= this.viewController.pos.x + this.pos.x + this.dim.x + this.ballSize/2 &&
+        mouseY >= this.viewController.pos.y + this.pos.y - this.ballSize/2 &&
+        mouseY <= this.viewController.pos.y + this.pos.y + this.ballSize/2){
+        // User clicked element
+        return true;
+      }
+    }else if(this.orientation == ElementOrient.VERTICAL){
+      if(mouseX >= this.viewController.pos.x + this.pos.x - this.ballSize/2 &&
+        mouseX <= this.viewController.pos.x + this.pos.x + this.ballSize/2 &&
+        mouseY >= this.viewController.pos.y + this.pos.y - this.ballSize/2 &&
+        mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y + this.ballSize/2){
+        // User clicked element
+        return true;
+      }
+    }
+    return false;
+  }
+
+  public void mousePressed(){
+    if(this.mousePressIsWithinBorder()){
+      // User clicked element
+      if(!this.disabled){
+        this.clickEvent();
+        this.mouseHeld = true;
+        this.select();
+        if(this.orientation == ElementOrient.HORIZONTAL){
+          if(mouseX >= this.viewController.pos.x + this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x) - this.ballSize/2 &&
+              mouseX <= this.viewController.pos.x + this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = true;
+          }else if(mouseX >= this.viewController.pos.x + this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x) - this.ballSize/2 &&
+              mouseX <= this.viewController.pos.x + this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = false;
+          }
+        }else if(this.orientation == ElementOrient.VERTICAL){
+          if(mouseY >= this.viewController.pos.y + this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y) - this.ballSize/2 &&
+              mouseY <= this.viewController.pos.y + this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = true;
+          }else if(mouseY >= this.viewController.pos.y + this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y) - this.ballSize/2 &&
+              mouseY <= this.viewController.pos.y + this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = false;
+          }
+        }
+      }
+    }
+  }
+
+  public void mouseReleased(){
+    this.mouseHeld = false;
+    this.grub = false;
+  }
+
+
 }

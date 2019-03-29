@@ -58,6 +58,7 @@ public class Chart implements Chart_Interface {
   public String Yquantity;
   public String Xunit;
   public String Yunit;
+  public boolean autoScroll;
 
   public Chart(float x, float y, float w, float h, ChartRange xR, ChartRange yR, String title, String Xq, String Xu, String Yq, String Yu){
     this.xRange = xR;
@@ -85,20 +86,40 @@ public class Chart implements Chart_Interface {
     this.Xunit = Xu;
     this.Yquantity = Yq;
     this.Yunit = Yu;
+
+    this.autoScroll = false;
   }
 
   public void addDataSet(DataSet a){
     this.dataSets.add(a);
   }
+
+  public void clear(){
+    this.dataSets.clear();
+  }
   
   public void resize(float x, float y, float w, float h) {
-	this.pos.set(x, y);
-	this.dim.set(w, h);
+	 this.pos.set(x, y);
+	 this.dim.set(w, h);
   }
   
   public void setRange(ChartRange xR, ChartRange yR) {
-	this.xRange = xR;
-	this.yRange = yR;
+	 this.xRange = xR;
+	 this.yRange = yR;
+  }
+
+  public void setXRange(ChartRange xR){
+    this.xRange = xR;
+  }
+
+  public void setYRange(ChartRange yR){
+    this.yRange = yR;
+  }
+
+  public void addScroll(float count){
+    count = -count/100*(this.yRange.max - this.yRange.min);
+    this.yRange.min += count;
+    this.yRange.max += count;
   }
 
 
@@ -224,6 +245,11 @@ public class Chart implements Chart_Interface {
 	        }
 	      }
 	      endShape();
+        // if(l.size() > 0){
+        //   if(l.getDataAt(l.size()-1).getXFloat() >= this.xRange.max){
+        //     this.xRange.max = l.getDataAt(l.size()-1).getXFloat() + (this.xRange.max - this.xRange.min)/20;
+        //   }
+        // }
 	      
 	      fill(this.colorList[colorScheme]);
 	      text(l.getQuantity(), this.pos.x + 5, this.pos.y - this.dim.y/2 + 15 + 15*dataSetNumber);

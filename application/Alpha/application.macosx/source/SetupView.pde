@@ -13,16 +13,18 @@ public class SetupView extends ViewController {
   public TextElement consoleLogFileTBLabel;
   public TextElement csvDataFileTBLabel;
 
-  public SelectionElement serialPortSelect;
-  public SelectionElement serialBaudSelect;
+  public SmartSelectionElement serialPortSelect;
+  public SmartSelectionElement serialBaudSelect;
 
   public UtilityButtonElement dataOutputFolderButton;
   public TextElement dataOutputFolderName;
 
-  public LineInputElement missionIdentifierInput;
+  public NewLineInputElement missionIdentifierInput;
 
   public TickBoxElement consoleLogFileTickBox;
   public TickBoxElement csvDataFileTickBox;
+
+  public SmartSliderElement testSlider;
 
   // Data
   String absoluteMissionPath;
@@ -58,8 +60,12 @@ public class SetupView extends ViewController {
     this.missionFolderLabel = new TextElement(this.appController, this, this.dim.x/2 - 210, 280, 200, "Mission folder:", RIGHT);
     this.missionIdentifierLabel = new TextElement(this.appController, this, this.dim.x/2 - 210, 320, 200, "Mission identifier:", RIGHT);
 
-    this.serialPortSelect = new SelectionElement(this.appController, this, this.dim.x/2 + 10, 200, 100);
-    this.serialBaudSelect = new SelectionElement(this.appController, this, this.dim.x/2 + 10, 240, 100);
+    this.serialPortSelect = new SmartSelectionElement(this.appController, this, this.dim.x/2 + 10, 200, 300);
+    this.serialPortSelect.setPlaceholder("Serial port");
+    this.serialPortSelect.setStrict(true);
+    this.serialBaudSelect = new SmartSelectionElement(this.appController, this, this.dim.x/2 + 10, 240, 150);
+    this.serialBaudSelect.setPlaceholder("Baud rate");
+    this.serialBaudSelect.setStrict(true);
 
     this.dataOutputFolderButton = new UtilityButtonElement(this.appController, this, this.dim.x/2 + 10, 280){
       public void clickEvent(){
@@ -68,13 +74,15 @@ public class SetupView extends ViewController {
     };
     this.dataOutputFolderName = new TextElement(this.appController, this, this.dim.x/2 + 30, 280, 500, "", LEFT);
 
-    this.missionIdentifierInput = new LineInputElement(this.appController, this, this.dim.x/2 + 10, 320, 200);
+    this.missionIdentifierInput = new NewLineInputElement(this.appController, this, this.dim.x/2 + 10, 320, 200);
 
     this.consoleLogFileTickBox = new TickBoxElement(this.appController, this, this.dim.x/2 - 100, 400);
-    this.consoleLogFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 400, 300, "Create console-log file", LEFT);
+    this.consoleLogFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 400, 300, "Create console-log file", RIGHT);
 
     this.csvDataFileTickBox = new TickBoxElement(this.appController, this, this.dim.x/2 - 100, 440);
-    this.csvDataFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 440, 300, "Create CSV data-output file", LEFT);
+    this.csvDataFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 440, 300, "Create CSV data-output file", RIGHT);
+
+    this.testSlider = new SmartSliderElement(this.appController, this, 100, 100, ElementOrient.VERTICAL, 200, 0, 100);
 
     this.elements.add(this.backButton);
     this.elements.add(this.continueButton);
@@ -95,6 +103,8 @@ public class SetupView extends ViewController {
     this.elements.add(this.consoleLogFileTBLabel);
     this.elements.add(this.csvDataFileTickBox);
     this.elements.add(this.csvDataFileTBLabel);
+
+    this.elements.add(this.testSlider);
 
     // Setting default values
     for(String s : SerialController.getAvailablePorts()){
@@ -162,8 +172,8 @@ public class SetupView extends ViewController {
     this.missionFolderLabel.resize(this.dim.x/2 - 210, 280, 200);
     this.missionIdentifierLabel.resize(this.dim.x/2 - 210, 320, 200);
 
-    this.serialPortSelect.resize(this.dim.x/2 + 10, 200, 100);
-    this.serialBaudSelect.resize(this.dim.x/2 + 10, 240, 100);
+    this.serialPortSelect.resize(this.dim.x/2 + 10, 200, 300);
+    this.serialBaudSelect.resize(this.dim.x/2 + 10, 240, 150);
 
     this.dataOutputFolderButton.resize(this.dim.x/2 + 10, 280);
     this.dataOutputFolderName.resize(this.dim.x/2 + 30, 280, 500);

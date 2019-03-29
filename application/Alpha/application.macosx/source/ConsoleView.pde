@@ -16,7 +16,7 @@ public class ConsoleView extends ViewController {
 
   public ButtonElement clearMessagesButton;
 
-  public LineInputElement commandInput;
+  public NewLineInputElement commandInput;
 
   public float calculatedMessageHeight;
   public float messageViewHeight;
@@ -48,7 +48,7 @@ public class ConsoleView extends ViewController {
       }
     };
 
-    this.commandInput = new LineInputElement(this.appController, this, 10, this.dim.y - 55, this.dim.x - 20){
+    this.commandInput = new NewLineInputElement(this.appController, this, 10, this.dim.y - 55, this.dim.x - 20){
       public void enterEvent(){
         String[] parse = this.appController.parseCommand(this.getValue());
         if(parse.length > 0){
@@ -57,6 +57,8 @@ public class ConsoleView extends ViewController {
         this.reset();
       }
     };
+    this.commandInput.setTextFont(fonts.get("SF").get("Regular"));
+    this.commandInput.setPlaceholder("Enter command");
 
     this.calculatedMessageHeight = 0;
 
@@ -220,8 +222,11 @@ public class ConsoleView extends ViewController {
 
   public void mouseScrolled(float count){
     this.scrollBar.addScroll(count);
-    if(count > 18) {
+    if(abs(count) > 18) {
     	this.autoScrollTickBox.setValue(false);
+    }
+    if(this.scrollBar.isAtBottom()){
+      this.autoScrollTickBox.setValue(true);
     }
   }
 

@@ -29,18 +29,26 @@ public class View_MotherCanInfo extends ViewController {
     text("Boot state:", this.dim.x/2 - 5, 100);
     text("Battery:", this.dim.x/2 - 5, 120);
     text("Radio connection:", this.dim.x/2 - 5, 140);
-    text("Flight-mode enabled:", this.dim.x/2 - 5, 160);
+    text("Mode:", this.dim.x/2 - 5, 160);
     text("GPS:", this.dim.x/2 - 5, 200);
     text("Measurements:", this.dim.x/2 - 5, 240);
+    text("BabyCans deployed:", this.dim.x/2 - 5, 280);
     
     textFont(fonts.get("SF").get("Regular"));
     textAlign(LEFT);
     text((DataSetDeposit.mu_bootState == 0 ? "Not booting" : (DataSetDeposit.mu_bootState == 1 ? "Booting" : (DataSetDeposit.mu_bootState == 2 ? "Active" : "..."))), this.dim.x/2 + 5, 100);
     text(str(DataSetDeposit.mu_batteryVoltage) + " volts", this.dim.x/2 + 5, 120);
+
+    text(str((float)DataSetDeposit.groundStation_RSSI), this.dim.x/2 + 5, 140);
+
+    text((DataSetDeposit.mu_flightMode == 0 ? "Non-flight-mode" : (DataSetDeposit.mu_flightMode == 1 ? "Flight-mode" : "Landed-mode")), this.dim.x/2 + 5, 160);
+
     
     text((DataSetDeposit.mu_GPSFix ? "Fixed" : "Not fixed") + ", " + str(DataSetDeposit.mu_GPSSatellites) + " satellites", this.dim.x/2 + 5, 200);
     
     text(str(DataSetDeposit.mu_pointsMeasured) + " datapoints", this.dim.x/2 + 5, 240);
+
+    text((DataSetDeposit.mu_babyCansDeployed ? "YES" : "NO"), this.dim.x/2 + 5, 280);
 
     
     

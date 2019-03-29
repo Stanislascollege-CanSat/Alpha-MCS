@@ -62,8 +62,8 @@ public class View_DataCharts extends ViewController {
     // creating charts
 
     this.chart_acceleration =     new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-15, 15),     "Acceleration",     "Time",     "s",    "Acceleration",               "m/s/s");
-    this.chart_gyroscope =        new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-10, 10),     "Gyroscope",        "Time",     "s",    "Angular velocity",           "deg/s");
-    this.chart_compass =          new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-100, 100),     "Compass",          "Time",     "s",    "Magnetic field strength",    "mT");
+    this.chart_gyroscope =        new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-10, 10),     "Gyroscope",        "Time",     "s",    "Angular velocity",           "rads/s");
+    this.chart_compass =          new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-100, 100),     "Compass",          "Time",     "s",    "Magnetic field strength",    "uT");
     this.chart_airpressure =      new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 1000000),   "Air pressure",     "Time",     "s",    "Pressure",                   "Pa");
     this.chart_airtemperature =   new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-10, 30),     "Air temperature",  "Time",     "s",    "Temperature",                "degC");
     this.chart_altitude =         new Chart(100, 0, 0, 700, new ChartRange(0, 100), new ChartRange(-10, 10),   "Altitude",         "Time",     "s",    "Altitude",                   "m");

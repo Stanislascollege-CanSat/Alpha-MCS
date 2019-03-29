@@ -39,6 +39,11 @@ public class View_BabyCanInfo extends ViewController {
     textAlign(LEFT);
     text((DataSetDeposit.beta_bootState == 0 ? "Not booting" : (DataSetDeposit.beta_bootState == 1 ? "Booting" : (DataSetDeposit.beta_bootState == 2 ? "Active" : "..."))), this.dim.x/4 + 5, 120);
     text(str(DataSetDeposit.beta_batteryVoltage) + " volts", this.dim.x/4 + 5, 140);
+
+    text(str((float)DataSetDeposit.groundStation_RSSI), this.dim.x/4 + 5, 160);
+
+    text((DataSetDeposit.beta_flightMode == 0 ? "Non-flight-mode" : (DataSetDeposit.beta_flightMode == 1 ? "Flight-mode" : "Landed-mode")), this.dim.x/4 + 5, 180);
+
     
     text((DataSetDeposit.beta_GPSFix ? "Fixed" : "Not fixed") + ", " + str(DataSetDeposit.beta_GPSSatellites) + " satellites", this.dim.x/4 + 5, 220);
     
@@ -66,6 +71,11 @@ public class View_BabyCanInfo extends ViewController {
     textAlign(LEFT);
     text((DataSetDeposit.rho_bootState == 0 ? "Not booting" : (DataSetDeposit.rho_bootState == 1 ? "Booting" : (DataSetDeposit.rho_bootState == 2 ? "Active" : "..."))), 3*this.dim.x/4 + 5, 120);
     text(str(DataSetDeposit.rho_batteryVoltage) + " volts", 3*this.dim.x/4 + 5, 140);
+
+    text(str((float)DataSetDeposit.groundStation_RSSI), 3*this.dim.x/4 + 5, 160);
+
+    text((DataSetDeposit.rho_flightMode == 0 ? "Non-flight-mode" : (DataSetDeposit.rho_flightMode == 1 ? "Flight-mode" : "Landed-mode")), 3*this.dim.x/4 + 5, 180);
+
     
     text((DataSetDeposit.rho_GPSFix ? "Fixed" : "Not fixed") + ", " + str(DataSetDeposit.rho_GPSSatellites) + " satellites", 3*this.dim.x/4 + 5, 220);
     

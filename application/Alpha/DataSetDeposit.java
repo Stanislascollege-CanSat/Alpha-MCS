@@ -2,6 +2,8 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class DataSetDeposit {
+	public static double groundStation_RSSI = 0;
+
 	// DATA OF BABYCAN 'BETA'
 	public static DataSet beta_accX = new DataSet("Bèta: Acceleration X");
 	public static DataSet beta_accY = new DataSet("Bèta: Acceleration Y");
@@ -24,6 +26,7 @@ public class DataSetDeposit {
 	public static int beta_GPSSatellites = 0;
 	public static float beta_batteryVoltage = 0;
 	public static int beta_bootState = 0;
+	public static int beta_flightMode = 0;
 	public static int beta_pointsMeasured = 0;
 
 
@@ -49,6 +52,7 @@ public class DataSetDeposit {
 	public static int rho_GPSSatellites = 0;
 	public static float rho_batteryVoltage = 0;
 	public static int rho_bootState = 0;
+	public static int rho_flightMode = 0;
 	public static int rho_pointsMeasured = 0;
 
 
@@ -74,6 +78,8 @@ public class DataSetDeposit {
 	public static int mu_GPSSatellites = 0;
 	public static float mu_batteryVoltage = 0;
 	public static int mu_bootState = 0;
+	public static int mu_flightMode = 0;
+	public static boolean mu_babyCansDeployed = false;
 	public static int mu_pointsMeasured = 0;
 
 }

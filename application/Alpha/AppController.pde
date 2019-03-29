@@ -39,6 +39,7 @@ public class AppController implements AppController_Interface {
   private View_BabyCanInfo view_BabyCanInfo;
   private View_MotherCanInfo view_MotherCanInfo;
   private View_ForceDeploy view_forceDeploy;
+  private View_ControlButtons view_controlButtons;
   private View_UniversalText view_universalText;
 
   private ConsoleView overviewConsoleView;
@@ -82,6 +83,9 @@ public class AppController implements AppController_Interface {
     this.view_forceDeploy = new View_ForceDeploy(this, 0, 80, width, height - 80);
     this.view_forceDeploy.visible = false;
 
+    this.view_controlButtons = new View_ControlButtons(this, 0, 80, width, height - 80);
+    this.view_controlButtons.visible = false;
+
     this.view_universalText = new View_UniversalText(this, 0, 80, width, height - 80);
     this.view_universalText.visible = false;
 
@@ -98,6 +102,7 @@ public class AppController implements AppController_Interface {
     this.viewControllers.add(this.view_BabyCanInfo);
     this.viewControllers.add(this.view_MotherCanInfo);
     this.viewControllers.add(this.view_forceDeploy);
+    this.viewControllers.add(this.view_controlButtons);
     this.viewControllers.add(this.view_universalText);
     this.viewControllers.add(this.overviewConsoleView);
 
@@ -143,6 +148,15 @@ public class AppController implements AppController_Interface {
     	MessageLogBuffer.clearSerial();
     }
 
+    if(DataDecoder.askDeployPermissionRequested){
+      this.askDeployPermission();
+      DataDecoder.askDeployPermissionRequested = false;
+    }
+    if(DataDecoder.notifyBabyCansRequested){
+      this.notifyBabyCansDeployed();
+      DataDecoder.notifyBabyCansRequested = false;
+    }
+
     if (frameRate < 45) {
       strokeWeight(1);
       fill(0);
@@ -168,6 +182,7 @@ public class AppController implements AppController_Interface {
     this.view_BabyCanInfo.resize(0, 80, width, height - 80);
     this.view_MotherCanInfo.resize(0, 80, width, height - 80);
     this.view_forceDeploy.resize(0, 80, width, height - 80);
+    this.view_controlButtons.resize(0, 80, width, height - 80);
     this.view_universalText.resize(0, 80, width, height - 80);
   }
 
@@ -582,6 +597,14 @@ public class AppController implements AppController_Interface {
     this.viewSelectorView.currentViewIdentifier = "motherCanInfo";
   }
 
+  public void switchViewToControlButtons() {
+    this.blockInteraction();
+    this.viewSelectorView.enableAllButtons();
+    this.viewSelectorView.visible = true;
+    this.view_controlButtons.visible = true;
+    this.viewSelectorView.currentViewIdentifier = "controlButtons";
+  }
+
   public void switchViewToForceDeploy() {
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
@@ -600,6 +623,24 @@ public class AppController implements AppController_Interface {
     this.viewSelectorView.currentViewIdentifier = "universalText";
     this.mouseReleased();
   }
+
+
+
+  // ------------------ CANSAT FUNCTIONS --------------------------- //
+  public void askDeployPermission(){
+    this.switchViewToForceDeploy();
+  }
+
+  public void notifyBabyCansDeployed(){
+    this.displayUniversalMessage("BABYCANS DEPLOYED", "The BabyCans have successfully been deployed.");
+  }
+
+  public void sendForceBabyCanDeploy(){
+    SerialController.send("[DEP]");
+  }
+
+
+
 
   // ------------------ PUSH UNIVERSAL FUNCTIONS TO VIEW-SELECTOR-VIEW ------------------- //
 

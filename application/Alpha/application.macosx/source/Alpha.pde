@@ -8,7 +8,11 @@ import java.util.Date;
 import processing.opengl.PGL;
 import processing.opengl.PJOGL;
 
-PImage appIcon;
+public PImage appIcon;
+public PImage MOUSEPOINTER_arrow;
+public PImage MOUSEPOINTER_text;
+public String CURRENT_MOUSEPOINTER;
+public boolean SET_MOUSEPOINTER_TEXT;
 
 import static javax.swing.JOptionPane.*;
 
@@ -27,7 +31,7 @@ public boolean ALT_PRESSED;
 public boolean CTRL_PRESSED;
 
 // Application components
-AppController appController;
+public AppController appController;
 //StartupView startupView;
 
  //PImage mouse_pointer_img;
@@ -40,7 +44,9 @@ public void settings(){
   size(1000, 700, P3D);
   //fullScreen(P3D);
   pixelDensity(displayDensity());
-  //smooth(8);
+  if(displayDensity() < 2) {
+	  smooth(8);
+  }
   PJOGL.setIcon("1024x1024.png");
 }
 
@@ -50,12 +56,22 @@ public void setup(){
 //  appIcon = loadImage("icon1000.png");
 //  surface.setIcon(appIcon);
   background(200);
+  
+  MOUSEPOINTER_arrow = loadImage("arrow.png");
+  MOUSEPOINTER_arrow.resize(25, 25);
+  
+  MOUSEPOINTER_text = loadImage("text.png");
+  MOUSEPOINTER_text.resize(12, 20);
+  
+  CURRENT_MOUSEPOINTER = "";
+  
+  SET_MOUSEPOINTER_TEXT = false;
 
   // Frame components
   w = width;
   h = height;
-  minWidth = 600;
-  minHeight = 500;
+  minWidth = 800;
+  minHeight = 700;
 
   // Cursor settings
    //mouse_pointer_img = loadImage("MousePointer.png");
@@ -132,9 +148,25 @@ public void setup(){
 
 }
 
+public final void setMousePointerToARROW(){
+  if(!(CURRENT_MOUSEPOINTER.equals("ARROW"))){
+    cursor(MOUSEPOINTER_arrow, 1, 1);
+    CURRENT_MOUSEPOINTER = "ARROW";
+  }
+}
+
+public final void setMousePointerToTEXT(){
+  if(!(CURRENT_MOUSEPOINTER.equals("TEXT"))){
+    // cursor(MOUSEPOINTER_text, 6, 10);
+    CURRENT_MOUSEPOINTER = "TEXT";
+    cursor(TEXT);
+  }
+}
+
 public void draw(){
   if(!completedStartup){
     //showMessageDialog(null, "This application is still being developed. Some functions might not work.", "Work in progress", WARNING_MESSAGE);
+    setMousePointerToARROW();
     completedStartup = true;
   }else{
 

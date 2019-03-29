@@ -18,6 +18,7 @@ public class ViewSelectorView extends ViewController {
   public ButtonElement consoleButton;
   public ButtonElement BabyCanInfo;
   public ButtonElement MotherCanInfo;
+  public ButtonElement ControlButtons;
   public ButtonElement FlightPath;
   public ButtonElement MeasuredData;
 
@@ -75,6 +76,13 @@ public class ViewSelectorView extends ViewController {
     		this.disable();
     	}
     };
+
+    this.ControlButtons = new ButtonElement(this.appController, this, 0, 0, 120, "Control buttons"){
+      public void clickEvent(){
+        this.appController.switchViewToControlButtons();
+        this.disable();
+      }
+    };
     
     this.FlightPath = new ButtonElement(this.appController, this, 0, 0, 90, "Flight path") {
     	public void clickEvent() {
@@ -112,6 +120,7 @@ public class ViewSelectorView extends ViewController {
     this.viewButtons.add(this.consoleButton);
     this.viewButtons.add(this.MotherCanInfo);
     this.viewButtons.add(this.BabyCanInfo);
+    this.viewButtons.add(this.ControlButtons);
     this.viewButtons.add(this.FlightPath);
     this.viewButtons.add(this.MeasuredData);
     

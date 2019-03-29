@@ -11,5 +11,7 @@
 }
 
 /*callback*/public void SetupView_selected_folder_MissionData(File selected){
-  appController.SetupView_selected_folder_MissionData(selected);
+	if(selected != null) {
+		appController.SetupView_selected_folder_MissionData(selected);
+	}
 }

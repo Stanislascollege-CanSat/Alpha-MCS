@@ -37,7 +37,11 @@ public class Alpha extends PApplet {
 
 
 
-PImage appIcon;
+public PImage appIcon;
+public PImage MOUSEPOINTER_arrow;
+public PImage MOUSEPOINTER_text;
+public String CURRENT_MOUSEPOINTER;
+public boolean SET_MOUSEPOINTER_TEXT;
 
 
 
@@ -56,7 +60,7 @@ public boolean ALT_PRESSED;
 public boolean CTRL_PRESSED;
 
 // Application components
-AppController appController;
+public AppController appController;
 //StartupView startupView;
 
  //PImage mouse_pointer_img;
@@ -69,7 +73,9 @@ public void settings(){
   size(1000, 700, P3D);
   //fullScreen(P3D);
   pixelDensity(displayDensity());
-  //smooth(8);
+  if(displayDensity() < 2) {
+	  smooth(8);
+  }
   PJOGL.setIcon("1024x1024.png");
 }
 
@@ -79,12 +85,22 @@ public void setup(){
 //  appIcon = loadImage("icon1000.png");
 //  surface.setIcon(appIcon);
   background(200);
+  
+  MOUSEPOINTER_arrow = loadImage("arrow.png");
+  MOUSEPOINTER_arrow.resize(25, 25);
+  
+  MOUSEPOINTER_text = loadImage("text.png");
+  MOUSEPOINTER_text.resize(12, 20);
+  
+  CURRENT_MOUSEPOINTER = "";
+  
+  SET_MOUSEPOINTER_TEXT = false;
 
   // Frame components
   w = width;
   h = height;
-  minWidth = 600;
-  minHeight = 500;
+  minWidth = 800;
+  minHeight = 700;
 
   // Cursor settings
    //mouse_pointer_img = loadImage("MousePointer.png");
@@ -161,9 +177,25 @@ public void setup(){
 
 }
 
+public final void setMousePointerToARROW(){
+  if(!(CURRENT_MOUSEPOINTER.equals("ARROW"))){
+    cursor(MOUSEPOINTER_arrow, 1, 1);
+    CURRENT_MOUSEPOINTER = "ARROW";
+  }
+}
+
+public final void setMousePointerToTEXT(){
+  if(!(CURRENT_MOUSEPOINTER.equals("TEXT"))){
+    // cursor(MOUSEPOINTER_text, 6, 10);
+    CURRENT_MOUSEPOINTER = "TEXT";
+    cursor(TEXT);
+  }
+}
+
 public void draw(){
   if(!completedStartup){
     //showMessageDialog(null, "This application is still being developed. Some functions might not work.", "Work in progress", WARNING_MESSAGE);
+    setMousePointerToARROW();
     completedStartup = true;
   }else{
 
@@ -348,13 +380,16 @@ public class AppController implements AppController_Interface {
   private View_DataCharts view_DataCharts;
   private View_BabyCanInfo view_BabyCanInfo;
   private View_MotherCanInfo view_MotherCanInfo;
+  private View_ForceDeploy view_forceDeploy;
+  private View_ControlButtons view_controlButtons;
+  private View_UniversalText view_universalText;
 
   private ConsoleView overviewConsoleView;
-  
+
   private FileWriter serial_receive_file;
   private boolean serial_receive_file_opened;
 
-  public AppController(PApplet environment){
+  public AppController(PApplet environment) {
 
 
     this.mainJavaEnvironment = environment;
@@ -374,18 +409,27 @@ public class AppController implements AppController_Interface {
 
     this.view_MissionInfo = new View_MissionInfo(this, 0, 80, width, height - 80);
     this.view_MissionInfo.visible = false;
-    
+
     this.view_FlightPath = new View_FlightPath(this, 0, 80, width, height - 80);
     this.view_FlightPath.visible = false;
-    
+
     this.view_DataCharts = new View_DataCharts(this, 0, 80, width, height - 80);
     this.view_DataCharts.visible = false;
-    
+
     this.view_BabyCanInfo = new View_BabyCanInfo(this, 0, 80, width, height - 80);
     this.view_BabyCanInfo.visible = false;
-    
+
     this.view_MotherCanInfo = new View_MotherCanInfo(this, 0, 80, width, height - 80);
     this.view_MotherCanInfo.visible = false;
+
+    this.view_forceDeploy = new View_ForceDeploy(this, 0, 80, width, height - 80);
+    this.view_forceDeploy.visible = false;
+
+    this.view_controlButtons = new View_ControlButtons(this, 0, 80, width, height - 80);
+    this.view_controlButtons.visible = false;
+
+    this.view_universalText = new View_UniversalText(this, 0, 80, width, height - 80);
+    this.view_universalText.visible = false;
 
     this.overviewConsoleView = new ConsoleView(this, 0, 80, 500, height - 80);
     this.overviewConsoleView.visible = false;
@@ -399,177 +443,211 @@ public class AppController implements AppController_Interface {
     this.viewControllers.add(this.view_DataCharts);
     this.viewControllers.add(this.view_BabyCanInfo);
     this.viewControllers.add(this.view_MotherCanInfo);
+    this.viewControllers.add(this.view_forceDeploy);
+    this.viewControllers.add(this.view_controlButtons);
+    this.viewControllers.add(this.view_universalText);
     this.viewControllers.add(this.overviewConsoleView);
-    
+
     DataDecoder.init();
   }
 
-  public void show(){
-    for(ViewController v : this.viewControllers){
-      if(v.visible){
+  public void show() {
+    SET_MOUSEPOINTER_TEXT = false;
+    for (ViewController v : this.viewControllers) {
+      if (v.visible) {
         v.show();
       }
     }
-    
-    if(SerialController.available()) {
-    	for(String s : SerialController.getReceived()) {
-    		//this.overviewConsoleView.logSerial(s);
-    		DataDecoder.addData(s);
-    		if(this.serial_receive_file_opened) {
-				try{	
-					this.serial_receive_file.write(s);
-				}catch(IOException e){
-					//doewatleuks.
-				}catch(Exception e){
-					// doe wat leuks.
-				}
-    		}
-    	}
+    if (SET_MOUSEPOINTER_TEXT) {
+      setMousePointerToTEXT();
+    } else {
+      setMousePointerToARROW();
     }
-    
+
+    if (SerialController.available()) {
+      for (String s : SerialController.getReceived()) {
+        //this.overviewConsoleView.logSerial(s);
+        DataDecoder.addData(s);
+        if (this.serial_receive_file_opened) {
+          try {	
+            this.serial_receive_file.write(s);
+          }
+          catch(IOException e) {
+            //doewatleuks.
+          }
+          catch(Exception e) {
+            // doe wat leuks.
+          }
+        }
+      }
+    }
+
     DataDecoder.update();
-    
-    strokeWeight(1);
-    fill(0);
-    textAlign(LEFT);
-    textFont(fonts.get("SF").get("Regular"));
-    text(PApplet.parseInt(frameRate), 10, 20);
+    if(MessageLogBuffer.serialBuffer.size() > 0){
+    	for(String s : MessageLogBuffer.serialBuffer){
+    		this.overviewConsoleView.logSerial(s);
+    	}
+    	MessageLogBuffer.clearSerial();
+    }
+
+    if(DataDecoder.askDeployPermissionRequested){
+      this.askDeployPermission();
+      DataDecoder.askDeployPermissionRequested = false;
+    }
+    if(DataDecoder.notifyBabyCansRequested){
+      this.notifyBabyCansDeployed();
+      DataDecoder.notifyBabyCansRequested = false;
+    }
+
+    if (frameRate < 45) {
+      strokeWeight(1);
+      fill(0);
+      textAlign(LEFT);
+      textFont(fonts.get("SF").get("Regular"));
+      text(PApplet.parseInt(frameRate), 10, 20);
+    }
   }
 
-  public void resize(){
+  public void resize() {
     this.startupView.resize(0, 0, width, height);
     this.setupView.resize(0, 0, width, height);
     this.viewSelectorView.resize(0, 0, width, 80);
     this.view_MissionStart.resize(0, 80, width, height - 80);
     this.view_MissionInfo.resize(0, 80, width, height - 80);
     this.view_FlightPath.resize(0, 80, width, height - 80);
-    if(this.viewSelectorView.currentViewIdentifier.equals("overview")){
+    if (this.viewSelectorView.currentViewIdentifier.equals("overview")) {
       this.overviewConsoleView.resize(0, 80, 500, height - 80);
-    }else if(this.viewSelectorView.currentViewIdentifier.equals("console")){
+    } else if (this.viewSelectorView.currentViewIdentifier.equals("console")) {
       this.overviewConsoleView.resize(0, 80, width, height - 80);
     }
     this.view_DataCharts.resize(0, 80, width, height - 80);
     this.view_BabyCanInfo.resize(0, 80, width, height - 80);
     this.view_MotherCanInfo.resize(0, 80, width, height - 80);
+    this.view_forceDeploy.resize(0, 80, width, height - 80);
+    this.view_controlButtons.resize(0, 80, width, height - 80);
+    this.view_universalText.resize(0, 80, width, height - 80);
   }
 
-  public void addView(ViewController v){
+  public void addView(ViewController v) {
     this.viewControllers.add(v);
   }
 
-  public void exitApplication(){
-	SerialController.close();
-	if(this.serial_receive_file_opened) {
-		try {
-			this.serial_receive_file.close();
-		}catch(IOException e) {
-			//doewatleuks
-		}catch(Exception e) {
-			//doewatleuks
-		}
-	}
-	
-	try {
-		FileWriter decoded_data_mother = new FileWriter(MissionSettings.getOutputFolderPath() + "/DECODED_DATA_MotherCan.txt");
-		decoded_data_mother.write("@MISSION: " + MissionSettings.getMissionIdentifier() + "\n");
-		decoded_data_mother.write("--> Measured " + DataDecoder.getDecodedMotherData().size() + " data points.\n");
-		for(MeasuredDataPoint p : DataDecoder.getDecodedMotherData()) {
-			decoded_data_mother.write("\n\n--\n\n");
-			for(String k : p.getMap().keySet()) {
-				decoded_data_mother.write(">>" + k + ": " + Double.toString(p.getMap().get(k)) + "\n");
-			}
-			println("\n\n");
-		}
-		decoded_data_mother.close();
-		
-		FileWriter decoded_data_beta = new FileWriter(MissionSettings.getOutputFolderPath() + "/DECODED_DATA_BetaCan.txt");
-		decoded_data_beta.write("@MISSION: " + MissionSettings.getMissionIdentifier() + "\n");
-		decoded_data_beta.write("--> Measured " + DataDecoder.getDecodedBetaData().size() + " data points.\n");
-		for(MeasuredDataPoint p : DataDecoder.getDecodedBetaData()) {
-			decoded_data_beta.write("\n\n--\n\n");
-			for(String k : p.getMap().keySet()) {
-				decoded_data_beta.write(">>" + k + ": " + Double.toString(p.getMap().get(k)) + "\n");
-			}
-		}
-		decoded_data_beta.close();
-		
-		FileWriter decoded_data_rho = new FileWriter(MissionSettings.getOutputFolderPath() + "/DECODED_DATA_RhoCan.txt");
-		decoded_data_rho.write("@MISSION: " + MissionSettings.getMissionIdentifier() + "\n");
-		decoded_data_rho.write("--> Measured " + DataDecoder.getDecodedRhoData().size() + " data points.\n");
-		for(MeasuredDataPoint p : DataDecoder.getDecodedRhoData()) {
-			decoded_data_rho.write("\n\n--\n\n");
-			for(String k : p.getMap().keySet()) {
-				decoded_data_rho.write(">>" + k + ": " + Double.toString(p.getMap().get(k)) + "\n");
-			}
-		}
-		decoded_data_rho.close();
-	}catch(IOException e) {
-		
-	}catch(Exception e) {
-		
-	}
-	
+  public void exitApplication() {
+    SerialController.close();
+    if (this.serial_receive_file_opened) {
+      try {
+        this.serial_receive_file.close();
+      }
+      catch(IOException e) {
+        //doewatleuks
+      }
+      catch(Exception e) {
+        //doewatleuks
+      }
+    }
+
+    try {
+      FileWriter decoded_data_mother = new FileWriter(MissionSettings.getOutputFolderPath() + "/DECODED_DATA_MotherCan.txt");
+      decoded_data_mother.write("@MISSION: " + MissionSettings.getMissionIdentifier() + "\n");
+      decoded_data_mother.write("--> Measured " + DataDecoder.getDecodedMotherData().size() + " data points.\n");
+      for (MeasuredDataPoint p : DataDecoder.getDecodedMotherData()) {
+        decoded_data_mother.write("\n\n--\n\n");
+        for (String k : p.getMap().keySet()) {
+          decoded_data_mother.write(">>" + k + ": " + Double.toString(p.getMap().get(k)) + "\n");
+        }
+        println("\n\n");
+      }
+      decoded_data_mother.close();
+
+      FileWriter decoded_data_beta = new FileWriter(MissionSettings.getOutputFolderPath() + "/DECODED_DATA_BetaCan.txt");
+      decoded_data_beta.write("@MISSION: " + MissionSettings.getMissionIdentifier() + "\n");
+      decoded_data_beta.write("--> Measured " + DataDecoder.getDecodedBetaData().size() + " data points.\n");
+      for (MeasuredDataPoint p : DataDecoder.getDecodedBetaData()) {
+        decoded_data_beta.write("\n\n--\n\n");
+        for (String k : p.getMap().keySet()) {
+          decoded_data_beta.write(">>" + k + ": " + Double.toString(p.getMap().get(k)) + "\n");
+        }
+      }
+      decoded_data_beta.close();
+
+      FileWriter decoded_data_rho = new FileWriter(MissionSettings.getOutputFolderPath() + "/DECODED_DATA_RhoCan.txt");
+      decoded_data_rho.write("@MISSION: " + MissionSettings.getMissionIdentifier() + "\n");
+      decoded_data_rho.write("--> Measured " + DataDecoder.getDecodedRhoData().size() + " data points.\n");
+      for (MeasuredDataPoint p : DataDecoder.getDecodedRhoData()) {
+        decoded_data_rho.write("\n\n--\n\n");
+        for (String k : p.getMap().keySet()) {
+          decoded_data_rho.write(">>" + k + ": " + Double.toString(p.getMap().get(k)) + "\n");
+        }
+      }
+      decoded_data_rho.close();
+    }
+    catch(IOException e) {
+    }
+    catch(Exception e) {
+    }
+
     exit();
   }
 
-  public void mousePressed(){
-    for(ViewController v : this.viewControllers){
-      if(v.visible && v.userInteractionEnabled){
+  public void mousePressed() {
+    for (ViewController v : this.viewControllers) {
+      if (v.visible && v.userInteractionEnabled) {
         v.mousePressed();
       }
     }
   }
 
-  public void mouseReleased(){
-    for(ViewController v : this.viewControllers){
+  public void mouseReleased() {
+    for (ViewController v : this.viewControllers) {
       v.userInteractionEnabled = true;
-      if(v.visible){
+      if (v.visible) {
         v.mouseReleased();
       }
     }
   }
 
-  public void mouseWheel(float count){
-    for(ViewController v : this.viewControllers){
-      if(v.visible && v.userInteractionEnabled){
+  public void mouseWheel(float count) {
+    for (ViewController v : this.viewControllers) {
+      if (v.visible && v.userInteractionEnabled) {
         v.mouseWheel(count);
       }
     }
   }
 
-  public void keyPressed(char k, int c){
-    if(k == '1' && CTRL_PRESSED){
+  public void keyPressed(char k, int c) {
+    if (k == '1' && CTRL_PRESSED) {
       this.exitApplication();
     }
-    for(ViewController v : this.viewControllers){
-      if(v.visible){
+    for (ViewController v : this.viewControllers) {
+      if (v.visible) {
         v.keyPressed(k, c);
       }
     }
   }
 
-  public void keyTyped(char k){
-    for(ViewController v : this.viewControllers){
-      if(v.visible){
+  public void keyTyped(char k) {
+    for (ViewController v : this.viewControllers) {
+      if (v.visible) {
         v.keyTyped(k);
       }
     }
   }
 
-  public void keyReleased(){
-    for(ViewController v : this.viewControllers){
-      if(v.visible){
+  public void keyReleased() {
+    for (ViewController v : this.viewControllers) {
+      if (v.visible) {
         v.keyReleased();
       }
     }
   }
 
-  private void blockInteraction(){
-    for(ViewController v : this.viewControllers){
+  private void blockInteraction() {
+    for (ViewController v : this.viewControllers) {
       v.userInteractionEnabled = false;
     }
-    for(ViewController v : this.viewControllers){
+    for (ViewController v : this.viewControllers) {
       v.visible = false;
+      v.blockInteraction();
     }
   }
 
@@ -578,45 +656,52 @@ public class AppController implements AppController_Interface {
 
 
 
-  public void displaySetupScheme(){
+  public void displaySetupScheme() {
     this.blockInteraction();
     this.setupView.visible = true;
   }
 
-  public void displayStartupScheme(){
+  public void displayStartupScheme() {
     this.blockInteraction();
     this.startupView.visible = true;
   }
 
-  public void runMissionSetup() throws IOException{
+  public void runMissionSetup() throws IOException {
     // println(this.setupView.getSelectedSerialPort());
     // println(this.setupView.getSelectedSerialBaud());
     // println(this.setupView.getSelectedMissionPath());
     // println(this.setupView.getSelectedMissionIdentifier());
     // println(this.setupView.getSelectedDoConsoleLogFile());
     // println(this.setupView.getSelectedDoCSVDataFile());
-	  
-	MissionSettings.set(
-		this.setupView.getSelectedSerialPort(),
-		PApplet.parseInt(this.setupView.getSelectedSerialBaud()),
-		this.setupView.getSelectedMissionPath(),
-		this.setupView.getSelectedMissionIdentifier(),
-		this.setupView.getSelectedDoConsoleLogFile(),
-		this.setupView.getSelectedDoCSVDataFile()
-	);
 
-    
+    MissionSettings.set(
+      this.setupView.getSelectedSerialPort(), 
+      PApplet.parseInt(this.setupView.getSelectedSerialBaud()), 
+      this.setupView.getSelectedMissionPath(), 
+      this.setupView.getSelectedMissionIdentifier(), 
+      this.setupView.getSelectedDoConsoleLogFile(), 
+      this.setupView.getSelectedDoCSVDataFile()
+      );
 
-    this.overviewConsoleView.logSetup("Serial port:\n    " + this.setupView.getSelectedSerialPort());
-    this.overviewConsoleView.logSetup("Serial baud-rate:\n    " + this.setupView.getSelectedSerialBaud());
-    this.overviewConsoleView.logSetup("Mission folder:\n    " + this.setupView.getSelectedMissionPath());
-    this.overviewConsoleView.logSetup("Mission identifier:\n    " + this.setupView.getSelectedMissionIdentifier());
-    this.overviewConsoleView.logSetup("Create console log file:\n    " + (this.setupView.getSelectedDoConsoleLogFile() ? "YES" : "NO"));
-    this.overviewConsoleView.logSetup("Create CSV data output file:\n    " + (this.setupView.getSelectedDoCSVDataFile() ? "YES" : "NO"));
-    
-    SerialController.open(this.mainJavaEnvironment, MissionSettings.getSerialPort(), MissionSettings.getSerialBaudRate());
-    this.serial_receive_file = new FileWriter(MissionSettings.getOutputFolderPath() + "/serial_receive.txt");
-    this.serial_receive_file_opened = true;	
+
+
+    //    this.overviewConsoleView.logSetup("Serial port:\n    " + this.setupView.getSelectedSerialPort());
+    //    this.overviewConsoleView.logSetup("Serial baud-rate:\n    " + this.setupView.getSelectedSerialBaud());
+    //    this.overviewConsoleView.logSetup("Mission folder:\n    " + this.setupView.getSelectedMissionPath());
+    //    this.overviewConsoleView.logSetup("Mission identifier:\n    " + this.setupView.getSelectedMissionIdentifier());
+    //    this.overviewConsoleView.logSetup("Create console log file:\n    " + (this.setupView.getSelectedDoConsoleLogFile() ? "YES" : "NO"));
+    //    this.overviewConsoleView.logSetup("Create CSV data output file:\n    " + (this.setupView.getSelectedDoCSVDataFile() ? "YES" : "NO"));
+
+    if (!(SerialController.open(this.mainJavaEnvironment, MissionSettings.getSerialPort(), MissionSettings.getSerialBaudRate()))) {
+      this.overviewConsoleView.logError("Failed to open serial port.\n\nRestart Alpha and check the USB-connection with the device.");
+    }
+    try {
+      this.serial_receive_file = new FileWriter(MissionSettings.getOutputFolderPath() + "/serial_receive.txt");
+      this.serial_receive_file_opened = true;
+    }
+    catch(Exception e) {
+      this.overviewConsoleView.logError("Failed to open serial_receive_file.\n\nRestart Alpha and check the validity of the mission-folder you selected.");
+    }
 
 
     this.blockInteraction();
@@ -626,186 +711,193 @@ public class AppController implements AppController_Interface {
 
   // ------------------ CONSOLE COMMANDS --------------------------- //
 
-  public String[] parseCommand(String input){
+  public void consoleLogSerial(String s){
+  	this.overviewConsoleView.logSerial(s);
+  }
+
+  public String[] parseCommand(String input) {
     String[] output = input.trim().split("\\s+");
     return output;
   }
 
-  public void runCommand(String command, String[] args){
-	  if(ActionRequest.anyRequestOpen() && !(command.equals("confirm") || command.equals("deny"))) {
-		  ActionRequest.denyAll();
-		  this.overviewConsoleView.logResponse("All requests denied.");
-	  }
-	  switch(command) {
-	  	case "log":
-	      if(args.length > 0){
-	        String msg = "";
-	        for(int i = 1; i < args.length; ++i){
-	          msg += args[i];
-	          msg += " ";
-	        }
-	        if(args[0].equals("msg")){
-	          this.overviewConsoleView.logMessage(msg);
-	        }else if(args[0].equals("wrn")){
-	          this.overviewConsoleView.logWarning(msg);
-	        }else if(args[0].equals("err")){
-	          this.overviewConsoleView.logError(msg);
-	        }else{
-	          String argslist = "";
-	          for(int i = 0; i < args.length; ++i){
-	            argslist += "\n[" + str(i) + "]->" + args[i];
-	          }
-	          this.overviewConsoleView.logSpecial("Command: '" + command + "'\nArguments:" + argslist + "\n\nShould be:\n" + command + " <msg,wrn,err> <text>", "syntax_error");
-	          argslist = null;
-	        }
-	        msg = null;
-	      }else{
-	        String argslist = "";
-	        for(int i = 0; i < args.length; ++i){
-	          argslist += "\n[" + str(i) + "]->" + args[i];
-	        }
-	        this.overviewConsoleView.logSpecial("Command: '" + command + "'\nArguments:" + argslist + "\n\nShould be:\n" + command + " <msg,wrn,err> <text>", "syntax_error");
-	        argslist = null;
-	      }
-	      break;
-	  	case "print":
-	      if(args.length > 0){
-	        String msg = "";
-	        for(int i = 0; i < args.length; ++i){
-	          msg += args[i];
-	          msg += " ";
-	        }
-	        this.overviewConsoleView.logMessage(msg);
-	      }else{
-	        String argslist = "";
-	        for(int i = 0; i < args.length; ++i){
-	          argslist += "\n[" + str(i) + "]->" + args[i];
-	        }
-	        this.overviewConsoleView.logSpecial("Command: '" + command + "'\nArguments:" + argslist + "\n\nShould be:\n" + command + " <text>", "syntax_error");
-	        argslist = null;
-	      }
-	      break;
-	  	case "clear":
-	      this.overviewConsoleView.logResponse("Do you want to clear the console?\n\nType: confirm / deny");
-	      ActionRequest.clearConsole = true;
-	      break;
-	  	case "exit":
-	      this.overviewConsoleView.logResponse("Do you want to exit Alpha?\n\nType: confirm / deny");
-	      ActionRequest.exitAlpha = true;
-	      break;
-	  	case "getMissionSetting":
-		    if(args.length == 1){
-		    	switch(args[0]) {
-		  	    	case "serialPort":
-		  	    		this.overviewConsoleView.logResponse(MissionSettings.getSerialPort());
-		  	    		break;
-		  	    	case "serialBaudRate":
-		  	    		this.overviewConsoleView.logResponse(Integer.toString(MissionSettings.getSerialBaudRate()));
-		  	    		break;
-		  	    	case "missionFolder":
-		  	    		this.overviewConsoleView.logResponse(MissionSettings.getOutputFolderPath());
-		  	    		break;
-		  	    	case "missionIdentifier":
-		  	    		this.overviewConsoleView.logResponse(MissionSettings.getMissionIdentifier());
-		  	    		break;
-		  	    	case "createConsoleLogFile":
-		  	    		this.overviewConsoleView.logResponse(Boolean.toString(MissionSettings.getCreateConsoleLogFile()));
-		  	    		break;
-		  	    	case "createCSVDataOutputFile":
-		  	    		this.overviewConsoleView.logResponse(Boolean.toString(MissionSettings.getCreateCSVDataOutputFile()));
-		  	    		break;
-		  	    	default:
-		  	    		this.overviewConsoleView.logSpecial("getInfo::" + args[0] + " does not exist.", "syntax_error");
-		  	    		break;
-		    	}
-		    }
-		    break;
-	  	case "send":
-	  		if(args.length > 0) {
-	  			for(String s : args) {
-	  				SerialController.send(s);
-	  			}
-	  			this.overviewConsoleView.logResponse("Done.");
-	  		}else {
-	  			this.overviewConsoleView.logSpecial("send <text>", "syntax_error");
-	  		}
-	  		break;
-	  	case "help":
-	  		if(args.length == 1) {
-	  			switch(args[0]) {
-	  				case "log":
-	  					this.overviewConsoleView.logHelp("-> log <msg,wrn,err> <text>");
-	  					break;
-	  				case "print":
-	  					this.overviewConsoleView.logHelp("-> print <text>");
-	  					break;
-	  				case "clear":
-	  					this.overviewConsoleView.logHelp("-> clear\n\nConfirmation needed");
-	  					break;
-		            case "exit":
-		                this.overviewConsoleView.logHelp("-> exit\n\nConfirmation needed");
-		                break;
-	  				case "getMissionSetting":
-	  					this.overviewConsoleView.logHelp("-> getMissionSetting <setting_name>\n   setting_name options:\n   - serialPort\n   - serialBaudRate\n   - missionFolder\n   - missionIdentifier\n   - createConsoleLogFile\n   - createCSVDataOutputFile\n");
-	  					break;
-	  				case "send":
-	  					this.overviewConsoleView.logHelp("-> send <text>");
-	  					break;
-	  				default:
-	  					this.overviewConsoleView.logSpecial("Command '" + args[0] + "' not found.", "syntax_error");
-	  			}
-	  		}else {
-	  			this.overviewConsoleView.logSpecial("help <command_name>\nType 'list' for list of commands.", "syntax_error");
-	  		}
-	  		break;
-	  	case "list":
-	  		this.overviewConsoleView.logResponse("List of commands:\n\nlog\nprint\nclear\nexit\ngetMissionSetting\nsend");
-	  		break;
-	  	case "confirm":
-	  		if(ActionRequest.clearConsole) {
-	  			this.overviewConsoleView.clearMessages();
-	  		}
-	  		if(ActionRequest.exitAlpha) {
-	  			this.exitApplication();
-	  		}
-	  		ActionRequest.denyAll();
-	  		break;
-	  	case "deny":
-	  		ActionRequest.denyAll();
-	  		this.overviewConsoleView.logResponse("All requests denied.");
-	  		break;
-	    default:
-	    	this.overviewConsoleView.logSpecial("'" + command + "'", "unknown_command");
-	  }
+  public void runCommand(String command, String[] args) {
+    if (ActionRequest.anyRequestOpen() && !(command.equals("confirm") || command.equals("deny"))) {
+      ActionRequest.denyAll();
+      this.overviewConsoleView.logResponse("All requests denied.");
+    }
+    switch(command) {
+    case "log":
+      if (args.length > 0) {
+        String msg = "";
+        for (int i = 1; i < args.length; ++i) {
+          msg += args[i];
+          msg += " ";
+        }
+        if (args[0].equals("msg")) {
+          this.overviewConsoleView.logMessage(msg);
+        } else if (args[0].equals("wrn")) {
+          this.overviewConsoleView.logWarning(msg);
+        } else if (args[0].equals("err")) {
+          this.overviewConsoleView.logError(msg);
+        } else {
+          String argslist = "";
+          for (int i = 0; i < args.length; ++i) {
+            argslist += "\n[" + str(i) + "]->" + args[i];
+          }
+          this.overviewConsoleView.logSpecial("Command: '" + command + "'\nArguments:" + argslist + "\n\nShould be:\n" + command + " <msg,wrn,err> <text>", "syntax_error");
+          argslist = null;
+        }
+        msg = null;
+      } else {
+        String argslist = "";
+        for (int i = 0; i < args.length; ++i) {
+          argslist += "\n[" + str(i) + "]->" + args[i];
+        }
+        this.overviewConsoleView.logSpecial("Command: '" + command + "'\nArguments:" + argslist + "\n\nShould be:\n" + command + " <msg,wrn,err> <text>", "syntax_error");
+        argslist = null;
+      }
+      break;
+    case "print":
+      if (args.length > 0) {
+        String msg = "";
+        for (int i = 0; i < args.length; ++i) {
+          msg += args[i];
+          msg += " ";
+        }
+        this.overviewConsoleView.logMessage(msg);
+      } else {
+        String argslist = "";
+        for (int i = 0; i < args.length; ++i) {
+          argslist += "\n[" + str(i) + "]->" + args[i];
+        }
+        this.overviewConsoleView.logSpecial("Command: '" + command + "'\nArguments:" + argslist + "\n\nShould be:\n" + command + " <text>", "syntax_error");
+        argslist = null;
+      }
+      break;
+    case "clear":
+      this.overviewConsoleView.logResponse("Do you want to clear the console?\n\nType: confirm / deny");
+      ActionRequest.clearConsole = true;
+      break;
+    case "exit":
+      this.overviewConsoleView.logResponse("Do you want to exit Alpha?\n\nType: confirm / deny");
+      ActionRequest.exitAlpha = true;
+      break;
+    case "getMissionSetting":
+      if (args.length == 1) {
+        switch(args[0]) {
+        case "serialPort":
+          this.overviewConsoleView.logResponse(MissionSettings.getSerialPort());
+          break;
+        case "serialBaudRate":
+          this.overviewConsoleView.logResponse(Integer.toString(MissionSettings.getSerialBaudRate()));
+          break;
+        case "missionFolder":
+          this.overviewConsoleView.logResponse(MissionSettings.getOutputFolderPath());
+          break;
+        case "missionIdentifier":
+          this.overviewConsoleView.logResponse(MissionSettings.getMissionIdentifier());
+          break;
+        case "createConsoleLogFile":
+          this.overviewConsoleView.logResponse(Boolean.toString(MissionSettings.getCreateConsoleLogFile()));
+          break;
+        case "createCSVDataOutputFile":
+          this.overviewConsoleView.logResponse(Boolean.toString(MissionSettings.getCreateCSVDataOutputFile()));
+          break;
+        default:
+          this.overviewConsoleView.logSpecial("getInfo::" + args[0] + " does not exist.", "syntax_error");
+          break;
+        }
+      }
+      break;
+    case "send":
+      if (args.length > 0) {
+        for (String s : args) {
+          SerialController.send(s);
+        }
+        this.overviewConsoleView.logResponse("Done.");
+      } else {
+        this.overviewConsoleView.logSpecial("send <text>", "syntax_error");
+      }
+      break;
+    case "forceDeploy":
+      this.switchViewToForceDeploy();
+      break;
+    case "help":
+      if (args.length == 1) {
+        switch(args[0]) {
+        case "log":
+          this.overviewConsoleView.logHelp("-> log <msg,wrn,err> <text>");
+          break;
+        case "print":
+          this.overviewConsoleView.logHelp("-> print <text>");
+          break;
+        case "clear":
+          this.overviewConsoleView.logHelp("-> clear\n\nConfirmation needed");
+          break;
+        case "exit":
+          this.overviewConsoleView.logHelp("-> exit\n\nConfirmation needed");
+          break;
+        case "getMissionSetting":
+          this.overviewConsoleView.logHelp("-> getMissionSetting <setting_name>\n   setting_name options:\n   - serialPort\n   - serialBaudRate\n   - missionFolder\n   - missionIdentifier\n   - createConsoleLogFile\n   - createCSVDataOutputFile\n");
+          break;
+        case "send":
+          this.overviewConsoleView.logHelp("-> send <text>");
+          break;
+        default:
+          this.overviewConsoleView.logSpecial("Command '" + args[0] + "' not found.", "syntax_error");
+        }
+      } else {
+        this.overviewConsoleView.logSpecial("help <command_name>\nType 'list' for list of commands.", "syntax_error");
+      }
+      break;
+    case "list":
+      this.overviewConsoleView.logResponse("List of commands:\n\nlog\nprint\nclear\nexit\ngetMissionSetting\nsend");
+      break;
+    case "confirm":
+      if (ActionRequest.clearConsole) {
+        this.overviewConsoleView.clearMessages();
+      }
+      if (ActionRequest.exitAlpha) {
+        this.exitApplication();
+      }
+      ActionRequest.denyAll();
+      break;
+    case "deny":
+      ActionRequest.denyAll();
+      this.overviewConsoleView.logResponse("All requests denied.");
+      break;
+    default:
+      this.overviewConsoleView.logSpecial("'" + command + "'", "unknown_command");
+    }
   }
 
-  public void deleteMessageFromConsole(int id){
+  public void deleteMessageFromConsole(int id) {
     this.overviewConsoleView.deleteMessage(id);
   }
 
-  public void clearConsoleMessages(){
+  public void clearConsoleMessages() {
     this.overviewConsoleView.clearMessages();
   }
 
   // ------------------ VIEW SWITCH METHODS ------------------------ //
 
-  public void switchViewToMissionInfo(){
+  public void switchViewToMissionInfo() {
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
     this.view_MissionInfo.visible = true;
     this.viewSelectorView.currentViewIdentifier = "missionInfo";
   }
-  
+
   public void switchViewToFlightPath() {
-	this.blockInteraction();
+    this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
     this.view_FlightPath.visible = true;
     this.viewSelectorView.currentViewIdentifier = "flightPath";
   }
 
-  public void switchViewToOverview(){
+  public void switchViewToOverview() {
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
@@ -814,7 +906,7 @@ public class AppController implements AppController_Interface {
     this.viewSelectorView.currentViewIdentifier = "overview";
   }
 
-  public void switchViewToConsole(){
+  public void switchViewToConsole() {
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
@@ -822,30 +914,84 @@ public class AppController implements AppController_Interface {
     this.overviewConsoleView.visible = true;
     this.viewSelectorView.currentViewIdentifier = "console";
   }
-  
-  public void switchViewToDataCharts(){
+
+  public void switchViewToDataCharts() {
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
     this.view_DataCharts.visible = true;
     this.viewSelectorView.currentViewIdentifier = "dataCharts";
   }
-  
-  public void switchViewToBabyCanInfo(){
+
+  public void switchViewToBabyCanInfo() {
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
     this.view_BabyCanInfo.visible = true;
     this.viewSelectorView.currentViewIdentifier = "babyCanInfo";
   }
-  
-  public void switchViewToMotherCanInfo(){
+
+  public void switchViewToMotherCanInfo() {
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
     this.view_MotherCanInfo.visible = true;
     this.viewSelectorView.currentViewIdentifier = "motherCanInfo";
   }
+
+  public void switchViewToControlButtons() {
+    this.blockInteraction();
+    this.viewSelectorView.enableAllButtons();
+    this.viewSelectorView.visible = true;
+    this.view_controlButtons.visible = true;
+    this.viewSelectorView.currentViewIdentifier = "controlButtons";
+  }
+
+  public void switchViewToForceDeploy() {
+    this.blockInteraction();
+    this.viewSelectorView.enableAllButtons();
+    this.viewSelectorView.visible = true;
+    this.view_forceDeploy.visible = true;
+    this.viewSelectorView.currentViewIdentifier = "forceDeploy";
+    this.mouseReleased();
+  }
+
+  public void displayUniversalMessage(String t, String s) {
+    this.blockInteraction();
+    this.viewSelectorView.enableAllButtons();
+    this.viewSelectorView.visible = true;
+    this.view_universalText.setMessage(t, s);
+    this.view_universalText.visible = true;
+    this.viewSelectorView.currentViewIdentifier = "universalText";
+    this.mouseReleased();
+  }
+
+
+
+  // ------------------ CANSAT FUNCTIONS --------------------------- //
+  public void askDeployPermission(){
+    this.switchViewToForceDeploy();
+  }
+
+  public void notifyBabyCansDeployed(){
+    this.displayUniversalMessage("BABYCANS DEPLOYED", "The BabyCans have successfully been deployed.");
+  }
+
+  public void sendForceBabyCanDeploy(){
+    SerialController.send("[DEP]");
+  }
+
+
+
+
+  // ------------------ PUSH UNIVERSAL FUNCTIONS TO VIEW-SELECTOR-VIEW ------------------- //
+
+  public void viewSelectorMethod(String func) {
+    this.viewSelectorView.universalMethod(func);
+  }
+
+
+
 
   // ------------------ DIALOG WINDOWS ----------------------------- //
 
@@ -854,11 +1000,11 @@ public class AppController implements AppController_Interface {
 
 
   // ------------------ FILE SELECTION METHODS --------------------- //
-  public void SetupView_ask_folder_MissionData(){
+  public void SetupView_ask_folder_MissionData() {
     SetupView_ask_folder_MissionData();
   }
 
-  public void SetupView_selected_folder_MissionData(File selected){
+  public void SetupView_selected_folder_MissionData(File selected) {
     this.setupView.Response_selected_folder_MissionData(selected);
   }
 }
@@ -922,6 +1068,7 @@ public class Chart implements Chart_Interface {
   public String Yquantity;
   public String Xunit;
   public String Yunit;
+  public boolean autoScroll;
 
   public Chart(float x, float y, float w, float h, ChartRange xR, ChartRange yR, String title, String Xq, String Xu, String Yq, String Yu){
     this.xRange = xR;
@@ -949,20 +1096,40 @@ public class Chart implements Chart_Interface {
     this.Xunit = Xu;
     this.Yquantity = Yq;
     this.Yunit = Yu;
+
+    this.autoScroll = false;
   }
 
   public void addDataSet(DataSet a){
     this.dataSets.add(a);
   }
+
+  public void clear(){
+    this.dataSets.clear();
+  }
   
   public void resize(float x, float y, float w, float h) {
-	this.pos.set(x, y);
-	this.dim.set(w, h);
+	 this.pos.set(x, y);
+	 this.dim.set(w, h);
   }
   
   public void setRange(ChartRange xR, ChartRange yR) {
-	this.xRange = xR;
-	this.yRange = yR;
+	 this.xRange = xR;
+	 this.yRange = yR;
+  }
+
+  public void setXRange(ChartRange xR){
+    this.xRange = xR;
+  }
+
+  public void setYRange(ChartRange yR){
+    this.yRange = yR;
+  }
+
+  public void addScroll(float count){
+    count = -count/100*(this.yRange.max - this.yRange.min);
+    this.yRange.min += count;
+    this.yRange.max += count;
   }
 
 
@@ -1088,6 +1255,11 @@ public class Chart implements Chart_Interface {
 	        }
 	      }
 	      endShape();
+        // if(l.size() > 0){
+        //   if(l.getDataAt(l.size()-1).getXFloat() >= this.xRange.max){
+        //     this.xRange.max = l.getDataAt(l.size()-1).getXFloat() + (this.xRange.max - this.xRange.min)/20;
+        //   }
+        // }
 	      
 	      fill(this.colorList[colorScheme]);
 	      text(l.getQuantity(), this.pos.x + 5, this.pos.y - this.dim.y/2 + 15 + 15*dataSetNumber);
@@ -1361,7 +1533,7 @@ public class ConsoleView extends ViewController {
 
   public ButtonElement clearMessagesButton;
 
-  public LineInputElement commandInput;
+  public NewLineInputElement commandInput;
 
   public float calculatedMessageHeight;
   public float messageViewHeight;
@@ -1393,7 +1565,7 @@ public class ConsoleView extends ViewController {
       }
     };
 
-    this.commandInput = new LineInputElement(this.appController, this, 10, this.dim.y - 55, this.dim.x - 20){
+    this.commandInput = new NewLineInputElement(this.appController, this, 10, this.dim.y - 55, this.dim.x - 20){
       public void enterEvent(){
         String[] parse = this.appController.parseCommand(this.getValue());
         if(parse.length > 0){
@@ -1402,6 +1574,8 @@ public class ConsoleView extends ViewController {
         this.reset();
       }
     };
+    this.commandInput.setTextFont(fonts.get("SF").get("Regular"));
+    this.commandInput.setPlaceholder("Enter command");
 
     this.calculatedMessageHeight = 0;
 
@@ -1565,8 +1739,11 @@ public class ConsoleView extends ViewController {
 
   public void mouseScrolled(float count){
     this.scrollBar.addScroll(count);
-    if(count > 18) {
+    if(abs(count) > 18) {
     	this.autoScrollTickBox.setValue(false);
+    }
+    if(this.scrollBar.isAtBottom()){
+      this.autoScrollTickBox.setValue(true);
     }
   }
 
@@ -1758,6 +1935,17 @@ public class ConsoleView extends ViewController {
 // Elements.pde
 // Processing 3.4
 // Rens Dur (Project Bèta)
+
+public final float defaultNewElementHeight = 30;
+public final float defaultNewElementAdditiveHeight = 20;
+public final int elementColor_Blue = color(56, 132, 255);
+
+public enum ElementOrient {
+  HORIZONTAL,
+  VERTICAL
+}
+
+
 
 public interface Element_Interface {
   public void select();
@@ -2084,6 +2272,31 @@ public class TickBoxElement extends Element {
 }
 
 //-----------------------------------------------------------------------------------------------------------------//
+
+public class BooleanElement extends TickBoxElement {
+  public BooleanElement(AppController a, ViewController v, float x, float y){
+    super(a, v, x, y, 0);
+    this.dim.x = 35;
+    this.dim.y = 20;
+  }
+
+  public void show(){
+    noStroke();
+    fill((this.mouseHeld ? 150 : 200));
+    ellipse(this.pos.x + this.dim.y/2, this.pos.y, this.dim.y, this.dim.y);
+    ellipse(this.pos.x + this.dim.x - this.dim.y/2, this.pos.y, this.dim.y, this.dim.y);
+    rectMode(CORNER);
+    rect(this.pos.x + this.dim.y/2, this.pos.y - this.dim.y/2, this.dim.x - this.dim.y, this.dim.y);
+    fill(elementColor_Blue);
+    ellipse(this.pos.x + (this.ticked ? (this.dim.x - this.dim.y/2) : (this.dim.y/2)), this.pos.y, this.dim.y, this.dim.y);
+  }
+}
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------//
+
 
 public class TextElement extends ButtonElement {
   public int alignment;
@@ -2475,6 +2688,648 @@ public class IntegerLineInputElement extends NumberLineInputElement {
 
 //-----------------------------------------------------------------------------------------------------------------//
 
+public class NewLineInputElement extends Element {
+  public int cursorPos;
+  public boolean cursorBlinkOn;
+  public float cursorBlinkCount;
+  public int beginTextDisplay, endTextDisplay;
+  public ArrayList<Character> text;
+  public String displayText;
+  public String placeHolder;
+  public boolean backspaceStillPressed;
+  public int backspaceCount;
+  public boolean arrowStillPressed;
+  public int arrowCount;
+  public int arrowFrequencyCount;
+  public boolean arrowDirection;
+  public PFont stdFont;
+
+
+
+  public NewLineInputElement(AppController a, ViewController v, float x, float y, float w){
+    super(a, v, x, y, w, defaultNewElementHeight);
+    this.cursorPos = 0;
+    this.cursorBlinkOn = true;
+    this.cursorBlinkCount = 0;
+    this.beginTextDisplay = 0;
+    this.endTextDisplay = 0;
+    this.text = new ArrayList<Character>();
+    this.displayText = "";
+    this.placeHolder = "Type here";
+    this.backspaceStillPressed = false;
+    this.backspaceCount = 0;
+    this.arrowStillPressed = false;
+    this.arrowCount = 0;
+    this.arrowFrequencyCount = 0;
+    this.arrowDirection = false;
+    this.stdFont = fonts.get("SF").get("Light");
+  }
+
+  public void resize(float x, float y, float w){
+    this.pos.set(x, y);
+    this.dim.set(w, defaultNewElementHeight);
+    this.arrangeString();
+  }
+
+  public void setPlaceholder(String s){
+    this.placeHolder = s;
+  }
+
+  public String getValue(){
+    String output = "";
+    for(char i : this.text){
+      output += i;
+    }
+    return output;
+  }
+
+  public void setValue(String v){
+    this.text.clear();
+    for(int i = 0; i < v.length(); ++i){
+      this.text.add(v.charAt(i));
+    }
+    this.cursorPos = this.text.size();
+    this.arrangeString();
+    this.contentEdited();
+  }
+
+  public void reset(){
+    this.cursorPos = 0;
+    this.text.clear();
+    this.arrangeString();
+    this.contentEdited();
+  }
+
+  public void setTextFont(PFont f){
+    this.stdFont = f;
+  }
+
+  public void show(){
+
+    if(this.mousePressIsWithinBorder()){
+      SET_MOUSEPOINTER_TEXT = true;
+    }
+
+    // stroke(0);
+    // strokeWeight(1);
+    // line(this.pos.x, this.pos.y + this.dim.y/2, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2);
+
+    // SHOWING CONTENTS
+    textFont(this.stdFont);
+    textAlign(LEFT);
+
+    if(this.displayText.length() > 0){
+      stroke(0);
+      fill(0);
+      text(this.displayText, this.pos.x + 2, this.pos.y + 6);
+    }else{
+      stroke(180);
+      fill(180);
+      text(this.placeHolder, this.pos.x + 2, this.pos.y + 6);
+    }
+
+    if(this.selected && this.cursorBlinkOn){
+      stroke(0);
+      strokeWeight(1);
+      line(this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2, this.pos.y - this.dim.y/2.3f, this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2, this.pos.y + this.dim.y/2.3f);
+    }
+
+
+
+
+
+
+    if(this.selected){
+      this.cursorBlinkCount += 1/frameRate;
+      if(this.cursorBlinkCount > 0.5f){
+        this.cursorBlinkOn = !this.cursorBlinkOn;
+        this.cursorBlinkCount = 0;
+      }
+    }else{
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+    }
+
+    //update text input
+    if(this.backspaceStillPressed){
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+      this.backspaceCount++;
+    }
+
+    if(this.backspaceCount >= frameRate/2){
+      this.backspaceTriggered();
+    }
+
+    if(this.arrowStillPressed){
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+      this.arrowCount++;
+      this.arrowFrequencyCount++;
+    }
+    if(this.arrowCount >= frameRate/2){
+      if(this.arrowFrequencyCount > frameRate/10){
+        if(this.arrowDirection == false){
+          // LEFT
+          if(this.cursorPos > 0){
+            this.cursorPos--;
+            if(this.cursorPos < this.beginTextDisplay){
+              // cursor out of field <--
+              this.beginTextDisplay = this.cursorPos;
+              this.arrangeString();
+            }
+
+          }
+        }else{
+          // RIGHT
+          if(this.cursorPos < this.text.size()){
+            this.cursorPos++;
+            this.arrangeString();
+          }
+        }
+        this.arrowFrequencyCount = 0;
+      }
+    }
+  }
+
+  public void enterEvent(){}
+
+  public void arrangeString(){
+    // constructing displayText
+    this.displayText = "";
+    for(int i = this.beginTextDisplay; i < this.text.size(); ++i){
+      this.displayText += this.text.get(i);
+    }
+
+    textFont(this.stdFont);
+    this.endTextDisplay = this.text.size();
+    while(textWidth(this.displayText) > this.dim.x - 4){
+      if(this.endTextDisplay > this.cursorPos){
+        this.displayText = this.displayText.substring(0, this.displayText.length() - 1);
+        this.endTextDisplay--;
+      }else{
+        // cursor left visible field
+        this.beginTextDisplay++;
+        this.displayText = "";
+        for(int i = this.beginTextDisplay; i < this.cursorPos; ++i){
+          this.displayText += this.text.get(i);
+        }
+      }
+    }
+  }
+
+  public void contentEdited(){}
+
+  public void keyPressed(char k, int c){
+    this.cursorBlinkCount = 0;
+    this.cursorBlinkOn = true;
+    if(k == BACKSPACE){
+      this.backspaceTriggered();
+      this.backspaceStillPressed = true;
+    }else if(k == ENTER || k == RETURN){
+      this.enterEvent();
+    }else if(c == LEFT){
+      if(this.cursorPos > 0){
+        this.cursorPos--;
+        if(this.cursorPos < this.beginTextDisplay){
+          // cursor out of field <--
+          this.beginTextDisplay = this.cursorPos;
+          this.arrangeString();
+        }
+
+      }
+      this.arrowStillPressed = true;
+      this.arrowDirection = false;
+    }else if(c == RIGHT){
+      if(this.cursorPos < this.text.size()){
+        this.cursorPos++;
+        this.arrangeString();
+      }
+      this.arrowStillPressed = true;
+      this.arrowDirection = true;
+    }
+    this.contentEdited();
+  }
+
+  public void keyReleased(){
+    this.backspaceStillPressed = false;
+    this.backspaceCount = 0;
+    this.arrowStillPressed = false;
+    this.arrowCount = 0;
+    this.arrowFrequencyCount = 0;
+  }
+
+  public void backspaceTriggered(){
+    this.cursorBlinkCount = 0;
+    this.cursorBlinkOn = true;
+    // handle backspace event
+    if(this.cursorPos > 0){
+      this.text.remove(this.cursorPos - 1);
+      this.cursorPos--;
+      if(this.cursorPos < this.beginTextDisplay){
+        // cursor out of field <--
+        this.beginTextDisplay = this.cursorPos;
+      }
+      this.arrangeString();
+      textFont(this.stdFont);
+      if(textWidth(this.displayText) < this.dim.x - 4){
+        this.beginTextDisplay = 0;
+        this.arrangeString();
+      }
+    }
+    this.contentEdited();
+  }
+
+  public void keyTyped(char k){
+    this.cursorBlinkCount = 0;
+    this.cursorBlinkOn = true;
+    if(this.cursorPos == this.text.size()){
+      // cursor is at end of string
+      this.text.add(k);
+      this.cursorPos++;
+      this.displayText = "";
+      for(int i = this.beginTextDisplay; i < this.text.size(); ++i){
+        this.displayText += this.text.get(i);
+      }
+      textFont(this.stdFont);
+      while(textWidth(this.displayText) > this.dim.x - 4){
+        // cursor went out of visible field.
+        this.beginTextDisplay++;
+        this.displayText = "";
+        for(int i = this.beginTextDisplay; i < this.text.size(); ++i){
+          this.displayText += this.text.get(i);
+        }
+      }
+    }else{
+      // cursor is not at end of string
+      this.text.add(this.cursorPos, k);
+      this.cursorPos++;
+
+      this.arrangeString();
+    }
+    this.contentEdited();
+  }
+
+  public void mousePressed(){
+    if(this.mousePressIsWithinBorder()){
+      // User clicked element
+      if(!this.disabled){
+        this.clickEvent();
+        this.mouseHeld = true;
+        this.select();
+
+        //this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2
+
+        textFont(this.stdFont);
+        int closest = 0;
+        float smallestDistance = width;
+        for(int i = 0; i <= this.displayText.length(); ++i){
+          if(abs(mouseX - (this.viewController.pos.x + this.pos.x + textWidth(this.displayText.substring(0, i)) + 2)) < smallestDistance){
+            closest = i;
+            smallestDistance = abs(mouseX - (this.viewController.pos.x + this.pos.x + textWidth(this.displayText.substring(0, i)) + 2));
+          }
+        }
+        this.cursorPos = this.beginTextDisplay + closest;
+      }
+    }
+  }
+
+
+
+  
+
+
+}
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+public class SmartSelectionElement extends NewLineInputElement {
+  public ArrayList<String> options;
+  public ArrayList<String> optionFilter;
+  public String filterBuffer;
+  public PFont boldFont;
+  public float dimY_options;
+  public boolean superStrict;
+
+  public SmartSelectionElement(AppController a, ViewController v, float x, float y, float w){
+    super(a, v, x, y, w);
+    this.options = new ArrayList<String>();
+    // for(int i = 1400; i < 2400; ++i){
+    //   this.options.add("/dev/cu.usbmodem" + str(i));
+    // }
+    this.optionFilter = new ArrayList<String>();
+    this.filterBuffer = "";
+    this.boldFont = fonts.get("SF").get("Bold");
+    this.dimY_options = this.dim.y;
+    this.superStrict = false;
+  }
+
+  public void setStrict(boolean s){
+    this.superStrict = s;
+  }
+
+  public void addOption(String s){
+    this.options.add(s);
+  }
+
+  public void select(){
+    this.selected = true;
+    this.layer = 1;
+    this.contentEdited();
+  }
+
+  public void deselect(){
+    this.selected = false;
+    this.layer = 0;
+    this.dimY_options = this.dim.y;
+  }
+
+  public void show(){
+
+    if(mouseX >= this.viewController.pos.x + this.pos.x &&
+      mouseX <= this.viewController.pos.x + this.pos.x + this.dim.x &&
+      mouseY >= this.viewController.pos.y + this.pos.y - this.dim.y/2 &&
+      mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y/2){
+      // user hovers element
+      SET_MOUSEPOINTER_TEXT = true;
+    }
+
+
+    // stroke(0);
+    // strokeWeight(1);
+    // line(this.pos.x, this.pos.y + this.dim.y/2, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2);
+
+    if(this.selected){
+      translate(0, 0, 1);
+      stroke(0);
+      strokeWeight(1);
+      fill(255);
+      rectMode(CORNER);
+      rect(this.pos.x, this.pos.y - this.dim.y/2, this.dim.x, this.dim.y);
+    }
+
+    // SHOWING CONTENTS
+    // if(this.optionFilter.size() > 0 || this.displayText.length() == 0){
+    //   textFont(this.stdFont);
+    // }else{
+    //   textFont(this.boldFont);
+    // }
+    textFont(this.stdFont);
+    textAlign(LEFT);
+
+    if(this.selected && this.displayText.length() > 0 && this.optionFilter.size() > 0){
+      fill(180);
+      text(this.optionFilter.get(0), this.pos.x + 2, this.pos.y + 6);
+    }
+
+    if(this.displayText.length() > 0){
+      stroke(0);
+      fill(0);
+      text(this.displayText, this.pos.x + 2, this.pos.y + 6);
+    }else{
+      stroke(180);
+      fill(180);
+      text(this.placeHolder, this.pos.x + 2, this.pos.y + 6);
+    }
+
+    if(this.selected && this.cursorBlinkOn){
+      stroke(0);
+      strokeWeight(1);
+      line(this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2, this.pos.y - this.dim.y/2.3f, this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2, this.pos.y + this.dim.y/2.3f);
+    }
+
+
+
+
+
+
+    if(this.selected){
+      this.cursorBlinkCount += 1/frameRate;
+      if(this.cursorBlinkCount > 0.5f){
+        this.cursorBlinkOn = !this.cursorBlinkOn;
+        this.cursorBlinkCount = 0;
+      }
+    }else{
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+    }
+
+    //update text input
+    if(this.backspaceStillPressed){
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+      this.backspaceCount++;
+    }
+
+    if(this.backspaceCount >= frameRate/2){
+      this.backspaceTriggered();
+    }
+
+    if(this.arrowStillPressed){
+      this.cursorBlinkCount = 0;
+      this.cursorBlinkOn = true;
+      this.arrowCount++;
+      this.arrowFrequencyCount++;
+    }
+    if(this.arrowCount >= frameRate/2){
+      if(this.arrowFrequencyCount > frameRate/10){
+        if(this.arrowDirection == false){
+          // LEFT
+          if(this.cursorPos > 0){
+            this.cursorPos--;
+            if(this.cursorPos < this.beginTextDisplay){
+              // cursor out of field <--
+              this.beginTextDisplay = this.cursorPos;
+              this.arrangeString();
+            }
+
+          }
+        }else{
+          // RIGHT
+          if(this.cursorPos < this.text.size()){
+            this.cursorPos++;
+            this.arrangeString();
+          }
+        }
+        this.arrowFrequencyCount = 0;
+      }
+    }
+
+    //
+    // PART BELONGING TO SMART SELECTION ELEMENT
+    //
+
+    if(this.selected){
+      float y = 0;
+      stroke(0);
+      strokeWeight(1);
+      rectMode(CORNER);
+      textFont(this.stdFont);
+      textAlign(LEFT);
+      for(String s : this.optionFilter){
+        if(this.viewController.pos.y + this.pos.y + this.dim.y/2 + y <= height){
+          noStroke();
+          fill(255);
+          rect(this.pos.x, this.pos.y + this.dim.y/2 + y, this.dim.x, defaultNewElementAdditiveHeight);
+
+          stroke(0);
+          line(this.pos.x, this.pos.y + this.dim.y/2 + y, this.pos.x, this.pos.y + this.dim.y/2 + y + defaultNewElementAdditiveHeight);
+          line(this.pos.x + this.dim.x, this.pos.y + this.dim.y/2 + y, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2 + y + defaultNewElementAdditiveHeight);
+
+          fill(0);
+          text(s, this.pos.x + 2, this.pos.y + this.dim.y/2 + y + defaultNewElementAdditiveHeight/2 + 6);
+        }
+        y += defaultNewElementAdditiveHeight;
+      }
+      line(this.pos.x, this.pos.y + this.dim.y/2 + y, this.pos.x + this.dim.x, this.pos.y + this.dim.y/2 + y);
+      this.dimY_options = this.dim.y + y;
+      translate(0, 0, -1);
+    }else{
+      this.dimY_options = this.dim.y;
+    }
+
+
+
+
+
+  }
+
+  public void contentEdited(){
+    //if(this.text.size() > 0){
+      // user has made request for suggestion
+      String userInput = "";
+      for(char c : this.text){
+        userInput += c;
+      }
+
+      this.optionFilter.clear();
+      for(String s : this.options){
+        if(s.length() >= userInput.length()){
+          this.optionFilter.add(s);
+        }
+      }
+      //printArray(this.optionFilter);
+      if(userInput.length() > 0){
+        for(int i = this.optionFilter.size() - 1; i >= 0; --i){
+          if(!(userInput.equals(this.optionFilter.get(i).substring(0, userInput.length())))){
+            this.optionFilter.remove(i);
+          }
+        }
+      }
+
+      if(this.superStrict){
+        if(this.optionFilter.size() == 0){
+          this.cursorPos = this.text.size();
+          this.backspaceTriggered();
+        }
+      }
+
+      //printArray(this.optionFilter);
+    //}
+  }
+
+  public void keyPressed(char k, int c){
+    this.cursorBlinkCount = 0;
+    this.cursorBlinkOn = true;
+    if(k == BACKSPACE){
+      this.backspaceTriggered();
+      this.backspaceStillPressed = true;
+    }else if(k == ENTER || k == RETURN){
+      this.enterEvent();
+    }else if(c == LEFT){
+      if(this.cursorPos > 0){
+        this.cursorPos--;
+        if(this.cursorPos < this.beginTextDisplay){
+          // cursor out of field <--
+          this.beginTextDisplay = this.cursorPos;
+          this.arrangeString();
+        }
+
+      }
+      this.arrowStillPressed = true;
+      this.arrowDirection = false;
+    }else if(c == RIGHT){
+      if(this.cursorPos < this.text.size()){
+        this.cursorPos++;
+        this.arrangeString();
+      }else if(this.cursorPos == this.text.size() && this.optionFilter.size() > 0 && this.text.size() > 0){
+        this.text.clear();
+        for(int j = 0; j < this.optionFilter.get(0).length(); ++j){
+          this.text.add(this.optionFilter.get(0).charAt(j));
+        }
+        this.cursorPos = this.text.size();
+        this.arrangeString();
+        this.contentEdited();
+      }
+      this.arrowStillPressed = true;
+      this.arrowDirection = true;
+    }
+    this.contentEdited();
+  }
+
+  public boolean mousePressIsWithinBorder(){
+    if(mouseX >= this.viewController.pos.x + this.pos.x &&
+      mouseX <= this.viewController.pos.x + this.pos.x + this.dim.x &&
+      mouseY >= this.viewController.pos.y + this.pos.y - this.dim.y/2 &&
+      mouseY <= this.viewController.pos.y + this.pos.y - this.dim.y/2 + this.dimY_options){
+      // User clicked element
+      return true;
+    }
+    return false;
+  }
+
+  public void mousePressed(){
+    if(this.mousePressIsWithinBorder()){
+      // User clicked element
+      if(!this.disabled && ( mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y/2 )){
+        this.clickEvent();
+        this.mouseHeld = true;
+        this.select();
+
+        //this.pos.x + textWidth(this.displayText.substring(0, this.cursorPos - this.beginTextDisplay)) + 2
+
+        textFont(this.stdFont);
+        int closest = 0;
+        float smallestDistance = width;
+        for(int i = 0; i <= this.displayText.length(); ++i){
+          if(abs(mouseX - (this.viewController.pos.x + this.pos.x + textWidth(this.displayText.substring(0, i)) + 2)) < smallestDistance){
+            closest = i;
+            smallestDistance = abs(mouseX - (this.viewController.pos.x + this.pos.x + textWidth(this.displayText.substring(0, i)) + 2));
+          }
+        }
+        this.cursorPos = this.beginTextDisplay + closest;
+      }else if(!this.disabled){
+        // option pressed
+        int selected = 0;
+        for(int i = 0; i < this.optionFilter.size(); ++i){
+          if(mouseY >= this.viewController.pos.y + this.pos.y + this.dim.y/2 + defaultNewElementAdditiveHeight * i &&
+             mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y/2 + defaultNewElementAdditiveHeight * (i+1)){
+            selected = i;
+            this.text.clear();
+            for(int j = 0; j < this.optionFilter.get(i).length(); ++j){
+              this.text.add(this.optionFilter.get(i).charAt(j));
+            }
+            this.cursorPos = this.text.size();
+            this.arrangeString();
+            this.contentEdited();
+            this.deselect();
+            break;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+}
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------//
 public class SelectionElement extends Element {
   public ArrayList<String> options;
   public int sel;
@@ -2889,6 +3744,14 @@ public class VerticalScrollElement extends Element {
     return this.rangeMax;
   }
 
+  public boolean isAtTop(){
+    return (this.rangeMin == this.min);
+  }
+
+  public boolean isAtBottom(){
+    return (this.rangeMax == this.max);
+  }
+
   public void addScroll(float count){
     this.dragHeight = this.rangeMax - this.rangeMin;
     this.rangeMin += count;
@@ -3086,6 +3949,183 @@ public class SliderElement extends Element {
 	
 	
 }
+
+
+
+// -------------------------------------------------------------------------------------------------------------------- //
+
+public class SmartSliderElement extends Element {
+  public ElementOrient orientation;
+  public Range range;
+  public float lowerValue;
+  public float upperValue;
+  public float ballSize;
+  public boolean grub;
+  public boolean leftGrub;
+
+  public SmartSliderElement(AppController a, ViewController v, float x, float y, ElementOrient o, float size, float min, float max){
+    super(a, v, x, y, (o == ElementOrient.HORIZONTAL ? size : 10), (o == ElementOrient.HORIZONTAL ? 10 : size));
+    this.orientation = o;
+    this.range = new Range(min, max);
+    this.lowerValue = this.range.min;
+    this.upperValue = this.range.max;
+    this.ballSize = 20;
+  }
+
+  public Range getValue(){
+    return new Range(this.lowerValue, this.upperValue);
+  }
+
+  public void setValue(float min, float max){
+    if((max > min) && (min >= this.range.min) && (max <= this.range.max)){
+      this.lowerValue = min;
+      this.upperValue = max;
+    }
+  }
+
+  public void resize(float x, float y, float size){
+    this.pos.set(x, y);
+    if(this.orientation == ElementOrient.HORIZONTAL){
+      this.dim.x = size;
+    }else if(this.orientation == ElementOrient.VERTICAL){
+      this.dim.y = size;
+    }
+  }
+
+  public void show(){
+    if(this.orientation == ElementOrient.HORIZONTAL){
+      stroke(0);
+      strokeWeight(2);
+      line(this.pos.x, this.pos.y, this.pos.x + this.dim.x, this.pos.y);
+      noStroke();
+      fill(elementColor_Blue);
+      translate(0, 0, 1);
+      ellipse(this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y, this.ballSize, this.ballSize);
+      ellipse(this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y, this.ballSize, this.ballSize);
+      translate(0, 0, -1);
+
+      if(this.grub){
+        textFont(fonts.get("SF").get("Regular 6"));
+        textAlign(CENTER);
+        fill(0);
+        if(this.leftGrub){
+          this.lowerValue = map(mouseX - this.viewController.pos.x - this.pos.x, 0, this.dim.x, this.range.min, this.range.max);
+          if(this.lowerValue < this.range.min){
+            this.lowerValue = this.range.min;
+          }
+          if(this.lowerValue >= this.upperValue - (this.range.max - this.range.min)/1000){
+            this.lowerValue = this.upperValue - (this.range.max - this.range.min)/1000;
+          }
+        }else{
+          this.upperValue = map(mouseX - this.viewController.pos.x - this.pos.x, 0, this.dim.x, this.range.min, this.range.max);
+          if(this.upperValue > this.range.max){
+            this.upperValue = this.range.max;
+          }
+          if(this.upperValue <= this.lowerValue + (this.range.max - this.range.min)/1000){
+            this.upperValue = this.lowerValue + (this.range.max - this.range.min)/1000;
+          }
+        }
+        text(this.lowerValue, this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y + this.ballSize);
+        text(this.upperValue, this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x), this.pos.y + this.ballSize);
+      }
+
+
+    }else if(this.orientation == ElementOrient.VERTICAL){
+      stroke(0);
+      strokeWeight(2);
+      line(this.pos.x, this.pos.y, this.pos.x, this.pos.y + this.dim.y);
+      noStroke();
+      fill(elementColor_Blue);
+      ellipse(this.pos.x, this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y), this.ballSize, this.ballSize);
+      ellipse(this.pos.x, this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y), this.ballSize, this.ballSize);
+
+      if(this.grub){
+        textFont(fonts.get("SF").get("Regular 6"));
+        textAlign(LEFT);
+        fill(0);
+        if(this.leftGrub){
+          this.lowerValue = map(mouseY - this.viewController.pos.y - this.pos.y, 0, this.dim.y, this.range.min, this.range.max);
+          if(this.lowerValue < this.range.min){
+            this.lowerValue = this.range.min;
+          }
+          if(this.lowerValue >= this.upperValue - (this.range.max - this.range.min)/1000){
+            this.lowerValue = this.upperValue - (this.range.max - this.range.min)/1000;
+          }
+        }else{
+          this.upperValue = map(mouseY - this.viewController.pos.y - this.pos.y, 0, this.dim.y, this.range.min, this.range.max);
+          if(this.upperValue > this.range.max){
+            this.upperValue = this.range.max;
+          }
+          if(this.upperValue <= this.lowerValue + (this.range.max - this.range.min)/1000){
+            this.upperValue = this.lowerValue + (this.range.max - this.range.min)/1000;
+          }
+        }
+        text(this.lowerValue, this.pos.x + this.ballSize, this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y));
+        text(this.upperValue, this.pos.x + this.ballSize, this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y));
+      }
+    }
+  }
+
+  public boolean mousePressIsWithinBorder(){
+    if(this.orientation == ElementOrient.HORIZONTAL){
+      if(mouseX >= this.viewController.pos.x + this.pos.x - this.ballSize/2 &&
+        mouseX <= this.viewController.pos.x + this.pos.x + this.dim.x + this.ballSize/2 &&
+        mouseY >= this.viewController.pos.y + this.pos.y - this.ballSize/2 &&
+        mouseY <= this.viewController.pos.y + this.pos.y + this.ballSize/2){
+        // User clicked element
+        return true;
+      }
+    }else if(this.orientation == ElementOrient.VERTICAL){
+      if(mouseX >= this.viewController.pos.x + this.pos.x - this.ballSize/2 &&
+        mouseX <= this.viewController.pos.x + this.pos.x + this.ballSize/2 &&
+        mouseY >= this.viewController.pos.y + this.pos.y - this.ballSize/2 &&
+        mouseY <= this.viewController.pos.y + this.pos.y + this.dim.y + this.ballSize/2){
+        // User clicked element
+        return true;
+      }
+    }
+    return false;
+  }
+
+  public void mousePressed(){
+    if(this.mousePressIsWithinBorder()){
+      // User clicked element
+      if(!this.disabled){
+        this.clickEvent();
+        this.mouseHeld = true;
+        this.select();
+        if(this.orientation == ElementOrient.HORIZONTAL){
+          if(mouseX >= this.viewController.pos.x + this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x) - this.ballSize/2 &&
+              mouseX <= this.viewController.pos.x + this.pos.x + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.x) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = true;
+          }else if(mouseX >= this.viewController.pos.x + this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x) - this.ballSize/2 &&
+              mouseX <= this.viewController.pos.x + this.pos.x + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.x) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = false;
+          }
+        }else if(this.orientation == ElementOrient.VERTICAL){
+          if(mouseY >= this.viewController.pos.y + this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y) - this.ballSize/2 &&
+              mouseY <= this.viewController.pos.y + this.pos.y + map(this.lowerValue, this.range.min, this.range.max, 0, this.dim.y) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = true;
+          }else if(mouseY >= this.viewController.pos.y + this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y) - this.ballSize/2 &&
+              mouseY <= this.viewController.pos.y + this.pos.y + map(this.upperValue, this.range.min, this.range.max, 0, this.dim.y) + this.ballSize/2){
+            this.grub = true;
+            this.leftGrub = false;
+          }
+        }
+      }
+    }
+  }
+
+  public void mouseReleased(){
+    this.mouseHeld = false;
+    this.grub = false;
+  }
+
+
+}
 // FileSelectorMethods.pde
 // Processing 3.4
 // Rens Dur (Project Bèta)
@@ -3099,7 +4139,9 @@ public class SliderElement extends Element {
 }
 
 /*callback*/public void SetupView_selected_folder_MissionData(File selected){
-  appController.SetupView_selected_folder_MissionData(selected);
+	if(selected != null) {
+		appController.SetupView_selected_folder_MissionData(selected);
+	}
 }
 // MathFunctions.pde
 // Processing 3.4
@@ -3325,27 +4367,44 @@ public static class SerialController {
 		return Serial.list();
 	}
 	
-	public static void open(PApplet javaEnvironment, String portName, int baudRate) {
-		if(isOpen && !(serialCom == null)) {
-			serialCom.stop();
-			serialCom = null;
-			isOpen = false;
-		}
-		if(portName.length() > 0 && baudRate >= 300) {
-			serialCom = new Serial(javaEnvironment, portName, baudRate);
-			isOpen = true;
+	public static boolean open(PApplet javaEnvironment, String portName, int baudRate) {
+		try{
+			if(isOpen && !(serialCom == null)) {
+				serialCom.stop();
+				serialCom = null;
+				isOpen = false;
+			}
+			if(portName.length() > 0 && baudRate >= 300) {
+				serialCom = new Serial(javaEnvironment, portName, baudRate);
+				isOpen = true;
+        return true;
+			}else{
+        return false;
+      }
+		}catch(Exception e){
+			return false;
 		}
 	}
 	
-	public static void close() {
-		if(isOpen) {
-			serialCom.stop();
+	public static boolean close() {
+		try{
+			if(isOpen) {
+				serialCom.stop();
+			}
+			return true;
+		}catch(Exception e){
+			return false;
 		}
 	}
 	
-	public static void send(String s) {
-		if(isOpen) {
-			serialCom.write(s);
+	public static boolean send(String s) {
+		try{
+			if(isOpen) {
+				serialCom.write(s);
+			}
+			return true;
+		}catch(Exception e){
+			return false;
 		}
 	}
 	
@@ -3384,16 +4443,18 @@ public class SetupView extends ViewController {
   public TextElement consoleLogFileTBLabel;
   public TextElement csvDataFileTBLabel;
 
-  public SelectionElement serialPortSelect;
-  public SelectionElement serialBaudSelect;
+  public SmartSelectionElement serialPortSelect;
+  public SmartSelectionElement serialBaudSelect;
 
   public UtilityButtonElement dataOutputFolderButton;
   public TextElement dataOutputFolderName;
 
-  public LineInputElement missionIdentifierInput;
+  public NewLineInputElement missionIdentifierInput;
 
   public TickBoxElement consoleLogFileTickBox;
   public TickBoxElement csvDataFileTickBox;
+
+  public SmartSliderElement testSlider;
 
   // Data
   String absoluteMissionPath;
@@ -3429,8 +4490,12 @@ public class SetupView extends ViewController {
     this.missionFolderLabel = new TextElement(this.appController, this, this.dim.x/2 - 210, 280, 200, "Mission folder:", RIGHT);
     this.missionIdentifierLabel = new TextElement(this.appController, this, this.dim.x/2 - 210, 320, 200, "Mission identifier:", RIGHT);
 
-    this.serialPortSelect = new SelectionElement(this.appController, this, this.dim.x/2 + 10, 200, 100);
-    this.serialBaudSelect = new SelectionElement(this.appController, this, this.dim.x/2 + 10, 240, 100);
+    this.serialPortSelect = new SmartSelectionElement(this.appController, this, this.dim.x/2 + 10, 200, 300);
+    this.serialPortSelect.setPlaceholder("Serial port");
+    this.serialPortSelect.setStrict(true);
+    this.serialBaudSelect = new SmartSelectionElement(this.appController, this, this.dim.x/2 + 10, 240, 150);
+    this.serialBaudSelect.setPlaceholder("Baud rate");
+    this.serialBaudSelect.setStrict(true);
 
     this.dataOutputFolderButton = new UtilityButtonElement(this.appController, this, this.dim.x/2 + 10, 280){
       public void clickEvent(){
@@ -3439,13 +4504,15 @@ public class SetupView extends ViewController {
     };
     this.dataOutputFolderName = new TextElement(this.appController, this, this.dim.x/2 + 30, 280, 500, "", LEFT);
 
-    this.missionIdentifierInput = new LineInputElement(this.appController, this, this.dim.x/2 + 10, 320, 200);
+    this.missionIdentifierInput = new NewLineInputElement(this.appController, this, this.dim.x/2 + 10, 320, 200);
 
     this.consoleLogFileTickBox = new TickBoxElement(this.appController, this, this.dim.x/2 - 100, 400);
-    this.consoleLogFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 400, 300, "Create console-log file", LEFT);
+    this.consoleLogFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 400, 300, "Create console-log file", RIGHT);
 
     this.csvDataFileTickBox = new TickBoxElement(this.appController, this, this.dim.x/2 - 100, 440);
-    this.csvDataFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 440, 300, "Create CSV data-output file", LEFT);
+    this.csvDataFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 80, 440, 300, "Create CSV data-output file", RIGHT);
+
+    this.testSlider = new SmartSliderElement(this.appController, this, 100, 100, ElementOrient.VERTICAL, 200, 0, 100);
 
     this.elements.add(this.backButton);
     this.elements.add(this.continueButton);
@@ -3466,6 +4533,8 @@ public class SetupView extends ViewController {
     this.elements.add(this.consoleLogFileTBLabel);
     this.elements.add(this.csvDataFileTickBox);
     this.elements.add(this.csvDataFileTBLabel);
+
+    this.elements.add(this.testSlider);
 
     // Setting default values
     for(String s : SerialController.getAvailablePorts()){
@@ -3533,8 +4602,8 @@ public class SetupView extends ViewController {
     this.missionFolderLabel.resize(this.dim.x/2 - 210, 280, 200);
     this.missionIdentifierLabel.resize(this.dim.x/2 - 210, 320, 200);
 
-    this.serialPortSelect.resize(this.dim.x/2 + 10, 200, 100);
-    this.serialBaudSelect.resize(this.dim.x/2 + 10, 240, 100);
+    this.serialPortSelect.resize(this.dim.x/2 + 10, 200, 300);
+    this.serialBaudSelect.resize(this.dim.x/2 + 10, 240, 150);
 
     this.dataOutputFolderButton.resize(this.dim.x/2 + 10, 280);
     this.dataOutputFolderName.resize(this.dim.x/2 + 30, 280, 500);
@@ -3718,7 +4787,11 @@ public class ViewController implements ViewController_Interface {
     this.elementFilter = new ArrayList<Integer>();
   }
 
+  public void universalMethod(String func){}
+
   public void viewResizeTriggered(){}
+
+  public void blockInteraction(){}
 
   public void resize(float x, float y, float w, float h){
     this.pos.set(x, y);
@@ -3820,12 +4893,15 @@ public class ViewSelectorView extends ViewController {
   public float viewWidth;
 
   public ButtonElement exitButton;
+  public ButtonElement setupButton;
+  public ButtonElement forceDeployButton;
 
   public ButtonElement missionInfoButton;
   public ButtonElement overviewButton;
   public ButtonElement consoleButton;
   public ButtonElement BabyCanInfo;
   public ButtonElement MotherCanInfo;
+  public ButtonElement ControlButtons;
   public ButtonElement FlightPath;
   public ButtonElement MeasuredData;
 
@@ -3851,6 +4927,18 @@ public class ViewSelectorView extends ViewController {
     this.exitButton.setStrokeColor(color(255, 0, 0));
     this.exitButton.setSuggested(true);
 
+    this.setupButton = new ButtonElement(this.appController, this, 70, 15, 60, 20, "Setup"){
+
+    };
+    this.setupButton.setStrokeColor(color(255, 233, 0));
+    this.setupButton.setSuggested(true);
+
+    this.forceDeployButton = new ButtonElement(this.appController, this, 150, 15, 140, 20, "Force Deploy View"){
+      public void clickEvent(){
+        this.appController.switchViewToForceDeploy();
+      }
+    };
+
     this.missionInfoButton = new ButtonElement(this.appController, this, 0, 0, 120, "Mission info"){
       public void clickEvent(){
         this.appController.switchViewToMissionInfo();
@@ -3870,6 +4958,13 @@ public class ViewSelectorView extends ViewController {
     		this.appController.switchViewToMotherCanInfo();
     		this.disable();
     	}
+    };
+
+    this.ControlButtons = new ButtonElement(this.appController, this, 0, 0, 120, "Control buttons"){
+      public void clickEvent(){
+        this.appController.switchViewToControlButtons();
+        this.disable();
+      }
     };
     
     this.FlightPath = new ButtonElement(this.appController, this, 0, 0, 90, "Flight path") {
@@ -3901,12 +4996,14 @@ public class ViewSelectorView extends ViewController {
     };
 
     this.elements.add(this.exitButton);
+    this.elements.add(this.setupButton);
     this.elements.add(this.scrollBar);
     this.viewButtons.add(this.missionInfoButton);
     this.viewButtons.add(this.overviewButton);
     this.viewButtons.add(this.consoleButton);
     this.viewButtons.add(this.MotherCanInfo);
     this.viewButtons.add(this.BabyCanInfo);
+    this.viewButtons.add(this.ControlButtons);
     this.viewButtons.add(this.FlightPath);
     this.viewButtons.add(this.MeasuredData);
     
@@ -3919,6 +5016,12 @@ public class ViewSelectorView extends ViewController {
     	this.viewWidth = b;
     	this.scrollBar.setExtremes(0, this.viewWidth);
     	this.scrollBar.setCurrentPosition(0, this.dim.x);
+    }
+  }
+
+  public void universalMethod(String func){
+    if(func.equals("AddForceDeployButton")){
+      this.elements.add(this.forceDeployButton);
     }
   }
 
@@ -4143,6 +5246,174 @@ public class View_BabyCanInfo extends ViewController {
     textAlign(CENTER);
     text("BabyCan information", this.dim.x/2, 50);
 
+    textFont(fonts.get("SF").get("Thin 15"));
+    text("Bèta", this.dim.x/4, 80);
+
+    textFont(fonts.get("SF").get("Bold"));
+    textAlign(RIGHT);
+    text("Boot state:", this.dim.x/4 - 5, 120);
+    text("Battery:", this.dim.x/4 - 5, 140);
+    text("Radio connection:", this.dim.x/4 - 5, 160);
+    text("Flight-mode enabled:", this.dim.x/4 - 5, 180);
+    text("GPS:", this.dim.x/4 - 5, 220);
+    text("Measurements:", this.dim.x/4 - 5, 260);
+    
+    textFont(fonts.get("SF").get("Regular"));
+    textAlign(LEFT);
+    text((DataSetDeposit.beta_bootState == 0 ? "Not booting" : (DataSetDeposit.beta_bootState == 1 ? "Booting" : (DataSetDeposit.beta_bootState == 2 ? "Active" : "..."))), this.dim.x/4 + 5, 120);
+    text(str(DataSetDeposit.beta_batteryVoltage) + " volts", this.dim.x/4 + 5, 140);
+
+    text(str((float)DataSetDeposit.groundStation_RSSI), this.dim.x/4 + 5, 160);
+
+    text((DataSetDeposit.beta_flightMode == 0 ? "Non-flight-mode" : (DataSetDeposit.beta_flightMode == 1 ? "Flight-mode" : "Landed-mode")), this.dim.x/4 + 5, 180);
+
+    
+    text((DataSetDeposit.beta_GPSFix ? "Fixed" : "Not fixed") + ", " + str(DataSetDeposit.beta_GPSSatellites) + " satellites", this.dim.x/4 + 5, 220);
+    
+    text(str(DataSetDeposit.beta_pointsMeasured) + " datapoints", this.dim.x/4 + 5, 260);
+
+    stroke(0);
+    strokeWeight(2);
+    line(this.dim.x/2, 60, this.dim.x/2, 280);
+
+
+    textFont(fonts.get("SF").get("Thin 15"));
+    textAlign(CENTER);
+    text("Rho", 3*this.dim.x/4, 80);
+
+    textFont(fonts.get("SF").get("Bold"));
+    textAlign(RIGHT);
+    text("Boot state:", 3*this.dim.x/4 - 5, 120);
+    text("Battery:", 3*this.dim.x/4 - 5, 140);
+    text("Radio connection:", 3*this.dim.x/4 - 5, 160);
+    text("Flight-mode enabled:", 3*this.dim.x/4 - 5, 180);
+    text("GPS:", 3*this.dim.x/4 - 5, 220);
+    text("Measurements:", 3*this.dim.x/4 - 5, 260);
+    
+    textFont(fonts.get("SF").get("Regular"));
+    textAlign(LEFT);
+    text((DataSetDeposit.rho_bootState == 0 ? "Not booting" : (DataSetDeposit.rho_bootState == 1 ? "Booting" : (DataSetDeposit.rho_bootState == 2 ? "Active" : "..."))), 3*this.dim.x/4 + 5, 120);
+    text(str(DataSetDeposit.rho_batteryVoltage) + " volts", 3*this.dim.x/4 + 5, 140);
+
+    text(str((float)DataSetDeposit.groundStation_RSSI), 3*this.dim.x/4 + 5, 160);
+
+    text((DataSetDeposit.rho_flightMode == 0 ? "Non-flight-mode" : (DataSetDeposit.rho_flightMode == 1 ? "Flight-mode" : "Landed-mode")), 3*this.dim.x/4 + 5, 180);
+
+    
+    text((DataSetDeposit.rho_GPSFix ? "Fixed" : "Not fixed") + ", " + str(DataSetDeposit.rho_GPSSatellites) + " satellites", 3*this.dim.x/4 + 5, 220);
+    
+    text(str(DataSetDeposit.rho_pointsMeasured) + " datapoints", 3*this.dim.x/4 + 5, 260);
+
+
+    for(Element e : this.elements){
+      e.show();
+    }
+
+    //
+    // End Content
+    //
+
+
+    translate(-this.pos.x, -this.pos.y);
+
+  }
+
+}
+// View_ControlButtons.pde
+// Processing 3.4
+// Rens Dur (Project Bèta)
+
+public class View_ControlButtons extends ViewController {
+
+  public ButtonElement openPinsButton;
+  public ButtonElement closePinsButton;
+  public ButtonElement openRingButton;
+  public ButtonElement closeRingButton;
+
+  public ButtonElement flightMode;
+  public ButtonElement sendAllData;
+  public ButtonElement clearData;
+
+
+  public View_ControlButtons(AppController a, float x, float y, float w, float h){
+    super(a, x, y, w, h);
+
+    this.openPinsButton = new ButtonElement(this.appController, this, this.dim.x/4, this.dim.y/2 - 80, 100, "Open pins"){
+      public void clickEvent(){
+        SerialController.send("[OPP]");
+      }
+    };
+    this.closePinsButton = new ButtonElement(this.appController, this, this.dim.x/4, this.dim.y/2 - 30, 100, "Close pins"){
+      public void clickEvent(){
+        SerialController.send("[CLP]");
+      }
+    };
+    this.openRingButton = new ButtonElement(this.appController, this, this.dim.x/4, this.dim.y/2 + 30, 100, "Open ring"){
+      public void clickEvent(){
+        SerialController.send("[OPR]");
+      }
+    };
+    this.closeRingButton = new ButtonElement(this.appController, this, this.dim.x/4, this.dim.y/2 + 80, 100, "Close ring"){
+      public void clickEvent(){
+        SerialController.send("[CLR]");
+      }
+    };
+
+    this.flightMode = new ButtonElement(this.appController, this, 3*this.dim.x/4, this.dim.y/2 - 80, 100, "Flight mode"){
+      public void clickEvent(){
+        SerialController.send("[FLIGHT_MODE]");
+      }
+    };
+
+    this.sendAllData = new ButtonElement(this.appController, this, 3*this.dim.x/4, this.dim.y/2, 100, "Send all data"){
+      public void clickEvent(){
+        SerialController.send("[SAD]");
+      }
+    };
+
+    this.clearData = new ButtonElement(this.appController, this, 3*this.dim.x/4, this.dim.y/2 + 50, 100, "Clear FRAM"){
+      public void clickEvent(){
+        SerialController.send("[CLF]");
+      }
+    };
+
+    this.elements.add(this.openPinsButton);
+    this.elements.add(this.closePinsButton);
+    this.elements.add(this.openRingButton);
+    this.elements.add(this.closeRingButton);
+    this.elements.add(this.flightMode);
+    this.elements.add(this.sendAllData);
+    this.elements.add(this.clearData);
+  }
+
+  public void viewResizeTriggered(){
+    this.openPinsButton.resize(this.dim.x/4, this.dim.y/2 - 75, 100);
+    this.closePinsButton.resize(this.dim.x/4, this.dim.y/2 - 25, 100);
+    this.openRingButton.resize(this.dim.x/4, this.dim.y/2 + 25, 100);
+    this.closeRingButton.resize(this.dim.x/4, this.dim.y/2 + 75, 100);
+
+    this.flightMode.resize(3*this.dim.x/4, this.dim.y/2 - 80, 100);
+    this.sendAllData.resize(3*this.dim.x/4, this.dim.y/2, 100);
+    this.clearData.resize(3*this.dim.x/4, this.dim.y/2 + 50, 100);
+  }
+
+  public void show(){
+
+    translate(this.pos.x, this.pos.y);
+
+    //
+    // Begin Content
+    //
+
+    textFont(fonts.get("SF").get("Heavy 15"));
+    textAlign(CENTER);
+    fill(0);
+    text("These actions are performed without applying\nany safety check.", this.dim.x/2, 50);
+
+    stroke(0);
+    strokeWeight(1);
+    line(this.dim.x/4 - 25, this.dim.y/2, this.dim.x/4 + 125, this.dim.y/2);
+
 
     for(Element e : this.elements){
       e.show();
@@ -4167,6 +5438,27 @@ public class View_BabyCanInfo extends ViewController {
 public class View_DataCharts extends ViewController {
 	public VerticalScrollElement scrollBar;
 	public ArrayList<Chart> charts;
+  public float chartHeight;
+
+  public ButtonElement selectMuDataButton;
+  public ButtonElement selectBetaDataButton;
+  public ButtonElement selectRhoDataButton;
+  public float selectButtonWidth;
+
+  public Chart chart_acceleration;
+  public Chart chart_gyroscope;
+  public Chart chart_compass;
+  public Chart chart_airpressure;
+  public Chart chart_airtemperature;
+  public Chart chart_altitude;
+  public Chart chart_humidity;
+  public Chart chart_TVOC;
+  public Chart chart_ECO2;
+  // public Chart chart_GPSsatellites;
+  // public Chart chart_batteryvoltage;
+
+  public SmartSliderElement horizontalSlider;
+
 
 
   public View_DataCharts(AppController a, float x, float y, float w, float h){
@@ -4175,34 +5467,145 @@ public class View_DataCharts extends ViewController {
     this.scrollBar = new VerticalScrollElement(this.appController, this, this.dim.x - 10, this.dim.y/2, this.dim.y, 0, this.dim.y);
     
     this.charts = new ArrayList<Chart>();
+    this.chartHeight = 500;
+
+    this.selectButtonWidth = 200;
+    this.selectBetaDataButton = new ButtonElement(this.appController, this, this.dim.x/2 - this.selectButtonWidth * 1.5f - 5, 20, this.selectButtonWidth, "Bèta data"){
+      public void clickEvent(){
+        this.viewController.universalMethod("setDataBeta");
+      }
+    };
+    this.selectMuDataButton = new ButtonElement(this.appController, this, this.dim.x/2 - this.selectButtonWidth/2, 20, this.selectButtonWidth, "Mu data"){
+      public void clickEvent(){
+        this.viewController.universalMethod("setDataMu");
+      }
+    };
+    this.selectRhoDataButton = new ButtonElement(this.appController, this, this.dim.x/2 + this.selectButtonWidth/2 + 5, 20, this.selectButtonWidth, "Rho data"){
+      public void clickEvent(){
+        this.viewController.universalMethod("setDataRho");
+      }
+    };
+
+
+    this.horizontalSlider = new SmartSliderElement(this.appController, this, 100, 50, ElementOrient.HORIZONTAL, this.dim.x - 210, 0, 1000);
+    this.horizontalSlider.setValue(0, 100);
+
+    // creating charts
+
+    this.chart_acceleration =     new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-15, 15),     "Acceleration",     "Time",     "s",    "Acceleration",               "m/s/s");
+    this.chart_gyroscope =        new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-10, 10),     "Gyroscope",        "Time",     "s",    "Angular velocity",           "rads/s");
+    this.chart_compass =          new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-100, 100),     "Compass",          "Time",     "s",    "Magnetic field strength",    "uT");
+    this.chart_airpressure =      new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 1000000),   "Air pressure",     "Time",     "s",    "Pressure",                   "Pa");
+    this.chart_airtemperature =   new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-10, 30),     "Air temperature",  "Time",     "s",    "Temperature",                "degC");
+    this.chart_altitude =         new Chart(100, 0, 0, 700, new ChartRange(0, 100), new ChartRange(-10, 10),   "Altitude",         "Time",     "s",    "Altitude",                   "m");
+    this.chart_humidity =         new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 100),       "Humidity",         "Time",     "s",    "Humidity",                   "?");
+    this.chart_TVOC =             new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 2000),       "TVOC",             "Time",     "s",    "TVOC",                       "?");
+    this.chart_ECO2 =             new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 2000),       "ECO2",             "Time",     "s",    "ECO2",                       "?");
+    // this.chart_GPSsatellites =    new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 10),       "GPS: satellites",  "Time",     "s",    "Satellites",                 "Units");
+    // this.chart_batteryvoltage =   new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 7),        "Battery voltage",  "Time",     "s",    "Voltage",                    "Volt");
     
-    this.charts.add(new Chart(100, 200, this.dim.x - 210, 300, new ChartRange(0, 500), new ChartRange(-20, 20), "Acceleration", "Time", "s", "Acceleration", "m/s/s"));
-    //DataSetDeposit.acceleration.addDataPoint(new DataPoint(0,0));
-    this.charts.get(0).addDataSet(DataSetDeposit.mu_accX);
-    this.charts.get(0).addDataSet(DataSetDeposit.mu_accY);
-    this.charts.get(0).addDataSet(DataSetDeposit.mu_accZ);
-    this.charts.add(new Chart(100, 200, this.dim.x - 210, 300, new ChartRange(0, 500), new ChartRange(-20, 20), "Gyroscope", "Time", "s", "Speed", "deg/s"));
-    this.charts.get(1).addDataSet(DataSetDeposit.mu_gyroX);
-    this.charts.get(1).addDataSet(DataSetDeposit.mu_gyroY);
-    this.charts.get(1).addDataSet(DataSetDeposit.mu_gyroZ);
-    this.charts.add(new Chart(100, 200, this.dim.x - 210, 300, new ChartRange(0, 500), new ChartRange(25865, 25885), "Height", "Time", "s", "Height", "m"));
-    this.charts.get(2).addDataSet(DataSetDeposit.mu_altitude);
+
+    this.charts.add(this.chart_acceleration);
+    this.charts.add(this.chart_gyroscope);
+    this.charts.add(this.chart_compass);
+    this.charts.add(this.chart_airpressure);
+    this.charts.add(this.chart_airtemperature);
+    this.charts.add(this.chart_altitude);
+    this.charts.add(this.chart_humidity);
+    this.charts.add(this.chart_TVOC);
+    this.charts.add(this.chart_ECO2);
+    // this.charts.add(this.chart_GPSsatellites);
+    // this.charts.add(this.chart_batteryvoltage);
+
+    for(Chart c : this.charts){
+      //c.autoScroll = true;
+    }
     
     this.viewResizeTriggered();
     
     this.elements.add(this.scrollBar);
+    this.elements.add(this.selectMuDataButton);
+    this.elements.add(this.selectBetaDataButton);
+    this.elements.add(this.selectRhoDataButton);
+    this.elements.add(this.horizontalSlider);
+  }
+
+  public void universalMethod(String func){
+    if(func.equals("setDataMu")){
+      for(Chart c : this.charts){
+        c.clear();
+      }
+      this.chart_acceleration.addDataSet(DataSetDeposit.mu_accX);
+      this.chart_acceleration.addDataSet(DataSetDeposit.mu_accY);
+      this.chart_acceleration.addDataSet(DataSetDeposit.mu_accZ);
+      this.chart_gyroscope.addDataSet(DataSetDeposit.mu_gyroX);
+      this.chart_gyroscope.addDataSet(DataSetDeposit.mu_gyroY);
+      this.chart_gyroscope.addDataSet(DataSetDeposit.mu_gyroZ);
+      this.chart_compass.addDataSet(DataSetDeposit.mu_compassX);
+      this.chart_compass.addDataSet(DataSetDeposit.mu_compassY);
+      this.chart_compass.addDataSet(DataSetDeposit.mu_compassZ);
+      this.chart_airpressure.addDataSet(DataSetDeposit.mu_airPres);
+      this.chart_airtemperature.addDataSet(DataSetDeposit.mu_airTemp);
+      this.chart_altitude.addDataSet(DataSetDeposit.mu_altitude);
+      this.chart_humidity.addDataSet(DataSetDeposit.mu_humidity);
+      this.chart_TVOC.addDataSet(DataSetDeposit.mu_TVOC);
+      this.chart_ECO2.addDataSet(DataSetDeposit.mu_ECO2);
+
+    }else if(func.equals("setDataBeta")){
+      for(Chart c : this.charts){
+        c.clear();
+      }
+      this.chart_acceleration.addDataSet(DataSetDeposit.beta_accX);
+      this.chart_acceleration.addDataSet(DataSetDeposit.beta_accY);
+      this.chart_acceleration.addDataSet(DataSetDeposit.beta_accZ);
+      this.chart_gyroscope.addDataSet(DataSetDeposit.beta_gyroX);
+      this.chart_gyroscope.addDataSet(DataSetDeposit.beta_gyroY);
+      this.chart_gyroscope.addDataSet(DataSetDeposit.beta_gyroZ);
+      this.chart_compass.addDataSet(DataSetDeposit.beta_compassX);
+      this.chart_compass.addDataSet(DataSetDeposit.beta_compassY);
+      this.chart_compass.addDataSet(DataSetDeposit.beta_compassZ);
+      this.chart_airpressure.addDataSet(DataSetDeposit.beta_airPres);
+      this.chart_airtemperature.addDataSet(DataSetDeposit.beta_airTemp);
+      this.chart_altitude.addDataSet(DataSetDeposit.beta_altitude);
+      this.chart_humidity.addDataSet(DataSetDeposit.beta_humidity);
+      this.chart_TVOC.addDataSet(DataSetDeposit.beta_TVOC);
+      this.chart_ECO2.addDataSet(DataSetDeposit.beta_ECO2);
+
+    }else if(func.equals("setDataRho")){
+      for(Chart c : this.charts){
+        c.clear();
+      }
+      this.chart_acceleration.addDataSet(DataSetDeposit.rho_accX);
+      this.chart_acceleration.addDataSet(DataSetDeposit.rho_accY);
+      this.chart_acceleration.addDataSet(DataSetDeposit.rho_accZ);
+      this.chart_gyroscope.addDataSet(DataSetDeposit.rho_gyroX);
+      this.chart_gyroscope.addDataSet(DataSetDeposit.rho_gyroY);
+      this.chart_gyroscope.addDataSet(DataSetDeposit.rho_gyroZ);
+      this.chart_compass.addDataSet(DataSetDeposit.rho_compassX);
+      this.chart_compass.addDataSet(DataSetDeposit.rho_compassY);
+      this.chart_compass.addDataSet(DataSetDeposit.rho_compassZ);
+      this.chart_airpressure.addDataSet(DataSetDeposit.rho_airPres);
+      this.chart_airtemperature.addDataSet(DataSetDeposit.rho_airTemp);
+      this.chart_altitude.addDataSet(DataSetDeposit.rho_altitude);
+      this.chart_humidity.addDataSet(DataSetDeposit.rho_humidity);
+      this.chart_TVOC.addDataSet(DataSetDeposit.rho_TVOC);
+      this.chart_ECO2.addDataSet(DataSetDeposit.rho_ECO2);
+    }
   }
   
   public void viewResizeTriggered(){
 	  this.scrollBar.resize(this.dim.x - 10, this.dim.y/2, this.dim.y);
+    this.selectBetaDataButton.resize(this.dim.x/2 - this.selectButtonWidth * 1.5f - 5, 20, this.selectButtonWidth);
+    this.selectMuDataButton.resize(this.dim.x/2 - this.selectButtonWidth/2, 20, this.selectButtonWidth);
+    this.selectRhoDataButton.resize(this.dim.x/2 + this.selectButtonWidth/2 + 5, 20, this.selectButtonWidth);
+    this.horizontalSlider.resize(100, 50, this.dim.x - 210);
 	  
-	  
-	  float y = 200;
-	  for(Chart c : this.charts) {
-		  c.resize(100, y, this.dim.x - 210, c.dim.y);
-		  y += c.dim.y + 100;
+	  float y = 120;
+	  for(int i = 0; i < this.charts.size(); ++i) {
+		  this.charts.get(i).resize(100, y + this.charts.get(i).dim.y/2, this.dim.x - 210, this.charts.get(i).dim.y);
+		  y += this.charts.get(i).dim.y + 200;
 	  }
-	  y -= 200;
+	  y -= 50;
 	  if(y > this.dim.y) {
 		  this.scrollBar.setExtremes(0, y);
 		  this.scrollBar.setCurrentPosition(0, this.dim.y);
@@ -4220,7 +5623,11 @@ public class View_DataCharts extends ViewController {
     // Begin Content
     //
     
-    this.scrollBar.show();
+    //this.scrollBar.show();
+
+    for(Chart c : this.charts){
+      c.setXRange(new ChartRange(this.horizontalSlider.getValue().min, this.horizontalSlider.getValue().max));
+    }
     
     translate(0, -this.scrollBar.getMinimumValue(), -1);
 
@@ -4229,6 +5636,14 @@ public class View_DataCharts extends ViewController {
     }
     
     translate(0, this.scrollBar.getMinimumValue(), 1);
+
+    noStroke();
+    fill(255);
+    rectMode(CORNER);
+    rect(0, 0, this.dim.x - 10, 80);
+    stroke(0);
+    strokeWeight(1);
+    line(0, 80, this.dim.x - 10, 80);
 
 
     for(Element e : this.elements){
@@ -4245,8 +5660,23 @@ public class View_DataCharts extends ViewController {
   }
   
   public void mouseScrolled(float count){
-    this.scrollBar.addScroll(count);
+    int selectedGraph = -1;
+    if(ALT_PRESSED){
+      for(int i = 0; i < this.charts.size(); ++i){
+        if((mouseX >= this.charts.get(i).pos.x) && (mouseX <= this.charts.get(i).pos.x + this.charts.get(i).dim.x) && 
+          ((mouseY + this.scrollBar.getMinimumValue()) >= this.charts.get(i).pos.y - this.charts.get(i).dim.y/2) && ((mouseY + this.scrollBar.getMinimumValue()) <= (this.charts.get(i).pos.y + this.charts.get(i).dim.y/2))){
+            selectedGraph = i;
+        }
+      }
+    }
+    if(selectedGraph >= 0){
+      this.charts.get(selectedGraph).addScroll(count);
+    }else{
+      this.scrollBar.addScroll(count);
+    }
   }
+
+
 
 }
 // View_FlightPath.pde
@@ -4319,6 +5749,95 @@ public class View_FlightPath extends ViewController {
     	this.rocket_time = PI;
     }else if(this.rocket_time < 0) {
     	this.rocket_time = 0;
+    }
+
+
+    for(Element e : this.elements){
+      e.show();
+    }
+
+    //
+    // End Content
+    //
+
+
+    translate(-this.pos.x, -this.pos.y);
+
+  }
+
+}
+// View_ForceDeploy.pde
+// Processing 3.4
+// Rens Dur (Project Bèta)
+
+public class View_ForceDeploy extends ViewController {
+    public ButtonElement denyButton;
+    public ButtonElement confirmButton;
+    public boolean onceShown;
+    public boolean onceClosed;
+
+
+  public View_ForceDeploy(AppController a, float x, float y, float w, float h){
+    super(a, x, y, w, h);
+
+    this.denyButton = new ButtonElement(this.appController, this, this.dim.x/3 - 100, this.dim.y/2 + 100, 200, 150, "Deny");
+    this.denyButton.setStrokeColor(color(255, 0, 0));
+
+    this.confirmButton = new ButtonElement(this.appController, this, 2*this.dim.x/3 - 100, this.dim.y/2 + 100, 200, 150, "Confirm"){
+        public void clickEvent(){
+            this.appController.sendForceBabyCanDeploy();
+        }
+    };
+    this.confirmButton.setStrokeColor(color(0, 255, 0));
+    this.confirmButton.setSuggested(true);
+
+    this.elements.add(this.denyButton);
+    this.elements.add(this.confirmButton);
+
+    this.onceShown = false;
+    this.onceClosed = false;
+  }
+
+  public void viewResizeTriggered(){
+    this.denyButton.resize(this.dim.x/3 - 100, this.dim.y/2 + 100, 200, 150);
+    this.confirmButton.resize(2*this.dim.x/3 - 100, this.dim.y/2 + 100, 200, 150);
+  }
+
+  public void blockInteraction(){
+    if(this.onceShown && !this.onceClosed){
+        this.onceClosed = true;
+    }
+  }
+
+  public void show(){
+
+    if(!this.onceShown){
+        this.appController.viewSelectorMethod("AddForceDeployButton");
+        this.onceShown = true;
+    }
+
+    translate(this.pos.x, this.pos.y);
+
+    //
+    // Begin Content
+    //
+
+    textFont(fonts.get("SF").get("Heavy 20"));
+    textAlign(CENTER);
+    fill(0);
+    text("FORCE DEPLOY REQUESTED", width/2, 250);
+    textFont(fonts.get("Lora").get("Regular"));
+    text("The MotherCan hasn't been able to determine the safety of the deploy.\nYou need to give manual permission for deploying the BabyCans.", this.dim.x/2, 275);
+
+    if(!this.onceClosed){
+        stroke(0);
+        strokeWeight(2);
+        fill(240);
+        rectMode(CENTER);
+        rect(220, 50, 300, 100);
+        textFont(fonts.get("SF").get("Regular"));
+        fill(0);
+        text("From now on, you can open this view by\nclicking 'Force Deploy View'.\n\nThis message will be displayed once.", 220, 25);
     }
 
 
@@ -4475,22 +5994,85 @@ public class View_MotherCanInfo extends ViewController {
     text("Boot state:", this.dim.x/2 - 5, 100);
     text("Battery:", this.dim.x/2 - 5, 120);
     text("Radio connection:", this.dim.x/2 - 5, 140);
-    text("Flight-mode enabled:", this.dim.x/2 - 5, 160);
+    text("Mode:", this.dim.x/2 - 5, 160);
     text("GPS:", this.dim.x/2 - 5, 200);
     text("Measurements:", this.dim.x/2 - 5, 240);
+    text("BabyCans deployed:", this.dim.x/2 - 5, 280);
     
     textFont(fonts.get("SF").get("Regular"));
     textAlign(LEFT);
     text((DataSetDeposit.mu_bootState == 0 ? "Not booting" : (DataSetDeposit.mu_bootState == 1 ? "Booting" : (DataSetDeposit.mu_bootState == 2 ? "Active" : "..."))), this.dim.x/2 + 5, 100);
     text(str(DataSetDeposit.mu_batteryVoltage) + " volts", this.dim.x/2 + 5, 120);
+
+    text(str((float)DataSetDeposit.groundStation_RSSI), this.dim.x/2 + 5, 140);
+
+    text((DataSetDeposit.mu_flightMode == 0 ? "Non-flight-mode" : (DataSetDeposit.mu_flightMode == 1 ? "Flight-mode" : "Landed-mode")), this.dim.x/2 + 5, 160);
+
     
     text((DataSetDeposit.mu_GPSFix ? "Fixed" : "Not fixed") + ", " + str(DataSetDeposit.mu_GPSSatellites) + " satellites", this.dim.x/2 + 5, 200);
     
     text(str(DataSetDeposit.mu_pointsMeasured) + " datapoints", this.dim.x/2 + 5, 240);
 
+    text((DataSetDeposit.mu_babyCansDeployed ? "YES" : "NO"), this.dim.x/2 + 5, 280);
+
     
     
     
+
+
+    for(Element e : this.elements){
+      e.show();
+    }
+
+    //
+    // End Content
+    //
+
+
+    translate(-this.pos.x, -this.pos.y);
+
+  }
+
+}
+
+// View_UniversalText.pde
+// Processing 3.4
+// Rens Dur (Project Bèta)
+
+public class View_UniversalText extends ViewController {
+    public String title;
+    public String subtitle;
+
+
+  public View_UniversalText(AppController a, float x, float y, float w, float h){
+    super(a, x, y, w, h);
+
+    this.title = "";
+    this.subtitle = "";
+  }
+
+  public void setMessage(String t, String s){
+    this.title = t;
+    this.subtitle = s;
+  }
+
+  public void show(){
+
+    translate(this.pos.x, this.pos.y);
+
+    //
+    // Begin Content
+    //
+
+    textFont(fonts.get("SF").get("Heavy 20"));
+    textAlign(CENTER);
+    fill(0);
+    text(this.title, this.dim.x/2, 250);
+    stroke(0);
+    strokeWeight(2);
+    line(this.dim.x/2 - textWidth(this.title)/2, 270, this.dim.x/2 + textWidth(this.title)/2, 270);
+    textFont(fonts.get("Lora").get("Regular"));
+    text(this.subtitle, this.dim.x/2, 300);
 
 
     for(Element e : this.elements){
