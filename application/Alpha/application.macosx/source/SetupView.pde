@@ -104,7 +104,7 @@ public class SetupView extends ViewController {
     this.elements.add(this.csvDataFileTickBox);
     this.elements.add(this.csvDataFileTBLabel);
 
-    this.elements.add(this.testSlider);
+    //this.elements.add(this.testSlider);
 
     // Setting default values
     for(String s : SerialController.getAvailablePorts()){

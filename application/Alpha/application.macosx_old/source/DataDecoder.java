@@ -252,10 +252,16 @@ public class DataDecoder {
 	private static void pushDataToDataSetDeposit(MeasuredDataPoint p) {
 		switch(selectedCan) {
 			case 1:
-				if(!(p.get("Radio RSSI") == null)){DataSetDeposit.groundStation_RSSI = p.get("Radio RSSI");}
+				if(!(p.get("Time since startup") == null)) {
+					p.addQuantity("Time since startup", p.get("Time since startup")/1000.0);
+					if(!(p.get("Radio RSSI") == null)){DataSetDeposit.groundStation_RSSI = p.get("Radio RSSI");}
+				}
 				break;
 			case 2:
-				if(!(p.get("Radio RSSI") == null)){DataSetDeposit.groundStation_RSSI = p.get("Radio RSSI");}
+				if(!(p.get("Time since startup") == null)) {
+					p.addQuantity("Time since startup", p.get("Time since startup")/1000.0);
+					if(!(p.get("Radio RSSI") == null)){DataSetDeposit.groundStation_RSSI = p.get("Radio RSSI");}
+				}
 				break;
 			case 3:
 				//MOTHERCAN

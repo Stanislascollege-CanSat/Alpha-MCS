@@ -70,8 +70,8 @@ public Calendar CALENDAR;
 public String[] DAYS;
 
 public void settings(){
-  //size(1000, 700, P3D);
-  fullScreen(P3D);
+  size(1000, 700, P3D);
+  //fullScreen(P3D);
   pixelDensity(displayDensity());
   if(displayDensity() < 2) {
 	  smooth(8);
@@ -4534,7 +4534,7 @@ public class SetupView extends ViewController {
     this.elements.add(this.csvDataFileTickBox);
     this.elements.add(this.csvDataFileTBLabel);
 
-    //this.elements.add(this.testSlider);
+    this.elements.add(this.testSlider);
 
     // Setting default values
     for(String s : SerialController.getAvailablePorts()){
@@ -4699,7 +4699,7 @@ public class StartupView extends ViewController {
     };
 
     this.elements.add(this.button);
-    //this.elements.add(this.shortCut);
+    this.elements.add(this.shortCut);
   }
 
   public void viewResizeTriggered(){
