@@ -82,7 +82,7 @@ public class View_FlightPath extends ViewController {
 
 		this.lowestBorder = 2;
 		this.deployBorder1 = 5;
-		this.deployBorder2 = this.deployBorder1*0.9;
+		this.deployBorder2 = this.deployBorder1*0.8;
 
     this.missionSucces = false;
     this.maxHeight = this.deployBorder1/this.calcSysHeight(20)*this.calcSysHeight(50);
@@ -116,14 +116,27 @@ public class View_FlightPath extends ViewController {
       float sh = map(height, 0, this.maxHeight, 0, this.calcSysHeight(50));
       float prog = (100*asin((2*sh)/(1.8*this.dim.y)))/PI;
       if(this.missionSucces){
-        return 100 - prog;
+        if(prog >= 0 && prog <= 100){
+          return 100 - prog;
+        }else{
+          return 0;
+        }
       }else{
-        return prog;
+        if(prog >= 0 && prog <= 100){
+          return prog;
+        }else{
+          return 0;
+        }
       }
     }
   }
 
   public void show(){
+    if(DataSetDeposit.mu_babyCansDeployed && !this.babyCansDeployed){
+      this.babyCansDeployed = true;
+    }
+
+
     this.tempTime += 1;
 
     translate(this.pos.x, this.pos.y);
@@ -164,18 +177,26 @@ public class View_FlightPath extends ViewController {
 		text(str(this.deployBorder2) + "m", this.dim.x - 100, this.dim.y*0.5 - 2);
 
 
-    if(mousePressed && this.userInteractionEnabled && this.tempTime % 60 == 0){
-      //this.progressGoal = this.calcProgress(map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight));
-      DataSetDeposit.mu_altitude.addDataPoint(new DataPoint(float(this.tempTime)/100, map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight)));
-    }
-    if(keyPressed){
-      if(key == 'd'){
-        this.babyCansDeployed = true;
+    // if(mousePressed && this.userInteractionEnabled && this.tempTime % 60 == 0){
+    //   //this.progressGoal = this.calcProgress(map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight));
+    //   DataSetDeposit.mu_altitude.addDataPoint(new DataPoint(float(this.tempTime)/100, map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight)));
+    // }
+    // if(keyPressed){
+    //   if(key == 'd'){
+    //     this.babyCansDeployed = true;
+    //   }
+    // }
+
+    if(DataSetDeposit.mu_altitude.size() > 0){
+      if((float)DataSetDeposit.mu_altitude.getDataAt(DataSetDeposit.mu_altitude.size()-1).getY() >= 0){
+        this.progressGoal = this.calcProgress((float)DataSetDeposit.mu_altitude.getDataAt(DataSetDeposit.mu_altitude.size()-1).getY());
+      }else{
+        this.progressGoal = this.calcProgress(0);
       }
     }
 
-    if(DataSetDeposit.mu_altitude.size() > 0){
-      this.progressGoal = this.calcProgress((float)DataSetDeposit.mu_altitude.getDataAt(DataSetDeposit.mu_altitude.size()-1).getY());
+    if(this.progressGoal > 97){
+      this.progressGoal = 97;
     }
 
     this.progressSpeed = (this.progressGoal - this.progress)/30;

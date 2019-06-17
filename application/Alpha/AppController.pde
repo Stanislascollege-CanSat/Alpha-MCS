@@ -157,13 +157,13 @@ public class AppController implements AppController_Interface {
       DataDecoder.notifyBabyCansRequested = false;
     }
 
-    if (frameRate < 45) {
-      strokeWeight(1);
-      fill(0);
-      textAlign(LEFT);
-      textFont(fonts.get("SF").get("Regular"));
-      text(int(frameRate), 10, 20);
-    }
+    //if (frameRate < 45) {
+    //  strokeWeight(1);
+    //  fill(0);
+    //  textAlign(LEFT);
+    //  textFont(fonts.get("SF").get("Regular"));
+    //  text(int(frameRate), 10, 20);
+    //}
   }
 
   public void resize() {
@@ -929,6 +929,7 @@ public class AppController implements AppController_Interface {
     this.blockInteraction();
     this.viewSelectorView.enableAllButtons();
     this.viewSelectorView.visible = true;
+    this.viewSelectorView.FlightPath.disable();
     this.view_FlightPath.visible = true;
     this.viewSelectorView.currentViewIdentifier = "flightPath";
   }
@@ -1014,7 +1015,9 @@ public class AppController implements AppController_Interface {
   }
 
   public void sendForceBabyCanDeploy(){
-    SerialController.send("[DEP]");
+    for(int i = 0; i < 50; ++i){
+      SerialController.send("[DEP]");
+    }
   }
 
 

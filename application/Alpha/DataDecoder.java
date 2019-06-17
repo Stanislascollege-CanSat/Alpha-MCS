@@ -60,7 +60,7 @@ public class DataDecoder {
 		availableQuantities.put("BV", "Battery voltage");
 
 		availableStatusIdentifiers.put("SBT", "Booted");
-		availableStatusIdentifiers.put("SFM", "Flight-mode");
+		availableStatusIdentifiers.put("SMU", "Flight-mode");
 		availableStatusIdentifiers.put("SDP", "Deployed");
 		availableStatusIdentifiers.put("SRC", "RadioConnection");
 
@@ -176,6 +176,8 @@ public class DataDecoder {
 														DataSetDeposit.mu_babyCansDeployed = true;
 														notifyBabyCansRequested = true;
 													}
+												}else if(readQuantity.equals("SMU")){
+													DataSetDeposit.mu_flightMode = Integer.valueOf(readValue);
 												}
 												break;
 											case 4:

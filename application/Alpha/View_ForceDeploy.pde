@@ -12,12 +12,19 @@ public class View_ForceDeploy extends ViewController {
   public View_ForceDeploy(AppController a, float x, float y, float w, float h){
     super(a, x, y, w, h);
 
-    this.denyButton = new ButtonElement(this.appController, this, this.dim.x/3 - 100, this.dim.y/2 + 100, 200, 150, "Deny");
+    this.denyButton = new ButtonElement(this.appController, this, this.dim.x/3 - 100, this.dim.y/2 + 100, 200, 150, "Deny"){
+        public void clickEvent(){
+            DataSetDeposit.mu_babyCansDeployed = false;
+            this.appController.switchViewToFlightPath();
+        }
+    };
     this.denyButton.setStrokeColor(color(255, 0, 0));
 
     this.confirmButton = new ButtonElement(this.appController, this, 2*this.dim.x/3 - 100, this.dim.y/2 + 100, 200, 150, "Confirm"){
         public void clickEvent(){
             this.appController.sendForceBabyCanDeploy();
+            DataSetDeposit.mu_babyCansDeployed = true;
+            this.appController.switchViewToFlightPath();
         }
     };
     this.confirmButton.setStrokeColor(color(0, 255, 0));

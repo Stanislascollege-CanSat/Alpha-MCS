@@ -41,12 +41,12 @@ public Calendar CALENDAR;
 public String[] DAYS;
 
 public void settings(){
-  //size(1000, 700, P3D);
-  fullScreen(P3D);
-  pixelDensity(displayDensity());
-  if(displayDensity() < 2) {
-	  smooth(8);
-  }
+  size(1000, 700, P3D);
+  //fullScreen(P3D);
+  //pixelDensity(displayDensity());
+  //if(displayDensity() < 2) {
+	 // smooth(8);
+  //}
   PJOGL.setIcon("1024x1024.png");
 }
 
