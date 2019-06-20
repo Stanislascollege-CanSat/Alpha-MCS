@@ -177,15 +177,15 @@ public class View_FlightPath extends ViewController {
 		text(str(this.deployBorder2) + "m", this.dim.x - 100, this.dim.y*0.5 - 2);
 
 
-    // if(mousePressed && this.userInteractionEnabled && this.tempTime % 60 == 0){
-    //   //this.progressGoal = this.calcProgress(map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight));
-    //   DataSetDeposit.mu_altitude.addDataPoint(new DataPoint(float(this.tempTime)/100, map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight)));
-    // }
-    // if(keyPressed){
-    //   if(key == 'd'){
-    //     this.babyCansDeployed = true;
-    //   }
-    // }
+					    // if(mousePressed && this.userInteractionEnabled && this.tempTime % 60 == 0){
+					    //   //this.progressGoal = this.calcProgress(map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight));
+					    //   DataSetDeposit.mu_altitude.addDataPoint(new DataPoint(float(this.tempTime)/100, map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight)));
+					    // }
+					    // if(keyPressed){
+					    //   if(key == 'd'){
+					    //     this.babyCansDeployed = true;
+					    //   }
+					    // }
 
     if(DataSetDeposit.mu_altitude.size() > 0){
       if((float)DataSetDeposit.mu_altitude.getDataAt(DataSetDeposit.mu_altitude.size()-1).getY() >= 0){

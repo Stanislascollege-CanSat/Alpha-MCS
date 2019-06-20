@@ -58,6 +58,7 @@ public class DataDecoder {
 		availableQuantities.put("O2", "ECO2");
 		availableQuantities.put("RS", "Radio RSSI");
 		availableQuantities.put("BV", "Battery voltage");
+		availableQuantities.put("DS", "Data Synchronization Point");
 
 		availableStatusIdentifiers.put("SBT", "Booted");
 		availableStatusIdentifiers.put("SMU", "Flight-mode");
@@ -280,6 +281,7 @@ public class DataDecoder {
 					if(!(p.get("GPS Longitude") == null)) {DataSetDeposit.mu_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Longitude")));}
 					if(!(p.get("TVOC") == null)) {DataSetDeposit.mu_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("TVOC")));}
 					if(!(p.get("ECO2") == null)) {DataSetDeposit.mu_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("ECO2")));}
+					if(!(p.get("Data Synchronization Point") == null)) {DataSetDeposit.mu_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Data Synchronization Point")));}
 					if(!(p.get("GPS 3D-fix") == null)) {DataSetDeposit.mu_GPSFix = (p.get("GPS 3D-fix") > 0 ? true : false);}
 					if(!(p.get("GPS satellites") == null)) {DataSetDeposit.mu_GPSSatellites = p.get("GPS satellites").intValue();}
 					if(!(p.get("Battery voltage") == null)) {DataSetDeposit.mu_batteryVoltage = p.get("Battery voltage").floatValue();}
@@ -307,6 +309,7 @@ public class DataDecoder {
 					if(!(p.get("GPS Longitude") == null)) {DataSetDeposit.beta_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Longitude")));}
 					if(!(p.get("TVOC") == null)) {DataSetDeposit.beta_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("TVOC")));}
 					if(!(p.get("ECO2") == null)) {DataSetDeposit.beta_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("ECO2")));}
+					if(!(p.get("Data Synchronization Point") == null)) {DataSetDeposit.beta_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Data Synchronization Point")));}
 					if(!(p.get("GPS 3D-fix") == null)) {DataSetDeposit.beta_GPSFix = (p.get("GPS 3D-fix") > 0 ? true : false);}
 					if(!(p.get("GPS satellites") == null)) {DataSetDeposit.beta_GPSSatellites = p.get("GPS satellites").intValue();}
 					if(!(p.get("Battery voltage") == null)) {DataSetDeposit.beta_batteryVoltage = p.get("Battery voltage").floatValue();}
@@ -334,6 +337,7 @@ public class DataDecoder {
 					if(!(p.get("GPS Longitude") == null)) {DataSetDeposit.rho_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Longitude")));}
 					if(!(p.get("TVOC") == null)) {DataSetDeposit.rho_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("TVOC")));}
 					if(!(p.get("ECO2") == null)) {DataSetDeposit.rho_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("ECO2")));}
+					if(!(p.get("Data Synchronization Point") == null)) {DataSetDeposit.rho_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Data Synchronization Point")));}
 					if(!(p.get("GPS 3D-fix") == null)) {DataSetDeposit.rho_GPSFix = (p.get("GPS 3D-fix") > 0 ? true : false);}
 					if(!(p.get("GPS satellites") == null)) {DataSetDeposit.rho_GPSSatellites = p.get("GPS satellites").intValue();}
 					if(!(p.get("Battery voltage") == null)) {DataSetDeposit.rho_batteryVoltage = p.get("Battery voltage").floatValue();}

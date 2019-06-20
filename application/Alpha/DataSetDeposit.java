@@ -22,6 +22,7 @@ public class DataSetDeposit {
 	public static DataSet beta_GPSLon = new DataSet("Bèta: GPS Longitude");
 	public static DataSet beta_TVOC = new DataSet("Bèta: TVOC");
 	public static DataSet beta_ECO2 = new DataSet("Bèta: ECO2");
+	public static DataSet beta_DSY = new DataSet("Bèta: Data Synchronization Points");
 	public static boolean beta_GPSFix = false;
 	public static int beta_GPSSatellites = 0;
 	public static float beta_batteryVoltage = 0;
@@ -48,6 +49,7 @@ public class DataSetDeposit {
 	public static DataSet rho_GPSLon = new DataSet("Rho: GPS Longitude");
 	public static DataSet rho_TVOC = new DataSet("Rho: TVOC");
 	public static DataSet rho_ECO2 = new DataSet("Rho: ECO2");
+	public static DataSet rho_DSY = new DataSet("Rho: Data Synchronization Points");
 	public static boolean rho_GPSFix = false;
 	public static int rho_GPSSatellites = 0;
 	public static float rho_batteryVoltage = 0;
@@ -74,6 +76,7 @@ public class DataSetDeposit {
 	public static DataSet mu_GPSLon = new DataSet("Mu: GPS Longitude");
 	public static DataSet mu_TVOC = new DataSet("Mu: TVOC");
 	public static DataSet mu_ECO2 = new DataSet("Mu: ECO2");
+	public static DataSet mu_DSY = new DataSet("Mu: Data Synchronization Points");
 	public static boolean mu_GPSFix = false;
 	public static int mu_GPSSatellites = 0;
 	public static float mu_batteryVoltage = 0;

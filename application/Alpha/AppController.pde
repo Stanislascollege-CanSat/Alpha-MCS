@@ -41,6 +41,7 @@ public class AppController implements AppController_Interface {
   private View_ForceDeploy view_forceDeploy;
   private View_ControlButtons view_controlButtons;
   private View_UniversalText view_universalText;
+  private View_Overview view_overview;
 
   private ConsoleView overviewConsoleView;
 
@@ -89,6 +90,9 @@ public class AppController implements AppController_Interface {
     this.view_universalText = new View_UniversalText(this, 0, 80, width, height - 80);
     this.view_universalText.visible = false;
 
+	this.view_overview = new View_Overview(this, 500, 80, width - 500, height - 80);
+	this.view_overview.visible = false;
+
     this.overviewConsoleView = new ConsoleView(this, 0, 80, 500, height - 80);
     this.overviewConsoleView.visible = false;
 
@@ -104,6 +108,7 @@ public class AppController implements AppController_Interface {
     this.viewControllers.add(this.view_forceDeploy);
     this.viewControllers.add(this.view_controlButtons);
     this.viewControllers.add(this.view_universalText);
+	this.viewControllers.add(this.view_overview);
     this.viewControllers.add(this.overviewConsoleView);
 
     DataDecoder.init();
@@ -127,7 +132,7 @@ public class AppController implements AppController_Interface {
         this.overviewConsoleView.logSerial(s);
         DataDecoder.addData(s);
         if (this.serial_receive_file_opened) {
-          try {	
+          try {
             this.serial_receive_file.write(s);
           }
           catch(IOException e) {
@@ -184,6 +189,7 @@ public class AppController implements AppController_Interface {
     this.view_forceDeploy.resize(0, 80, width, height - 80);
     this.view_controlButtons.resize(0, 80, width, height - 80);
     this.view_universalText.resize(0, 80, width, height - 80);
+	this.view_overview.resize(500, 80, width - 500, height - 80);
   }
 
   public void addView(ViewController v) {
@@ -707,11 +713,11 @@ public class AppController implements AppController_Interface {
     // println(this.setupView.getSelectedDoCSVDataFile());
 
     MissionSettings.set(
-      this.setupView.getSelectedSerialPort(), 
-      int(this.setupView.getSelectedSerialBaud()), 
-      this.setupView.getSelectedMissionPath(), 
-      this.setupView.getSelectedMissionIdentifier(), 
-      this.setupView.getSelectedDoConsoleLogFile(), 
+      this.setupView.getSelectedSerialPort(),
+      int(this.setupView.getSelectedSerialBaud()),
+      this.setupView.getSelectedMissionPath(),
+      this.setupView.getSelectedMissionIdentifier(),
+      this.setupView.getSelectedDoConsoleLogFile(),
       this.setupView.getSelectedDoCSVDataFile()
       );
 
@@ -730,7 +736,7 @@ public class AppController implements AppController_Interface {
     // try {
     //   SerialController.open(this.mainJavaEnvironment, MissionSettings.getSerialPort(), MissionSettings.getSerialBaudRate());
     // }catch(Exception e){}
-    
+
     try {
       this.serial_receive_file = new FileWriter(MissionSettings.getOutputFolderPath() + "/serial_receive.txt");
       this.serial_receive_file_opened = true;
@@ -940,6 +946,7 @@ public class AppController implements AppController_Interface {
     this.viewSelectorView.visible = true;
     this.overviewConsoleView.resize(0, 80, 500, height - 80);
     this.overviewConsoleView.visible = true;
+	this.view_overview.visible = true;
     this.viewSelectorView.currentViewIdentifier = "overview";
   }
 

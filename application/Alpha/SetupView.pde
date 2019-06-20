@@ -82,7 +82,7 @@ public class SetupView extends ViewController {
 
     this.csvDataFileTBLabel = new TextElement(this.appController, this, this.dim.x/2 - 210, 440, 200, "Create CSV data-output file", RIGHT);
     this.csvDataFileTickBox = new BooleanElement(this.appController, this, this.dim.x/2 + 10, 440);
-    
+
     this.testSlider = new SmartSliderElement(this.appController, this, 100, 100, ElementOrient.VERTICAL, 200, 0, 100);
 
     this.elements.add(this.backButton);
@@ -181,11 +181,11 @@ public class SetupView extends ViewController {
 
     this.missionIdentifierInput.resize(this.dim.x/2 + 10, 320, 200);
 
-    this.consoleLogFileTickBox.resize(this.dim.x/2 - 100, 400);
-    this.consoleLogFileTBLabel.resize(this.dim.x/2 - 80, 400, 300);
+    this.consoleLogFileTickBox.resize(this.dim.x/2 + 10, 400);
+    this.consoleLogFileTBLabel.resize(this.dim.x/2 - 210, 400, 200);
 
-    this.csvDataFileTickBox.resize(this.dim.x/2 - 100, 440);
-    this.csvDataFileTBLabel.resize(this.dim.x/2 - 80, 440, 300);
+    this.csvDataFileTickBox.resize(this.dim.x/2 + 10, 440);
+    this.csvDataFileTBLabel.resize(this.dim.x/2 - 210, 440, 200);
   }
 
   public void show(){
