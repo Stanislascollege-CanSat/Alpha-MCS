@@ -264,24 +264,24 @@ public class DataDecoder {
 				//MOTHERCAN
 				if(!(p.get("Time since startup") == null)) {
 					p.addQuantity("Time since startup", p.get("Time since startup")/1000.0);
-					if(!(p.get("Acceleration X") == null)) {DataSetDeposit.mu_accX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration X")));}
-					if(!(p.get("Acceleration Y") == null)) {DataSetDeposit.mu_accY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Y")));}
-					if(!(p.get("Acceleration Z") == null)) {DataSetDeposit.mu_accZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Z")));}
-					if(!(p.get("Gyroscope X") == null)) {DataSetDeposit.mu_gyroX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope X")));}
-					if(!(p.get("Gyroscope Y") == null)) {DataSetDeposit.mu_gyroY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Y")));}
-					if(!(p.get("Gyroscope Z") == null)) {DataSetDeposit.mu_gyroZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Z")));}
-					if(!(p.get("Compass X") == null)) {DataSetDeposit.mu_compassX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass X")));}
-					if(!(p.get("Compass Y") == null)) {DataSetDeposit.mu_compassY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Y")));}
-					if(!(p.get("Compass Z") == null)) {DataSetDeposit.mu_compassZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Z")));}
-					if(!(p.get("Air-pressure") == null)) {DataSetDeposit.mu_airPres.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-pressure")));}
-					if(!(p.get("Air-temperature") == null)) {DataSetDeposit.mu_airTemp.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-temperature")));}
-					if(!(p.get("Altitude") == null)) {DataSetDeposit.mu_altitude.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Altitude")));}
-					if(!(p.get("Humidity") == null)) {DataSetDeposit.mu_humidity.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Humidity")));}
-					if(!(p.get("GPS Latitude") == null)) {DataSetDeposit.mu_GPSLat.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Latitude")));}
-					if(!(p.get("GPS Longitude") == null)) {DataSetDeposit.mu_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Longitude")));}
-					if(!(p.get("TVOC") == null)) {DataSetDeposit.mu_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("TVOC")));}
-					if(!(p.get("ECO2") == null)) {DataSetDeposit.mu_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("ECO2")));}
-					if(!(p.get("Data Synchronization Point") == null)) {DataSetDeposit.mu_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Data Synchronization Point")));}
+					if(!(p.get("Acceleration X") == null)) {DataSetDeposit.mu_accX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration X")));}else{DataSetDeposit.mu_accX.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Acceleration Y") == null)) {DataSetDeposit.mu_accY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Y")));}else{DataSetDeposit.mu_accY.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Acceleration Z") == null)) {DataSetDeposit.mu_accZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Z")));}else{DataSetDeposit.mu_accZ.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Gyroscope X") == null)) {DataSetDeposit.mu_gyroX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope X")));}else{DataSetDeposit.mu_gyroX.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Gyroscope Y") == null)) {DataSetDeposit.mu_gyroY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Y")));}else{DataSetDeposit.mu_gyroY.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Gyroscope Z") == null)) {DataSetDeposit.mu_gyroZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Z")));}else{DataSetDeposit.mu_gyroZ.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Compass X") == null)) {DataSetDeposit.mu_compassX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass X")));}else{DataSetDeposit.mu_compassX.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Compass Y") == null)) {DataSetDeposit.mu_compassY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Y")));}else{DataSetDeposit.mu_compassY.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Compass Z") == null)) {DataSetDeposit.mu_compassZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Z")));}else{DataSetDeposit.mu_compassZ.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Air-pressure") == null)) {DataSetDeposit.mu_airPres.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-pressure")));}else{DataSetDeposit.mu_airPres.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Air-temperature") == null)) {DataSetDeposit.mu_airTemp.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-temperature")));}else{DataSetDeposit.mu_airTemp.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Altitude") == null)) {DataSetDeposit.mu_altitude.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Altitude")));}else{DataSetDeposit.mu_altitude.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Humidity") == null)) {DataSetDeposit.mu_humidity.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Humidity")));}else{DataSetDeposit.mu_humidity.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("GPS Latitude") == null)) {DataSetDeposit.mu_GPSLat.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Latitude")));}else{DataSetDeposit.mu_GPSLat.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("GPS Longitude") == null)) {DataSetDeposit.mu_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Longitude")));}else{DataSetDeposit.mu_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("TVOC") == null)) {DataSetDeposit.mu_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("TVOC")));}else{DataSetDeposit.mu_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("ECO2") == null)) {DataSetDeposit.mu_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("ECO2")));}else{DataSetDeposit.mu_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Data Synchronization Point") == null)) {DataSetDeposit.mu_DSY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Data Synchronization Point")));}else{DataSetDeposit.mu_DSY.addDataPoint(new DataPoint(p.get("Time since startup"), -1));}
 					if(!(p.get("GPS 3D-fix") == null)) {DataSetDeposit.mu_GPSFix = (p.get("GPS 3D-fix") > 0 ? true : false);}
 					if(!(p.get("GPS satellites") == null)) {DataSetDeposit.mu_GPSSatellites = p.get("GPS satellites").intValue();}
 					if(!(p.get("Battery voltage") == null)) {DataSetDeposit.mu_batteryVoltage = p.get("Battery voltage").floatValue();}
@@ -292,24 +292,24 @@ public class DataDecoder {
 				//BETA
 				if(!(p.get("Time since startup") == null)) {
 					p.addQuantity("Time since startup", p.get("Time since startup")/1000.0);
-					if(!(p.get("Acceleration X") == null)) {DataSetDeposit.beta_accX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration X")));}
-					if(!(p.get("Acceleration Y") == null)) {DataSetDeposit.beta_accY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Y")));}
-					if(!(p.get("Acceleration Z") == null)) {DataSetDeposit.beta_accZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Z")));}
-					if(!(p.get("Gyroscope X") == null)) {DataSetDeposit.beta_gyroX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope X")));}
-					if(!(p.get("Gyroscope Y") == null)) {DataSetDeposit.beta_gyroY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Y")));}
-					if(!(p.get("Gyroscope Z") == null)) {DataSetDeposit.beta_gyroZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Z")));}
-					if(!(p.get("Compass X") == null)) {DataSetDeposit.beta_compassX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass X")));}
-					if(!(p.get("Compass Y") == null)) {DataSetDeposit.beta_compassY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Y")));}
-					if(!(p.get("Compass Z") == null)) {DataSetDeposit.beta_compassZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Z")));}
-					if(!(p.get("Air-pressure") == null)) {DataSetDeposit.beta_airPres.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-pressure")));}
-					if(!(p.get("Air-temperature") == null)) {DataSetDeposit.beta_airTemp.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-temperature")));}
-					if(!(p.get("Altitude") == null)) {DataSetDeposit.beta_altitude.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Altitude")));}
-					if(!(p.get("Humidity") == null)) {DataSetDeposit.beta_humidity.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Humidity")));}
-					if(!(p.get("GPS Latitude") == null)) {DataSetDeposit.beta_GPSLat.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Latitude")));}
-					if(!(p.get("GPS Longitude") == null)) {DataSetDeposit.beta_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Longitude")));}
-					if(!(p.get("TVOC") == null)) {DataSetDeposit.beta_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("TVOC")));}
-					if(!(p.get("ECO2") == null)) {DataSetDeposit.beta_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("ECO2")));}
-					if(!(p.get("Data Synchronization Point") == null)) {DataSetDeposit.beta_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Data Synchronization Point")));}
+					if(!(p.get("Acceleration X") == null)) {DataSetDeposit.beta_accX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration X")));}else{DataSetDeposit.beta_accX.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Acceleration Y") == null)) {DataSetDeposit.beta_accY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Y")));}else{DataSetDeposit.beta_accY.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Acceleration Z") == null)) {DataSetDeposit.beta_accZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Z")));}else{DataSetDeposit.beta_accZ.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Gyroscope X") == null)) {DataSetDeposit.beta_gyroX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope X")));}else{DataSetDeposit.beta_gyroX.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Gyroscope Y") == null)) {DataSetDeposit.beta_gyroY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Y")));}else{DataSetDeposit.beta_gyroY.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Gyroscope Z") == null)) {DataSetDeposit.beta_gyroZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Z")));}else{DataSetDeposit.beta_gyroZ.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Compass X") == null)) {DataSetDeposit.beta_compassX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass X")));}else{DataSetDeposit.beta_compassX.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Compass Y") == null)) {DataSetDeposit.beta_compassY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Y")));}else{DataSetDeposit.beta_compassY.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Compass Z") == null)) {DataSetDeposit.beta_compassZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Z")));}else{DataSetDeposit.beta_compassZ.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Air-pressure") == null)) {DataSetDeposit.beta_airPres.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-pressure")));}else{DataSetDeposit.beta_airPres.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Air-temperature") == null)) {DataSetDeposit.beta_airTemp.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-temperature")));}else{DataSetDeposit.beta_airTemp.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Altitude") == null)) {DataSetDeposit.beta_altitude.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Altitude")));}else{DataSetDeposit.beta_altitude.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Humidity") == null)) {DataSetDeposit.beta_humidity.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Humidity")));}else{DataSetDeposit.beta_humidity.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("GPS Latitude") == null)) {DataSetDeposit.beta_GPSLat.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Latitude")));}else{DataSetDeposit.beta_GPSLat.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("GPS Longitude") == null)) {DataSetDeposit.beta_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Longitude")));}else{DataSetDeposit.beta_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("TVOC") == null)) {DataSetDeposit.beta_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("TVOC")));}else{DataSetDeposit.beta_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("ECO2") == null)) {DataSetDeposit.beta_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("ECO2")));}else{DataSetDeposit.beta_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Data Synchronization Point") == null)) {DataSetDeposit.beta_DSY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Data Synchronization Point")));}else{DataSetDeposit.beta_DSY.addDataPoint(new DataPoint(p.get("Time since startup"), -1));}
 					if(!(p.get("GPS 3D-fix") == null)) {DataSetDeposit.beta_GPSFix = (p.get("GPS 3D-fix") > 0 ? true : false);}
 					if(!(p.get("GPS satellites") == null)) {DataSetDeposit.beta_GPSSatellites = p.get("GPS satellites").intValue();}
 					if(!(p.get("Battery voltage") == null)) {DataSetDeposit.beta_batteryVoltage = p.get("Battery voltage").floatValue();}
@@ -320,24 +320,24 @@ public class DataDecoder {
 				//RHO
 				if(!(p.get("Time since startup") == null)) {
 					p.addQuantity("Time since startup", p.get("Time since startup")/1000.0);
-					if(!(p.get("Acceleration X") == null)) {DataSetDeposit.rho_accX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration X")));}
-					if(!(p.get("Acceleration Y") == null)) {DataSetDeposit.rho_accY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Y")));}
-					if(!(p.get("Acceleration Z") == null)) {DataSetDeposit.rho_accZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Z")));}
-					if(!(p.get("Gyroscope X") == null)) {DataSetDeposit.rho_gyroX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope X")));}
-					if(!(p.get("Gyroscope Y") == null)) {DataSetDeposit.rho_gyroY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Y")));}
-					if(!(p.get("Gyroscope Z") == null)) {DataSetDeposit.rho_gyroZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Z")));}
-					if(!(p.get("Compass X") == null)) {DataSetDeposit.rho_compassX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass X")));}
-					if(!(p.get("Compass Y") == null)) {DataSetDeposit.rho_compassY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Y")));}
-					if(!(p.get("Compass Z") == null)) {DataSetDeposit.rho_compassZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Z")));}
-					if(!(p.get("Air-pressure") == null)) {DataSetDeposit.rho_airPres.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-pressure")));}
-					if(!(p.get("Air-temperature") == null)) {DataSetDeposit.rho_airTemp.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-temperature")));}
-					if(!(p.get("Altitude") == null)) {DataSetDeposit.rho_altitude.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Altitude")));}
-					if(!(p.get("Humidity") == null)) {DataSetDeposit.rho_humidity.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Humidity")));}
-					if(!(p.get("GPS Latitude") == null)) {DataSetDeposit.rho_GPSLat.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Latitude")));}
-					if(!(p.get("GPS Longitude") == null)) {DataSetDeposit.rho_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Longitude")));}
-					if(!(p.get("TVOC") == null)) {DataSetDeposit.rho_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("TVOC")));}
-					if(!(p.get("ECO2") == null)) {DataSetDeposit.rho_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("ECO2")));}
-					if(!(p.get("Data Synchronization Point") == null)) {DataSetDeposit.rho_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Data Synchronization Point")));}
+					if(!(p.get("Acceleration X") == null)) {DataSetDeposit.rho_accX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration X")));}else{DataSetDeposit.rho_accX.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Acceleration Y") == null)) {DataSetDeposit.rho_accY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Y")));}else{DataSetDeposit.rho_accY.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Acceleration Z") == null)) {DataSetDeposit.rho_accZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Acceleration Z")));}else{DataSetDeposit.rho_accZ.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Gyroscope X") == null)) {DataSetDeposit.rho_gyroX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope X")));}else{DataSetDeposit.rho_gyroX.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Gyroscope Y") == null)) {DataSetDeposit.rho_gyroY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Y")));}else{DataSetDeposit.rho_gyroY.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Gyroscope Z") == null)) {DataSetDeposit.rho_gyroZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Gyroscope Z")));}else{DataSetDeposit.rho_gyroZ.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Compass X") == null)) {DataSetDeposit.rho_compassX.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass X")));}else{DataSetDeposit.rho_compassX.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Compass Y") == null)) {DataSetDeposit.rho_compassY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Y")));}else{DataSetDeposit.rho_compassY.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Compass Z") == null)) {DataSetDeposit.rho_compassZ.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Compass Z")));}else{DataSetDeposit.rho_compassZ.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Air-pressure") == null)) {DataSetDeposit.rho_airPres.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-pressure")));}else{DataSetDeposit.rho_airPres.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Air-temperature") == null)) {DataSetDeposit.rho_airTemp.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Air-temperature")));}else{DataSetDeposit.rho_airTemp.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Altitude") == null)) {DataSetDeposit.rho_altitude.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Altitude")));}else{DataSetDeposit.rho_altitude.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Humidity") == null)) {DataSetDeposit.rho_humidity.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Humidity")));}else{DataSetDeposit.rho_humidity.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("GPS Latitude") == null)) {DataSetDeposit.rho_GPSLat.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Latitude")));}else{DataSetDeposit.rho_GPSLat.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("GPS Longitude") == null)) {DataSetDeposit.rho_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("GPS Longitude")));}else{DataSetDeposit.rho_GPSLon.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("TVOC") == null)) {DataSetDeposit.rho_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("TVOC")));}else{DataSetDeposit.rho_TVOC.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("ECO2") == null)) {DataSetDeposit.rho_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("ECO2")));}else{DataSetDeposit.rho_ECO2.addDataPoint(new DataPoint(p.get("Time since startup"), 0));}
+					if(!(p.get("Data Synchronization Point") == null)) {DataSetDeposit.rho_DSY.addDataPoint(new DataPoint(p.get("Time since startup"), p.get("Data Synchronization Point")));}else{DataSetDeposit.rho_DSY.addDataPoint(new DataPoint(p.get("Time since startup"), -1));}
 					if(!(p.get("GPS 3D-fix") == null)) {DataSetDeposit.rho_GPSFix = (p.get("GPS 3D-fix") > 0 ? true : false);}
 					if(!(p.get("GPS satellites") == null)) {DataSetDeposit.rho_GPSSatellites = p.get("GPS satellites").intValue();}
 					if(!(p.get("Battery voltage") == null)) {DataSetDeposit.rho_batteryVoltage = p.get("Battery voltage").floatValue();}

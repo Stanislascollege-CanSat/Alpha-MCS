@@ -1,0 +1,4717 @@
+@MISSION: European Mission
+--> Measured 157 data points.
+
+
+--
+
+
+
+--
+
+
+
+--
+
+>>Time since startup: 55.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 0.0
+>>Acceleration Y: 4.0
+>>Acceleration X: -7.63
+>>Acceleration Z: 2.42
+>>Compass Z: 8.95
+>>GPS speed: 0.0
+>>Compass X: 51.83
+>>Compass Y: 9.64
+>>Humidity: 56.47
+>>Air-pressure: 102425.3
+>>GPSTime hour: 1.0
+>>GPS angle: 0.0
+>>GPSTime minute: 0.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.34
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.68
+>>Gyroscope Z: 0.37
+>>Air-temperature: 34.9
+>>Battery voltage: 4.16
+>>Altitude: -0.27
+
+
+--
+
+>>Time since startup: 1144.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 47.0
+>>Acceleration Y: 8.69
+>>Acceleration X: -5.9
+>>Acceleration Z: -2.91
+>>Compass Z: 31.0
+>>GPS speed: 0.0
+>>Compass X: 40.26
+>>Compass Y: 5.68
+>>Humidity: 56.82
+>>Air-pressure: 102419.23
+>>GPSTime hour: 24.0
+>>GPS angle: 0.0
+>>GPSTime minute: 59.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 2.03
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 2.11
+>>Gyroscope Z: 1.43
+>>Air-temperature: 35.0
+>>Battery voltage: 4.17
+>>Altitude: 0.23
+
+
+--
+
+
+
+--
+
+>>Time since startup: 13390.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -1.91
+>>Acceleration X: 10.22
+>>Acceleration Z: -1.48
+>>Compass Z: 23.04
+>>GPS speed: 0.0
+>>Compass X: -21.6
+>>Compass Y: 57.69
+>>Humidity: 51.18
+>>Air-pressure: 102432.01
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.07
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.56
+>>Gyroscope Z: -0.78
+>>Air-temperature: 35.0
+>>Battery voltage: 4.16
+>>Altitude: -0.83
+
+
+--
+
+>>Time since startup: 14404.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -3.16
+>>Acceleration X: 8.8
+>>Acceleration Z: -2.45
+>>Compass Z: 23.54
+>>GPS speed: 0.0
+>>Compass X: -17.97
+>>Compass Y: 61.65
+>>Humidity: 50.62
+>>Air-pressure: 102433.59
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.05
+>>Gyroscope Z: 0.07
+>>Air-temperature: 35.1
+>>Battery voltage: 4.16
+>>Altitude: -0.96
+
+
+--
+
+>>Time since startup: 15699.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -2.09
+>>Acceleration X: 9.5
+>>Acceleration Z: -1.62
+>>Compass Z: 0.99
+>>GPS speed: 0.0
+>>Compass X: -17.28
+>>Compass Y: 76.11
+>>Humidity: 49.98
+>>Air-pressure: 102444.52
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.88
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.14
+>>Gyroscope Z: -0.75
+>>Air-temperature: 35.1
+>>Battery voltage: 4.16
+>>Altitude: -1.86
+
+
+--
+
+>>Time since startup: 16989.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -6.06
+>>Acceleration X: 8.28
+>>Acceleration Z: -1.09
+>>Compass Z: 0.5
+>>GPS speed: 0.0
+>>Compass X: -11.23
+>>Compass Y: 82.14
+>>Humidity: 49.4
+>>Air-pressure: 102446.86
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.6
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.27
+>>Gyroscope Z: 0.23
+>>Air-temperature: 35.2
+>>Battery voltage: 4.16
+>>Altitude: -2.05
+
+
+--
+
+>>Time since startup: 18274.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -1.63
+>>Acceleration X: 8.1
+>>Acceleration Z: -2.11
+>>Compass Z: 21.71
+>>GPS speed: 0.0
+>>Compass X: -19.18
+>>Compass Y: 54.93
+>>Humidity: 48.93
+>>Air-pressure: 102429.34
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.09
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.1
+>>Gyroscope Z: 0.39
+>>Air-temperature: 35.2
+>>Battery voltage: 4.16
+>>Altitude: -0.61
+
+
+--
+
+>>Time since startup: 19559.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -1.23
+>>Acceleration X: 9.95
+>>Acceleration Z: -0.87
+>>Compass Z: 10.11
+>>GPS speed: 0.0
+>>Compass X: -25.4
+>>Compass Y: 56.65
+>>Humidity: 48.52
+>>Air-pressure: 102435.12
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.31
+>>Gyroscope Z: -0.13
+>>Air-temperature: 35.2
+>>Battery voltage: 4.16
+>>Altitude: -1.08
+
+
+--
+
+>>Time since startup: 20844.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -6.0
+>>Acceleration X: 12.01
+>>Acceleration Z: 0.31
+>>Compass Z: 6.96
+>>GPS speed: 0.0
+>>Compass X: -26.61
+>>Compass Y: 58.89
+>>Humidity: 48.15
+>>Air-pressure: 102442.37
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.16
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.44
+>>Gyroscope Z: 0.91
+>>Air-temperature: 35.2
+>>Battery voltage: 4.16
+>>Altitude: -1.68
+
+
+--
+
+>>Time since startup: 22129.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -3.69
+>>Acceleration X: 9.3
+>>Acceleration Z: -1.2
+>>Compass Z: 6.96
+>>GPS speed: 0.0
+>>Compass X: -22.12
+>>Compass Y: 66.47
+>>Humidity: 47.81
+>>Air-pressure: 102438.44
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.11
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.02
+>>Gyroscope Z: -0.07
+>>Air-temperature: 35.2
+>>Battery voltage: 4.15
+>>Altitude: -1.36
+
+
+--
+
+>>Time since startup: 23414.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -5.64
+>>Acceleration X: 6.62
+>>Acceleration Z: 0.74
+>>Compass Z: 6.8
+>>GPS speed: 0.0
+>>Compass X: -7.08
+>>Compass Y: 70.08
+>>Humidity: 47.51
+>>Air-pressure: 102429.32
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.03
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.59
+>>Gyroscope Z: 1.3
+>>Air-temperature: 35.3
+>>Battery voltage: 4.15
+>>Altitude: -0.61
+
+
+--
+
+>>Time since startup: 24694.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -7.16
+>>Acceleration X: 5.47
+>>Acceleration Z: -1.98
+>>Compass Z: 15.42
+>>GPS speed: 0.0
+>>Compass X: -8.47
+>>Compass Y: 61.82
+>>Humidity: 47.26
+>>Air-pressure: 102441.52
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.91
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.56
+>>Gyroscope Z: -0.39
+>>Air-temperature: 35.3
+>>Battery voltage: 4.16
+>>Altitude: -1.61
+
+
+--
+
+>>Time since startup: 25973.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -5.75
+>>Acceleration X: 7.77
+>>Acceleration Z: -2.54
+>>Compass Z: 13.76
+>>GPS speed: 0.0
+>>Compass X: -10.89
+>>Compass Y: 59.06
+>>Humidity: 47.06
+>>Air-pressure: 102431.74
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.05
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.03
+>>Gyroscope Z: -0.42
+>>Air-temperature: 35.4
+>>Battery voltage: 4.16
+>>Altitude: -0.81
+
+
+--
+
+>>Time since startup: 29834.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -6.57
+>>Acceleration X: 5.86
+>>Acceleration Z: -0.79
+>>Compass Z: 15.42
+>>GPS speed: 0.0
+>>Compass X: -6.74
+>>Compass Y: 62.51
+>>Humidity: 46.59
+>>Air-pressure: 102428.14
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.34
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.22
+>>Gyroscope Z: -0.17
+>>Air-temperature: 35.5
+>>Battery voltage: 4.15
+>>Altitude: -0.51
+
+
+--
+
+>>Time since startup: 31134.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -7.88
+>>Acceleration X: 2.93
+>>Acceleration Z: -2.38
+>>Compass Z: 29.67
+>>GPS speed: 0.0
+>>Compass X: 6.74
+>>Compass Y: 57.69
+>>Humidity: 46.68
+>>Air-pressure: 102446.28
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.43
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.59
+>>Gyroscope Z: 0.5
+>>Air-temperature: 35.5
+>>Battery voltage: 4.16
+>>Altitude: -2.01
+
+
+--
+
+>>Time since startup: 32419.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -8.22
+>>Acceleration X: 5.2
+>>Acceleration Z: 3.33
+>>Compass Z: 6.96
+>>GPS speed: 0.0
+>>Compass X: -5.18
+>>Compass Y: 67.85
+>>Humidity: 46.78
+>>Air-pressure: 102432.12
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.06
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.02
+>>Gyroscope Z: -0.06
+>>Air-temperature: 35.5
+>>Battery voltage: 4.15
+>>Altitude: -0.84
+
+
+--
+
+>>Time since startup: 33704.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -7.69
+>>Acceleration X: 4.66
+>>Acceleration Z: 2.87
+>>Compass Z: 7.62
+>>GPS speed: 0.0
+>>Compass X: -6.57
+>>Compass Y: 65.43
+>>Humidity: 46.78
+>>Air-pressure: 102426.45
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.27
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.13
+>>Gyroscope Z: -0.12
+>>Air-temperature: 35.4
+>>Battery voltage: 4.14
+>>Altitude: -0.37
+
+
+--
+
+>>Time since startup: 34989.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -7.62
+>>Acceleration X: 6.05
+>>Acceleration Z: 1.35
+>>Compass Z: 10.28
+>>GPS speed: 0.0
+>>Compass X: -5.18
+>>Compass Y: 65.43
+>>Humidity: 46.77
+>>Air-pressure: 102440.94
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.07
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.51
+>>Gyroscope Z: -0.32
+>>Air-temperature: 35.5
+>>Battery voltage: 4.14
+>>Altitude: -1.56
+
+
+--
+
+>>Time since startup: 36274.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 37.0
+>>Acceleration Y: -3.18
+>>Acceleration X: 8.02
+>>Acceleration Z: -0.85
+>>Compass Z: 8.45
+>>GPS speed: 0.0
+>>Compass X: -24.36
+>>Compass Y: 53.21
+>>Humidity: 46.75
+>>Air-pressure: 102425.31
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.29
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -1.63
+>>Gyroscope Z: 0.6
+>>Air-temperature: 35.5
+>>Battery voltage: 4.15
+>>Altitude: -0.27
+
+
+--
+
+>>Time since startup: 37559.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -1.49
+>>Acceleration X: 7.76
+>>Acceleration Z: -6.14
+>>Compass Z: 37.13
+>>GPS speed: 0.0
+>>Compass X: -12.44
+>>Compass Y: 37.54
+>>Humidity: 46.87
+>>Air-pressure: 102421.28
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -1.08
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -1.2
+>>Gyroscope Z: -2.22
+>>Air-temperature: 35.5
+>>Battery voltage: 4.15
+>>Altitude: 0.06
+
+
+--
+
+>>Time since startup: 38849.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 4.66
+>>Acceleration X: 3.94
+>>Acceleration Z: -5.57
+>>Compass Z: 39.95
+>>GPS speed: 0.0
+>>Compass X: -11.23
+>>Compass Y: 18.08
+>>Humidity: 47.29
+>>Air-pressure: 102422.73
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.15
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.28
+>>Gyroscope Z: -0.34
+>>Air-temperature: 35.7
+>>Battery voltage: 4.15
+>>Altitude: -0.06
+
+
+--
+
+>>Time since startup: 40139.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 7.51
+>>Acceleration X: -1.75
+>>Acceleration Z: -5.51
+>>Compass Z: 40.61
+>>GPS speed: 0.0
+>>Compass X: 1.21
+>>Compass Y: 8.09
+>>Humidity: 48.05
+>>Air-pressure: 102420.85
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.39
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.77
+>>Gyroscope Z: -0.97
+>>Air-temperature: 35.8
+>>Battery voltage: 4.15
+>>Altitude: 0.09
+
+
+--
+
+>>Time since startup: 41424.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 7.39
+>>Acceleration X: -0.63
+>>Acceleration Z: -6.36
+>>Compass Z: 43.26
+>>GPS speed: 0.0
+>>Compass X: 5.36
+>>Compass Y: 9.82
+>>Humidity: 49.0
+>>Air-pressure: 102422.41
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.07
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.05
+>>Gyroscope Z: 0.14
+>>Air-temperature: 35.8
+>>Battery voltage: 4.14
+>>Altitude: -0.03
+
+
+--
+
+>>Time since startup: 42709.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 6.6
+>>Acceleration X: -0.12
+>>Acceleration Z: -5.55
+>>Compass Z: 43.1
+>>GPS speed: 0.0
+>>Compass X: 7.26
+>>Compass Y: 8.61
+>>Humidity: 50.04
+>>Air-pressure: 102419.95
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.05
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: 0.03
+>>Air-temperature: 35.9
+>>Battery voltage: 4.15
+>>Altitude: 0.17
+
+
+--
+
+>>Time since startup: 43989.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 7.58
+>>Acceleration X: -0.31
+>>Acceleration Z: -6.11
+>>Compass Z: 42.76
+>>GPS speed: 0.0
+>>Compass X: 6.57
+>>Compass Y: 7.58
+>>Humidity: 51.09
+>>Air-pressure: 102420.59
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.0
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.11
+>>Gyroscope Z: 0.04
+>>Air-temperature: 35.9
+>>Battery voltage: 4.14
+>>Altitude: 0.11
+
+
+--
+
+>>Time since startup: 45263.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 7.25
+>>Acceleration X: 0.92
+>>Acceleration Z: -6.44
+>>Compass Z: 43.1
+>>GPS speed: 0.0
+>>Compass X: 2.76
+>>Compass Y: 10.33
+>>Humidity: 52.13
+>>Air-pressure: 102422.14
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.12
+>>Gyroscope Z: -0.08
+>>Air-temperature: 35.9
+>>Battery voltage: 4.14
+>>Altitude: -0.01
+
+
+--
+
+>>Time since startup: 46542.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 7.11
+>>Acceleration X: 0.61
+>>Acceleration Z: -6.54
+>>Compass Z: 42.93
+>>GPS speed: 0.0
+>>Compass X: 1.9
+>>Compass Y: 10.16
+>>Humidity: 53.12
+>>Air-pressure: 102417.48
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.12
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.1
+>>Gyroscope Z: 0.05
+>>Air-temperature: 36.0
+>>Battery voltage: 4.15
+>>Altitude: 0.37
+
+
+--
+
+>>Time since startup: 47822.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 7.43
+>>Acceleration X: 0.7
+>>Acceleration Z: -6.69
+>>Compass Z: 41.11
+>>GPS speed: 0.0
+>>Compass X: 3.11
+>>Compass Y: 9.64
+>>Humidity: 54.05
+>>Air-pressure: 102418.05
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.06
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.02
+>>Gyroscope Z: 0.0
+>>Air-temperature: 36.0
+>>Battery voltage: 4.15
+>>Altitude: 0.33
+
+
+--
+
+>>Time since startup: 49096.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 7.19
+>>Acceleration X: 0.92
+>>Acceleration Z: -5.9
+>>Compass Z: 42.93
+>>GPS speed: 0.0
+>>Compass X: 2.94
+>>Compass Y: 10.85
+>>Humidity: 54.95
+>>Air-pressure: 102420.08
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.09
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.08
+>>Gyroscope Z: -0.05
+>>Air-temperature: 36.0
+>>Battery voltage: 4.15
+>>Altitude: 0.16
+
+
+--
+
+>>Time since startup: 50370.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 8.48
+>>Acceleration X: -1.47
+>>Acceleration Z: -4.94
+>>Compass Z: 41.6
+>>GPS speed: 0.0
+>>Compass X: 6.05
+>>Compass Y: 6.03
+>>Humidity: 55.76
+>>Air-pressure: 102421.45
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.68
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.46
+>>Gyroscope Z: -0.67
+>>Air-temperature: 36.1
+>>Battery voltage: 4.14
+>>Altitude: 0.04
+
+
+--
+
+>>Time since startup: 51649.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 6.67
+>>Acceleration X: 2.97
+>>Acceleration Z: -6.49
+>>Compass Z: 41.44
+>>GPS speed: 0.0
+>>Compass X: -7.6
+>>Compass Y: 16.88
+>>Humidity: 56.51
+>>Air-pressure: 102428.32
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.15
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.06
+>>Gyroscope Z: -0.58
+>>Air-temperature: 36.1
+>>Battery voltage: 4.14
+>>Altitude: -0.52
+
+
+--
+
+>>Time since startup: 52934.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 4.4
+>>Acceleration X: -7.17
+>>Acceleration Z: 5.08
+>>Compass Z: -3.98
+>>GPS speed: 0.0
+>>Compass X: 43.2
+>>Compass Y: -7.92
+>>Humidity: 57.22
+>>Air-pressure: 102421.11
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.03
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.24
+>>Gyroscope Z: -0.09
+>>Air-temperature: 36.1
+>>Battery voltage: 4.14
+>>Altitude: 0.07
+
+
+--
+
+>>Time since startup: 54219.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.25
+>>Acceleration X: -7.02
+>>Acceleration Z: 6.36
+>>Compass Z: -10.77
+>>GPS speed: 0.0
+>>Compass X: 49.24
+>>Compass Y: 11.54
+>>Humidity: 57.88
+>>Air-pressure: 102416.92
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.1
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.19
+>>Gyroscope Z: -0.03
+>>Air-temperature: 36.2
+>>Battery voltage: 4.14
+>>Altitude: 0.42
+
+
+--
+
+>>Time since startup: 55504.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.18
+>>Acceleration X: -7.97
+>>Acceleration Z: 6.34
+>>Compass Z: -7.46
+>>GPS speed: 0.0
+>>Compass X: 49.59
+>>Compass Y: 7.06
+>>Humidity: 58.47
+>>Air-pressure: 102419.41
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.08
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.28
+>>Gyroscope Z: -0.49
+>>Air-temperature: 36.2
+>>Battery voltage: 4.14
+>>Altitude: 0.21
+
+
+--
+
+>>Time since startup: 56789.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.38
+>>Acceleration X: -7.3
+>>Acceleration Z: 6.85
+>>Compass Z: -8.62
+>>GPS speed: 0.0
+>>Compass X: 51.83
+>>Compass Y: 11.71
+>>Humidity: 59.07
+>>Air-pressure: 102418.13
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.05
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.13
+>>Gyroscope Z: 0.03
+>>Air-temperature: 36.2
+>>Battery voltage: 4.15
+>>Altitude: 0.32
+
+
+--
+
+>>Time since startup: 58074.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.12
+>>Acceleration X: -7.82
+>>Acceleration Z: 6.99
+>>Compass Z: -9.95
+>>GPS speed: 0.0
+>>Compass X: 49.42
+>>Compass Y: 11.71
+>>Humidity: 59.59
+>>Air-pressure: 102416.1
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.13
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.18
+>>Gyroscope Z: 0.05
+>>Air-temperature: 36.2
+>>Battery voltage: 4.14
+>>Altitude: 0.49
+
+
+--
+
+>>Time since startup: 59359.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.2
+>>Acceleration X: -7.27
+>>Acceleration Z: 5.87
+>>Compass Z: -11.44
+>>GPS speed: 0.0
+>>Compass X: 50.62
+>>Compass Y: 8.09
+>>Humidity: 60.1
+>>Air-pressure: 102415.05
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.05
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.13
+>>Gyroscope Z: 0.18
+>>Air-temperature: 36.3
+>>Battery voltage: 4.15
+>>Altitude: 0.57
+
+
+--
+
+>>Time since startup: 60639.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.38
+>>Acceleration X: -8.22
+>>Acceleration Z: 6.42
+>>Compass Z: -6.8
+>>GPS speed: 0.0
+>>Compass X: 50.62
+>>Compass Y: 6.37
+>>Humidity: 60.56
+>>Air-pressure: 102417.28
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.08
+>>Gyroscope Z: -0.02
+>>Air-temperature: 36.3
+>>Battery voltage: 4.14
+>>Altitude: 0.39
+
+
+--
+
+>>Time since startup: 61923.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.05
+>>Acceleration X: -8.24
+>>Acceleration Z: 6.83
+>>Compass Z: -7.46
+>>GPS speed: 0.0
+>>Compass X: 51.32
+>>Compass Y: 9.13
+>>Humidity: 61.03
+>>Air-pressure: 102415.73
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.16
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.12
+>>Gyroscope Z: -0.37
+>>Air-temperature: 36.3
+>>Battery voltage: 4.14
+>>Altitude: 0.52
+
+
+--
+
+>>Time since startup: 63202.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.48
+>>Acceleration X: -7.89
+>>Acceleration Z: 5.96
+>>Compass Z: -9.95
+>>GPS speed: 0.0
+>>Compass X: 51.14
+>>Compass Y: 12.05
+>>Humidity: 61.44
+>>Air-pressure: 102415.59
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.06
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.09
+>>Gyroscope Z: -0.06
+>>Air-temperature: 36.4
+>>Battery voltage: 4.15
+>>Altitude: 0.53
+
+
+--
+
+>>Time since startup: 64487.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.74
+>>Acceleration X: -7.7
+>>Acceleration Z: 5.95
+>>Compass Z: -7.29
+>>GPS speed: 0.0
+>>Compass X: 50.45
+>>Compass Y: 9.3
+>>Humidity: 61.83
+>>Air-pressure: 102419.66
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.08
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.03
+>>Gyroscope Z: 0.17
+>>Air-temperature: 36.4
+>>Battery voltage: 4.14
+>>Altitude: 0.19
+
+
+--
+
+>>Time since startup: 65772.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.16
+>>Acceleration X: -8.08
+>>Acceleration Z: 6.28
+>>Compass Z: -7.96
+>>GPS speed: 0.0
+>>Compass X: 51.83
+>>Compass Y: 12.74
+>>Humidity: 62.21
+>>Air-pressure: 102419.84
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.11
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.19
+>>Gyroscope Z: -0.03
+>>Air-temperature: 36.5
+>>Battery voltage: 4.15
+>>Altitude: 0.18
+
+
+--
+
+>>Time since startup: 67057.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.12
+>>Acceleration X: -7.5
+>>Acceleration Z: 5.6
+>>Compass Z: -6.63
+>>GPS speed: 0.0
+>>Compass X: 51.83
+>>Compass Y: 12.74
+>>Humidity: 62.57
+>>Air-pressure: 102418.25
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.05
+>>Gyroscope Z: 0.03
+>>Air-temperature: 36.5
+>>Battery voltage: 4.14
+>>Altitude: 0.31
+
+
+--
+
+>>Time since startup: 68342.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 2.57
+>>Acceleration X: -7.86
+>>Acceleration Z: 4.59
+>>Compass Z: 5.14
+>>GPS speed: 0.0
+>>Compass X: 51.66
+>>Compass Y: 6.37
+>>Humidity: 62.9
+>>Air-pressure: 102423.28
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.08
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.08
+>>Gyroscope Z: -0.22
+>>Air-temperature: 36.5
+>>Battery voltage: 4.14
+>>Altitude: -0.11
+
+
+--
+
+>>Time since startup: 69622.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 4.05
+>>Acceleration X: -7.14
+>>Acceleration Z: 4.55
+>>Compass Z: 3.81
+>>GPS speed: 0.0
+>>Compass X: 48.21
+>>Compass Y: 1.89
+>>Humidity: 63.23
+>>Air-pressure: 102421.25
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.34
+>>Gyroscope Z: 0.08
+>>Air-temperature: 36.6
+>>Battery voltage: 4.14
+>>Altitude: 0.06
+
+
+--
+
+>>Time since startup: 70896.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 7.32
+>>Acceleration X: 1.45
+>>Acceleration Z: -6.0
+>>Compass Z: 38.45
+>>GPS speed: 0.0
+>>Compass X: -7.26
+>>Compass Y: 12.74
+>>Humidity: 63.55
+>>Air-pressure: 102421.58
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.38
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.23
+>>Gyroscope Z: 0.06
+>>Air-temperature: 36.6
+>>Battery voltage: 4.14
+>>Altitude: 0.03
+
+
+--
+
+>>Time since startup: 72170.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 2.01
+>>Acceleration X: 7.47
+>>Acceleration Z: -4.71
+>>Compass Z: 22.21
+>>GPS speed: 0.0
+>>Compass X: -28.34
+>>Compass Y: 38.92
+>>Humidity: 63.64
+>>Air-pressure: 102436.59
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.56
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.21
+>>Gyroscope Z: -0.32
+>>Air-temperature: 36.4
+>>Battery voltage: 4.14
+>>Altitude: -1.21
+
+
+--
+
+>>Time since startup: 73450.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -4.64
+>>Acceleration X: 7.47
+>>Acceleration Z: -2.62
+>>Compass Z: -3.32
+>>GPS speed: 0.0
+>>Compass X: -26.26
+>>Compass Y: 53.72
+>>Humidity: 62.98
+>>Air-pressure: 102453.98
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.24
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.47
+>>Gyroscope Z: 0.19
+>>Air-temperature: 36.5
+>>Battery voltage: 4.14
+>>Altitude: -2.64
+
+
+--
+
+>>Time since startup: 74735.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -8.1
+>>Acceleration X: 5.49
+>>Acceleration Z: -2.13
+>>Compass Z: -9.28
+>>GPS speed: 0.0
+>>Compass X: -16.93
+>>Compass Y: 60.96
+>>Humidity: 61.94
+>>Air-pressure: 102459.44
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.23
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.32
+>>Gyroscope Z: 0.25
+>>Air-temperature: 36.5
+>>Battery voltage: 4.14
+>>Altitude: -3.09
+
+
+--
+
+>>Time since startup: 76020.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 2.77
+>>Acceleration X: 9.23
+>>Acceleration Z: -6.67
+>>Compass Z: 17.07
+>>GPS speed: 0.0
+>>Compass X: -29.2
+>>Compass Y: 38.4
+>>Humidity: 60.75
+>>Air-pressure: 102459.42
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.5
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.24
+>>Gyroscope Z: 0.04
+>>Air-temperature: 36.4
+>>Battery voltage: 4.14
+>>Altitude: -3.09
+
+
+--
+
+>>Time since startup: 77305.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 5.9
+>>Acceleration X: 8.13
+>>Acceleration Z: -5.28
+>>Compass Z: 21.55
+>>GPS speed: 0.0
+>>Compass X: -30.41
+>>Compass Y: 27.21
+>>Humidity: 59.4
+>>Air-pressure: 102438.41
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.59
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.1
+>>Gyroscope Z: -0.22
+>>Air-temperature: 36.4
+>>Battery voltage: 4.15
+>>Altitude: -1.36
+
+
+--
+
+>>Time since startup: 78590.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 5.65
+>>Acceleration X: 8.34
+>>Acceleration Z: -2.1
+>>Compass Z: 18.4
+>>GPS speed: 0.0
+>>Compass X: -33.0
+>>Compass Y: 20.84
+>>Humidity: 58.08
+>>Air-pressure: 102432.7
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.17
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.1
+>>Gyroscope Z: -0.02
+>>Air-temperature: 36.5
+>>Battery voltage: 4.14
+>>Altitude: -0.88
+
+
+--
+
+>>Time since startup: 79875.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 5.49
+>>Acceleration X: 8.5
+>>Acceleration Z: -1.01
+>>Compass Z: 14.09
+>>GPS speed: 0.0
+>>Compass X: -33.35
+>>Compass Y: 19.8
+>>Humidity: 56.75
+>>Air-pressure: 102437.95
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.08
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.05
+>>Gyroscope Z: -0.27
+>>Air-temperature: 36.5
+>>Battery voltage: 4.14
+>>Altitude: -1.32
+
+
+--
+
+>>Time since startup: 83725.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.27
+>>Acceleration X: 9.32
+>>Acceleration Z: -1.18
+>>Compass Z: -1.82
+>>GPS speed: 0.0
+>>Compass X: -37.49
+>>Compass Y: 20.15
+>>Humidity: 53.2
+>>Air-pressure: 102427.77
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 1.85
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.36
+>>Gyroscope Z: 2.06
+>>Air-temperature: 36.4
+>>Battery voltage: 4.14
+>>Altitude: -0.48
+
+
+--
+
+>>Time since startup: 85004.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -8.83
+>>Acceleration X: 3.37
+>>Acceleration Z: -1.0
+>>Compass Z: -15.91
+>>GPS speed: 0.0
+>>Compass X: -1.38
+>>Compass Y: 65.43
+>>Humidity: 52.2
+>>Air-pressure: 102476.57
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.32
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.06
+>>Gyroscope Z: -0.59
+>>Air-temperature: 36.6
+>>Battery voltage: 4.14
+>>Altitude: -4.51
+
+
+--
+
+>>Time since startup: 86294.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -9.5
+>>Acceleration X: 3.26
+>>Acceleration Z: 0.54
+>>Compass Z: -24.37
+>>GPS speed: 0.0
+>>Compass X: -1.56
+>>Compass Y: 61.47
+>>Humidity: 51.35
+>>Air-pressure: 102454.29
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.4
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.03
+>>Gyroscope Z: -0.14
+>>Air-temperature: 36.6
+>>Battery voltage: 4.14
+>>Altitude: -2.67
+
+
+--
+
+>>Time since startup: 87589.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -8.77
+>>Acceleration X: 4.94
+>>Acceleration Z: -2.13
+>>Compass Z: -12.6
+>>GPS speed: 0.0
+>>Compass X: -7.95
+>>Compass Y: 65.09
+>>Humidity: 50.69
+>>Air-pressure: 102465.16
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.32
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.11
+>>Gyroscope Z: 1.02
+>>Air-temperature: 36.6
+>>Battery voltage: 4.14
+>>Altitude: -3.56
+
+
+--
+
+>>Time since startup: 90164.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -10.86
+>>Acceleration X: 0.24
+>>Acceleration Z: -0.46
+>>Compass Z: -19.72
+>>GPS speed: 0.0
+>>Compass X: 9.16
+>>Compass Y: 65.26
+>>Humidity: 49.44
+>>Air-pressure: 102431.05
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.66
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -2.24
+>>Gyroscope Z: -0.4
+>>Air-temperature: 36.5
+>>Battery voltage: 4.14
+>>Altitude: -0.75
+
+
+--
+
+>>Time since startup: 91455.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -7.74
+>>Acceleration X: -5.75
+>>Acceleration Z: -3.11
+>>Compass Z: -15.91
+>>GPS speed: 0.0
+>>Compass X: 29.72
+>>Compass Y: 60.96
+>>Humidity: 48.79
+>>Air-pressure: 102435.48
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.67
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.56
+>>Gyroscope Z: 1.44
+>>Air-temperature: 36.5
+>>Battery voltage: 4.14
+>>Altitude: -1.11
+
+
+--
+
+>>Time since startup: 92760.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -6.31
+>>Acceleration X: -6.61
+>>Acceleration Z: -2.95
+>>Compass Z: -14.75
+>>GPS speed: 0.0
+>>Compass X: 31.62
+>>Compass Y: 60.79
+>>Humidity: 48.32
+>>Air-pressure: 102416.8
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.26
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.25
+>>Gyroscope Z: -0.25
+>>Air-temperature: 36.4
+>>Battery voltage: 4.14
+>>Altitude: 0.43
+
+
+--
+
+>>Time since startup: 94056.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -4.91
+>>Acceleration X: -7.9
+>>Acceleration Z: -3.09
+>>Compass Z: -11.6
+>>GPS speed: 0.0
+>>Compass X: 34.21
+>>Compass Y: 59.24
+>>Humidity: 48.2
+>>Air-pressure: 102418.2
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.14
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.73
+>>Gyroscope Z: -0.02
+>>Air-temperature: 36.4
+>>Battery voltage: 4.14
+>>Altitude: 0.31
+
+
+--
+
+>>Time since startup: 95352.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -6.05
+>>Acceleration X: -7.75
+>>Acceleration Z: 1.01
+>>Compass Z: -26.19
+>>GPS speed: 0.0
+>>Compass X: 27.64
+>>Compass Y: 58.2
+>>Humidity: 48.16
+>>Air-pressure: 102424.0
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.59
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.71
+>>Gyroscope Z: 0.31
+>>Air-temperature: 36.5
+>>Battery voltage: 4.14
+>>Altitude: -0.17
+
+
+--
+
+>>Time since startup: 96642.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -6.79
+>>Acceleration X: -8.43
+>>Acceleration Z: -0.34
+>>Compass Z: -19.23
+>>GPS speed: 0.0
+>>Compass X: 45.27
+>>Compass Y: 40.29
+>>Humidity: 48.12
+>>Air-pressure: 102433.36
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.3
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.03
+>>Gyroscope Z: -0.17
+>>Air-temperature: 36.5
+>>Battery voltage: 4.14
+>>Altitude: -0.94
+
+
+--
+
+>>Time since startup: 97932.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -7.24
+>>Acceleration X: -5.39
+>>Acceleration Z: 0.0
+>>Compass Z: -27.85
+>>GPS speed: 0.0
+>>Compass X: 34.9
+>>Compass Y: 53.04
+>>Humidity: 47.87
+>>Air-pressure: 102434.28
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.04
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.16
+>>Gyroscope Z: 0.2
+>>Air-temperature: 36.5
+>>Battery voltage: 4.14
+>>Altitude: -1.01
+
+
+--
+
+>>Time since startup: 99222.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -5.87
+>>Acceleration X: -7.34
+>>Acceleration Z: -2.69
+>>Compass Z: -10.77
+>>GPS speed: 0.0
+>>Compass X: 47.51
+>>Compass Y: 43.91
+>>Humidity: 47.48
+>>Air-pressure: 102431.16
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.22
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.23
+>>Gyroscope Z: -0.16
+>>Air-temperature: 36.6
+>>Battery voltage: 4.14
+>>Altitude: -0.76
+
+
+--
+
+>>Time since startup: 100512.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -5.96
+>>Acceleration X: -6.55
+>>Acceleration Z: -4.63
+>>Compass Z: -6.8
+>>GPS speed: 0.0
+>>Compass X: 47.86
+>>Compass Y: 46.66
+>>Humidity: 47.07
+>>Air-pressure: 102427.59
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.13
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.34
+>>Gyroscope Z: -0.96
+>>Air-temperature: 36.7
+>>Battery voltage: 4.13
+>>Altitude: -0.46
+
+
+--
+
+>>Time since startup: 101808.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -5.53
+>>Acceleration X: -6.88
+>>Acceleration Z: -4.63
+>>Compass Z: -2.49
+>>GPS speed: 0.0
+>>Compass X: 47.17
+>>Compass Y: 44.6
+>>Humidity: 46.91
+>>Air-pressure: 102420.02
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.41
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.63
+>>Gyroscope Z: 0.12
+>>Air-temperature: 36.6
+>>Battery voltage: 4.13
+>>Altitude: 0.16
+
+
+--
+
+>>Time since startup: 106974.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -5.21
+>>Acceleration X: -5.92
+>>Acceleration Z: 6.09
+>>Compass Z: -29.01
+>>GPS speed: 0.0
+>>Compass X: 15.72
+>>Compass Y: 61.13
+>>Humidity: 48.8
+>>Air-pressure: 102421.69
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.39
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.13
+>>Gyroscope Z: 0.41
+>>Air-temperature: 36.5
+>>Battery voltage: 4.13
+>>Altitude: 0.02
+
+
+--
+
+>>Time since startup: 108275.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -5.27
+>>Acceleration X: -4.82
+>>Acceleration Z: 6.81
+>>Compass Z: -22.21
+>>GPS speed: 0.0
+>>Compass X: 24.88
+>>Compass Y: 60.96
+>>Humidity: 49.58
+>>Air-pressure: 102419.3
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.05
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.67
+>>Gyroscope Z: -0.61
+>>Air-temperature: 36.6
+>>Battery voltage: 4.13
+>>Altitude: 0.22
+
+
+--
+
+>>Time since startup: 109571.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -6.6
+>>Acceleration X: -3.12
+>>Acceleration Z: 3.71
+>>Compass Z: -30.17
+>>GPS speed: 0.0
+>>Compass X: 15.2
+>>Compass Y: 60.27
+>>Humidity: 50.37
+>>Air-pressure: 102425.38
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.92
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.74
+>>Gyroscope Z: -0.75
+>>Air-temperature: 36.7
+>>Battery voltage: 4.14
+>>Altitude: -0.28
+
+
+--
+
+>>Time since startup: 110867.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -6.67
+>>Acceleration X: -4.04
+>>Acceleration Z: 5.81
+>>Compass Z: -30.5
+>>GPS speed: 0.0
+>>Compass X: 4.84
+>>Compass Y: 59.24
+>>Humidity: 50.98
+>>Air-pressure: 102429.27
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.16
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.18
+>>Gyroscope Z: -0.04
+>>Air-temperature: 36.7
+>>Battery voltage: 4.13
+>>Altitude: -0.6
+
+
+--
+
+>>Time since startup: 112163.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -7.27
+>>Acceleration X: -3.36
+>>Acceleration Z: 6.16
+>>Compass Z: -24.53
+>>GPS speed: 0.0
+>>Compass X: 4.15
+>>Compass Y: 63.02
+>>Humidity: 51.34
+>>Air-pressure: 102419.05
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.07
+>>Gyroscope Z: -0.12
+>>Air-temperature: 36.8
+>>Battery voltage: 4.14
+>>Altitude: 0.24
+
+
+--
+
+>>Time since startup: 113459.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -6.73
+>>Acceleration X: -2.8
+>>Acceleration Z: 6.22
+>>Compass Z: -23.37
+>>GPS speed: 0.0
+>>Compass X: 3.63
+>>Compass Y: 64.92
+>>Humidity: 51.43
+>>Air-pressure: 102421.8
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.07
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.15
+>>Gyroscope Z: -0.1
+>>Air-temperature: 36.8
+>>Battery voltage: 4.13
+>>Altitude: 0.02
+
+
+--
+
+>>Time since startup: 114749.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -2.22
+>>Acceleration X: -3.61
+>>Acceleration Z: 9.85
+>>Compass Z: -43.92
+>>GPS speed: 0.0
+>>Compass X: 13.3
+>>Compass Y: 43.22
+>>Humidity: 51.42
+>>Air-pressure: 102418.91
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.11
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 2.19
+>>Gyroscope Z: -0.42
+>>Air-temperature: 36.8
+>>Battery voltage: 4.13
+>>Altitude: 0.25
+
+
+--
+
+>>Time since startup: 116040.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -4.36
+>>Acceleration X: -7.11
+>>Acceleration Z: 4.72
+>>Compass Z: -30.83
+>>GPS speed: 0.0
+>>Compass X: 24.88
+>>Compass Y: 53.72
+>>Humidity: 51.23
+>>Air-pressure: 102447.47
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.08
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.22
+>>Gyroscope Z: -0.2
+>>Air-temperature: 36.8
+>>Battery voltage: 4.13
+>>Altitude: -2.1
+
+
+--
+
+>>Time since startup: 117336.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -3.3
+>>Acceleration X: -7.45
+>>Acceleration Z: 2.9
+>>Compass Z: -27.18
+>>GPS speed: 0.0
+>>Compass X: 27.3
+>>Compass Y: 54.07
+>>Humidity: 51.16
+>>Air-pressure: 102418.33
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.45
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.22
+>>Gyroscope Z: -0.11
+>>Air-temperature: 36.7
+>>Battery voltage: 4.12
+>>Altitude: 0.3
+
+
+--
+
+>>Time since startup: 118632.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -8.54
+>>Acceleration X: -8.18
+>>Acceleration Z: 6.95
+>>Compass Z: -26.85
+>>GPS speed: 0.0
+>>Compass X: 13.48
+>>Compass Y: 55.1
+>>Humidity: 51.34
+>>Air-pressure: 102428.22
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.34
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 3.61
+>>Gyroscope Z: 3.13
+>>Air-temperature: 36.7
+>>Battery voltage: 4.13
+>>Altitude: -0.52
+
+
+--
+
+>>Time since startup: 119922.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -2.96
+>>Acceleration X: -8.11
+>>Acceleration Z: 3.84
+>>Compass Z: -24.86
+>>GPS speed: 0.0
+>>Compass X: 30.41
+>>Compass Y: 56.14
+>>Humidity: 51.61
+>>Air-pressure: 102418.72
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.55
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.22
+>>Gyroscope Z: -0.31
+>>Air-temperature: 36.8
+>>Battery voltage: 4.13
+>>Altitude: 0.27
+
+
+--
+
+>>Time since startup: 121212.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -1.4
+>>Acceleration X: -9.15
+>>Acceleration Z: 3.79
+>>Compass Z: -23.87
+>>GPS speed: 0.0
+>>Compass X: 28.68
+>>Compass Y: 60.61
+>>Humidity: 51.64
+>>Air-pressure: 102421.45
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.06
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.14
+>>Gyroscope Z: 0.12
+>>Air-temperature: 36.8
+>>Battery voltage: 4.14
+>>Altitude: 0.04
+
+
+--
+
+>>Time since startup: 122512.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -1.94
+>>Acceleration X: -6.63
+>>Acceleration Z: 7.85
+>>Compass Z: -43.26
+>>GPS speed: 0.0
+>>Compass X: 11.58
+>>Compass Y: 44.6
+>>Humidity: 51.45
+>>Air-pressure: 102425.68
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.21
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.03
+>>Gyroscope Z: 0.21
+>>Air-temperature: 36.9
+>>Battery voltage: 4.12
+>>Altitude: -0.3
+
+
+--
+
+>>Time since startup: 125098.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.31
+>>Acceleration X: -9.06
+>>Acceleration Z: 6.7
+>>Compass Z: -45.75
+>>GPS speed: 0.0
+>>Compass X: 24.19
+>>Compass Y: 19.63
+>>Humidity: 51.63
+>>Air-pressure: 102417.06
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 1.32
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 1.33
+>>Gyroscope Z: 0.61
+>>Air-temperature: 36.6
+>>Battery voltage: 4.12
+>>Altitude: 0.41
+
+
+--
+
+>>Time since startup: 126388.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -2.41
+>>Acceleration X: -9.18
+>>Acceleration Z: -0.46
+>>Compass Z: -20.55
+>>GPS speed: 0.0
+>>Compass X: 48.72
+>>Compass Y: 34.78
+>>Humidity: 52.12
+>>Air-pressure: 102414.53
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.38
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.48
+>>Gyroscope Z: 2.01
+>>Air-temperature: 36.6
+>>Battery voltage: 4.13
+>>Altitude: 0.62
+
+
+--
+
+>>Time since startup: 127678.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -4.01
+>>Acceleration X: 6.46
+>>Acceleration Z: 2.56
+>>Compass Z: -38.79
+>>GPS speed: 0.0
+>>Compass X: -11.06
+>>Compass Y: 44.77
+>>Humidity: 52.46
+>>Air-pressure: 102430.02
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.86
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.86
+>>Gyroscope Z: -0.16
+>>Air-temperature: 36.5
+>>Battery voltage: 4.13
+>>Altitude: -0.66
+
+
+--
+
+>>Time since startup: 128974.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 3.71
+>>Acceleration X: 7.43
+>>Acceleration Z: 4.39
+>>Compass Z: -26.19
+>>GPS speed: 0.0
+>>Compass X: -30.41
+>>Compass Y: 28.58
+>>Humidity: 52.51
+>>Air-pressure: 102419.53
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.03
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 1.85
+>>Gyroscope Z: -0.64
+>>Air-temperature: 36.6
+>>Battery voltage: 4.12
+>>Altitude: 0.2
+
+
+--
+
+>>Time since startup: 130264.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.56
+>>Acceleration X: 9.72
+>>Acceleration Z: -1.89
+>>Compass Z: -18.73
+>>GPS speed: 0.0
+>>Compass X: -33.35
+>>Compass Y: 28.41
+>>Humidity: 52.54
+>>Air-pressure: 102426.09
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.68
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.02
+>>Gyroscope Z: 0.07
+>>Air-temperature: 36.4
+>>Battery voltage: 4.12
+>>Altitude: -0.34
+
+
+--
+
+>>Time since startup: 131554.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 4.57
+>>Acceleration X: 8.39
+>>Acceleration Z: -5.56
+>>Compass Z: -24.7
+>>GPS speed: 0.0
+>>Compass X: -34.73
+>>Compass Y: 26.69
+>>Humidity: 52.37
+>>Air-pressure: 102427.77
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.52
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.1
+>>Gyroscope Z: -0.77
+>>Air-temperature: 36.5
+>>Battery voltage: 4.13
+>>Altitude: -0.48
+
+
+--
+
+>>Time since startup: 162636.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -2.52
+>>Acceleration X: 10.61
+>>Acceleration Z: -2.82
+>>Compass Z: -10.77
+>>GPS speed: 0.0
+>>Compass X: -28.16
+>>Compass Y: 46.66
+>>Humidity: 54.67
+>>Air-pressure: 102426.97
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.16
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.14
+>>Gyroscope Z: -0.48
+>>Air-temperature: 37.0
+>>Battery voltage: 4.12
+>>Altitude: -0.41
+
+
+--
+
+>>Time since startup: 165234.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -9.13
+>>Acceleration X: 8.91
+>>Acceleration Z: -2.28
+>>Compass Z: -6.8
+>>GPS speed: 0.0
+>>Compass X: -18.14
+>>Compass Y: 60.44
+>>Humidity: 53.66
+>>Air-pressure: 102429.92
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 2.87
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 1.37
+>>Gyroscope Z: 4.05
+>>Air-temperature: 37.0
+>>Battery voltage: 4.12
+>>Altitude: -0.65
+
+
+--
+
+>>Time since startup: 170407.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.29
+>>Acceleration X: 10.08
+>>Acceleration Z: 0.51
+>>Compass Z: -11.11
+>>GPS speed: 0.0
+>>Compass X: -30.93
+>>Compass Y: 44.6
+>>Humidity: 51.15
+>>Air-pressure: 102428.62
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.1
+>>Battery voltage: 4.12
+>>Altitude: -0.55
+
+
+--
+
+>>Time since startup: 171703.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.71
+>>Acceleration X: 9.94
+>>Acceleration Z: 1.49
+>>Compass Z: -13.43
+>>GPS speed: 0.0
+>>Compass X: -31.96
+>>Compass Y: 42.53
+>>Humidity: 50.35
+>>Air-pressure: 102425.66
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.05
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.1
+>>Battery voltage: 4.12
+>>Altitude: -0.3
+
+
+--
+
+>>Time since startup: 172994.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.73
+>>Acceleration X: 9.53
+>>Acceleration Z: -1.37
+>>Compass Z: 21.88
+>>GPS speed: 0.0
+>>Compass X: -27.64
+>>Compass Y: 34.78
+>>Humidity: 49.63
+>>Air-pressure: 102423.25
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.46
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -2.03
+>>Gyroscope Z: 1.27
+>>Air-temperature: 37.1
+>>Battery voltage: 4.12
+>>Altitude: -0.1
+
+
+--
+
+>>Time since startup: 174284.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.57
+>>Acceleration X: 1.18
+>>Acceleration Z: -9.21
+>>Compass Z: 38.12
+>>GPS speed: 0.0
+>>Compass X: 23.84
+>>Compass Y: 33.06
+>>Humidity: 49.03
+>>Air-pressure: 102421.19
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.12
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.07
+>>Gyroscope Z: -0.06
+>>Air-temperature: 37.2
+>>Battery voltage: 4.12
+>>Altitude: 0.07
+
+
+--
+
+>>Time since startup: 175574.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.94
+>>Acceleration X: 0.67
+>>Acceleration Z: -9.26
+>>Compass Z: 39.12
+>>GPS speed: 0.0
+>>Compass X: 26.61
+>>Compass Y: 37.88
+>>Humidity: 48.39
+>>Air-pressure: 102430.44
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.03
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.06
+>>Gyroscope Z: -0.05
+>>Air-temperature: 37.1
+>>Battery voltage: 4.12
+>>Altitude: -0.7
+
+
+--
+
+>>Time since startup: 176860.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.56
+>>Acceleration X: 0.16
+>>Acceleration Z: -9.37
+>>Compass Z: 37.13
+>>GPS speed: 0.0
+>>Compass X: 14.51
+>>Compass Y: 46.84
+>>Humidity: 47.77
+>>Air-pressure: 102436.48
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.02
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.0
+>>Gyroscope Z: -0.39
+>>Air-temperature: 37.2
+>>Battery voltage: 4.12
+>>Altitude: -1.2
+
+
+--
+
+>>Time since startup: 178150.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.26
+>>Acceleration X: 0.11
+>>Acceleration Z: -9.45
+>>Compass Z: 35.47
+>>GPS speed: 0.0
+>>Compass X: 13.82
+>>Compass Y: 47.53
+>>Humidity: 47.11
+>>Air-pressure: 102439.95
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.2
+>>Battery voltage: 4.12
+>>Altitude: -1.48
+
+
+--
+
+>>Time since startup: 179446.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.25
+>>Acceleration X: 0.29
+>>Acceleration Z: -9.47
+>>Compass Z: 35.64
+>>GPS speed: 0.0
+>>Compass X: 13.3
+>>Compass Y: 46.66
+>>Humidity: 46.51
+>>Air-pressure: 102447.22
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.3
+>>Battery voltage: 4.12
+>>Altitude: -2.08
+
+
+--
+
+>>Time since startup: 180741.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.23
+>>Acceleration X: 0.3
+>>Acceleration Z: -9.41
+>>Compass Z: 37.46
+>>GPS speed: 0.0
+>>Compass X: 14.51
+>>Compass Y: 48.21
+>>Humidity: 45.99
+>>Air-pressure: 102441.73
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.09
+>>Gyroscope Z: 0.0
+>>Air-temperature: 37.2
+>>Battery voltage: 4.11
+>>Altitude: -1.63
+
+
+--
+
+>>Time since startup: 182031.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.24
+>>Acceleration X: 0.25
+>>Acceleration Z: -9.45
+>>Compass Z: 37.96
+>>GPS speed: 0.0
+>>Compass X: 14.0
+>>Compass Y: 47.35
+>>Humidity: 45.57
+>>Air-pressure: 102445.09
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.0
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.06
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.3
+>>Battery voltage: 4.12
+>>Altitude: -1.91
+
+
+--
+
+>>Time since startup: 183331.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.22
+>>Acceleration X: 0.25
+>>Acceleration Z: -9.47
+>>Compass Z: 34.64
+>>GPS speed: 0.0
+>>Compass X: 13.3
+>>Compass Y: 48.39
+>>Humidity: 45.17
+>>Air-pressure: 102445.27
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.0
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.3
+>>Battery voltage: 4.12
+>>Altitude: -1.92
+
+
+--
+
+>>Time since startup: 184627.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.27
+>>Acceleration X: 0.23
+>>Acceleration Z: -9.44
+>>Compass Z: 35.47
+>>GPS speed: 0.0
+>>Compass X: 13.48
+>>Compass Y: 46.84
+>>Humidity: 44.77
+>>Air-pressure: 102444.42
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.02
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.3
+>>Battery voltage: 4.12
+>>Altitude: -1.85
+
+
+--
+
+>>Time since startup: 185922.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.33
+>>Acceleration X: 0.15
+>>Acceleration Z: -9.41
+>>Compass Z: 35.97
+>>GPS speed: 0.0
+>>Compass X: 13.65
+>>Compass Y: 47.01
+>>Humidity: 44.43
+>>Air-pressure: 102445.36
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.03
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.3
+>>Battery voltage: 4.12
+>>Altitude: -1.93
+
+
+--
+
+>>Time since startup: 187217.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.05
+>>Acceleration X: 1.2
+>>Acceleration Z: -9.36
+>>Compass Z: 38.62
+>>GPS speed: 0.0
+>>Compass X: 16.41
+>>Compass Y: 46.32
+>>Humidity: 44.08
+>>Air-pressure: 102447.77
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.03
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.03
+>>Gyroscope Z: 0.05
+>>Air-temperature: 37.3
+>>Battery voltage: 4.12
+>>Altitude: -2.13
+
+
+--
+
+>>Time since startup: 188513.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.36
+>>Acceleration X: 0.31
+>>Acceleration Z: -9.42
+>>Compass Z: 36.63
+>>GPS speed: 0.0
+>>Compass X: 16.76
+>>Compass Y: 45.29
+>>Humidity: 43.7
+>>Air-pressure: 102447.08
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.03
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.02
+>>Gyroscope Z: -0.06
+>>Air-temperature: 37.3
+>>Battery voltage: 4.11
+>>Altitude: -2.07
+
+
+--
+
+>>Time since startup: 189808.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.26
+>>Acceleration X: 0.57
+>>Acceleration Z: -9.43
+>>Compass Z: 37.13
+>>GPS speed: 0.0
+>>Compass X: 17.28
+>>Compass Y: 46.15
+>>Humidity: 43.26
+>>Air-pressure: 102445.7
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.05
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.3
+>>Battery voltage: 4.11
+>>Altitude: -1.96
+
+
+--
+
+>>Time since startup: 191103.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.29
+>>Acceleration X: 0.54
+>>Acceleration Z: -9.46
+>>Compass Z: 37.29
+>>GPS speed: 0.0
+>>Compass X: 16.41
+>>Compass Y: 46.32
+>>Humidity: 42.92
+>>Air-pressure: 102449.16
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.05
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.4
+>>Battery voltage: 4.12
+>>Altitude: -2.24
+
+
+--
+
+>>Time since startup: 192399.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.3
+>>Acceleration X: 0.46
+>>Acceleration Z: -9.4
+>>Compass Z: 37.13
+>>GPS speed: 0.0
+>>Compass X: 16.24
+>>Compass Y: 44.77
+>>Humidity: 42.63
+>>Air-pressure: 102445.53
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.4
+>>Battery voltage: 4.12
+>>Altitude: -1.94
+
+
+--
+
+>>Time since startup: 193695.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.27
+>>Acceleration X: 0.53
+>>Acceleration Z: -9.42
+>>Compass Z: 36.3
+>>GPS speed: 0.0
+>>Compass X: 16.76
+>>Compass Y: 44.25
+>>Humidity: 42.31
+>>Air-pressure: 102446.58
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.0
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.05
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.4
+>>Battery voltage: 4.12
+>>Altitude: -2.03
+
+
+--
+
+>>Time since startup: 194990.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.28
+>>Acceleration X: 0.5
+>>Acceleration Z: -9.45
+>>Compass Z: 37.79
+>>GPS speed: 0.0
+>>Compass X: 14.86
+>>Compass Y: 44.77
+>>Humidity: 42.05
+>>Air-pressure: 102448.64
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.02
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.03
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.4
+>>Battery voltage: 4.12
+>>Altitude: -2.2
+
+
+--
+
+>>Time since startup: 196286.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.29
+>>Acceleration X: 0.57
+>>Acceleration Z: -9.46
+>>Compass Z: 37.96
+>>GPS speed: 0.0
+>>Compass X: 15.38
+>>Compass Y: 44.6
+>>Humidity: 41.74
+>>Air-pressure: 102442.56
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.0
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.4
+>>Battery voltage: 4.12
+>>Altitude: -1.7
+
+
+--
+
+>>Time since startup: 197576.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.28
+>>Acceleration X: 0.61
+>>Acceleration Z: -9.4
+>>Compass Z: 38.29
+>>GPS speed: 0.0
+>>Compass X: 15.72
+>>Compass Y: 46.66
+>>Humidity: 41.5
+>>Air-pressure: 102451.76
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.0
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.5
+>>Battery voltage: 4.11
+>>Altitude: -2.46
+
+
+--
+
+>>Time since startup: 198866.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.42
+>>Acceleration X: 0.48
+>>Acceleration Z: -9.34
+>>Compass Z: 37.63
+>>GPS speed: 0.0
+>>Compass X: 17.11
+>>Compass Y: 45.98
+>>Humidity: 41.29
+>>Air-pressure: 102449.45
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.5
+>>Battery voltage: 4.12
+>>Altitude: -2.27
+
+
+--
+
+>>Time since startup: 200162.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.42
+>>Acceleration X: 0.52
+>>Acceleration Z: -9.33
+>>Compass Z: 36.8
+>>GPS speed: 0.0
+>>Compass X: 16.59
+>>Compass Y: 45.8
+>>Humidity: 41.08
+>>Air-pressure: 102448.6
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 3.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.05
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.5
+>>Battery voltage: 4.11
+>>Altitude: -2.2
+
+
+--
+
+>>Time since startup: 201458.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.64
+>>Acceleration X: 0.63
+>>Acceleration Z: -9.4
+>>Compass Z: 35.47
+>>GPS speed: 0.0
+>>Compass X: 17.28
+>>Compass Y: 45.46
+>>Humidity: 40.92
+>>Air-pressure: 102451.44
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 10.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.03
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.5
+>>Battery voltage: 4.12
+>>Altitude: -2.43
+
+
+--
+
+>>Time since startup: 202754.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.59
+>>Acceleration X: 0.34
+>>Acceleration Z: -9.44
+>>Compass Z: 35.64
+>>GPS speed: 0.0
+>>Compass X: 17.45
+>>Compass Y: 47.01
+>>Humidity: 40.73
+>>Air-pressure: 102446.93
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.0
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.07
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.4
+>>Battery voltage: 4.11
+>>Altitude: -2.06
+
+
+--
+
+>>Time since startup: 204049.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.48
+>>Acceleration X: 0.42
+>>Acceleration Z: -9.4
+>>Compass Z: 35.31
+>>GPS speed: 0.0
+>>Compass X: 16.76
+>>Compass Y: 44.94
+>>Humidity: 40.56
+>>Air-pressure: 102449.89
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.4
+>>Battery voltage: 4.12
+>>Altitude: -2.3
+
+
+--
+
+>>Time since startup: 206640.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.6
+>>Acceleration X: 0.34
+>>Acceleration Z: -9.35
+>>Compass Z: 35.64
+>>GPS speed: 0.0
+>>Compass X: 15.38
+>>Compass Y: 45.63
+>>Humidity: 40.26
+>>Air-pressure: 102450.91
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.02
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.03
+>>Gyroscope Z: -0.09
+>>Air-temperature: 37.4
+>>Battery voltage: 4.11
+>>Altitude: -2.39
+
+
+--
+
+>>Time since startup: 209215.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.72
+>>Acceleration X: 0.68
+>>Acceleration Z: -9.33
+>>Compass Z: 32.82
+>>GPS speed: 0.0
+>>Compass X: 14.51
+>>Compass Y: 40.29
+>>Humidity: 40.8
+>>Air-pressure: 102415.89
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.05
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.0
+>>Gyroscope Z: -0.05
+>>Air-temperature: 37.1
+>>Battery voltage: 4.12
+>>Altitude: 0.5
+
+
+--
+
+>>Time since startup: 210494.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.01
+>>Acceleration X: 0.42
+>>Acceleration Z: -9.35
+>>Compass Z: 37.63
+>>GPS speed: 0.0
+>>Compass X: 16.07
+>>Compass Y: 39.78
+>>Humidity: 41.72
+>>Air-pressure: 102417.01
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.02
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.01
+>>Gyroscope Z: -0.06
+>>Air-temperature: 37.1
+>>Battery voltage: 4.12
+>>Altitude: 0.41
+
+
+--
+
+>>Time since startup: 211779.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.19
+>>Acceleration X: 0.43
+>>Acceleration Z: -9.39
+>>Compass Z: 38.29
+>>GPS speed: 0.0
+>>Compass X: 16.76
+>>Compass Y: 38.74
+>>Humidity: 42.92
+>>Air-pressure: 102414.2
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.0
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.06
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.1
+>>Battery voltage: 4.12
+>>Altitude: 0.64
+
+
+--
+
+>>Time since startup: 213065.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.4
+>>Acceleration X: 0.3
+>>Acceleration Z: -9.25
+>>Compass Z: 38.12
+>>GPS speed: 0.0
+>>Compass X: 17.62
+>>Compass Y: 39.95
+>>Humidity: 44.24
+>>Air-pressure: 102415.73
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.06
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.01
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.1
+>>Battery voltage: 4.12
+>>Altitude: 0.52
+
+
+--
+
+>>Time since startup: 214360.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.17
+>>Acceleration X: 0.39
+>>Acceleration Z: -9.34
+>>Compass Z: 37.46
+>>GPS speed: 0.0
+>>Compass X: 16.59
+>>Compass Y: 39.26
+>>Humidity: 45.57
+>>Air-pressure: 102416.23
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.02
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.03
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.1
+>>Battery voltage: 4.12
+>>Altitude: 0.47
+
+
+--
+
+>>Time since startup: 215645.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.09
+>>Acceleration X: 0.38
+>>Acceleration Z: -9.37
+>>Compass Z: 36.47
+>>GPS speed: 0.0
+>>Compass X: 16.24
+>>Compass Y: 38.57
+>>Humidity: 46.85
+>>Air-pressure: 102416.56
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.0
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.03
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.2
+>>Battery voltage: 4.11
+>>Altitude: 0.45
+
+
+--
+
+>>Time since startup: 216930.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.26
+>>Acceleration X: 0.29
+>>Acceleration Z: -9.32
+>>Compass Z: 35.8
+>>GPS speed: 0.0
+>>Compass X: 16.59
+>>Compass Y: 39.95
+>>Humidity: 48.11
+>>Air-pressure: 102413.92
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.03
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.01
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.2
+>>Battery voltage: 4.12
+>>Altitude: 0.67
+
+
+--
+
+>>Time since startup: 218215.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.29
+>>Acceleration X: 0.27
+>>Acceleration Z: -9.37
+>>Compass Z: 36.8
+>>GPS speed: 0.0
+>>Compass X: 18.66
+>>Compass Y: 40.29
+>>Humidity: 49.29
+>>Air-pressure: 102417.8
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.02
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.05
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.2
+>>Battery voltage: 4.11
+>>Altitude: 0.35
+
+
+--
+
+>>Time since startup: 219500.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.17
+>>Acceleration X: 0.31
+>>Acceleration Z: -9.35
+>>Compass Z: 37.63
+>>GPS speed: 0.0
+>>Compass X: 16.41
+>>Compass Y: 41.15
+>>Humidity: 50.42
+>>Air-pressure: 102419.41
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.03
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.2
+>>Battery voltage: 4.11
+>>Altitude: 0.21
+
+
+--
+
+>>Time since startup: 220785.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.1
+>>Acceleration X: 0.4
+>>Acceleration Z: -9.37
+>>Compass Z: 36.13
+>>GPS speed: 0.0
+>>Compass X: 17.28
+>>Compass Y: 38.57
+>>Humidity: 51.49
+>>Air-pressure: 102415.78
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.06
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.2
+>>Battery voltage: 4.11
+>>Altitude: 0.51
+
+
+--
+
+>>Time since startup: 222070.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.21
+>>Acceleration X: 0.32
+>>Acceleration Z: -9.39
+>>Compass Z: 37.13
+>>GPS speed: 0.0
+>>Compass X: 15.55
+>>Compass Y: 38.92
+>>Humidity: 52.48
+>>Air-pressure: 102414.78
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.03
+>>Gyroscope Z: -0.04
+>>Air-temperature: 37.2
+>>Battery voltage: 4.11
+>>Altitude: 0.59
+
+
+--
+
+>>Time since startup: 223355.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -0.31
+>>Acceleration X: 0.57
+>>Acceleration Z: -9.52
+>>Compass Z: 38.79
+>>GPS speed: 0.0
+>>Compass X: 14.51
+>>Compass Y: 41.33
+>>Humidity: 53.45
+>>Air-pressure: 102406.67
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.31
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.11
+>>Gyroscope Z: -0.05
+>>Air-temperature: 37.2
+>>Battery voltage: 4.11
+>>Altitude: 1.26
+
+
+--
+
+>>Time since startup: 224640.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 5.36
+>>Acceleration X: 6.71
+>>Acceleration Z: -1.58
+>>Compass Z: 32.49
+>>GPS speed: 0.0
+>>Compass X: -17.62
+>>Compass Y: 11.36
+>>Humidity: 54.09
+>>Air-pressure: 102427.09
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -1.46
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 1.05
+>>Gyroscope Z: -0.24
+>>Air-temperature: 37.2
+>>Battery voltage: 4.11
+>>Altitude: -0.42
+
+
+--
+
+>>Time since startup: 225930.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -3.28
+>>Acceleration X: 5.54
+>>Acceleration Z: -7.95
+>>Compass Z: 19.72
+>>GPS speed: 0.0
+>>Compass X: -17.8
+>>Compass Y: 51.83
+>>Humidity: 54.47
+>>Air-pressure: 102448.57
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.5
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.14
+>>Gyroscope Z: 0.21
+>>Air-temperature: 37.2
+>>Battery voltage: 4.12
+>>Altitude: -2.19
+
+
+--
+
+>>Time since startup: 227226.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -2.04
+>>Acceleration X: 6.56
+>>Acceleration Z: -6.03
+>>Compass Z: 7.46
+>>GPS speed: 0.0
+>>Compass X: -27.82
+>>Compass Y: 49.76
+>>Humidity: 54.25
+>>Air-pressure: 102431.25
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.11
+>>Gyroscope Z: 0.05
+>>Air-temperature: 37.3
+>>Battery voltage: 4.11
+>>Altitude: -0.76
+
+
+--
+
+>>Time since startup: 228516.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -2.13
+>>Acceleration X: 7.16
+>>Acceleration Z: -6.12
+>>Compass Z: 3.98
+>>GPS speed: 0.0
+>>Compass X: -33.17
+>>Compass Y: 42.7
+>>Humidity: 53.55
+>>Air-pressure: 102432.48
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.13
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.05
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.3
+>>Battery voltage: 4.11
+>>Altitude: -0.87
+
+
+--
+
+>>Time since startup: 229806.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -1.15
+>>Acceleration X: 7.52
+>>Acceleration Z: -5.27
+>>Compass Z: 4.97
+>>GPS speed: 0.0
+>>Compass X: -32.14
+>>Compass Y: 43.74
+>>Humidity: 52.64
+>>Air-pressure: 102430.98
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.57
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.04
+>>Gyroscope Z: -0.23
+>>Air-temperature: 37.4
+>>Battery voltage: 4.11
+>>Altitude: -0.74
+
+
+--
+
+>>Time since startup: 231101.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 1.35
+>>Acceleration X: 5.12
+>>Acceleration Z: -6.63
+>>Compass Z: 30.83
+>>GPS speed: 0.0
+>>Compass X: -24.19
+>>Compass Y: 22.04
+>>Humidity: 51.74
+>>Air-pressure: 102431.45
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 2.32
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 2.0
+>>Gyroscope Z: 0.62
+>>Air-temperature: 37.4
+>>Battery voltage: 4.11
+>>Altitude: -0.78
+
+
+--
+
+>>Time since startup: 232391.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -5.1
+>>Acceleration X: 5.92
+>>Acceleration Z: -5.87
+>>Compass Z: 6.46
+>>GPS speed: 0.0
+>>Compass X: -22.63
+>>Compass Y: 54.59
+>>Humidity: 50.87
+>>Air-pressure: 102445.59
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.4
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.28
+>>Gyroscope Z: 0.15
+>>Air-temperature: 37.4
+>>Battery voltage: 4.11
+>>Altitude: -1.95
+
+
+--
+
+>>Time since startup: 233676.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: -9.14
+>>Acceleration X: 8.89
+>>Acceleration Z: -2.7
+>>Compass Z: -11.77
+>>GPS speed: 0.0
+>>Compass X: -24.02
+>>Compass Y: 55.27
+>>Humidity: 50.03
+>>Air-pressure: 102455.05
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 1.63
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 1.84
+>>Gyroscope Z: -0.87
+>>Air-temperature: 37.4
+>>Battery voltage: 4.11
+>>Altitude: -2.73
+
+
+--
+
+>>Time since startup: 234966.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 2.79
+>>Acceleration X: 5.79
+>>Acceleration Z: -7.04
+>>Compass Z: 13.43
+>>GPS speed: 0.0
+>>Compass X: -34.04
+>>Compass Y: 23.94
+>>Humidity: 49.26
+>>Air-pressure: 102430.23
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.03
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.45
+>>Gyroscope Z: 0.41
+>>Air-temperature: 37.4
+>>Battery voltage: 4.11
+>>Altitude: -0.68
+
+
+--
+
+>>Time since startup: 236256.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.27
+>>Acceleration X: 11.35
+>>Acceleration Z: -0.91
+>>Compass Z: -15.75
+>>GPS speed: 0.0
+>>Compass X: -30.93
+>>Compass Y: 40.81
+>>Humidity: 48.84
+>>Air-pressure: 102414.31
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.22
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 1.1
+>>Gyroscope Z: -1.34
+>>Air-temperature: 37.2
+>>Battery voltage: 4.09
+>>Altitude: 0.63
+
+
+--
+
+>>Time since startup: 238842.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.63
+>>Acceleration X: 9.92
+>>Acceleration Z: -0.74
+>>Compass Z: -32.98
+>>GPS speed: 0.0
+>>Compass X: -33.69
+>>Compass Y: 26.69
+>>Humidity: 49.34
+>>Air-pressure: 102440.98
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.07
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.02
+>>Gyroscope Z: 0.03
+>>Air-temperature: 37.1
+>>Battery voltage: 4.06
+>>Altitude: -1.57
+
+
+--
+
+>>Time since startup: 240138.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.39
+>>Acceleration X: 9.72
+>>Acceleration Z: -0.56
+>>Compass Z: -37.96
+>>GPS speed: 0.0
+>>Compass X: -37.49
+>>Compass Y: 30.82
+>>Humidity: 50.11
+>>Air-pressure: 102564.11
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.09
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.13
+>>Gyroscope Z: 0.13
+>>Air-temperature: 37.0
+>>Battery voltage: 4.09
+>>Altitude: -11.72
+
+
+--
+
+>>Time since startup: 241434.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.33
+>>Acceleration X: 9.87
+>>Acceleration Z: -0.23
+>>Compass Z: -46.25
+>>GPS speed: 0.0
+>>Compass X: -47.51
+>>Compass Y: 33.23
+>>Humidity: 51.08
+>>Air-pressure: 102679.05
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.31
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: -0.06
+>>Gyroscope Z: 0.01
+>>Air-temperature: 37.0
+>>Battery voltage: 4.11
+>>Altitude: -21.2
+
+
+--
+
+>>Time since startup: 242730.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.03
+>>Acceleration X: 9.95
+>>Acceleration Z: -0.02
+>>Compass Z: -37.63
+>>GPS speed: 0.0
+>>Compass X: -43.71
+>>Compass Y: 35.64
+>>Humidity: 52.09
+>>Air-pressure: 102405.3
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.04
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.1
+>>Air-temperature: 36.8
+>>Battery voltage: 4.1
+>>Altitude: 1.38
+
+
+--
+
+>>Time since startup: 244036.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.21
+>>Acceleration X: 9.96
+>>Acceleration Z: 0.31
+>>Compass Z: -39.28
+>>GPS speed: 0.0
+>>Compass X: -41.99
+>>Compass Y: 34.96
+>>Humidity: 53.1
+>>Air-pressure: 102419.46
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.2
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.07
+>>Gyroscope Z: -0.02
+>>Air-temperature: 37.0
+>>Battery voltage: 4.11
+>>Altitude: 0.21
+
+
+--
+
+>>Time since startup: 245326.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.1
+>>Acceleration X: 10.04
+>>Acceleration Z: 0.46
+>>Compass Z: -39.45
+>>GPS speed: 0.0
+>>Compass X: -43.54
+>>Compass Y: 34.78
+>>Humidity: 54.07
+>>Air-pressure: 102414.69
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.02
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.07
+>>Gyroscope Z: -0.02
+>>Air-temperature: 37.0
+>>Battery voltage: 4.09
+>>Altitude: 0.6
+
+
+--
+
+>>Time since startup: 246611.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.34
+>>Acceleration X: 10.07
+>>Acceleration Z: 0.47
+>>Compass Z: -38.62
+>>GPS speed: 0.0
+>>Compass X: -43.71
+>>Compass Y: 33.23
+>>Humidity: 54.99
+>>Air-pressure: 102452.38
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.04
+>>Gyroscope Z: -0.05
+>>Air-temperature: 37.2
+>>Battery voltage: 4.11
+>>Altitude: -2.51
+
+
+--
+
+>>Time since startup: 247902.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.27
+>>Acceleration X: 9.93
+>>Acceleration Z: 0.51
+>>Compass Z: -39.61
+>>GPS speed: 0.0
+>>Compass X: -42.68
+>>Compass Y: 33.23
+>>Humidity: 55.85
+>>Air-pressure: 102460.39
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.05
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.3
+>>Battery voltage: 4.1
+>>Altitude: -3.17
+
+
+--
+
+>>Time since startup: 249198.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.28
+>>Acceleration X: 10.01
+>>Acceleration Z: 0.58
+>>Compass Z: -40.11
+>>GPS speed: 0.0
+>>Compass X: -42.85
+>>Compass Y: 31.34
+>>Humidity: 56.63
+>>Air-pressure: 102449.45
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.05
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.4
+>>Battery voltage: 4.1
+>>Altitude: -2.27
+
+
+--
+
+>>Time since startup: 250494.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.29
+>>Acceleration X: 10.01
+>>Acceleration Z: 0.56
+>>Compass Z: -39.78
+>>GPS speed: 0.0
+>>Compass X: -43.89
+>>Compass Y: 33.06
+>>Humidity: 57.28
+>>Air-pressure: 102446.52
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.05
+>>Gyroscope Z: -0.03
+>>Air-temperature: 37.4
+>>Battery voltage: 4.1
+>>Altitude: -2.03
+
+
+--
+
+>>Time since startup: 337326.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 0.07
+>>Acceleration X: 9.94
+>>Acceleration Z: 0.4
+>>Compass Z: -22.54
+>>GPS speed: 0.0
+>>Compass X: -42.5
+>>Compass Y: 43.39
+>>Humidity: 36.58
+>>Air-pressure: 102424.16
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: -0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.05
+>>Gyroscope Z: -0.02
+>>Air-temperature: 40.8
+>>Battery voltage: 4.09
+>>Altitude: -0.18
+
+
+--
+
+>>Time since startup: 338621.0
+>>GPS Latitude: 0.0
+>>GPS speed: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+
+
+--
+
+>>Time since startup: 525397.0
+>>GPS Latitude: 0.0
+>>GPS speed: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+
+
+--
+
+>>Time since startup: 640006.0
+>>ECO2: 400.0
+>>GPS Latitude: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>Acceleration Y: 6.73
+>>Acceleration X: 7.15
+>>Acceleration Z: -1.59
+>>Compass Z: 5.8
+>>GPS speed: 0.0
+>>Compass X: -48.21
+>>Compass Y: 22.21
+>>Humidity: 32.86
+>>Air-pressure: 102394.25
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>Gyroscope X: 0.01
+>>TVOC: 0.0
+>>GPS satellites: 0.0
+>>Gyroscope Y: 0.03
+>>Gyroscope Z: -0.08
+>>Air-temperature: 41.1
+>>Battery voltage: 4.06
+>>Altitude: 2.29
+
+
+--
+
+>>Time since startup: 746979.0
+>>GPS Latitude: 0.0
+>>GPS speed: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0
+
+
+--
+
+>>Time since startup: 906383.0
+>>GPS Latitude: 0.0
+>>GPS speed: 0.0
+>>GPS altitude: 0.0
+>>GPSTime second: 38.0
+>>GPSTime minute: 45.0
+>>GPS Longitude: 0.0
+>>GPS 3D-fix: 0.0
+>>GPSTime hour: 8.0
+>>GPS angle: 0.0

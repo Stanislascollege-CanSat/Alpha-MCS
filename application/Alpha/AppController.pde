@@ -42,6 +42,7 @@ public class AppController implements AppController_Interface {
   private View_ControlButtons view_controlButtons;
   private View_UniversalText view_universalText;
   private View_Overview view_overview;
+  private View_Reconstruction view_reconstruction;
 
   private ConsoleView overviewConsoleView;
 
@@ -93,6 +94,9 @@ public class AppController implements AppController_Interface {
 	this.view_overview = new View_Overview(this, 500, 80, width - 500, height - 80);
 	this.view_overview.visible = false;
 
+    this.view_reconstruction = new View_Reconstruction(this, 0, 80, width, height - 80);
+    this.view_reconstruction.visible = false;
+
     this.overviewConsoleView = new ConsoleView(this, 0, 80, 500, height - 80);
     this.overviewConsoleView.visible = false;
 
@@ -110,6 +114,7 @@ public class AppController implements AppController_Interface {
     this.viewControllers.add(this.view_universalText);
 	this.viewControllers.add(this.view_overview);
     this.viewControllers.add(this.overviewConsoleView);
+    this.viewControllers.add(this.view_reconstruction);
 
     DataDecoder.init();
   }
@@ -129,7 +134,7 @@ public class AppController implements AppController_Interface {
 
     if (SerialController.available()) {
       for (String s : SerialController.getReceived()) {
-        this.overviewConsoleView.logSerial(s);
+        //this.overviewConsoleView.logSerial(s);
         DataDecoder.addData(s);
         if (this.serial_receive_file_opened) {
           try {
@@ -189,7 +194,8 @@ public class AppController implements AppController_Interface {
     this.view_forceDeploy.resize(0, 80, width, height - 80);
     this.view_controlButtons.resize(0, 80, width, height - 80);
     this.view_universalText.resize(0, 80, width, height - 80);
-	this.view_overview.resize(500, 80, width - 500, height - 80);
+	  this.view_overview.resize(500, 80, width - 500, height - 80);
+    this.view_reconstruction.resize(0, 80, width, height - 80);
   }
 
   public void addView(ViewController v) {
@@ -326,6 +332,12 @@ public class AppController implements AppController_Interface {
           dataoutput_csv.write(Double.toString(p.getY()) + ";");
         }
 
+
+        dataoutput_csv.write("\nData Synchronization Points;");
+        for(DataPoint p : DataSetDeposit.beta_DSY.getData()){
+          dataoutput_csv.write(Double.toString(p.getY()) + ";");
+        }
+
         dataoutput_csv.write("\nBattery voltage (volt);");
         for(MeasuredDataPoint p : DataDecoder.getDecodedBetaData()){
           if(p.get("Battery voltage") != null){
@@ -449,6 +461,11 @@ public class AppController implements AppController_Interface {
           dataoutput_csv.write(Double.toString(p.getY()) + ";");
         }
 
+        dataoutput_csv.write("\nData Synchronization Points;");
+        for(DataPoint p : DataSetDeposit.rho_DSY.getData()){
+          dataoutput_csv.write(Double.toString(p.getY()) + ";");
+        }
+
         dataoutput_csv.write("\nBattery voltage (volt);");
         for(MeasuredDataPoint p : DataDecoder.getDecodedRhoData()){
           if(p.get("Battery voltage") != null){
@@ -569,6 +586,11 @@ public class AppController implements AppController_Interface {
         }
         dataoutput_csv.write("\nECO2 (ppm);");
         for(DataPoint p : DataSetDeposit.mu_ECO2.getData()){
+          dataoutput_csv.write(Double.toString(p.getY()) + ";");
+        }
+
+        dataoutput_csv.write("\nData Synchronization Points;");
+        for(DataPoint p : DataSetDeposit.mu_DSY.getData()){
           dataoutput_csv.write(Double.toString(p.getY()) + ";");
         }
 
@@ -998,6 +1020,14 @@ public class AppController implements AppController_Interface {
     this.view_forceDeploy.visible = true;
     this.viewSelectorView.currentViewIdentifier = "forceDeploy";
     this.mouseReleased();
+  }
+
+  public void switchViewToReconstruction() {
+    this.blockInteraction();
+    this.viewSelectorView.enableAllButtons();
+    this.viewSelectorView.visible = true;
+    this.view_reconstruction.visible = true;
+    this.viewSelectorView.currentViewIdentifier = "reconstruction";
   }
 
   public void displayUniversalMessage(String t, String s) {

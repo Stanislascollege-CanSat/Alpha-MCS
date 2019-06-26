@@ -21,6 +21,7 @@ public class ViewSelectorView extends ViewController {
   public ButtonElement ControlButtons;
   public ButtonElement FlightPath;
   public ButtonElement MeasuredData;
+  public ButtonElement ReconstructionButton;
 
   public String currentViewIdentifier;
 
@@ -62,7 +63,7 @@ public class ViewSelectorView extends ViewController {
         this.disable();
       }
     };
-    
+
     this.BabyCanInfo = new ButtonElement(this.appController, this, 0, 0, 130, "BabyCan info") {
     	public void clickEvent() {
     		this.appController.switchViewToBabyCanInfo();
@@ -83,14 +84,14 @@ public class ViewSelectorView extends ViewController {
         this.disable();
       }
     };
-    
+
     this.FlightPath = new ButtonElement(this.appController, this, 0, 0, 90, "Flight path") {
     	public void clickEvent() {
     		this.appController.switchViewToFlightPath();
     		this.disable();
     	}
     };
-    
+
     this.MeasuredData = new ButtonElement(this.appController, this, 0, 0, 120, "Measured data"){
         public void clickEvent(){
             this.appController.switchViewToDataCharts();
@@ -112,6 +113,13 @@ public class ViewSelectorView extends ViewController {
       }
     };
 
+    this.ReconstructionButton = new ButtonElement(this.appController, this, 0, 0, 130, "Reconstruction"){
+      public void clickEvent(){
+        this.appController.switchViewToReconstruction();
+        this.disable();
+      }
+    };
+
     this.elements.add(this.exitButton);
     this.elements.add(this.setupButton);
     this.elements.add(this.scrollBar);
@@ -122,8 +130,9 @@ public class ViewSelectorView extends ViewController {
     this.viewButtons.add(this.BabyCanInfo);
     this.viewButtons.add(this.ControlButtons);
     this.viewButtons.add(this.FlightPath);
+    this.viewButtons.add(this.ReconstructionButton);
     this.viewButtons.add(this.MeasuredData);
-    
+
     float b = 5;
     for(ButtonElement e : this.viewButtons) {
     	e.resize(b, 50, e.dim.x);
@@ -155,7 +164,7 @@ public class ViewSelectorView extends ViewController {
     if(b > this.viewWidth) {
     	this.viewWidth = b;
     }
-	this.scrollBar.setExtremes(0, this.viewWidth);
+	  this.scrollBar.setExtremes(0, this.viewWidth);
     this.scrollBar.setCurrentPosition(0, this.dim.x);
   }
 
@@ -190,7 +199,7 @@ public class ViewSelectorView extends ViewController {
     //
     // Begin Content
     //
-    
+
     fill(0);
     textFont(fonts.get("SF").get("Regular"));
     textAlign(RIGHT);

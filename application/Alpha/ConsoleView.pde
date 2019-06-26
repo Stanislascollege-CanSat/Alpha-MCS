@@ -144,6 +144,7 @@ public class ConsoleView extends ViewController {
 	}
 	this.messages.get(this.messages.size() - 1).setScrollContainer(0, this.messageViewHeight);
 	this.arrangeMessages();
+  
   }
 
   private void removeMessage(int id){
@@ -199,11 +200,11 @@ public class ConsoleView extends ViewController {
   public void logSetup(String msg){
     this.logSpecial(msg, "setup");
   }
-  
+
   public void logResponse(String msg) {
 	  this.logSpecial(msg,  "response");
   }
-  
+
   public void logHelp(String msg) {
 	  this.logSpecial(msg, "help");
   }

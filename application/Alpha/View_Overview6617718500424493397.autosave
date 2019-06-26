@@ -23,7 +23,6 @@ public class View_Overview extends ViewController {
 				for(int i = 0; i < 25; i++){
 					SerialController.send("[DEP]");
 				}
-				this.appController.notifyBabyCansDeployed();
 			}
 		};
 
@@ -33,7 +32,6 @@ public class View_Overview extends ViewController {
 
   public void viewResizeTriggered(){
     this.DSYButton.resize(this.dim.x/2 - 125, this.dim.y/2, 250);
-		this.DemoDeployButton.resize(this.dim.x/2 - 75, this.dim.y/2 + 100, 150);
   }
 
   public void show(){

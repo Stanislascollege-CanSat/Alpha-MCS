@@ -1,0 +1,8920 @@
+@MISSION: European Mission
+--> Measured 812 data points.
+
+
+--
+
+
+
+--
+
+
+
+--
+
+>>Time since startup: 14358.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.37
+>>Compass X: -21.05
+>>Compass Y: 21.76
+>>GPS Longitude: 0.0
+>>Altitude: 0.67
+
+
+--
+
+>>Time since startup: 15166.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -21.23
+>>Compass Y: 21.23
+>>GPS Longitude: 0.0
+>>Altitude: 0.12
+
+
+--
+
+>>Time since startup: 15974.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.49
+>>Compass X: -21.93
+>>Compass Y: 22.64
+>>GPS Longitude: 0.0
+>>Altitude: 0.51
+
+
+--
+
+>>Time since startup: 16782.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.98
+>>Compass X: -20.7
+>>Compass Y: 20.7
+>>GPS Longitude: 0.0
+>>Altitude: 0.17
+
+
+--
+
+>>Time since startup: 17590.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -22.99
+>>Compass Y: 21.23
+>>GPS Longitude: 0.0
+>>Altitude: 0.49
+
+
+--
+
+>>Time since startup: 18398.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -21.23
+>>Compass Y: 23.7
+>>GPS Longitude: 0.0
+>>Altitude: 0.47
+
+
+--
+
+>>Time since startup: 19206.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -21.58
+>>Compass Y: 20.87
+>>GPS Longitude: 0.0
+>>Altitude: 0.29
+
+
+--
+
+>>Time since startup: 20008.0
+>>GPS Latitude: 0.0
+>>Compass Z: -88.08
+>>Compass X: -8.31
+>>Compass Y: 9.37
+>>GPS Longitude: 0.0
+>>Altitude: 0.24
+
+
+--
+
+>>Time since startup: 20811.0
+>>GPS Latitude: 0.0
+>>Compass Z: -90.3
+>>Compass X: -9.91
+>>Compass Y: 18.04
+>>GPS Longitude: 0.0
+>>Altitude: 0.09
+
+
+--
+
+>>Time since startup: 21614.0
+>>GPS Latitude: 0.0
+>>Compass Z: -82.95
+>>Compass X: -15.74
+>>Compass Y: 21.05
+>>GPS Longitude: 0.0
+>>Altitude: 0.19
+
+
+--
+
+>>Time since startup: 22422.0
+>>GPS Latitude: 0.0
+>>Compass Z: -88.08
+>>Compass X: -16.8
+>>Compass Y: 19.63
+>>GPS Longitude: 0.0
+>>Altitude: 0.49
+
+
+--
+
+>>Time since startup: 23225.0
+>>GPS Latitude: 0.0
+>>Compass Z: -84.83
+>>Compass X: -6.01
+>>Compass Y: 15.57
+>>GPS Longitude: 0.0
+>>Altitude: 0.39
+
+
+--
+
+>>Time since startup: 24032.0
+>>GPS Latitude: 0.0
+>>Compass Z: -82.43
+>>Compass X: -2.12
+>>Compass Y: 12.38
+>>GPS Longitude: 0.0
+>>Altitude: 0.59
+
+
+--
+
+>>Time since startup: 25648.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.86
+>>Compass X: -19.1
+>>Compass Y: 21.58
+>>GPS Longitude: 0.0
+>>Altitude: 0.14
+
+
+--
+
+>>Time since startup: 27264.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.0
+>>Compass X: -22.46
+>>Compass Y: 22.46
+>>GPS Longitude: 0.0
+>>Altitude: 0.04
+
+
+--
+
+>>Time since startup: 28072.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -22.99
+>>Compass Y: 20.87
+>>GPS Longitude: 0.0
+>>Altitude: -0.22
+
+
+--
+
+>>Time since startup: 28890.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -23.35
+>>Compass Y: 20.52
+>>GPS Longitude: 0.0
+>>Altitude: -0.16
+
+
+--
+
+>>Time since startup: 29708.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -20.7
+>>Compass Y: 24.23
+>>GPS Longitude: 0.0
+>>Altitude: 0.01
+
+
+--
+
+>>Time since startup: 30516.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -22.82
+>>Compass Y: 21.76
+>>GPS Longitude: 0.0
+>>Altitude: -0.07
+
+
+--
+
+>>Time since startup: 32147.0
+>>GPS Latitude: 0.0
+>>Compass Z: -81.58
+>>Compass X: 0.88
+>>Compass Y: 16.45
+>>GPS Longitude: 0.0
+>>Altitude: 0.36
+
+
+--
+
+>>Time since startup: 33758.0
+>>GPS Latitude: 0.0
+>>Compass Z: -70.63
+>>Compass X: -34.85
+>>Compass Y: 6.9
+>>GPS Longitude: 0.0
+>>Altitude: 0.23
+
+
+--
+
+>>Time since startup: 34566.0
+>>GPS Latitude: 0.0
+>>Compass Z: -78.16
+>>Compass X: -31.31
+>>Compass Y: 4.78
+>>GPS Longitude: 0.0
+>>Altitude: 0.36
+
+
+--
+
+>>Time since startup: 35369.0
+>>GPS Latitude: 0.0
+>>Compass Z: -95.94
+>>Compass X: -35.91
+>>Compass Y: 4.07
+>>GPS Longitude: 0.0
+>>Altitude: 0.32
+
+
+--
+
+>>Time since startup: 36177.0
+>>GPS Latitude: 0.0
+>>Compass Z: -96.63
+>>Compass X: -34.14
+>>Compass Y: 0.88
+>>GPS Longitude: 0.0
+>>Altitude: 0.14
+
+
+--
+
+>>Time since startup: 36985.0
+>>GPS Latitude: 0.0
+>>Compass Z: -86.37
+>>Compass X: -39.44
+>>Compass Y: 10.08
+>>GPS Longitude: 0.0
+>>Altitude: 0.08
+
+
+--
+
+>>Time since startup: 38601.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.74
+>>Compass X: -38.03
+>>Compass Y: 14.33
+>>GPS Longitude: 0.0
+>>Altitude: 0.39
+
+
+--
+
+>>Time since startup: 39409.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -38.03
+>>Compass Y: 11.5
+>>GPS Longitude: 0.0
+>>Altitude: 0.23
+
+
+--
+
+>>Time since startup: 40217.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.23
+>>Compass X: -36.08
+>>Compass Y: 14.86
+>>GPS Longitude: 0.0
+>>Altitude: 0.61
+
+
+--
+
+>>Time since startup: 42570.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.24
+>>Compass X: -38.38
+>>Compass Y: 14.33
+>>GPS Longitude: 0.0
+>>Altitude: 0.46
+
+
+--
+
+>>Time since startup: 43378.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.41
+>>Compass X: -32.55
+>>Compass Y: 18.75
+>>GPS Longitude: 0.0
+>>Altitude: 0.06
+
+
+--
+
+>>Time since startup: 44186.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.49
+>>Compass X: -31.84
+>>Compass Y: 16.63
+>>GPS Longitude: 0.0
+>>Altitude: 0.19
+
+
+--
+
+>>Time since startup: 44994.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.74
+>>Compass X: -37.32
+>>Compass Y: 23.17
+>>GPS Longitude: 0.0
+>>Altitude: 0.05
+
+
+--
+
+>>Time since startup: 45802.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.32
+>>Compass X: -34.85
+>>Compass Y: 18.22
+>>GPS Longitude: 0.0
+>>Altitude: 0.37
+
+
+--
+
+>>Time since startup: 46610.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -32.02
+>>Compass Y: 17.86
+>>GPS Longitude: 0.0
+>>Altitude: -0.05
+
+
+--
+
+>>Time since startup: 47428.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -32.19
+>>Compass Y: 17.69
+>>GPS Longitude: 0.0
+>>Altitude: 0.1
+
+
+--
+
+>>Time since startup: 48236.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.86
+>>Compass X: -32.55
+>>Compass Y: 18.04
+>>GPS Longitude: 0.0
+>>Altitude: 0.36
+
+
+--
+
+>>Time since startup: 49044.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.66
+>>Compass X: -32.37
+>>Compass Y: 18.57
+>>GPS Longitude: 0.0
+>>Altitude: 0.23
+
+
+--
+
+>>Time since startup: 50660.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -31.66
+>>Compass Y: 18.93
+>>GPS Longitude: 0.0
+>>Altitude: -0.01
+
+
+--
+
+>>Time since startup: 51478.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -32.02
+>>Compass Y: 18.93
+>>GPS Longitude: 0.0
+>>Altitude: 0.22
+
+
+--
+
+>>Time since startup: 52286.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.91
+>>Compass X: -32.9
+>>Compass Y: 19.46
+>>GPS Longitude: 0.0
+>>Altitude: 0.5
+
+
+--
+
+>>Time since startup: 53094.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -33.61
+>>Compass Y: 16.98
+>>GPS Longitude: 0.0
+>>Altitude: 0.27
+
+
+--
+
+>>Time since startup: 53902.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.91
+>>Compass X: -31.13
+>>Compass Y: 20.52
+>>GPS Longitude: 0.0
+>>Altitude: 0.16
+
+
+--
+
+>>Time since startup: 54710.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.4
+>>Compass X: -32.37
+>>Compass Y: 17.86
+>>GPS Longitude: 0.0
+>>Altitude: 0.04
+
+
+--
+
+>>Time since startup: 55518.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -32.9
+>>Compass Y: 18.75
+>>GPS Longitude: 0.0
+>>Altitude: -0.35
+
+
+--
+
+>>Time since startup: 56336.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -31.48
+>>Compass Y: 19.1
+>>GPS Longitude: 0.0
+>>Altitude: 0.21
+
+
+--
+
+>>Time since startup: 57962.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -32.19
+>>Compass Y: 20.16
+>>GPS Longitude: 0.0
+>>Altitude: 0.06
+
+
+--
+
+>>Time since startup: 58770.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -33.43
+>>Compass Y: 19.28
+>>GPS Longitude: 0.0
+>>Altitude: 0.11
+
+
+--
+
+>>Time since startup: 59578.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -30.6
+>>Compass Y: 18.93
+>>GPS Longitude: 0.0
+>>Altitude: 0.25
+
+
+--
+
+>>Time since startup: 60386.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.86
+>>Compass X: -33.61
+>>Compass Y: 18.75
+>>GPS Longitude: 0.0
+>>Altitude: 0.07
+
+
+--
+
+>>Time since startup: 61194.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -33.08
+>>Compass Y: 19.63
+>>GPS Longitude: 0.0
+>>Altitude: 0.03
+
+
+--
+
+>>Time since startup: 62012.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -33.43
+>>Compass Y: 17.51
+>>GPS Longitude: 0.0
+>>Altitude: 0.01
+
+
+--
+
+>>Time since startup: 64437.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.66
+>>Compass X: -32.72
+>>Compass Y: 18.22
+>>GPS Longitude: 0.0
+>>Altitude: 0.22
+
+
+--
+
+>>Time since startup: 66053.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.54
+>>Compass X: -31.84
+>>Compass Y: 17.69
+>>GPS Longitude: 0.0
+>>Altitude: 0.3
+
+
+--
+
+>>Time since startup: 66861.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.54
+>>Compass X: -32.19
+>>Compass Y: 20.16
+>>GPS Longitude: 0.0
+>>Altitude: 0.16
+
+
+--
+
+>>Time since startup: 68477.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -30.78
+>>Compass Y: 19.81
+>>GPS Longitude: 0.0
+>>Altitude: 0.5
+
+
+--
+
+>>Time since startup: 70093.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -32.55
+>>Compass Y: 19.46
+>>GPS Longitude: 0.0
+>>Altitude: 0.33
+
+
+--
+
+>>Time since startup: 70901.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -30.95
+>>Compass Y: 20.34
+>>GPS Longitude: 0.0
+>>Altitude: 0.28
+
+
+--
+
+>>Time since startup: 71709.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.2
+>>Compass X: -32.9
+>>Compass Y: 18.75
+>>GPS Longitude: 0.0
+>>Altitude: 0.29
+
+
+--
+
+>>Time since startup: 72517.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.57
+>>Compass X: -31.48
+>>Compass Y: 18.4
+>>GPS Longitude: 0.0
+>>Altitude: -0.01
+
+
+--
+
+>>Time since startup: 73335.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -32.37
+>>Compass Y: 18.57
+>>GPS Longitude: 0.0
+>>Altitude: 0.25
+
+
+--
+
+>>Time since startup: 74951.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -31.66
+>>Compass Y: 16.45
+>>GPS Longitude: 0.0
+>>Altitude: -0.18
+
+
+--
+
+>>Time since startup: 76577.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -31.31
+>>Compass Y: 18.22
+>>GPS Longitude: 0.0
+>>Altitude: 0.22
+
+
+--
+
+>>Time since startup: 77385.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.49
+>>Compass X: -33.25
+>>Compass Y: 17.33
+>>GPS Longitude: 0.0
+>>Altitude: 0.25
+
+
+--
+
+>>Time since startup: 79001.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.2
+>>Compass X: -33.96
+>>Compass Y: 19.1
+>>GPS Longitude: 0.0
+>>Altitude: 0.07
+
+
+--
+
+>>Time since startup: 81371.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -32.02
+>>Compass Y: 19.99
+>>GPS Longitude: 0.0
+>>Altitude: 0.37
+
+
+--
+
+>>Time since startup: 82987.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.86
+>>Compass X: -32.9
+>>Compass Y: 18.04
+>>GPS Longitude: 0.0
+>>Altitude: 0.2
+
+
+--
+
+>>Time since startup: 83795.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.4
+>>Compass X: -30.95
+>>Compass Y: 18.93
+>>GPS Longitude: 0.0
+>>Altitude: 0.41
+
+
+--
+
+>>Time since startup: 84603.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -33.96
+>>Compass Y: 19.1
+>>GPS Longitude: 0.0
+>>Altitude: 0.26
+
+
+--
+
+>>Time since startup: 85411.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -33.43
+>>Compass Y: 18.93
+>>GPS Longitude: 0.0
+>>Altitude: 0.2
+
+
+--
+
+>>Time since startup: 86219.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -31.31
+>>Compass Y: 18.57
+>>GPS Longitude: 0.0
+>>Altitude: 0.25
+
+
+--
+
+>>Time since startup: 87835.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.0
+>>Compass X: -30.6
+>>Compass Y: 19.99
+>>GPS Longitude: 0.0
+>>Altitude: 0.33
+
+
+--
+
+>>Time since startup: 89451.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.23
+>>Compass X: -32.9
+>>Compass Y: 19.81
+>>GPS Longitude: 0.0
+>>Altitude: 0.55
+
+
+--
+
+>>Time since startup: 90259.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.37
+>>Compass X: -31.66
+>>Compass Y: 17.51
+>>GPS Longitude: 0.0
+>>Altitude: 0.27
+
+
+--
+
+>>Time since startup: 91062.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.23
+>>Compass X: -32.55
+>>Compass Y: 19.46
+>>GPS Longitude: 0.0
+>>Altitude: 0.52
+
+
+--
+
+>>Time since startup: 91870.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -32.55
+>>Compass Y: 18.75
+>>GPS Longitude: 0.0
+>>Altitude: 0.43
+
+
+--
+
+>>Time since startup: 92688.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -33.25
+>>Compass Y: 18.75
+>>GPS Longitude: 0.0
+>>Altitude: 0.16
+
+
+--
+
+>>Time since startup: 93496.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.08
+>>Compass X: -32.02
+>>Compass Y: 19.99
+>>GPS Longitude: 0.0
+>>Altitude: 1.02
+
+
+--
+
+>>Time since startup: 94304.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.86
+>>Compass X: -33.25
+>>Compass Y: 17.69
+>>GPS Longitude: 0.0
+>>Altitude: 0.67
+
+
+--
+
+>>Time since startup: 96728.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -32.72
+>>Compass Y: 20.34
+>>GPS Longitude: 0.0
+>>Altitude: 0.66
+
+
+--
+
+>>Time since startup: 99906.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.23
+>>Compass X: -32.9
+>>Compass Y: 18.4
+>>GPS Longitude: 0.0
+>>Altitude: 0.31
+
+
+--
+
+>>Time since startup: 100714.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -32.9
+>>Compass Y: 17.33
+>>GPS Longitude: 0.0
+>>Altitude: 0.33
+
+
+--
+
+>>Time since startup: 101532.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.48
+>>Compass X: -22.46
+>>Compass Y: 20.7
+>>GPS Longitude: 0.0
+>>Altitude: 0.59
+
+
+--
+
+>>Time since startup: 102350.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.82
+>>Compass X: -24.59
+>>Compass Y: 19.28
+>>GPS Longitude: 0.0
+>>Altitude: 0.47
+
+
+--
+
+>>Time since startup: 103168.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.13
+>>Compass X: -24.94
+>>Compass Y: 20.7
+>>GPS Longitude: 0.0
+>>Altitude: 0.74
+
+
+--
+
+>>Time since startup: 103992.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.45
+>>Compass X: -26.36
+>>Compass Y: 17.51
+>>GPS Longitude: 0.0
+>>Altitude: 0.73
+
+
+--
+
+>>Time since startup: 104810.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.28
+>>Compass X: -25.12
+>>Compass Y: 19.46
+>>GPS Longitude: 0.0
+>>Altitude: 0.23
+
+
+--
+
+>>Time since startup: 105628.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.11
+>>Compass X: -27.06
+>>Compass Y: 18.57
+>>GPS Longitude: 0.0
+>>Altitude: 0.35
+
+
+--
+
+>>Time since startup: 106446.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -29.89
+>>Compass Y: 21.05
+>>GPS Longitude: 0.0
+>>Altitude: 0.15
+
+
+--
+
+>>Time since startup: 107264.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.91
+>>Compass X: -30.42
+>>Compass Y: 19.46
+>>GPS Longitude: 0.0
+>>Altitude: 0.64
+
+
+--
+
+>>Time since startup: 108900.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.4
+>>Compass X: -29.54
+>>Compass Y: 18.93
+>>GPS Longitude: 0.0
+>>Altitude: 0.32
+
+
+--
+
+>>Time since startup: 109718.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.42
+>>Compass X: -28.48
+>>Compass Y: 19.28
+>>GPS Longitude: 0.0
+>>Altitude: 0.63
+
+
+--
+
+>>Time since startup: 110536.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -29.54
+>>Compass Y: 19.99
+>>GPS Longitude: 0.0
+>>Altitude: 0.48
+
+
+--
+
+>>Time since startup: 111354.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.2
+>>Compass X: -28.3
+>>Compass Y: 20.16
+>>GPS Longitude: 0.0
+>>Altitude: 1.05
+
+
+--
+
+>>Time since startup: 112172.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.91
+>>Compass X: -26.53
+>>Compass Y: 19.46
+>>GPS Longitude: 0.0
+>>Altitude: 0.46
+
+
+--
+
+>>Time since startup: 112990.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.42
+>>Compass X: -27.77
+>>Compass Y: 18.22
+>>GPS Longitude: 0.0
+>>Altitude: 0.81
+
+
+--
+
+>>Time since startup: 114626.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -11.5
+>>Compass Y: 19.28
+>>GPS Longitude: 0.0
+>>Altitude: 0.93
+
+
+--
+
+>>Time since startup: 116262.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.4
+>>Compass X: -37.68
+>>Compass Y: -9.73
+>>GPS Longitude: 0.0
+>>Altitude: 0.9
+
+
+--
+
+>>Time since startup: 117080.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -37.85
+>>Compass Y: -9.91
+>>GPS Longitude: 0.0
+>>Altitude: 1.08
+
+
+--
+
+>>Time since startup: 117898.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.23
+>>Compass X: -42.45
+>>Compass Y: -2.48
+>>GPS Longitude: 0.0
+>>Altitude: 0.95
+
+
+--
+
+>>Time since startup: 118716.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -42.27
+>>Compass Y: 1.59
+>>GPS Longitude: 0.0
+>>Altitude: 0.84
+
+
+--
+
+>>Time since startup: 119524.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -43.69
+>>Compass Y: -0.53
+>>GPS Longitude: 0.0
+>>Altitude: 0.95
+
+
+--
+
+>>Time since startup: 120337.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -42.27
+>>Compass Y: 0.53
+>>GPS Longitude: 0.0
+>>Altitude: 0.99
+
+
+--
+
+>>Time since startup: 121140.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -43.34
+>>Compass Y: 0.88
+>>GPS Longitude: 0.0
+>>Altitude: 0.97
+
+
+--
+
+>>Time since startup: 122766.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.77
+>>Compass X: -40.51
+>>Compass Y: 3.01
+>>GPS Longitude: 0.0
+>>Altitude: 1.18
+
+
+--
+
+>>Time since startup: 123569.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.74
+>>Compass X: -41.92
+>>Compass Y: 0.53
+>>GPS Longitude: 0.0
+>>Altitude: 0.65
+
+
+--
+
+>>Time since startup: 124377.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.42
+>>Compass X: -41.57
+>>Compass Y: 0.53
+>>GPS Longitude: 0.0
+>>Altitude: 0.89
+
+
+--
+
+>>Time since startup: 125185.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.59
+>>Compass X: -41.39
+>>Compass Y: 0.71
+>>GPS Longitude: 0.0
+>>Altitude: 0.77
+
+
+--
+
+>>Time since startup: 125993.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.42
+>>Compass X: -41.92
+>>Compass Y: -0.18
+>>GPS Longitude: 0.0
+>>Altitude: 1.21
+
+
+--
+
+>>Time since startup: 127619.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.25
+>>Compass X: -40.68
+>>Compass Y: 5.66
+>>GPS Longitude: 0.0
+>>Altitude: 0.78
+
+
+--
+
+>>Time since startup: 128427.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.13
+>>Compass X: -38.38
+>>Compass Y: 6.54
+>>GPS Longitude: 0.0
+>>Altitude: 0.65
+
+
+--
+
+>>Time since startup: 129235.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.23
+>>Compass X: -41.74
+>>Compass Y: 6.37
+>>GPS Longitude: 0.0
+>>Altitude: 1.04
+
+
+--
+
+>>Time since startup: 130846.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.59
+>>Compass X: -39.98
+>>Compass Y: 7.08
+>>GPS Longitude: 0.0
+>>Altitude: 1.4
+
+
+--
+
+>>Time since startup: 131654.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -41.39
+>>Compass Y: 6.72
+>>GPS Longitude: 0.0
+>>Altitude: 1.19
+
+
+--
+
+>>Time since startup: 132457.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -41.74
+>>Compass Y: 6.72
+>>GPS Longitude: 0.0
+>>Altitude: 1.05
+
+
+--
+
+>>Time since startup: 133265.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.23
+>>Compass X: -39.62
+>>Compass Y: 5.66
+>>GPS Longitude: 0.0
+>>Altitude: 0.71
+
+
+--
+
+>>Time since startup: 134068.0
+>>GPS Latitude: 0.0
+>>Compass Z: -66.36
+>>Compass X: -38.21
+>>Compass Y: 6.72
+>>GPS Longitude: 0.0
+>>Altitude: 1.33
+
+
+--
+
+>>Time since startup: 134871.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.59
+>>Compass X: -37.5
+>>Compass Y: 6.37
+>>GPS Longitude: 0.0
+>>Altitude: 1.11
+
+
+--
+
+>>Time since startup: 135674.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.11
+>>Compass X: -37.32
+>>Compass Y: 7.25
+>>GPS Longitude: 0.0
+>>Altitude: 1.65
+
+
+--
+
+>>Time since startup: 137280.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.42
+>>Compass X: -36.97
+>>Compass Y: 9.02
+>>GPS Longitude: 0.0
+>>Altitude: 1.34
+
+
+--
+
+>>Time since startup: 138088.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.62
+>>Compass X: -36.79
+>>Compass Y: 7.78
+>>GPS Longitude: 0.0
+>>Altitude: 1.17
+
+
+--
+
+>>Time since startup: 138896.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.42
+>>Compass X: -38.03
+>>Compass Y: 9.73
+>>GPS Longitude: 0.0
+>>Altitude: 1.14
+
+
+--
+
+>>Time since startup: 140502.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.79
+>>Compass X: -36.97
+>>Compass Y: 7.61
+>>GPS Longitude: 0.0
+>>Altitude: 1.43
+
+
+--
+
+>>Time since startup: 141310.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.45
+>>Compass X: -37.32
+>>Compass Y: 7.61
+>>GPS Longitude: 0.0
+>>Altitude: 1.33
+
+
+--
+
+>>Time since startup: 142118.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.62
+>>Compass X: -38.56
+>>Compass Y: 8.84
+>>GPS Longitude: 0.0
+>>Altitude: 1.13
+
+
+--
+
+>>Time since startup: 143734.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.65
+>>Compass X: -35.38
+>>Compass Y: 7.78
+>>GPS Longitude: 0.0
+>>Altitude: 0.95
+
+
+--
+
+>>Time since startup: 144542.0
+>>GPS Latitude: 0.0
+>>Compass Z: -65.84
+>>Compass X: -35.55
+>>Compass Y: 8.31
+>>GPS Longitude: 0.0
+>>Altitude: 1.28
+
+
+--
+
+>>Time since startup: 145350.0
+>>GPS Latitude: 0.0
+>>Compass Z: -65.67
+>>Compass X: -37.15
+>>Compass Y: 5.66
+>>GPS Longitude: 0.0
+>>Altitude: 1.19
+
+
+--
+
+>>Time since startup: 146158.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.13
+>>Compass X: -40.15
+>>Compass Y: 5.13
+>>GPS Longitude: 0.0
+>>Altitude: 0.99
+
+
+--
+
+>>Time since startup: 146966.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.91
+>>Compass X: -40.33
+>>Compass Y: 2.48
+>>GPS Longitude: 0.0
+>>Altitude: 1.22
+
+
+--
+
+>>Time since startup: 147774.0
+>>GPS Latitude: 0.0
+>>Compass Z: -65.16
+>>Compass X: -38.74
+>>Compass Y: 4.42
+>>GPS Longitude: 0.0
+>>Altitude: 1.08
+
+
+--
+
+>>Time since startup: 148582.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.94
+>>Compass X: -39.98
+>>Compass Y: 2.83
+>>GPS Longitude: 0.0
+>>Altitude: 1.33
+
+
+--
+
+>>Time since startup: 149390.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.94
+>>Compass X: -39.98
+>>Compass Y: 3.18
+>>GPS Longitude: 0.0
+>>Altitude: 0.97
+
+
+--
+
+>>Time since startup: 150198.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.25
+>>Compass X: -41.04
+>>Compass Y: 3.89
+>>GPS Longitude: 0.0
+>>Altitude: 1.08
+
+
+--
+
+>>Time since startup: 151006.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -44.04
+>>Compass Y: -3.01
+>>GPS Longitude: 0.0
+>>Altitude: 0.94
+
+
+--
+
+>>Time since startup: 151824.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -42.45
+>>Compass Y: -7.08
+>>GPS Longitude: 0.0
+>>Altitude: 0.82
+
+
+--
+
+>>Time since startup: 152642.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.37
+>>Compass X: -42.27
+>>Compass Y: -5.13
+>>GPS Longitude: 0.0
+>>Altitude: 0.9
+
+
+--
+
+>>Time since startup: 153470.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -42.27
+>>Compass Y: -5.13
+>>GPS Longitude: 0.0
+>>Altitude: 0.91
+
+
+--
+
+>>Time since startup: 154288.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.59
+>>Compass X: -40.33
+>>Compass Y: 7.43
+>>GPS Longitude: 0.0
+>>Altitude: 0.94
+
+
+--
+
+>>Time since startup: 155096.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.08
+>>Compass X: -37.32
+>>Compass Y: 11.85
+>>GPS Longitude: 0.0
+>>Altitude: 0.65
+
+
+--
+
+>>Time since startup: 155914.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.59
+>>Compass X: -33.61
+>>Compass Y: 9.91
+>>GPS Longitude: 0.0
+>>Altitude: -0.63
+
+
+--
+
+>>Time since startup: 156727.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.21
+>>Compass X: -51.47
+>>Compass Y: 1.24
+>>GPS Longitude: 0.0
+>>Altitude: 0.16
+
+
+--
+
+>>Time since startup: 157535.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.41
+>>Compass X: -56.25
+>>Compass Y: -13.09
+>>GPS Longitude: 0.0
+>>Altitude: 1.03
+
+
+--
+
+>>Time since startup: 159177.0
+>>GPS Latitude: 0.0
+>>Compass Z: -47.37
+>>Compass X: -58.55
+>>Compass Y: -7.96
+>>GPS Longitude: 0.0
+>>Altitude: 0.9
+
+
+--
+
+>>Time since startup: 159995.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.23
+>>Compass X: -49.88
+>>Compass Y: -20.52
+>>GPS Longitude: 0.0
+>>Altitude: 0.57
+
+
+--
+
+>>Time since startup: 160819.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.19
+>>Compass X: -41.57
+>>Compass Y: -22.82
+>>GPS Longitude: 0.0
+>>Altitude: 0.83
+
+
+--
+
+>>Time since startup: 161637.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.2
+>>Compass X: -14.86
+>>Compass Y: -20.87
+>>GPS Longitude: 0.0
+>>Altitude: 0.31
+
+
+--
+
+>>Time since startup: 162455.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.59
+>>Compass X: -7.43
+>>Compass Y: -10.61
+>>GPS Longitude: 0.0
+>>Altitude: 0.37
+
+
+--
+
+>>Time since startup: 163273.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -15.03
+>>Compass Y: 19.63
+>>GPS Longitude: 0.0
+>>Altitude: 1.12
+
+
+--
+
+>>Time since startup: 164092.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -15.03
+>>Compass Y: 23.53
+>>GPS Longitude: 0.0
+>>Altitude: 1.19
+
+
+--
+
+>>Time since startup: 164910.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.95
+>>Compass X: -17.51
+>>Compass Y: 23.88
+>>GPS Longitude: 0.0
+>>Altitude: 0.95
+
+
+--
+
+>>Time since startup: 165729.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.2
+>>Compass X: -18.4
+>>Compass Y: 27.59
+>>GPS Longitude: 0.0
+>>Altitude: 0.85
+
+
+--
+
+>>Time since startup: 166549.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.73
+>>Compass X: -27.95
+>>Compass Y: 29.36
+>>GPS Longitude: 0.0
+>>Altitude: 0.95
+
+
+--
+
+>>Time since startup: 168181.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.59
+>>Compass X: -6.37
+>>Compass Y: 9.91
+>>GPS Longitude: 0.0
+>>Altitude: 0.62
+
+
+--
+
+>>Time since startup: 168989.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.96
+>>Compass X: -7.08
+>>Compass Y: 13.09
+>>GPS Longitude: 0.0
+>>Altitude: 1.03
+
+
+--
+
+>>Time since startup: 169797.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.37
+>>Compass X: -3.71
+>>Compass Y: 9.02
+>>GPS Longitude: 0.0
+>>Altitude: 1.18
+
+
+--
+
+>>Time since startup: 170600.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.59
+>>Compass X: -5.31
+>>Compass Y: 14.5
+>>GPS Longitude: 0.0
+>>Altitude: 1.2
+
+
+--
+
+>>Time since startup: 171408.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -3.89
+>>Compass Y: 19.1
+>>GPS Longitude: 0.0
+>>Altitude: 1.03
+
+
+--
+
+>>Time since startup: 172216.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -2.83
+>>Compass Y: 14.15
+>>GPS Longitude: 0.0
+>>Altitude: 1.09
+
+
+--
+
+>>Time since startup: 173024.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -4.07
+>>Compass Y: 20.7
+>>GPS Longitude: 0.0
+>>Altitude: 0.72
+
+
+--
+
+>>Time since startup: 174640.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.91
+>>Compass X: -4.25
+>>Compass Y: 13.09
+>>GPS Longitude: 0.0
+>>Altitude: 0.76
+
+
+--
+
+>>Time since startup: 175448.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.2
+>>Compass X: -8.14
+>>Compass Y: 12.74
+>>GPS Longitude: 0.0
+>>Altitude: 1.13
+
+
+--
+
+>>Time since startup: 177069.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.37
+>>Compass X: -1.24
+>>Compass Y: 5.48
+>>GPS Longitude: 0.0
+>>Altitude: 1.19
+
+
+--
+
+>>Time since startup: 177872.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -3.89
+>>Compass Y: 3.89
+>>GPS Longitude: 0.0
+>>Altitude: 1.06
+
+
+--
+
+>>Time since startup: 178680.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.23
+>>Compass X: -2.83
+>>Compass Y: 6.01
+>>GPS Longitude: 0.0
+>>Altitude: 1.03
+
+
+--
+
+>>Time since startup: 179488.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.91
+>>Compass X: -4.6
+>>Compass Y: 4.95
+>>GPS Longitude: 0.0
+>>Altitude: 1.15
+
+
+--
+
+>>Time since startup: 180291.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.42
+>>Compass X: -4.07
+>>Compass Y: 2.3
+>>GPS Longitude: 0.0
+>>Altitude: 0.98
+
+
+--
+
+>>Time since startup: 181099.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -4.07
+>>Compass Y: 6.9
+>>GPS Longitude: 0.0
+>>Altitude: 0.96
+
+
+--
+
+>>Time since startup: 181912.0
+>>GPS Latitude: 0.0
+>>Compass Z: -66.02
+>>Compass X: -21.58
+>>Compass Y: -10.97
+>>GPS Longitude: 0.0
+>>Altitude: 1.11
+
+
+--
+
+>>Time since startup: 183549.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.94
+>>Compass X: -34.67
+>>Compass Y: -10.61
+>>GPS Longitude: 0.0
+>>Altitude: 1.32
+
+
+--
+
+>>Time since startup: 184367.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -35.73
+>>Compass Y: -14.86
+>>GPS Longitude: 0.0
+>>Altitude: 1.27
+
+
+--
+
+>>Time since startup: 185186.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.0
+>>Compass X: -45.1
+>>Compass Y: -1.95
+>>GPS Longitude: 0.0
+>>Altitude: 1.59
+
+
+--
+
+>>Time since startup: 186003.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -45.28
+>>Compass Y: 4.95
+>>GPS Longitude: 0.0
+>>Altitude: 1.51
+
+
+--
+
+>>Time since startup: 186811.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.37
+>>Compass X: -43.34
+>>Compass Y: 4.78
+>>GPS Longitude: 0.0
+>>Altitude: 1.97
+
+
+--
+
+>>Time since startup: 187619.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.29
+>>Compass X: -44.75
+>>Compass Y: 0.53
+>>GPS Longitude: 0.0
+>>Altitude: 1.44
+
+
+--
+
+>>Time since startup: 188427.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -41.92
+>>Compass Y: 1.59
+>>GPS Longitude: 0.0
+>>Altitude: 1.73
+
+
+--
+
+>>Time since startup: 189230.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -40.51
+>>Compass Y: 2.3
+>>GPS Longitude: 0.0
+>>Altitude: 1.55
+
+
+--
+
+>>Time since startup: 190038.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -41.21
+>>Compass Y: 0.88
+>>GPS Longitude: 0.0
+>>Altitude: 1.51
+
+
+--
+
+>>Time since startup: 190846.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.25
+>>Compass X: -28.65
+>>Compass Y: 19.1
+>>GPS Longitude: 0.0
+>>Altitude: 1.49
+
+
+--
+
+>>Time since startup: 191664.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -4.25
+>>Compass Y: 15.92
+>>GPS Longitude: 0.0
+>>Altitude: 1.53
+
+
+--
+
+>>Time since startup: 192472.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.23
+>>Compass X: -5.66
+>>Compass Y: 18.4
+>>GPS Longitude: 0.0
+>>Altitude: 1.5
+
+
+--
+
+>>Time since startup: 193280.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.29
+>>Compass X: -4.42
+>>Compass Y: 17.86
+>>GPS Longitude: 0.0
+>>Altitude: 1.85
+
+
+--
+
+>>Time since startup: 194088.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.37
+>>Compass X: -5.48
+>>Compass Y: 17.86
+>>GPS Longitude: 0.0
+>>Altitude: 1.26
+
+
+--
+
+>>Time since startup: 194896.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.32
+>>Compass X: -5.48
+>>Compass Y: 18.22
+>>GPS Longitude: 0.0
+>>Altitude: 1.49
+
+
+--
+
+>>Time since startup: 195704.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -4.95
+>>Compass Y: 19.81
+>>GPS Longitude: 0.0
+>>Altitude: 1.75
+
+
+--
+
+>>Time since startup: 196512.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.64
+>>Compass X: -6.54
+>>Compass Y: 19.63
+>>GPS Longitude: 0.0
+>>Altitude: 1.72
+
+
+--
+
+>>Time since startup: 197320.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.32
+>>Compass X: -6.19
+>>Compass Y: 21.4
+>>GPS Longitude: 0.0
+>>Altitude: 1.96
+
+
+--
+
+>>Time since startup: 198128.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -6.9
+>>Compass Y: 18.93
+>>GPS Longitude: 0.0
+>>Altitude: 1.81
+
+
+--
+
+>>Time since startup: 198936.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.95
+>>Compass X: -6.19
+>>Compass Y: 20.7
+>>GPS Longitude: 0.0
+>>Altitude: 1.82
+
+
+--
+
+>>Time since startup: 199744.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.49
+>>Compass X: -6.01
+>>Compass Y: 20.87
+>>GPS Longitude: 0.0
+>>Altitude: 1.6
+
+
+--
+
+>>Time since startup: 200552.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.46
+>>Compass X: -8.49
+>>Compass Y: 19.81
+>>GPS Longitude: 0.0
+>>Altitude: 1.5
+
+
+--
+
+>>Time since startup: 201360.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.66
+>>Compass X: -6.54
+>>Compass Y: 21.76
+>>GPS Longitude: 0.0
+>>Altitude: 1.56
+
+
+--
+
+>>Time since startup: 202976.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.98
+>>Compass X: -7.25
+>>Compass Y: 22.11
+>>GPS Longitude: 0.0
+>>Altitude: 1.89
+
+
+--
+
+>>Time since startup: 203784.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -7.78
+>>Compass Y: 21.58
+>>GPS Longitude: 0.0
+>>Altitude: 1.64
+
+
+--
+
+>>Time since startup: 204592.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.32
+>>Compass X: -6.19
+>>Compass Y: 21.05
+>>GPS Longitude: 0.0
+>>Altitude: 1.79
+
+
+--
+
+>>Time since startup: 206208.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.12
+>>Compass X: -7.43
+>>Compass Y: 20.87
+>>GPS Longitude: 0.0
+>>Altitude: 1.9
+
+
+--
+
+>>Time since startup: 207016.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -6.37
+>>Compass Y: 21.58
+>>GPS Longitude: 0.0
+>>Altitude: 1.95
+
+
+--
+
+>>Time since startup: 207824.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.98
+>>Compass X: -7.61
+>>Compass Y: 20.34
+>>GPS Longitude: 0.0
+>>Altitude: 1.87
+
+
+--
+
+>>Time since startup: 208632.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.98
+>>Compass X: -7.25
+>>Compass Y: 21.05
+>>GPS Longitude: 0.0
+>>Altitude: 1.8
+
+
+--
+
+>>Time since startup: 209440.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.15
+>>Compass X: -7.08
+>>Compass Y: 21.23
+>>GPS Longitude: 0.0
+>>Altitude: 1.74
+
+
+--
+
+>>Time since startup: 210248.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.12
+>>Compass X: -8.14
+>>Compass Y: 21.93
+>>GPS Longitude: 0.0
+>>Altitude: 1.73
+
+
+--
+
+>>Time since startup: 211859.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.58
+>>Compass X: 5.48
+>>Compass Y: 4.78
+>>GPS Longitude: 0.0
+>>Altitude: 1.51
+
+
+--
+
+>>Time since startup: 212662.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.57
+>>Compass X: -4.25
+>>Compass Y: 8.14
+>>GPS Longitude: 0.0
+>>Altitude: 1.44
+
+
+--
+
+>>Time since startup: 213470.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.0
+>>Compass X: -3.36
+>>Compass Y: 14.33
+>>GPS Longitude: 0.0
+>>Altitude: 1.46
+
+
+--
+
+>>Time since startup: 214283.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.86
+>>Compass X: 1.77
+>>Compass Y: 6.72
+>>GPS Longitude: 0.0
+>>Altitude: 1.87
+
+
+--
+
+>>Time since startup: 215091.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -1.06
+>>Compass Y: 4.25
+>>GPS Longitude: 0.0
+>>Altitude: 1.29
+
+
+--
+
+>>Time since startup: 215894.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -0.53
+>>Compass Y: 6.9
+>>GPS Longitude: 0.0
+>>Altitude: 1.67
+
+
+--
+
+>>Time since startup: 216702.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: 3.01
+>>Compass Y: 9.02
+>>GPS Longitude: 0.0
+>>Altitude: 1.49
+
+
+--
+
+>>Time since startup: 218313.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: 3.36
+>>Compass Y: 9.02
+>>GPS Longitude: 0.0
+>>Altitude: 1.27
+
+
+--
+
+>>Time since startup: 219121.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.64
+>>Compass X: 3.36
+>>Compass Y: 5.84
+>>GPS Longitude: 0.0
+>>Altitude: 1.5
+
+
+--
+
+>>Time since startup: 219929.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.98
+>>Compass X: 2.3
+>>Compass Y: 5.84
+>>GPS Longitude: 0.0
+>>Altitude: 1.61
+
+
+--
+
+>>Time since startup: 220742.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.46
+>>Compass X: 3.54
+>>Compass Y: 13.44
+>>GPS Longitude: 0.0
+>>Altitude: 1.74
+
+
+--
+
+>>Time since startup: 221550.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.75
+>>Compass X: 2.48
+>>Compass Y: 12.74
+>>GPS Longitude: 0.0
+>>Altitude: 2.2
+
+
+--
+
+>>Time since startup: 222358.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -3.18
+>>Compass Y: 22.99
+>>GPS Longitude: 0.0
+>>Altitude: 2.12
+
+
+--
+
+>>Time since startup: 223166.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.12
+>>Compass X: -8.84
+>>Compass Y: 25.47
+>>GPS Longitude: 0.0
+>>Altitude: 2.26
+
+
+--
+
+>>Time since startup: 224777.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.29
+>>Compass X: -9.73
+>>Compass Y: 23.53
+>>GPS Longitude: 0.0
+>>Altitude: 2.2
+
+
+--
+
+>>Time since startup: 225585.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.92
+>>Compass X: -8.67
+>>Compass Y: 24.23
+>>GPS Longitude: 0.0
+>>Altitude: 2.01
+
+
+--
+
+>>Time since startup: 226393.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.12
+>>Compass X: -2.83
+>>Compass Y: 17.33
+>>GPS Longitude: 0.0
+>>Altitude: 2.12
+
+
+--
+
+>>Time since startup: 227201.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.46
+>>Compass X: -1.06
+>>Compass Y: 16.27
+>>GPS Longitude: 0.0
+>>Altitude: 1.63
+
+
+--
+
+>>Time since startup: 228009.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.0
+>>Compass X: -0.18
+>>Compass Y: 17.16
+>>GPS Longitude: 0.0
+>>Altitude: 2.03
+
+
+--
+
+>>Time since startup: 228817.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -0.88
+>>Compass Y: 16.8
+>>GPS Longitude: 0.0
+>>Altitude: 1.83
+
+
+--
+
+>>Time since startup: 229625.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.86
+>>Compass X: 0.71
+>>Compass Y: 15.21
+>>GPS Longitude: 0.0
+>>Altitude: 2.13
+
+
+--
+
+>>Time since startup: 230433.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.95
+>>Compass X: -1.59
+>>Compass Y: 14.33
+>>GPS Longitude: 0.0
+>>Altitude: 2.16
+
+
+--
+
+>>Time since startup: 232049.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.66
+>>Compass X: -0.53
+>>Compass Y: 17.16
+>>GPS Longitude: 0.0
+>>Altitude: 1.9
+
+
+--
+
+>>Time since startup: 232852.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: 0.35
+>>Compass Y: 14.86
+>>GPS Longitude: 0.0
+>>Altitude: 2.47
+
+
+--
+
+>>Time since startup: 233660.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -0.71
+>>Compass Y: 14.5
+>>GPS Longitude: 0.0
+>>Altitude: 2.05
+
+
+--
+
+>>Time since startup: 234468.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.49
+>>Compass X: -0.35
+>>Compass Y: 15.57
+>>GPS Longitude: 0.0
+>>Altitude: 1.76
+
+
+--
+
+>>Time since startup: 235276.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.74
+>>Compass X: -8.31
+>>Compass Y: 18.57
+>>GPS Longitude: 0.0
+>>Altitude: 1.87
+
+
+--
+
+>>Time since startup: 236084.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -11.5
+>>Compass Y: 19.63
+>>GPS Longitude: 0.0
+>>Altitude: 2.07
+
+
+--
+
+>>Time since startup: 237710.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -12.03
+>>Compass Y: 22.99
+>>GPS Longitude: 0.0
+>>Altitude: 2.49
+
+
+--
+
+>>Time since startup: 238528.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.49
+>>Compass X: -18.04
+>>Compass Y: 26.18
+>>GPS Longitude: 0.0
+>>Altitude: 2.25
+
+
+--
+
+>>Time since startup: 239347.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.49
+>>Compass X: -17.33
+>>Compass Y: 26.89
+>>GPS Longitude: 0.0
+>>Altitude: 2.31
+
+
+--
+
+>>Time since startup: 240165.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -19.1
+>>Compass Y: 25.47
+>>GPS Longitude: 0.0
+>>Altitude: 2.41
+
+
+--
+
+>>Time since startup: 240983.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.49
+>>Compass X: -19.46
+>>Compass Y: 25.82
+>>GPS Longitude: 0.0
+>>Altitude: 1.88
+
+
+--
+
+>>Time since startup: 241801.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -23.7
+>>Compass Y: 25.82
+>>GPS Longitude: 0.0
+>>Altitude: 1.8
+
+
+--
+
+>>Time since startup: 242625.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.58
+>>Compass X: -28.48
+>>Compass Y: 26.36
+>>GPS Longitude: 0.0
+>>Altitude: 2.06
+
+
+--
+
+>>Time since startup: 243443.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -32.9
+>>Compass Y: 20.87
+>>GPS Longitude: 0.0
+>>Altitude: 1.85
+
+
+--
+
+>>Time since startup: 244267.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.66
+>>Compass X: -40.51
+>>Compass Y: 12.56
+>>GPS Longitude: 0.0
+>>Altitude: 2.25
+
+
+--
+
+>>Time since startup: 245100.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -39.62
+>>Compass Y: 10.97
+>>GPS Longitude: 0.0
+>>Altitude: 2.03
+
+
+--
+
+>>Time since startup: 245923.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -39.8
+>>Compass Y: 7.61
+>>GPS Longitude: 0.0
+>>Altitude: 2.27
+
+
+--
+
+>>Time since startup: 246731.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.0
+>>Compass X: -42.27
+>>Compass Y: -12.56
+>>GPS Longitude: 0.0
+>>Altitude: 2.15
+
+
+--
+
+>>Time since startup: 247555.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -37.85
+>>Compass Y: -14.5
+>>GPS Longitude: 0.0
+>>Altitude: 2.41
+
+
+--
+
+>>Time since startup: 248379.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -41.04
+>>Compass Y: -7.78
+>>GPS Longitude: 0.0
+>>Altitude: 2.21
+
+
+--
+
+>>Time since startup: 249202.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.94
+>>Compass X: -28.3
+>>Compass Y: -15.57
+>>GPS Longitude: 0.0
+>>Altitude: 1.92
+
+
+--
+
+>>Time since startup: 250020.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.0
+>>Compass X: -41.21
+>>Compass Y: -3.36
+>>GPS Longitude: 0.0
+>>Altitude: 2.02
+
+
+--
+
+>>Time since startup: 250838.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.92
+>>Compass X: -45.46
+>>Compass Y: 15.03
+>>GPS Longitude: 0.0
+>>Altitude: 2.31
+
+
+--
+
+>>Time since startup: 251656.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.74
+>>Compass X: -54.3
+>>Compass Y: 12.2
+>>GPS Longitude: 0.0
+>>Altitude: 2.22
+
+
+--
+
+>>Time since startup: 252474.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.64
+>>Compass X: -55.01
+>>Compass Y: 17.16
+>>GPS Longitude: 0.0
+>>Altitude: 2.94
+
+
+--
+
+>>Time since startup: 253293.0
+>>GPS Latitude: 0.0
+>>Compass Z: -39.16
+>>Compass X: -55.36
+>>Compass Y: 19.99
+>>GPS Longitude: 0.0
+>>Altitude: 2.67
+
+
+--
+
+>>Time since startup: 254111.0
+>>GPS Latitude: 0.0
+>>Compass Z: -41.56
+>>Compass X: -52.89
+>>Compass Y: 18.22
+>>GPS Longitude: 0.0
+>>Altitude: 2.45
+
+
+--
+
+>>Time since startup: 254929.0
+>>GPS Latitude: 0.0
+>>Compass Z: -40.7
+>>Compass X: -54.83
+>>Compass Y: 18.04
+>>GPS Longitude: 0.0
+>>Altitude: 2.51
+
+
+--
+
+>>Time since startup: 255747.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.95
+>>Compass X: -54.66
+>>Compass Y: 15.74
+>>GPS Longitude: 0.0
+>>Altitude: 2.5
+
+
+--
+
+>>Time since startup: 256565.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.1
+>>Compass X: -54.13
+>>Compass Y: 6.01
+>>GPS Longitude: 0.0
+>>Altitude: 2.22
+
+
+--
+
+>>Time since startup: 257373.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.76
+>>Compass X: -56.96
+>>Compass Y: 7.43
+>>GPS Longitude: 0.0
+>>Altitude: 2.0
+
+
+--
+
+>>Time since startup: 258181.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.61
+>>Compass X: -55.72
+>>Compass Y: 7.25
+>>GPS Longitude: 0.0
+>>Altitude: 2.06
+
+
+--
+
+>>Time since startup: 258989.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.81
+>>Compass X: -54.83
+>>Compass Y: 7.08
+>>GPS Longitude: 0.0
+>>Altitude: 2.29
+
+
+--
+
+>>Time since startup: 259797.0
+>>GPS Latitude: 0.0
+>>Compass Z: -41.73
+>>Compass X: -55.19
+>>Compass Y: 7.08
+>>GPS Longitude: 0.0
+>>Altitude: 2.08
+
+
+--
+
+>>Time since startup: 260605.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.64
+>>Compass X: -56.07
+>>Compass Y: 6.19
+>>GPS Longitude: 0.0
+>>Altitude: 2.26
+
+
+--
+
+>>Time since startup: 261408.0
+>>GPS Latitude: 0.0
+>>Compass Z: -41.56
+>>Compass X: -55.36
+>>Compass Y: 8.67
+>>GPS Longitude: 0.0
+>>Altitude: 2.33
+
+
+--
+
+>>Time since startup: 262211.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.59
+>>Compass X: -55.72
+>>Compass Y: 7.25
+>>GPS Longitude: 0.0
+>>Altitude: 2.64
+
+
+--
+
+>>Time since startup: 263019.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.27
+>>Compass X: -55.01
+>>Compass Y: 9.37
+>>GPS Longitude: 0.0
+>>Altitude: 2.17
+
+
+--
+
+>>Time since startup: 263827.0
+>>GPS Latitude: 0.0
+>>Compass Z: -41.05
+>>Compass X: -56.6
+>>Compass Y: 7.08
+>>GPS Longitude: 0.0
+>>Altitude: 2.29
+
+
+--
+
+>>Time since startup: 264635.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.27
+>>Compass X: -55.36
+>>Compass Y: 6.19
+>>GPS Longitude: 0.0
+>>Altitude: 1.77
+
+
+--
+
+>>Time since startup: 265443.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.41
+>>Compass X: -56.6
+>>Compass Y: 6.37
+>>GPS Longitude: 0.0
+>>Altitude: 1.87
+
+
+--
+
+>>Time since startup: 266251.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.44
+>>Compass X: -55.89
+>>Compass Y: 6.37
+>>GPS Longitude: 0.0
+>>Altitude: 2.28
+
+
+--
+
+>>Time since startup: 267064.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.1
+>>Compass X: -55.89
+>>Compass Y: 6.72
+>>GPS Longitude: 0.0
+>>Altitude: 2.41
+
+
+--
+
+>>Time since startup: 267877.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.61
+>>Compass X: -56.43
+>>Compass Y: 5.84
+>>GPS Longitude: 0.0
+>>Altitude: 1.85
+
+
+--
+
+>>Time since startup: 268685.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.12
+>>Compass X: -54.48
+>>Compass Y: 6.37
+>>GPS Longitude: 0.0
+>>Altitude: 2.15
+
+
+--
+
+>>Time since startup: 269493.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.44
+>>Compass X: -53.77
+>>Compass Y: 7.78
+>>GPS Longitude: 0.0
+>>Altitude: 1.95
+
+
+--
+
+>>Time since startup: 270301.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.95
+>>Compass X: -54.66
+>>Compass Y: 12.56
+>>GPS Longitude: 0.0
+>>Altitude: 2.34
+
+
+--
+
+>>Time since startup: 271120.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.15
+>>Compass X: -53.42
+>>Compass Y: 11.67
+>>GPS Longitude: 0.0
+>>Altitude: 1.97
+
+
+--
+
+>>Time since startup: 271938.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.15
+>>Compass X: -48.47
+>>Compass Y: 24.76
+>>GPS Longitude: 0.0
+>>Altitude: 1.82
+
+
+--
+
+>>Time since startup: 272756.0
+>>GPS Latitude: 0.0
+>>Compass Z: -47.37
+>>Compass X: -51.12
+>>Compass Y: 10.79
+>>GPS Longitude: 0.0
+>>Altitude: 2.12
+
+
+--
+
+>>Time since startup: 273580.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.79
+>>Compass X: -44.75
+>>Compass Y: 23.17
+>>GPS Longitude: 0.0
+>>Altitude: 1.77
+
+
+--
+
+>>Time since startup: 274393.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.74
+>>Compass X: -46.87
+>>Compass Y: 22.46
+>>GPS Longitude: 0.0
+>>Altitude: 1.78
+
+
+--
+
+>>Time since startup: 275221.0
+>>GPS Latitude: 0.0
+>>Compass Z: -47.2
+>>Compass X: -45.99
+>>Compass Y: 21.58
+>>GPS Longitude: 0.0
+>>Altitude: 2.41
+
+
+--
+
+>>Time since startup: 276039.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.25
+>>Compass X: -44.93
+>>Compass Y: 21.58
+>>GPS Longitude: 0.0
+>>Altitude: 2.11
+
+
+--
+
+>>Time since startup: 276857.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.33
+>>Compass X: -42.1
+>>Compass Y: 21.93
+>>GPS Longitude: 0.0
+>>Altitude: 2.58
+
+
+--
+
+>>Time since startup: 277675.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.68
+>>Compass X: -41.39
+>>Compass Y: 20.87
+>>GPS Longitude: 0.0
+>>Altitude: 1.87
+
+
+--
+
+>>Time since startup: 278488.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.85
+>>Compass X: -41.21
+>>Compass Y: 18.93
+>>GPS Longitude: 0.0
+>>Altitude: 1.98
+
+
+--
+
+>>Time since startup: 279306.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.33
+>>Compass X: -41.39
+>>Compass Y: 19.1
+>>GPS Longitude: 0.0
+>>Altitude: 2.2
+
+
+--
+
+>>Time since startup: 280125.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.85
+>>Compass X: -41.21
+>>Compass Y: 18.22
+>>GPS Longitude: 0.0
+>>Altitude: 1.97
+
+
+--
+
+>>Time since startup: 280943.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.19
+>>Compass X: -39.09
+>>Compass Y: 19.63
+>>GPS Longitude: 0.0
+>>Altitude: 2.42
+
+
+--
+
+>>Time since startup: 281762.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.04
+>>Compass X: -38.56
+>>Compass Y: 19.81
+>>GPS Longitude: 0.0
+>>Altitude: 2.21
+
+
+--
+
+>>Time since startup: 282585.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.31
+>>Compass X: -39.98
+>>Compass Y: 20.16
+>>GPS Longitude: 0.0
+>>Altitude: 1.64
+
+
+--
+
+>>Time since startup: 283404.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.7
+>>Compass X: -41.39
+>>Compass Y: 21.23
+>>GPS Longitude: 0.0
+>>Altitude: 2.39
+
+
+--
+
+>>Time since startup: 284222.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.87
+>>Compass X: -38.74
+>>Compass Y: 21.4
+>>GPS Longitude: 0.0
+>>Altitude: 2.24
+
+
+--
+
+>>Time since startup: 285040.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.02
+>>Compass X: -39.98
+>>Compass Y: 19.1
+>>GPS Longitude: 0.0
+>>Altitude: 2.4
+
+
+--
+
+>>Time since startup: 285858.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.36
+>>Compass X: -40.33
+>>Compass Y: 19.81
+>>GPS Longitude: 0.0
+>>Altitude: 2.28
+
+
+--
+
+>>Time since startup: 286676.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.9
+>>Compass X: -39.8
+>>Compass Y: 19.99
+>>GPS Longitude: 0.0
+>>Altitude: 2.43
+
+
+--
+
+>>Time since startup: 287500.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.56
+>>Compass X: -41.21
+>>Compass Y: 15.74
+>>GPS Longitude: 0.0
+>>Altitude: 2.69
+
+
+--
+
+>>Time since startup: 288324.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.45
+>>Compass X: -48.29
+>>Compass Y: 12.2
+>>GPS Longitude: 0.0
+>>Altitude: 2.18
+
+
+--
+
+>>Time since startup: 289148.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.41
+>>Compass X: -36.44
+>>Compass Y: -10.61
+>>GPS Longitude: 0.0
+>>Altitude: 2.08
+
+
+--
+
+>>Time since startup: 289966.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.29
+>>Compass X: -22.46
+>>Compass Y: -12.91
+>>GPS Longitude: 0.0
+>>Altitude: 2.59
+
+
+--
+
+>>Time since startup: 290790.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.15
+>>Compass X: -12.03
+>>Compass Y: -8.49
+>>GPS Longitude: 0.0
+>>Altitude: 2.57
+
+
+--
+
+>>Time since startup: 291608.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -10.26
+>>Compass Y: -7.43
+>>GPS Longitude: 0.0
+>>Altitude: 2.57
+
+
+--
+
+>>Time since startup: 292426.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -7.78
+>>Compass Y: -3.54
+>>GPS Longitude: 0.0
+>>Altitude: 2.15
+
+
+--
+
+>>Time since startup: 293234.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -9.2
+>>Compass Y: -3.89
+>>GPS Longitude: 0.0
+>>Altitude: 2.33
+
+
+--
+
+>>Time since startup: 294037.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.23
+>>Compass X: -8.14
+>>Compass Y: -4.6
+>>GPS Longitude: 0.0
+>>Altitude: 2.42
+
+
+--
+
+>>Time since startup: 294845.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -7.78
+>>Compass Y: -8.49
+>>GPS Longitude: 0.0
+>>Altitude: 2.5
+
+
+--
+
+>>Time since startup: 295653.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -4.25
+>>Compass Y: 0.71
+>>GPS Longitude: 0.0
+>>Altitude: 2.35
+
+
+--
+
+>>Time since startup: 297279.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -10.44
+>>Compass Y: -6.19
+>>GPS Longitude: 0.0
+>>Altitude: 2.3
+
+
+--
+
+>>Time since startup: 298097.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.2
+>>Compass X: -9.91
+>>Compass Y: -4.6
+>>GPS Longitude: 0.0
+>>Altitude: 2.36
+
+
+--
+
+>>Time since startup: 298900.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -9.02
+>>Compass Y: -5.13
+>>GPS Longitude: 0.0
+>>Altitude: 2.61
+
+
+--
+
+>>Time since startup: 299708.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.86
+>>Compass X: -9.55
+>>Compass Y: -4.6
+>>GPS Longitude: 0.0
+>>Altitude: 2.47
+
+
+--
+
+>>Time since startup: 300521.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.0
+>>Compass X: -11.85
+>>Compass Y: -7.25
+>>GPS Longitude: 0.0
+>>Altitude: 2.41
+
+
+--
+
+>>Time since startup: 301339.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -12.03
+>>Compass Y: -5.66
+>>GPS Longitude: 0.0
+>>Altitude: 2.21
+
+
+--
+
+>>Time since startup: 302163.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -24.06
+>>Compass Y: -11.32
+>>GPS Longitude: 0.0
+>>Altitude: 2.66
+
+
+--
+
+>>Time since startup: 302981.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.66
+>>Compass X: -9.37
+>>Compass Y: -7.96
+>>GPS Longitude: 0.0
+>>Altitude: 2.53
+
+
+--
+
+>>Time since startup: 303789.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.64
+>>Compass X: -26.36
+>>Compass Y: -12.2
+>>GPS Longitude: 0.0
+>>Altitude: 2.15
+
+
+--
+
+>>Time since startup: 304613.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.27
+>>Compass X: -30.25
+>>Compass Y: -12.91
+>>GPS Longitude: 0.0
+>>Altitude: 2.03
+
+
+--
+
+>>Time since startup: 305446.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.95
+>>Compass X: -15.74
+>>Compass Y: -9.02
+>>GPS Longitude: 0.0
+>>Altitude: 2.22
+
+
+--
+
+>>Time since startup: 306264.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.74
+>>Compass X: -11.14
+>>Compass Y: -3.71
+>>GPS Longitude: 0.0
+>>Altitude: 1.99
+
+
+--
+
+>>Time since startup: 307082.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.57
+>>Compass X: -6.72
+>>Compass Y: 4.95
+>>GPS Longitude: 0.0
+>>Altitude: 1.94
+
+
+--
+
+>>Time since startup: 307885.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -7.25
+>>Compass Y: 11.14
+>>GPS Longitude: 0.0
+>>Altitude: 2.08
+
+
+--
+
+>>Time since startup: 308693.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -8.31
+>>Compass Y: 10.08
+>>GPS Longitude: 0.0
+>>Altitude: 1.98
+
+
+--
+
+>>Time since startup: 310304.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -12.56
+>>Compass Y: -0.18
+>>GPS Longitude: 0.0
+>>Altitude: 2.35
+
+
+--
+
+>>Time since startup: 311127.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.94
+>>Compass X: -15.92
+>>Compass Y: -4.6
+>>GPS Longitude: 0.0
+>>Altitude: 2.12
+
+
+--
+
+>>Time since startup: 311950.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -15.39
+>>Compass Y: -6.19
+>>GPS Longitude: 0.0
+>>Altitude: 2.4
+
+
+--
+
+>>Time since startup: 312768.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.57
+>>Compass X: -16.98
+>>Compass Y: -2.12
+>>GPS Longitude: 0.0
+>>Altitude: 2.15
+
+
+--
+
+>>Time since startup: 313591.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.45
+>>Compass X: -15.03
+>>Compass Y: -1.24
+>>GPS Longitude: 0.0
+>>Altitude: 2.05
+
+
+--
+
+>>Time since startup: 314409.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -15.03
+>>Compass Y: -3.01
+>>GPS Longitude: 0.0
+>>Altitude: 2.17
+
+
+--
+
+>>Time since startup: 315227.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.2
+>>Compass X: -14.86
+>>Compass Y: -2.83
+>>GPS Longitude: 0.0
+>>Altitude: 2.31
+
+
+--
+
+>>Time since startup: 316050.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.54
+>>Compass X: -15.92
+>>Compass Y: -4.25
+>>GPS Longitude: 0.0
+>>Altitude: 2.23
+
+
+--
+
+>>Time since startup: 316873.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.25
+>>Compass X: -14.5
+>>Compass Y: -4.25
+>>GPS Longitude: 0.0
+>>Altitude: 2.06
+
+
+--
+
+>>Time since startup: 317691.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -15.74
+>>Compass Y: -5.13
+>>GPS Longitude: 0.0
+>>Altitude: 2.09
+
+
+--
+
+>>Time since startup: 318509.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.91
+>>Compass X: -10.97
+>>Compass Y: -1.06
+>>GPS Longitude: 0.0
+>>Altitude: 2.22
+
+
+--
+
+>>Time since startup: 319327.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.39
+>>Compass X: -10.26
+>>Compass Y: 24.76
+>>GPS Longitude: 0.0
+>>Altitude: 2.18
+
+
+--
+
+>>Time since startup: 320145.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -11.67
+>>Compass Y: 21.93
+>>GPS Longitude: 0.0
+>>Altitude: 2.23
+
+
+--
+
+>>Time since startup: 320963.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.32
+>>Compass X: -6.54
+>>Compass Y: 13.27
+>>GPS Longitude: 0.0
+>>Altitude: 2.12
+
+
+--
+
+>>Time since startup: 321771.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -10.44
+>>Compass Y: -0.18
+>>GPS Longitude: 0.0
+>>Altitude: 1.93
+
+
+--
+
+>>Time since startup: 322589.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.08
+>>Compass X: -11.14
+>>Compass Y: 3.36
+>>GPS Longitude: 0.0
+>>Altitude: 1.77
+
+
+--
+
+>>Time since startup: 323397.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.91
+>>Compass X: -8.14
+>>Compass Y: 3.18
+>>GPS Longitude: 0.0
+>>Altitude: 2.15
+
+
+--
+
+>>Time since startup: 324205.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.54
+>>Compass X: -10.26
+>>Compass Y: 1.06
+>>GPS Longitude: 0.0
+>>Altitude: 2.29
+
+
+--
+
+>>Time since startup: 325013.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -10.08
+>>Compass Y: 1.95
+>>GPS Longitude: 0.0
+>>Altitude: 2.19
+
+
+--
+
+>>Time since startup: 325816.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -8.31
+>>Compass Y: 2.65
+>>GPS Longitude: 0.0
+>>Altitude: 2.39
+
+
+--
+
+>>Time since startup: 326619.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.23
+>>Compass X: -8.49
+>>Compass Y: 4.95
+>>GPS Longitude: 0.0
+>>Altitude: 2.28
+
+
+--
+
+>>Time since startup: 327422.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -8.31
+>>Compass Y: 5.84
+>>GPS Longitude: 0.0
+>>Altitude: 2.15
+
+
+--
+
+>>Time since startup: 328230.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -8.31
+>>Compass Y: 5.48
+>>GPS Longitude: 0.0
+>>Altitude: 2.32
+
+
+--
+
+>>Time since startup: 329033.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -8.49
+>>Compass Y: 4.25
+>>GPS Longitude: 0.0
+>>Altitude: 2.53
+
+
+--
+
+>>Time since startup: 329841.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.2
+>>Compass X: -10.26
+>>Compass Y: 4.95
+>>GPS Longitude: 0.0
+>>Altitude: 2.58
+
+
+--
+
+>>Time since startup: 330649.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.37
+>>Compass X: -9.37
+>>Compass Y: 3.36
+>>GPS Longitude: 0.0
+>>Altitude: 2.08
+
+
+--
+
+>>Time since startup: 331452.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.25
+>>Compass X: -8.84
+>>Compass Y: 6.37
+>>GPS Longitude: 0.0
+>>Altitude: 2.2
+
+
+--
+
+>>Time since startup: 332255.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -7.78
+>>Compass Y: 4.95
+>>GPS Longitude: 0.0
+>>Altitude: 1.99
+
+
+--
+
+>>Time since startup: 333063.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -10.44
+>>Compass Y: 5.48
+>>GPS Longitude: 0.0
+>>Altitude: 2.27
+
+
+--
+
+>>Time since startup: 333871.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -9.55
+>>Compass Y: 4.95
+>>GPS Longitude: 0.0
+>>Altitude: 2.26
+
+
+--
+
+>>Time since startup: 334679.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -10.79
+>>Compass Y: 4.07
+>>GPS Longitude: 0.0
+>>Altitude: 2.57
+
+
+--
+
+>>Time since startup: 335497.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -9.02
+>>Compass Y: 4.07
+>>GPS Longitude: 0.0
+>>Altitude: 2.83
+
+
+--
+
+>>Time since startup: 337113.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.0
+>>Compass X: -11.85
+>>Compass Y: 12.56
+>>GPS Longitude: 0.0
+>>Altitude: 2.5
+
+
+--
+
+>>Time since startup: 337931.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.98
+>>Compass X: -10.44
+>>Compass Y: 12.56
+>>GPS Longitude: 0.0
+>>Altitude: 2.72
+
+
+--
+
+>>Time since startup: 338749.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.15
+>>Compass X: -10.61
+>>Compass Y: 13.8
+>>GPS Longitude: 0.0
+>>Altitude: 2.66
+
+
+--
+
+>>Time since startup: 339573.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.66
+>>Compass X: -11.14
+>>Compass Y: 13.97
+>>GPS Longitude: 0.0
+>>Altitude: 2.79
+
+
+--
+
+>>Time since startup: 340391.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -11.5
+>>Compass Y: 15.39
+>>GPS Longitude: 0.0
+>>Altitude: 2.75
+
+
+--
+
+>>Time since startup: 341209.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -9.55
+>>Compass Y: 13.44
+>>GPS Longitude: 0.0
+>>Altitude: 2.91
+
+
+--
+
+>>Time since startup: 342017.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -9.55
+>>Compass Y: 14.15
+>>GPS Longitude: 0.0
+>>Altitude: 2.65
+
+
+--
+
+>>Time since startup: 343633.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.37
+>>Compass X: -9.02
+>>Compass Y: 13.97
+>>GPS Longitude: 0.0
+>>Altitude: 2.53
+
+
+--
+
+>>Time since startup: 344441.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -9.37
+>>Compass Y: 14.33
+>>GPS Longitude: 0.0
+>>Altitude: 2.76
+
+
+--
+
+>>Time since startup: 345249.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -7.96
+>>Compass Y: 15.74
+>>GPS Longitude: 0.0
+>>Altitude: 2.78
+
+
+--
+
+>>Time since startup: 346057.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.66
+>>Compass X: -7.25
+>>Compass Y: 13.62
+>>GPS Longitude: 0.0
+>>Altitude: 2.49
+
+
+--
+
+>>Time since startup: 346860.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -6.19
+>>Compass Y: 7.61
+>>GPS Longitude: 0.0
+>>Altitude: 2.9
+
+
+--
+
+>>Time since startup: 347663.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -4.95
+>>Compass Y: 5.31
+>>GPS Longitude: 0.0
+>>Altitude: 2.55
+
+
+--
+
+>>Time since startup: 348466.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -5.66
+>>Compass Y: 9.55
+>>GPS Longitude: 0.0
+>>Altitude: 2.72
+
+
+--
+
+>>Time since startup: 349274.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.2
+>>Compass X: -3.89
+>>Compass Y: 7.78
+>>GPS Longitude: 0.0
+>>Altitude: 2.35
+
+
+--
+
+>>Time since startup: 350082.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.32
+>>Compass X: -10.08
+>>Compass Y: 17.16
+>>GPS Longitude: 0.0
+>>Altitude: 2.73
+
+
+--
+
+>>Time since startup: 350900.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.98
+>>Compass X: -15.03
+>>Compass Y: 24.94
+>>GPS Longitude: 0.0
+>>Altitude: 2.72
+
+
+--
+
+>>Time since startup: 351724.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.24
+>>Compass X: -23.88
+>>Compass Y: 28.12
+>>GPS Longitude: 0.0
+>>Altitude: 2.81
+
+
+--
+
+>>Time since startup: 352542.0
+>>GPS Latitude: 0.0
+>>Compass Z: -41.22
+>>Compass X: -45.81
+>>Compass Y: 33.08
+>>GPS Longitude: 0.0
+>>Altitude: 2.33
+
+
+--
+
+>>Time since startup: 353360.0
+>>GPS Latitude: 0.0
+>>Compass Z: -37.63
+>>Compass X: -53.42
+>>Compass Y: 23.7
+>>GPS Longitude: 0.0
+>>Altitude: 2.73
+
+
+--
+
+>>Time since startup: 354178.0
+>>GPS Latitude: 0.0
+>>Compass Z: -39.85
+>>Compass X: -56.78
+>>Compass Y: 7.25
+>>GPS Longitude: 0.0
+>>Altitude: 2.11
+
+
+--
+
+>>Time since startup: 354991.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.52
+>>Compass X: -51.3
+>>Compass Y: -9.2
+>>GPS Longitude: 0.0
+>>Altitude: 2.57
+
+
+--
+
+>>Time since startup: 355809.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.4
+>>Compass X: -49.7
+>>Compass Y: -6.54
+>>GPS Longitude: 0.0
+>>Altitude: 1.84
+
+
+--
+
+>>Time since startup: 356627.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.14
+>>Compass X: -47.93
+>>Compass Y: -6.19
+>>GPS Longitude: 0.0
+>>Altitude: 2.34
+
+
+--
+
+>>Time since startup: 358263.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.94
+>>Compass X: -28.65
+>>Compass Y: 34.67
+>>GPS Longitude: 0.0
+>>Altitude: 2.48
+
+
+--
+
+>>Time since startup: 359081.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.49
+>>Compass X: -16.63
+>>Compass Y: 24.06
+>>GPS Longitude: 0.0
+>>Altitude: 2.31
+
+
+--
+
+>>Time since startup: 359899.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.66
+>>Compass X: -13.62
+>>Compass Y: 23.17
+>>GPS Longitude: 0.0
+>>Altitude: 2.78
+
+
+--
+
+>>Time since startup: 360717.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -18.4
+>>Compass Y: 24.06
+>>GPS Longitude: 0.0
+>>Altitude: 2.74
+
+
+--
+
+>>Time since startup: 361535.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.99
+>>Compass X: -28.3
+>>Compass Y: 27.59
+>>GPS Longitude: 0.0
+>>Altitude: 2.89
+
+
+--
+
+>>Time since startup: 362353.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.08
+>>Compass X: -50.06
+>>Compass Y: 10.44
+>>GPS Longitude: 0.0
+>>Altitude: 2.68
+
+
+--
+
+>>Time since startup: 363171.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.5
+>>Compass X: -42.98
+>>Compass Y: 17.86
+>>GPS Longitude: 0.0
+>>Altitude: 2.93
+
+
+--
+
+>>Time since startup: 363989.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -23.53
+>>Compass Y: 7.25
+>>GPS Longitude: 0.0
+>>Altitude: 2.64
+
+
+--
+
+>>Time since startup: 364792.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -2.48
+>>Compass Y: 0.35
+>>GPS Longitude: 0.0
+>>Altitude: 2.43
+
+
+--
+
+>>Time since startup: 366418.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.11
+>>Compass X: -11.85
+>>Compass Y: -0.53
+>>GPS Longitude: 0.0
+>>Altitude: 2.57
+
+
+--
+
+>>Time since startup: 367236.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.79
+>>Compass X: -10.08
+>>Compass Y: 0.18
+>>GPS Longitude: 0.0
+>>Altitude: 2.43
+
+
+--
+
+>>Time since startup: 368044.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.08
+>>Compass X: -4.78
+>>Compass Y: -0.18
+>>GPS Longitude: 0.0
+>>Altitude: 2.55
+
+
+--
+
+>>Time since startup: 368852.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.11
+>>Compass X: -5.84
+>>Compass Y: -2.3
+>>GPS Longitude: 0.0
+>>Altitude: 2.5
+
+
+--
+
+>>Time since startup: 369660.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.13
+>>Compass X: -15.39
+>>Compass Y: -1.95
+>>GPS Longitude: 0.0
+>>Altitude: 2.37
+
+
+--
+
+>>Time since startup: 370478.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.31
+>>Compass X: -11.32
+>>Compass Y: -4.95
+>>GPS Longitude: 0.0
+>>Altitude: 2.63
+
+
+--
+
+>>Time since startup: 372104.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.42
+>>Compass X: -1.59
+>>Compass Y: -7.61
+>>GPS Longitude: 0.0
+>>Altitude: 2.55
+
+
+--
+
+>>Time since startup: 372912.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.42
+>>Compass X: -5.84
+>>Compass Y: -9.02
+>>GPS Longitude: 0.0
+>>Altitude: 2.89
+
+
+--
+
+>>Time since startup: 373720.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.25
+>>Compass X: -9.55
+>>Compass Y: -5.66
+>>GPS Longitude: 0.0
+>>Altitude: 2.97
+
+
+--
+
+>>Time since startup: 374523.0
+>>GPS Latitude: 0.0
+>>Compass Z: -65.67
+>>Compass X: -8.14
+>>Compass Y: 1.06
+>>GPS Longitude: 0.0
+>>Altitude: 2.85
+
+
+--
+
+>>Time since startup: 375331.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.11
+>>Compass X: -6.54
+>>Compass Y: 3.36
+>>GPS Longitude: 0.0
+>>Altitude: 2.89
+
+
+--
+
+>>Time since startup: 376134.0
+>>GPS Latitude: 0.0
+>>Compass Z: -65.5
+>>Compass X: -4.07
+>>Compass Y: 3.01
+>>GPS Longitude: 0.0
+>>Altitude: 2.64
+
+
+--
+
+>>Time since startup: 376937.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.77
+>>Compass X: -5.13
+>>Compass Y: 3.01
+>>GPS Longitude: 0.0
+>>Altitude: 2.89
+
+
+--
+
+>>Time since startup: 377740.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.45
+>>Compass X: -4.07
+>>Compass Y: 3.01
+>>GPS Longitude: 0.0
+>>Altitude: 2.85
+
+
+--
+
+>>Time since startup: 378548.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.4
+>>Compass X: -0.18
+>>Compass Y: 1.59
+>>GPS Longitude: 0.0
+>>Altitude: 2.51
+
+
+--
+
+>>Time since startup: 379351.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.86
+>>Compass X: 1.42
+>>Compass Y: 1.06
+>>GPS Longitude: 0.0
+>>Altitude: 2.53
+
+
+--
+
+>>Time since startup: 380159.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: 6.19
+>>Compass Y: 0.53
+>>GPS Longitude: 0.0
+>>Altitude: 2.53
+
+
+--
+
+>>Time since startup: 380967.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: 2.83
+>>Compass Y: -0.35
+>>GPS Longitude: 0.0
+>>Altitude: 2.02
+
+
+--
+
+>>Time since startup: 381780.0
+>>GPS Latitude: 0.0
+>>Compass Z: -67.55
+>>Compass X: -13.97
+>>Compass Y: -5.13
+>>GPS Longitude: 0.0
+>>Altitude: 2.11
+
+
+--
+
+>>Time since startup: 382603.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.82
+>>Compass X: -30.6
+>>Compass Y: 3.36
+>>GPS Longitude: 0.0
+>>Altitude: 2.41
+
+
+--
+
+>>Time since startup: 383411.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.45
+>>Compass X: -41.57
+>>Compass Y: 10.44
+>>GPS Longitude: 0.0
+>>Altitude: 2.16
+
+
+--
+
+>>Time since startup: 384229.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.11
+>>Compass X: -42.98
+>>Compass Y: 9.02
+>>GPS Longitude: 0.0
+>>Altitude: 2.75
+
+
+--
+
+>>Time since startup: 385037.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.59
+>>Compass X: -42.81
+>>Compass Y: 11.67
+>>GPS Longitude: 0.0
+>>Altitude: 2.03
+
+
+--
+
+>>Time since startup: 385855.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.59
+>>Compass X: -42.1
+>>Compass Y: 7.78
+>>GPS Longitude: 0.0
+>>Altitude: 2.37
+
+
+--
+
+>>Time since startup: 386668.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.62
+>>Compass X: -41.04
+>>Compass Y: 8.49
+>>GPS Longitude: 0.0
+>>Altitude: 2.42
+
+
+--
+
+>>Time since startup: 388284.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.42
+>>Compass X: -41.21
+>>Compass Y: 5.48
+>>GPS Longitude: 0.0
+>>Altitude: 2.7
+
+
+--
+
+>>Time since startup: 389092.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -42.45
+>>Compass Y: 10.97
+>>GPS Longitude: 0.0
+>>Altitude: 2.68
+
+
+--
+
+>>Time since startup: 389916.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.25
+>>Compass X: -42.1
+>>Compass Y: 7.08
+>>GPS Longitude: 0.0
+>>Altitude: 2.46
+
+
+--
+
+>>Time since startup: 390728.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.91
+>>Compass X: -41.04
+>>Compass Y: 10.97
+>>GPS Longitude: 0.0
+>>Altitude: 1.94
+
+
+--
+
+>>Time since startup: 391546.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.54
+>>Compass X: -43.16
+>>Compass Y: 7.08
+>>GPS Longitude: 0.0
+>>Altitude: 1.86
+
+
+--
+
+>>Time since startup: 392360.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.82
+>>Compass X: -38.03
+>>Compass Y: 5.48
+>>GPS Longitude: 0.0
+>>Altitude: 1.99
+
+
+--
+
+>>Time since startup: 393172.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.11
+>>Compass X: -38.03
+>>Compass Y: 9.73
+>>GPS Longitude: 0.0
+>>Altitude: 1.91
+
+
+--
+
+>>Time since startup: 393980.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.45
+>>Compass X: -32.37
+>>Compass Y: 15.39
+>>GPS Longitude: 0.0
+>>Altitude: 1.87
+
+
+--
+
+>>Time since startup: 394793.0
+>>GPS Latitude: 0.0
+>>Compass Z: -67.04
+>>Compass X: -23.7
+>>Compass Y: 3.54
+>>GPS Longitude: 0.0
+>>Altitude: 1.88
+
+
+--
+
+>>Time since startup: 395601.0
+>>GPS Latitude: 0.0
+>>Compass Z: -65.67
+>>Compass X: -10.61
+>>Compass Y: -6.01
+>>GPS Longitude: 0.0
+>>Altitude: 1.78
+
+
+--
+
+>>Time since startup: 398863.0
+>>GPS Latitude: 0.0
+>>Compass Z: -65.5
+>>Compass X: -8.67
+>>Compass Y: -5.13
+>>GPS Longitude: 0.0
+>>Altitude: 2.18
+
+
+--
+
+>>Time since startup: 399671.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.99
+>>Compass X: -8.14
+>>Compass Y: -5.66
+>>GPS Longitude: 0.0
+>>Altitude: 1.97
+
+
+--
+
+>>Time since startup: 401282.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.31
+>>Compass X: -9.55
+>>Compass Y: -4.95
+>>GPS Longitude: 0.0
+>>Altitude: 2.25
+
+
+--
+
+>>Time since startup: 402090.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.94
+>>Compass X: -11.67
+>>Compass Y: -3.54
+>>GPS Longitude: 0.0
+>>Altitude: 2.93
+
+
+--
+
+>>Time since startup: 402908.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.48
+>>Compass X: -11.14
+>>Compass Y: -5.84
+>>GPS Longitude: 0.0
+>>Altitude: 2.8
+
+
+--
+
+>>Time since startup: 403726.0
+>>GPS Latitude: 0.0
+>>Compass Z: -65.5
+>>Compass X: -10.08
+>>Compass Y: -5.84
+>>GPS Longitude: 0.0
+>>Altitude: 2.3
+
+
+--
+
+>>Time since startup: 404544.0
+>>GPS Latitude: 0.0
+>>Compass Z: -64.13
+>>Compass X: -9.02
+>>Compass Y: -5.48
+>>GPS Longitude: 0.0
+>>Altitude: 2.23
+
+
+--
+
+>>Time since startup: 405352.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.37
+>>Compass X: -2.3
+>>Compass Y: -10.79
+>>GPS Longitude: 0.0
+>>Altitude: 1.53
+
+
+--
+
+>>Time since startup: 406170.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.45
+>>Compass X: -3.71
+>>Compass Y: -5.84
+>>GPS Longitude: 0.0
+>>Altitude: 1.71
+
+
+--
+
+>>Time since startup: 406973.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.28
+>>Compass X: -7.78
+>>Compass Y: -5.31
+>>GPS Longitude: 0.0
+>>Altitude: 1.69
+
+
+--
+
+>>Time since startup: 407781.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.45
+>>Compass X: -8.31
+>>Compass Y: -7.25
+>>GPS Longitude: 0.0
+>>Altitude: 1.79
+
+
+--
+
+>>Time since startup: 408589.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.36
+>>Compass X: 5.31
+>>Compass Y: -13.44
+>>GPS Longitude: 0.0
+>>Altitude: 1.51
+
+
+--
+
+>>Time since startup: 410205.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.36
+>>Compass X: 7.08
+>>Compass Y: -14.15
+>>GPS Longitude: 0.0
+>>Altitude: 1.33
+
+
+--
+
+>>Time since startup: 411013.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.08
+>>Compass X: -9.73
+>>Compass Y: -17.86
+>>GPS Longitude: 0.0
+>>Altitude: 1.59
+
+
+--
+
+>>Time since startup: 411837.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.58
+>>Compass X: -10.44
+>>Compass Y: -28.12
+>>GPS Longitude: 0.0
+>>Altitude: 1.33
+
+
+--
+
+>>Time since startup: 412661.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.57
+>>Compass X: 10.97
+>>Compass Y: -18.4
+>>GPS Longitude: 0.0
+>>Altitude: 1.66
+
+
+--
+
+>>Time since startup: 413479.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.68
+>>Compass X: 13.09
+>>Compass Y: -4.95
+>>GPS Longitude: 0.0
+>>Altitude: 1.7
+
+
+--
+
+>>Time since startup: 414287.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.07
+>>Compass X: 10.61
+>>Compass Y: -1.77
+>>GPS Longitude: 0.0
+>>Altitude: 1.71
+
+
+--
+
+>>Time since startup: 415090.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.54
+>>Compass X: 3.18
+>>Compass Y: -2.12
+>>GPS Longitude: 0.0
+>>Altitude: 1.51
+
+
+--
+
+>>Time since startup: 416696.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.74
+>>Compass X: 1.24
+>>Compass Y: 8.67
+>>GPS Longitude: 0.0
+>>Altitude: 1.82
+
+
+--
+
+>>Time since startup: 417504.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -2.48
+>>Compass Y: 17.69
+>>GPS Longitude: 0.0
+>>Altitude: 2.76
+
+
+--
+
+>>Time since startup: 418306.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.94
+>>Compass X: 0.0
+>>Compass Y: 8.84
+>>GPS Longitude: 0.0
+>>Altitude: 2.0
+
+
+--
+
+>>Time since startup: 419113.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.06
+>>Compass X: -2.3
+>>Compass Y: 4.42
+>>GPS Longitude: 0.0
+>>Altitude: 2.66
+
+
+--
+
+>>Time since startup: 419921.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.4
+>>Compass X: 0.18
+>>Compass Y: -6.54
+>>GPS Longitude: 0.0
+>>Altitude: 2.57
+
+
+--
+
+>>Time since startup: 420729.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.74
+>>Compass X: 14.33
+>>Compass Y: -1.95
+>>GPS Longitude: 0.0
+>>Altitude: 2.64
+
+
+--
+
+>>Time since startup: 421537.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.0
+>>Compass X: 0.53
+>>Compass Y: 15.03
+>>GPS Longitude: 0.0
+>>Altitude: 2.46
+
+
+--
+
+>>Time since startup: 423153.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.97
+>>Compass X: -19.46
+>>Compass Y: 36.44
+>>GPS Longitude: 0.0
+>>Altitude: 2.38
+
+
+--
+
+>>Time since startup: 423971.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.45
+>>Compass X: -19.99
+>>Compass Y: 36.26
+>>GPS Longitude: 0.0
+>>Altitude: 2.58
+
+
+--
+
+>>Time since startup: 424795.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.95
+>>Compass X: -24.23
+>>Compass Y: 26.36
+>>GPS Longitude: 0.0
+>>Altitude: 2.25
+
+
+--
+
+>>Time since startup: 425613.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.73
+>>Compass X: -25.47
+>>Compass Y: 30.78
+>>GPS Longitude: 0.0
+>>Altitude: 2.17
+
+
+--
+
+>>Time since startup: 426441.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.6
+>>Compass X: -23.7
+>>Compass Y: 35.02
+>>GPS Longitude: 0.0
+>>Altitude: 2.36
+
+
+--
+
+>>Time since startup: 427264.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.14
+>>Compass X: -23.53
+>>Compass Y: 34.14
+>>GPS Longitude: 0.0
+>>Altitude: 2.02
+
+
+--
+
+>>Time since startup: 428083.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.7
+>>Compass X: -22.64
+>>Compass Y: 33.25
+>>GPS Longitude: 0.0
+>>Altitude: 2.5
+
+
+--
+
+>>Time since startup: 430527.0
+>>GPS Latitude: 0.0
+>>Compass Z: -65.33
+>>Compass X: -19.46
+>>Compass Y: -6.37
+>>GPS Longitude: 0.0
+>>Altitude: 2.61
+
+
+--
+
+>>Time since startup: 432163.0
+>>GPS Latitude: 0.0
+>>Compass Z: -66.53
+>>Compass X: -20.7
+>>Compass Y: -8.67
+>>GPS Longitude: 0.0
+>>Altitude: 2.92
+
+
+--
+
+>>Time since startup: 432981.0
+>>GPS Latitude: 0.0
+>>Compass Z: -65.33
+>>Compass X: -27.24
+>>Compass Y: -7.78
+>>GPS Longitude: 0.0
+>>Altitude: 2.7
+
+
+--
+
+>>Time since startup: 433799.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.17
+>>Compass X: -44.57
+>>Compass Y: 13.8
+>>GPS Longitude: 0.0
+>>Altitude: 2.45
+
+
+--
+
+>>Time since startup: 434618.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.49
+>>Compass X: -41.04
+>>Compass Y: 20.52
+>>GPS Longitude: 0.0
+>>Altitude: 2.52
+
+
+--
+
+>>Time since startup: 435442.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.53
+>>Compass X: -45.81
+>>Compass Y: 19.99
+>>GPS Longitude: 0.0
+>>Altitude: 3.08
+
+
+--
+
+>>Time since startup: 436260.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.44
+>>Compass X: -46.34
+>>Compass Y: 19.46
+>>GPS Longitude: 0.0
+>>Altitude: 3.07
+
+
+--
+
+>>Time since startup: 437078.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.07
+>>Compass X: -48.82
+>>Compass Y: 19.46
+>>GPS Longitude: 0.0
+>>Altitude: 2.59
+
+
+--
+
+>>Time since startup: 437896.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.92
+>>Compass X: -46.87
+>>Compass Y: 16.8
+>>GPS Longitude: 0.0
+>>Altitude: 2.41
+
+
+--
+
+>>Time since startup: 438714.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.19
+>>Compass X: -49.7
+>>Compass Y: 13.62
+>>GPS Longitude: 0.0
+>>Altitude: 2.67
+
+
+--
+
+>>Time since startup: 439538.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.02
+>>Compass X: -54.83
+>>Compass Y: 12.03
+>>GPS Longitude: 0.0
+>>Altitude: 2.72
+
+
+--
+
+>>Time since startup: 441175.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.47
+>>Compass X: -49.88
+>>Compass Y: 28.3
+>>GPS Longitude: 0.0
+>>Altitude: 2.81
+
+
+--
+
+>>Time since startup: 442000.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.15
+>>Compass X: -47.4
+>>Compass Y: 30.07
+>>GPS Longitude: 0.0
+>>Altitude: 2.84
+
+
+--
+
+>>Time since startup: 442824.0
+>>GPS Latitude: 0.0
+>>Compass Z: -41.22
+>>Compass X: -46.52
+>>Compass Y: 31.66
+>>GPS Longitude: 0.0
+>>Altitude: 1.96
+
+
+--
+
+>>Time since startup: 443642.0
+>>GPS Latitude: 0.0
+>>Compass Z: -40.53
+>>Compass X: -46.17
+>>Compass Y: 34.49
+>>GPS Longitude: 0.0
+>>Altitude: 1.58
+
+
+--
+
+>>Time since startup: 444461.0
+>>GPS Latitude: 0.0
+>>Compass Z: -37.97
+>>Compass X: -45.28
+>>Compass Y: 35.73
+>>GPS Longitude: 0.0
+>>Altitude: 2.87
+
+
+--
+
+>>Time since startup: 445279.0
+>>GPS Latitude: 0.0
+>>Compass Z: -41.73
+>>Compass X: -41.39
+>>Compass Y: 36.08
+>>GPS Longitude: 0.0
+>>Altitude: 2.3
+
+
+--
+
+>>Time since startup: 446097.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.41
+>>Compass X: -40.33
+>>Compass Y: 37.5
+>>GPS Longitude: 0.0
+>>Altitude: 3.02
+
+
+--
+
+>>Time since startup: 446921.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.78
+>>Compass X: -40.33
+>>Compass Y: 37.5
+>>GPS Longitude: 0.0
+>>Altitude: 3.1
+
+
+--
+
+>>Time since startup: 447739.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.44
+>>Compass X: -39.27
+>>Compass Y: 37.5
+>>GPS Longitude: 0.0
+>>Altitude: 2.94
+
+
+--
+
+>>Time since startup: 448557.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.93
+>>Compass X: -41.21
+>>Compass Y: 36.97
+>>GPS Longitude: 0.0
+>>Altitude: 3.08
+
+
+--
+
+>>Time since startup: 450195.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.64
+>>Compass X: -44.4
+>>Compass Y: 35.2
+>>GPS Longitude: 0.0
+>>Altitude: 3.17
+
+
+--
+
+>>Time since startup: 451013.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.44
+>>Compass X: -24.76
+>>Compass Y: 28.65
+>>GPS Longitude: 0.0
+>>Altitude: 3.0
+
+
+--
+
+>>Time since startup: 451831.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.11
+>>Compass X: -18.93
+>>Compass Y: 17.16
+>>GPS Longitude: 0.0
+>>Altitude: 2.81
+
+
+--
+
+>>Time since startup: 452649.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.94
+>>Compass X: -19.1
+>>Compass Y: 14.86
+>>GPS Longitude: 0.0
+>>Altitude: 2.82
+
+
+--
+
+>>Time since startup: 453474.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.94
+>>Compass X: -14.86
+>>Compass Y: 18.04
+>>GPS Longitude: 0.0
+>>Altitude: 2.61
+
+
+--
+
+>>Time since startup: 454298.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.03
+>>Compass X: -19.63
+>>Compass Y: 22.46
+>>GPS Longitude: 0.0
+>>Altitude: 2.04
+
+
+--
+
+>>Time since startup: 455116.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.54
+>>Compass X: -21.23
+>>Compass Y: 20.87
+>>GPS Longitude: 0.0
+>>Altitude: 2.28
+
+
+--
+
+>>Time since startup: 455934.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.4
+>>Compass X: -20.7
+>>Compass Y: 21.76
+>>GPS Longitude: 0.0
+>>Altitude: 2.28
+
+
+--
+
+>>Time since startup: 456768.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -22.64
+>>Compass Y: 24.41
+>>GPS Longitude: 0.0
+>>Altitude: 1.96
+
+
+--
+
+>>Time since startup: 457586.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.15
+>>Compass X: -22.99
+>>Compass Y: 26.53
+>>GPS Longitude: 0.0
+>>Altitude: 2.23
+
+
+--
+
+>>Time since startup: 458404.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.86
+>>Compass X: -24.41
+>>Compass Y: 24.41
+>>GPS Longitude: 0.0
+>>Altitude: 1.39
+
+
+--
+
+>>Time since startup: 459228.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -23.53
+>>Compass Y: 25.65
+>>GPS Longitude: 0.0
+>>Altitude: 1.82
+
+
+--
+
+>>Time since startup: 460046.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.78
+>>Compass X: -24.41
+>>Compass Y: 27.95
+>>GPS Longitude: 0.0
+>>Altitude: 1.56
+
+
+--
+
+>>Time since startup: 460870.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -22.82
+>>Compass Y: 27.42
+>>GPS Longitude: 0.0
+>>Altitude: 2.19
+
+
+--
+
+>>Time since startup: 461689.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.11
+>>Compass X: -24.94
+>>Compass Y: 15.03
+>>GPS Longitude: 0.0
+>>Altitude: 1.62
+
+
+--
+
+>>Time since startup: 462507.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -40.15
+>>Compass Y: 3.01
+>>GPS Longitude: 0.0
+>>Altitude: 1.36
+
+
+--
+
+>>Time since startup: 463315.0
+>>GPS Latitude: 0.0
+>>Compass Z: -40.7
+>>Compass X: -60.14
+>>Compass Y: 0.0
+>>GPS Longitude: 0.0
+>>Altitude: 0.72
+
+
+--
+
+>>Time since startup: 464123.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.93
+>>Compass X: -57.13
+>>Compass Y: 0.53
+>>GPS Longitude: 0.0
+>>Altitude: 0.31
+
+
+--
+
+>>Time since startup: 464931.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.83
+>>Compass X: -53.42
+>>Compass Y: -1.77
+>>GPS Longitude: 0.0
+>>Altitude: 0.84
+
+
+--
+
+>>Time since startup: 465749.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.6
+>>Compass X: -52.36
+>>Compass Y: -3.18
+>>GPS Longitude: 0.0
+>>Altitude: 0.98
+
+
+--
+
+>>Time since startup: 466567.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.68
+>>Compass X: -49.17
+>>Compass Y: -5.66
+>>GPS Longitude: 0.0
+>>Altitude: 0.93
+
+
+--
+
+>>Time since startup: 467385.0
+>>GPS Latitude: 0.0
+>>Compass Z: -62.42
+>>Compass X: -33.78
+>>Compass Y: 2.3
+>>GPS Longitude: 0.0
+>>Altitude: 1.84
+
+
+--
+
+>>Time since startup: 468193.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.91
+>>Compass X: -35.73
+>>Compass Y: 4.25
+>>GPS Longitude: 0.0
+>>Altitude: 1.19
+
+
+--
+
+>>Time since startup: 469001.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -31.84
+>>Compass Y: 7.43
+>>GPS Longitude: 0.0
+>>Altitude: 0.98
+
+
+--
+
+>>Time since startup: 469804.0
+>>GPS Latitude: 0.0
+>>Compass Z: -61.74
+>>Compass X: -35.2
+>>Compass Y: 1.95
+>>GPS Longitude: 0.0
+>>Altitude: 1.12
+
+
+--
+
+>>Time since startup: 470612.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -40.33
+>>Compass Y: -1.42
+>>GPS Longitude: 0.0
+>>Altitude: 0.96
+
+
+--
+
+>>Time since startup: 471430.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -38.21
+>>Compass Y: 1.77
+>>GPS Longitude: 0.0
+>>Altitude: 0.8
+
+
+--
+
+>>Time since startup: 472238.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.45
+>>Compass X: -27.06
+>>Compass Y: 13.27
+>>GPS Longitude: 0.0
+>>Altitude: 0.76
+
+
+--
+
+>>Time since startup: 473056.0
+>>GPS Latitude: 0.0
+>>Compass Z: -63.79
+>>Compass X: -26.0
+>>Compass Y: 13.27
+>>GPS Longitude: 0.0
+>>Altitude: 0.8
+
+
+--
+
+>>Time since startup: 473880.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -25.65
+>>Compass Y: 14.33
+>>GPS Longitude: 0.0
+>>Altitude: 0.73
+
+
+--
+
+>>Time since startup: 474698.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -29.19
+>>Compass Y: 17.51
+>>GPS Longitude: 0.0
+>>Altitude: 0.45
+
+
+--
+
+>>Time since startup: 475517.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.46
+>>Compass X: -26.18
+>>Compass Y: 27.24
+>>GPS Longitude: 0.0
+>>Altitude: 0.68
+
+
+--
+
+>>Time since startup: 476335.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.36
+>>Compass X: -26.89
+>>Compass Y: 33.25
+>>GPS Longitude: 0.0
+>>Altitude: 1.13
+
+
+--
+
+>>Time since startup: 477160.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.68
+>>Compass X: -29.01
+>>Compass Y: 32.9
+>>GPS Longitude: 0.0
+>>Altitude: 0.82
+
+
+--
+
+>>Time since startup: 477978.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.74
+>>Compass X: -32.02
+>>Compass Y: 36.61
+>>GPS Longitude: 0.0
+>>Altitude: 1.22
+
+
+--
+
+>>Time since startup: 478796.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.45
+>>Compass X: -29.89
+>>Compass Y: 36.26
+>>GPS Longitude: 0.0
+>>Altitude: 1.27
+
+
+--
+
+>>Time since startup: 479615.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.48
+>>Compass X: -29.54
+>>Compass Y: 35.2
+>>GPS Longitude: 0.0
+>>Altitude: 1.41
+
+
+--
+
+>>Time since startup: 480433.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.41
+>>Compass X: -42.81
+>>Compass Y: 34.67
+>>GPS Longitude: 0.0
+>>Altitude: 1.48
+
+
+--
+
+>>Time since startup: 482069.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.1
+>>Compass X: -38.91
+>>Compass Y: 36.79
+>>GPS Longitude: 0.0
+>>Altitude: 1.08
+
+
+--
+
+>>Time since startup: 482887.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.28
+>>Compass X: -31.84
+>>Compass Y: 34.67
+>>GPS Longitude: 0.0
+>>Altitude: 1.05
+
+
+--
+
+>>Time since startup: 483705.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.5
+>>Compass X: -30.95
+>>Compass Y: 34.85
+>>GPS Longitude: 0.0
+>>Altitude: 1.15
+
+
+--
+
+>>Time since startup: 484523.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.08
+>>Compass X: -32.02
+>>Compass Y: 33.43
+>>GPS Longitude: 0.0
+>>Altitude: 1.78
+
+
+--
+
+>>Time since startup: 485341.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.43
+>>Compass X: -31.66
+>>Compass Y: 34.85
+>>GPS Longitude: 0.0
+>>Altitude: 1.32
+
+
+--
+
+>>Time since startup: 486159.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.08
+>>Compass X: -32.72
+>>Compass Y: 34.14
+>>GPS Longitude: 0.0
+>>Altitude: 1.21
+
+
+--
+
+>>Time since startup: 486987.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.33
+>>Compass X: -31.48
+>>Compass Y: 34.67
+>>GPS Longitude: 0.0
+>>Altitude: 1.22
+
+
+--
+
+>>Time since startup: 487805.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.43
+>>Compass X: -32.02
+>>Compass Y: 34.85
+>>GPS Longitude: 0.0
+>>Altitude: 1.46
+
+
+--
+
+>>Time since startup: 488623.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.66
+>>Compass X: -37.32
+>>Compass Y: 38.03
+>>GPS Longitude: 0.0
+>>Altitude: 1.47
+
+
+--
+
+>>Time since startup: 489441.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.78
+>>Compass X: -38.21
+>>Compass Y: 38.21
+>>GPS Longitude: 0.0
+>>Altitude: 1.53
+
+
+--
+
+>>Time since startup: 490259.0
+>>GPS Latitude: 0.0
+>>Compass Z: -41.56
+>>Compass X: -46.52
+>>Compass Y: 35.55
+>>GPS Longitude: 0.0
+>>Altitude: 1.72
+
+
+--
+
+>>Time since startup: 491077.0
+>>GPS Latitude: 0.0
+>>Compass Z: -37.97
+>>Compass X: -48.11
+>>Compass Y: 34.31
+>>GPS Longitude: 0.0
+>>Altitude: 1.69
+
+
+--
+
+>>Time since startup: 491896.0
+>>GPS Latitude: 0.0
+>>Compass Z: -39.34
+>>Compass X: -45.28
+>>Compass Y: 36.08
+>>GPS Longitude: 0.0
+>>Altitude: 1.78
+
+
+--
+
+>>Time since startup: 492714.0
+>>GPS Latitude: 0.0
+>>Compass Z: -37.11
+>>Compass X: -49.7
+>>Compass Y: 31.31
+>>GPS Longitude: 0.0
+>>Altitude: 2.3
+
+
+--
+
+>>Time since startup: 493533.0
+>>GPS Latitude: 0.0
+>>Compass Z: -33.52
+>>Compass X: -60.14
+>>Compass Y: 21.23
+>>GPS Longitude: 0.0
+>>Altitude: 1.77
+
+
+--
+
+>>Time since startup: 494352.0
+>>GPS Latitude: 0.0
+>>Compass Z: -36.77
+>>Compass X: -61.38
+>>Compass Y: 10.79
+>>GPS Longitude: 0.0
+>>Altitude: 1.45
+
+
+--
+
+>>Time since startup: 495170.0
+>>GPS Latitude: 0.0
+>>Compass Z: -39.16
+>>Compass X: -60.67
+>>Compass Y: 8.67
+>>GPS Longitude: 0.0
+>>Altitude: 1.34
+
+
+--
+
+>>Time since startup: 495978.0
+>>GPS Latitude: 0.0
+>>Compass Z: -40.7
+>>Compass X: -61.2
+>>Compass Y: 6.37
+>>GPS Longitude: 0.0
+>>Altitude: 1.25
+
+
+--
+
+>>Time since startup: 496781.0
+>>GPS Latitude: 0.0
+>>Compass Z: -39.51
+>>Compass X: -62.09
+>>Compass Y: 4.78
+>>GPS Longitude: 0.0
+>>Altitude: 1.34
+
+
+--
+
+>>Time since startup: 497589.0
+>>GPS Latitude: 0.0
+>>Compass Z: -36.09
+>>Compass X: -61.73
+>>Compass Y: 11.85
+>>GPS Longitude: 0.0
+>>Altitude: 1.57
+
+
+--
+
+>>Time since startup: 498407.0
+>>GPS Latitude: 0.0
+>>Compass Z: -37.11
+>>Compass X: -59.96
+>>Compass Y: 16.1
+>>GPS Longitude: 0.0
+>>Altitude: 1.61
+
+
+--
+
+>>Time since startup: 500050.0
+>>GPS Latitude: 0.0
+>>Compass Z: -35.06
+>>Compass X: -59.61
+>>Compass Y: 19.63
+>>GPS Longitude: 0.0
+>>Altitude: 1.75
+
+
+--
+
+>>Time since startup: 501692.0
+>>GPS Latitude: 0.0
+>>Compass Z: -35.4
+>>Compass X: -62.09
+>>Compass Y: 16.45
+>>GPS Longitude: 0.0
+>>Altitude: 1.17
+
+
+--
+
+>>Time since startup: 502510.0
+>>GPS Latitude: 0.0
+>>Compass Z: -34.55
+>>Compass X: -59.79
+>>Compass Y: 16.98
+>>GPS Longitude: 0.0
+>>Altitude: 1.72
+
+
+--
+
+>>Time since startup: 503329.0
+>>GPS Latitude: 0.0
+>>Compass Z: -34.38
+>>Compass X: -62.44
+>>Compass Y: 15.74
+>>GPS Longitude: 0.0
+>>Altitude: 1.81
+
+
+--
+
+>>Time since startup: 504147.0
+>>GPS Latitude: 0.0
+>>Compass Z: -33.52
+>>Compass X: -62.97
+>>Compass Y: 15.92
+>>GPS Longitude: 0.0
+>>Altitude: 1.95
+
+
+--
+
+>>Time since startup: 504965.0
+>>GPS Latitude: 0.0
+>>Compass Z: -29.59
+>>Compass X: -56.07
+>>Compass Y: 28.48
+>>GPS Longitude: 0.0
+>>Altitude: 1.8
+
+
+--
+
+>>Time since startup: 505784.0
+>>GPS Latitude: 0.0
+>>Compass Z: -22.75
+>>Compass X: -59.61
+>>Compass Y: 27.42
+>>GPS Longitude: 0.0
+>>Altitude: 1.31
+
+
+--
+
+>>Time since startup: 506602.0
+>>GPS Latitude: 0.0
+>>Compass Z: -26.85
+>>Compass X: -55.72
+>>Compass Y: 29.54
+>>GPS Longitude: 0.0
+>>Altitude: 1.28
+
+
+--
+
+>>Time since startup: 507420.0
+>>GPS Latitude: 0.0
+>>Compass Z: -28.39
+>>Compass X: -55.54
+>>Compass Y: 31.48
+>>GPS Longitude: 0.0
+>>Altitude: 1.45
+
+
+--
+
+>>Time since startup: 508238.0
+>>GPS Latitude: 0.0
+>>Compass Z: -26.85
+>>Compass X: -55.01
+>>Compass Y: 30.6
+>>GPS Longitude: 0.0
+>>Altitude: 1.86
+
+
+--
+
+>>Time since startup: 509056.0
+>>GPS Latitude: 0.0
+>>Compass Z: -29.93
+>>Compass X: -54.66
+>>Compass Y: 30.6
+>>GPS Longitude: 0.0
+>>Altitude: 2.08
+
+
+--
+
+>>Time since startup: 509874.0
+>>GPS Latitude: 0.0
+>>Compass Z: -29.93
+>>Compass X: -47.58
+>>Compass Y: 38.74
+>>GPS Longitude: 0.0
+>>Altitude: 1.63
+
+
+--
+
+>>Time since startup: 510692.0
+>>GPS Latitude: 0.0
+>>Compass Z: -40.02
+>>Compass X: -31.48
+>>Compass Y: 42.1
+>>GPS Longitude: 0.0
+>>Altitude: 0.5
+
+
+--
+
+>>Time since startup: 511510.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.49
+>>Compass X: -31.84
+>>Compass Y: 38.91
+>>GPS Longitude: 0.0
+>>Altitude: 0.18
+
+
+--
+
+>>Time since startup: 512328.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.12
+>>Compass X: -23.35
+>>Compass Y: 41.39
+>>GPS Longitude: 0.0
+>>Altitude: 0.09
+
+
+--
+
+>>Time since startup: 513146.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.12
+>>Compass X: -26.18
+>>Compass Y: 39.62
+>>GPS Longitude: 0.0
+>>Altitude: 0.14
+
+
+--
+
+>>Time since startup: 513964.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.01
+>>Compass X: -27.42
+>>Compass Y: 40.15
+>>GPS Longitude: 0.0
+>>Altitude: 0.17
+
+
+--
+
+>>Time since startup: 514782.0
+>>GPS Latitude: 0.0
+>>Compass Z: -34.89
+>>Compass X: -54.13
+>>Compass Y: 29.72
+>>GPS Longitude: 0.0
+>>Altitude: 1.03
+
+
+--
+
+>>Time since startup: 515600.0
+>>GPS Latitude: 0.0
+>>Compass Z: -34.03
+>>Compass X: -53.59
+>>Compass Y: 30.95
+>>GPS Longitude: 0.0
+>>Altitude: 1.11
+
+
+--
+
+>>Time since startup: 516418.0
+>>GPS Latitude: 0.0
+>>Compass Z: -30.78
+>>Compass X: -54.48
+>>Compass Y: 29.01
+>>GPS Longitude: 0.0
+>>Altitude: 1.86
+
+
+--
+
+>>Time since startup: 517247.0
+>>GPS Latitude: 0.0
+>>Compass Z: -29.93
+>>Compass X: -61.73
+>>Compass Y: 11.85
+>>GPS Longitude: 0.0
+>>Altitude: 1.68
+
+
+--
+
+>>Time since startup: 518065.0
+>>GPS Latitude: 0.0
+>>Compass Z: -33.01
+>>Compass X: -62.09
+>>Compass Y: 10.79
+>>GPS Longitude: 0.0
+>>Altitude: 1.52
+
+
+--
+
+>>Time since startup: 518883.0
+>>GPS Latitude: 0.0
+>>Compass Z: -15.73
+>>Compass X: -62.97
+>>Compass Y: 12.38
+>>GPS Longitude: 0.0
+>>Altitude: 1.13
+
+
+--
+
+>>Time since startup: 519701.0
+>>GPS Latitude: 0.0
+>>Compass Z: 2.74
+>>Compass X: -59.79
+>>Compass Y: 13.8
+>>GPS Longitude: 0.0
+>>Altitude: 0.99
+
+
+--
+
+>>Time since startup: 520509.0
+>>GPS Latitude: 0.0
+>>Compass Z: -3.93
+>>Compass X: -64.21
+>>Compass Y: 10.08
+>>GPS Longitude: 0.0
+>>Altitude: 0.79
+
+
+--
+
+>>Time since startup: 521317.0
+>>GPS Latitude: 0.0
+>>Compass Z: -9.92
+>>Compass X: -64.38
+>>Compass Y: 9.2
+>>GPS Longitude: 0.0
+>>Altitude: 1.2
+
+
+--
+
+>>Time since startup: 522120.0
+>>GPS Latitude: 0.0
+>>Compass Z: -7.18
+>>Compass X: -62.26
+>>Compass Y: 8.49
+>>GPS Longitude: 0.0
+>>Altitude: 0.6
+
+
+--
+
+>>Time since startup: 522928.0
+>>GPS Latitude: 0.0
+>>Compass Z: -6.33
+>>Compass X: -64.92
+>>Compass Y: 0.88
+>>GPS Longitude: 0.0
+>>Altitude: 0.73
+
+
+--
+
+>>Time since startup: 523736.0
+>>GPS Latitude: 0.0
+>>Compass Z: -3.25
+>>Compass X: -62.44
+>>Compass Y: -2.65
+>>GPS Longitude: 0.0
+>>Altitude: 0.76
+
+
+--
+
+>>Time since startup: 524544.0
+>>GPS Latitude: 0.0
+>>Compass Z: -2.91
+>>Compass X: -62.79
+>>Compass Y: -4.78
+>>GPS Longitude: 0.0
+>>Altitude: 1.43
+
+
+--
+
+>>Time since startup: 525352.0
+>>GPS Latitude: 0.0
+>>Compass Z: -6.33
+>>Compass X: -62.44
+>>Compass Y: -4.78
+>>GPS Longitude: 0.0
+>>Altitude: 0.65
+
+
+--
+
+>>Time since startup: 526160.0
+>>GPS Latitude: 0.0
+>>Compass Z: -13.17
+>>Compass X: -64.21
+>>Compass Y: -0.18
+>>GPS Longitude: 0.0
+>>Altitude: 1.15
+
+
+--
+
+>>Time since startup: 526973.0
+>>GPS Latitude: 0.0
+>>Compass Z: -16.59
+>>Compass X: -65.98
+>>Compass Y: 1.24
+>>GPS Longitude: 0.0
+>>Altitude: 1.27
+
+
+--
+
+>>Time since startup: 527781.0
+>>GPS Latitude: 0.0
+>>Compass Z: -18.3
+>>Compass X: -64.92
+>>Compass Y: 4.42
+>>GPS Longitude: 0.0
+>>Altitude: 1.33
+
+
+--
+
+>>Time since startup: 528589.0
+>>GPS Latitude: 0.0
+>>Compass Z: -8.38
+>>Compass X: -64.21
+>>Compass Y: 4.78
+>>GPS Longitude: 0.0
+>>Altitude: 1.21
+
+
+--
+
+>>Time since startup: 529397.0
+>>GPS Latitude: 0.0
+>>Compass Z: -18.3
+>>Compass X: -62.79
+>>Compass Y: -3.36
+>>GPS Longitude: 0.0
+>>Altitude: 1.09
+
+
+--
+
+>>Time since startup: 530215.0
+>>GPS Latitude: 0.0
+>>Compass Z: -9.92
+>>Compass X: -65.45
+>>Compass Y: -1.06
+>>GPS Longitude: 0.0
+>>Altitude: 1.05
+
+
+--
+
+>>Time since startup: 531023.0
+>>GPS Latitude: 0.0
+>>Compass Z: -10.26
+>>Compass X: -62.62
+>>Compass Y: 7.08
+>>GPS Longitude: 0.0
+>>Altitude: 1.62
+
+
+--
+
+>>Time since startup: 531831.0
+>>GPS Latitude: 0.0
+>>Compass Z: -28.05
+>>Compass X: 8.49
+>>Compass Y: -35.38
+>>GPS Longitude: 0.0
+>>Altitude: 2.41
+
+
+--
+
+>>Time since startup: 532639.0
+>>GPS Latitude: 0.0
+>>Compass Z: -19.15
+>>Compass X: 18.4
+>>Compass Y: -25.12
+>>GPS Longitude: 0.0
+>>Altitude: 1.8
+
+
+--
+
+>>Time since startup: 533457.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.63
+>>Compass X: 18.4
+>>Compass Y: -25.12
+>>GPS Longitude: 0.0
+>>Altitude: 1.69
+
+
+--
+
+>>Time since startup: 534275.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.48
+>>Compass X: 17.86
+>>Compass Y: -28.48
+>>GPS Longitude: 0.0
+>>Altitude: 2.14
+
+
+--
+
+>>Time since startup: 535094.0
+>>GPS Latitude: 0.0
+>>Compass Z: -27.02
+>>Compass X: 16.63
+>>Compass Y: -26.18
+>>GPS Longitude: 0.0
+>>Altitude: 1.6
+
+
+--
+
+>>Time since startup: 535912.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.14
+>>Compass X: 18.22
+>>Compass Y: -25.29
+>>GPS Longitude: 0.0
+>>Altitude: 1.91
+
+
+--
+
+>>Time since startup: 536730.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.31
+>>Compass X: 20.52
+>>Compass Y: -21.58
+>>GPS Longitude: 0.0
+>>Altitude: 1.78
+
+
+--
+
+>>Time since startup: 537548.0
+>>GPS Latitude: 0.0
+>>Compass Z: -23.77
+>>Compass X: 19.63
+>>Compass Y: -23.88
+>>GPS Longitude: 0.0
+>>Altitude: 2.03
+
+
+--
+
+>>Time since startup: 538367.0
+>>GPS Latitude: 0.0
+>>Compass Z: -22.92
+>>Compass X: 19.81
+>>Compass Y: -21.23
+>>GPS Longitude: 0.0
+>>Altitude: 1.99
+
+
+--
+
+>>Time since startup: 539186.0
+>>GPS Latitude: 0.0
+>>Compass Z: -21.89
+>>Compass X: 20.52
+>>Compass Y: -20.16
+>>GPS Longitude: 0.0
+>>Altitude: 1.96
+
+
+--
+
+>>Time since startup: 540004.0
+>>GPS Latitude: 0.0
+>>Compass Z: -18.64
+>>Compass X: 20.34
+>>Compass Y: -20.34
+>>GPS Longitude: 0.0
+>>Altitude: 1.83
+
+
+--
+
+>>Time since startup: 540823.0
+>>GPS Latitude: 0.0
+>>Compass Z: -21.04
+>>Compass X: 13.97
+>>Compass Y: -29.54
+>>GPS Longitude: 0.0
+>>Altitude: 1.42
+
+
+--
+
+>>Time since startup: 541636.0
+>>GPS Latitude: 0.0
+>>Compass Z: -19.5
+>>Compass X: 9.91
+>>Compass Y: -35.38
+>>GPS Longitude: 0.0
+>>Altitude: 1.35
+
+
+--
+
+>>Time since startup: 542449.0
+>>GPS Latitude: 0.0
+>>Compass Z: -16.59
+>>Compass X: 12.2
+>>Compass Y: -33.08
+>>GPS Longitude: 0.0
+>>Altitude: 1.18
+
+
+--
+
+>>Time since startup: 543267.0
+>>GPS Latitude: 0.0
+>>Compass Z: -16.93
+>>Compass X: 11.14
+>>Compass Y: -34.14
+>>GPS Longitude: 0.0
+>>Altitude: 1.09
+
+
+--
+
+>>Time since startup: 544085.0
+>>GPS Latitude: 0.0
+>>Compass Z: -17.62
+>>Compass X: 13.62
+>>Compass Y: -31.66
+>>GPS Longitude: 0.0
+>>Altitude: 1.17
+
+
+--
+
+>>Time since startup: 544903.0
+>>GPS Latitude: 0.0
+>>Compass Z: -14.88
+>>Compass X: 13.62
+>>Compass Y: -31.66
+>>GPS Longitude: 0.0
+>>Altitude: 0.85
+
+
+--
+
+>>Time since startup: 545721.0
+>>GPS Latitude: 0.0
+>>Compass Z: -15.73
+>>Compass X: 13.44
+>>Compass Y: -31.48
+>>GPS Longitude: 0.0
+>>Altitude: 0.9
+
+
+--
+
+>>Time since startup: 546544.0
+>>GPS Latitude: 0.0
+>>Compass Z: -13.0
+>>Compass X: 14.5
+>>Compass Y: -28.3
+>>GPS Longitude: 0.0
+>>Altitude: 1.21
+
+
+--
+
+>>Time since startup: 547372.0
+>>GPS Latitude: 0.0
+>>Compass Z: -12.83
+>>Compass X: 16.1
+>>Compass Y: -27.06
+>>GPS Longitude: 0.0
+>>Altitude: 1.22
+
+
+--
+
+>>Time since startup: 548190.0
+>>GPS Latitude: 0.0
+>>Compass Z: -12.83
+>>Compass X: 16.45
+>>Compass Y: -27.42
+>>GPS Longitude: 0.0
+>>Altitude: 1.55
+
+
+--
+
+>>Time since startup: 549008.0
+>>GPS Latitude: 0.0
+>>Compass Z: -15.56
+>>Compass X: 16.45
+>>Compass Y: -27.06
+>>GPS Longitude: 0.0
+>>Altitude: 1.21
+
+
+--
+
+>>Time since startup: 549826.0
+>>GPS Latitude: 0.0
+>>Compass Z: -14.02
+>>Compass X: 15.92
+>>Compass Y: -28.65
+>>GPS Longitude: 0.0
+>>Altitude: 1.49
+
+
+--
+
+>>Time since startup: 551468.0
+>>GPS Latitude: 0.0
+>>Compass Z: -11.12
+>>Compass X: 11.14
+>>Compass Y: -33.78
+>>GPS Longitude: 0.0
+>>Altitude: 1.43
+
+
+--
+
+>>Time since startup: 552286.0
+>>GPS Latitude: 0.0
+>>Compass Z: -11.8
+>>Compass X: 8.67
+>>Compass Y: -35.91
+>>GPS Longitude: 0.0
+>>Altitude: 1.03
+
+
+--
+
+>>Time since startup: 553902.0
+>>GPS Latitude: 0.0
+>>Compass Z: -16.25
+>>Compass X: 9.37
+>>Compass Y: -35.55
+>>GPS Longitude: 0.0
+>>Altitude: 1.22
+
+
+--
+
+>>Time since startup: 554710.0
+>>GPS Latitude: 0.0
+>>Compass Z: -13.85
+>>Compass X: 7.96
+>>Compass Y: -36.26
+>>GPS Longitude: 0.0
+>>Altitude: 1.57
+
+
+--
+
+>>Time since startup: 555518.0
+>>GPS Latitude: 0.0
+>>Compass Z: -15.91
+>>Compass X: 8.67
+>>Compass Y: -35.2
+>>GPS Longitude: 0.0
+>>Altitude: 0.92
+
+
+--
+
+>>Time since startup: 556326.0
+>>GPS Latitude: 0.0
+>>Compass Z: -15.22
+>>Compass X: 7.25
+>>Compass Y: -35.2
+>>GPS Longitude: 0.0
+>>Altitude: 0.88
+
+
+--
+
+>>Time since startup: 557134.0
+>>GPS Latitude: 0.0
+>>Compass Z: -16.25
+>>Compass X: 9.73
+>>Compass Y: -34.14
+>>GPS Longitude: 0.0
+>>Altitude: 1.36
+
+
+--
+
+>>Time since startup: 557942.0
+>>GPS Latitude: 0.0
+>>Compass Z: -13.85
+>>Compass X: 7.96
+>>Compass Y: -36.61
+>>GPS Longitude: 0.0
+>>Altitude: 1.81
+
+
+--
+
+>>Time since startup: 558750.0
+>>GPS Latitude: 0.0
+>>Compass Z: -14.2
+>>Compass X: 9.73
+>>Compass Y: -35.2
+>>GPS Longitude: 0.0
+>>Altitude: 0.86
+
+
+--
+
+>>Time since startup: 559558.0
+>>GPS Latitude: 0.0
+>>Compass Z: -16.59
+>>Compass X: 8.67
+>>Compass Y: -36.97
+>>GPS Longitude: 0.0
+>>Altitude: 1.83
+
+
+--
+
+>>Time since startup: 560366.0
+>>GPS Latitude: 0.0
+>>Compass Z: -15.05
+>>Compass X: 8.49
+>>Compass Y: -35.02
+>>GPS Longitude: 0.0
+>>Altitude: 1.67
+
+
+--
+
+>>Time since startup: 561174.0
+>>GPS Latitude: 0.0
+>>Compass Z: -16.08
+>>Compass X: 8.84
+>>Compass Y: -35.02
+>>GPS Longitude: 0.0
+>>Altitude: 1.51
+
+
+--
+
+>>Time since startup: 561982.0
+>>GPS Latitude: 0.0
+>>Compass Z: -14.37
+>>Compass X: 8.49
+>>Compass Y: -36.79
+>>GPS Longitude: 0.0
+>>Altitude: 1.39
+
+
+--
+
+>>Time since startup: 562790.0
+>>GPS Latitude: 0.0
+>>Compass Z: -12.14
+>>Compass X: 15.03
+>>Compass Y: -30.25
+>>GPS Longitude: 0.0
+>>Altitude: 1.5
+
+
+--
+
+>>Time since startup: 563614.0
+>>GPS Latitude: 0.0
+>>Compass Z: -16.59
+>>Compass X: 18.93
+>>Compass Y: -24.59
+>>GPS Longitude: 0.0
+>>Altitude: 1.83
+
+
+--
+
+>>Time since startup: 564432.0
+>>GPS Latitude: 0.0
+>>Compass Z: -15.73
+>>Compass X: 19.1
+>>Compass Y: -22.64
+>>GPS Longitude: 0.0
+>>Altitude: 1.67
+
+
+--
+
+>>Time since startup: 566068.0
+>>GPS Latitude: 0.0
+>>Compass Z: -14.71
+>>Compass X: 19.1
+>>Compass Y: -23.35
+>>GPS Longitude: 0.0
+>>Altitude: 1.58
+
+
+--
+
+>>Time since startup: 566887.0
+>>GPS Latitude: 0.0
+>>Compass Z: -12.83
+>>Compass X: 22.11
+>>Compass Y: -17.86
+>>GPS Longitude: 0.0
+>>Altitude: 1.25
+
+
+--
+
+>>Time since startup: 567705.0
+>>GPS Latitude: 0.0
+>>Compass Z: -16.08
+>>Compass X: 21.58
+>>Compass Y: -15.21
+>>GPS Longitude: 0.0
+>>Altitude: 1.75
+
+
+--
+
+>>Time since startup: 568529.0
+>>GPS Latitude: 0.0
+>>Compass Z: -12.83
+>>Compass X: 22.82
+>>Compass Y: -16.1
+>>GPS Longitude: 0.0
+>>Altitude: 1.38
+
+
+--
+
+>>Time since startup: 569347.0
+>>GPS Latitude: 0.0
+>>Compass Z: -11.97
+>>Compass X: 20.87
+>>Compass Y: -18.4
+>>GPS Longitude: 0.0
+>>Altitude: 1.98
+
+
+--
+
+>>Time since startup: 570165.0
+>>GPS Latitude: 0.0
+>>Compass Z: -13.17
+>>Compass X: 21.4
+>>Compass Y: -17.16
+>>GPS Longitude: 0.0
+>>Altitude: 1.78
+
+
+--
+
+>>Time since startup: 570983.0
+>>GPS Latitude: 0.0
+>>Compass Z: -11.63
+>>Compass X: 20.87
+>>Compass Y: -17.69
+>>GPS Longitude: 0.0
+>>Altitude: 1.49
+
+
+--
+
+>>Time since startup: 571801.0
+>>GPS Latitude: 0.0
+>>Compass Z: -7.18
+>>Compass X: 19.46
+>>Compass Y: -23.7
+>>GPS Longitude: 0.0
+>>Altitude: 1.73
+
+
+--
+
+>>Time since startup: 572609.0
+>>GPS Latitude: 0.0
+>>Compass Z: -8.04
+>>Compass X: 19.99
+>>Compass Y: -15.39
+>>GPS Longitude: 0.0
+>>Altitude: 1.83
+
+
+--
+
+>>Time since startup: 573417.0
+>>GPS Latitude: 0.0
+>>Compass Z: -5.64
+>>Compass X: 20.34
+>>Compass Y: -15.39
+>>GPS Longitude: 0.0
+>>Altitude: 1.7
+
+
+--
+
+>>Time since startup: 574225.0
+>>GPS Latitude: 0.0
+>>Compass Z: -23.6
+>>Compass X: 25.12
+>>Compass Y: -14.15
+>>GPS Longitude: 0.0
+>>Altitude: 1.67
+
+
+--
+
+>>Time since startup: 575043.0
+>>GPS Latitude: 0.0
+>>Compass Z: -5.47
+>>Compass X: 15.21
+>>Compass Y: -25.12
+>>GPS Longitude: 0.0
+>>Altitude: 1.5
+
+
+--
+
+>>Time since startup: 575851.0
+>>GPS Latitude: 0.0
+>>Compass Z: 0.34
+>>Compass X: 15.21
+>>Compass Y: -20.52
+>>GPS Longitude: 0.0
+>>Altitude: 1.38
+
+
+--
+
+>>Time since startup: 576659.0
+>>GPS Latitude: 0.0
+>>Compass Z: -0.34
+>>Compass X: 12.03
+>>Compass Y: -26.53
+>>GPS Longitude: 0.0
+>>Altitude: 1.6
+
+
+--
+
+>>Time since startup: 577477.0
+>>GPS Latitude: 0.0
+>>Compass Z: -3.08
+>>Compass X: 20.16
+>>Compass Y: -16.27
+>>GPS Longitude: 0.0
+>>Altitude: 1.74
+
+
+--
+
+>>Time since startup: 578285.0
+>>GPS Latitude: 0.0
+>>Compass Z: -11.8
+>>Compass X: 19.99
+>>Compass Y: -20.34
+>>GPS Longitude: 0.0
+>>Altitude: 1.72
+
+
+--
+
+>>Time since startup: 579103.0
+>>GPS Latitude: 0.0
+>>Compass Z: -11.63
+>>Compass X: 19.81
+>>Compass Y: -19.1
+>>GPS Longitude: 0.0
+>>Altitude: 1.4
+
+
+--
+
+>>Time since startup: 579921.0
+>>GPS Latitude: 0.0
+>>Compass Z: -21.21
+>>Compass X: 21.23
+>>Compass Y: -19.1
+>>GPS Longitude: 0.0
+>>Altitude: 1.75
+
+
+--
+
+>>Time since startup: 580744.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.65
+>>Compass X: 18.04
+>>Compass Y: -23.7
+>>GPS Longitude: 0.0
+>>Altitude: 1.45
+
+
+--
+
+>>Time since startup: 581563.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.8
+>>Compass X: 16.1
+>>Compass Y: -26.0
+>>GPS Longitude: 0.0
+>>Altitude: 1.66
+
+
+--
+
+>>Time since startup: 582381.0
+>>GPS Latitude: 0.0
+>>Compass Z: -26.17
+>>Compass X: 18.57
+>>Compass Y: -23.17
+>>GPS Longitude: 0.0
+>>Altitude: 1.57
+
+
+--
+
+>>Time since startup: 583199.0
+>>GPS Latitude: 0.0
+>>Compass Z: -26.0
+>>Compass X: 18.75
+>>Compass Y: -21.93
+>>GPS Longitude: 0.0
+>>Altitude: 1.64
+
+
+--
+
+>>Time since startup: 584017.0
+>>GPS Latitude: 0.0
+>>Compass Z: -27.36
+>>Compass X: 16.98
+>>Compass Y: -26.18
+>>GPS Longitude: 0.0
+>>Altitude: 1.71
+
+
+--
+
+>>Time since startup: 584835.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.14
+>>Compass X: 16.45
+>>Compass Y: -28.12
+>>GPS Longitude: 0.0
+>>Altitude: 1.46
+
+
+--
+
+>>Time since startup: 585653.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.8
+>>Compass X: 16.1
+>>Compass Y: -27.77
+>>GPS Longitude: 0.0
+>>Altitude: 1.51
+
+
+--
+
+>>Time since startup: 586477.0
+>>GPS Latitude: 0.0
+>>Compass Z: -26.34
+>>Compass X: 16.63
+>>Compass Y: -27.24
+>>GPS Longitude: 0.0
+>>Altitude: 1.55
+
+
+--
+
+>>Time since startup: 587295.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.65
+>>Compass X: 18.75
+>>Compass Y: -25.47
+>>GPS Longitude: 0.0
+>>Altitude: 1.34
+
+
+--
+
+>>Time since startup: 588113.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.65
+>>Compass X: 16.98
+>>Compass Y: -24.06
+>>GPS Longitude: 0.0
+>>Altitude: 1.67
+
+
+--
+
+>>Time since startup: 588931.0
+>>GPS Latitude: 0.0
+>>Compass Z: -23.77
+>>Compass X: 17.51
+>>Compass Y: -27.06
+>>GPS Longitude: 0.0
+>>Altitude: 1.73
+
+
+--
+
+>>Time since startup: 589750.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.46
+>>Compass X: 18.22
+>>Compass Y: -24.23
+>>GPS Longitude: 0.0
+>>Altitude: 1.58
+
+
+--
+
+>>Time since startup: 590574.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.29
+>>Compass X: 17.69
+>>Compass Y: -25.82
+>>GPS Longitude: 0.0
+>>Altitude: 1.6
+
+
+--
+
+>>Time since startup: 591392.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.14
+>>Compass X: 18.22
+>>Compass Y: -24.59
+>>GPS Longitude: 0.0
+>>Altitude: 1.86
+
+
+--
+
+>>Time since startup: 592210.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.46
+>>Compass X: 18.22
+>>Compass Y: -24.59
+>>GPS Longitude: 0.0
+>>Altitude: 1.32
+
+
+--
+
+>>Time since startup: 593028.0
+>>GPS Latitude: 0.0
+>>Compass Z: -26.51
+>>Compass X: 17.86
+>>Compass Y: -25.29
+>>GPS Longitude: 0.0
+>>Altitude: 1.35
+
+
+--
+
+>>Time since startup: 593846.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.8
+>>Compass X: 17.86
+>>Compass Y: -25.65
+>>GPS Longitude: 0.0
+>>Altitude: 1.5
+
+
+--
+
+>>Time since startup: 594664.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.31
+>>Compass X: 19.46
+>>Compass Y: -24.76
+>>GPS Longitude: 0.0
+>>Altitude: 1.27
+
+
+--
+
+>>Time since startup: 595487.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.46
+>>Compass X: 18.22
+>>Compass Y: -26.0
+>>GPS Longitude: 0.0
+>>Altitude: 1.34
+
+
+--
+
+>>Time since startup: 596305.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.82
+>>Compass X: 19.63
+>>Compass Y: -23.88
+>>GPS Longitude: 0.0
+>>Altitude: 1.71
+
+
+--
+
+>>Time since startup: 597123.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.63
+>>Compass X: 19.46
+>>Compass Y: -23.7
+>>GPS Longitude: 0.0
+>>Altitude: 1.86
+
+
+--
+
+>>Time since startup: 597941.0
+>>GPS Latitude: 0.0
+>>Compass Z: -27.36
+>>Compass X: 19.81
+>>Compass Y: -22.99
+>>GPS Longitude: 0.0
+>>Altitude: 1.52
+
+
+--
+
+>>Time since startup: 598760.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.11
+>>Compass X: 18.22
+>>Compass Y: -24.59
+>>GPS Longitude: 0.0
+>>Altitude: 1.51
+
+
+--
+
+>>Time since startup: 599578.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.82
+>>Compass X: 18.57
+>>Compass Y: -24.23
+>>GPS Longitude: 0.0
+>>Altitude: 1.54
+
+
+--
+
+>>Time since startup: 600396.0
+>>GPS Latitude: 0.0
+>>Compass Z: -23.6
+>>Compass X: 17.33
+>>Compass Y: -22.99
+>>GPS Longitude: 0.0
+>>Altitude: 1.74
+
+
+--
+
+>>Time since startup: 602033.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.29
+>>Compass X: 18.04
+>>Compass Y: -23.7
+>>GPS Longitude: 0.0
+>>Altitude: 1.6
+
+
+--
+
+>>Time since startup: 602851.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.14
+>>Compass X: 19.99
+>>Compass Y: -21.76
+>>GPS Longitude: 0.0
+>>Altitude: 1.57
+
+
+--
+
+>>Time since startup: 603669.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.8
+>>Compass X: 16.8
+>>Compass Y: -24.59
+>>GPS Longitude: 0.0
+>>Altitude: 1.56
+
+
+--
+
+>>Time since startup: 604487.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.82
+>>Compass X: 17.51
+>>Compass Y: -24.94
+>>GPS Longitude: 0.0
+>>Altitude: 1.51
+
+
+--
+
+>>Time since startup: 605306.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.14
+>>Compass X: 18.57
+>>Compass Y: -23.53
+>>GPS Longitude: 0.0
+>>Altitude: 1.81
+
+
+--
+
+>>Time since startup: 606124.0
+>>GPS Latitude: 0.0
+>>Compass Z: -26.17
+>>Compass X: 18.93
+>>Compass Y: -25.29
+>>GPS Longitude: 0.0
+>>Altitude: 1.73
+
+
+--
+
+>>Time since startup: 606942.0
+>>GPS Latitude: 0.0
+>>Compass Z: -23.94
+>>Compass X: 18.04
+>>Compass Y: -23.35
+>>GPS Longitude: 0.0
+>>Altitude: 1.48
+
+
+--
+
+>>Time since startup: 607770.0
+>>GPS Latitude: 0.0
+>>Compass Z: -25.31
+>>Compass X: 18.04
+>>Compass Y: -24.76
+>>GPS Longitude: 0.0
+>>Altitude: 1.41
+
+
+--
+
+>>Time since startup: 608593.0
+>>GPS Latitude: 0.0
+>>Compass Z: -24.46
+>>Compass X: 18.57
+>>Compass Y: -24.59
+>>GPS Longitude: 0.0
+>>Altitude: 1.25
+
+
+--
+
+>>Time since startup: 609412.0
+>>GPS Latitude: 0.0
+>>Compass Z: -20.52
+>>Compass X: 18.75
+>>Compass Y: -21.93
+>>GPS Longitude: 0.0
+>>Altitude: 1.27
+
+
+--
+
+>>Time since startup: 611054.0
+>>GPS Latitude: 0.0
+>>Compass Z: -22.92
+>>Compass X: 16.27
+>>Compass Y: -29.36
+>>GPS Longitude: 0.0
+>>Altitude: 1.35
+
+
+--
+
+>>Time since startup: 611872.0
+>>GPS Latitude: 0.0
+>>Compass Z: -20.52
+>>Compass X: 14.5
+>>Compass Y: -30.42
+>>GPS Longitude: 0.0
+>>Altitude: 1.21
+
+
+--
+
+>>Time since startup: 612691.0
+>>GPS Latitude: 0.0
+>>Compass Z: -17.44
+>>Compass X: 16.27
+>>Compass Y: -29.01
+>>GPS Longitude: 0.0
+>>Altitude: 0.93
+
+
+--
+
+>>Time since startup: 613509.0
+>>GPS Latitude: 0.0
+>>Compass Z: -15.73
+>>Compass X: 15.21
+>>Compass Y: -29.01
+>>GPS Longitude: 0.0
+>>Altitude: 0.98
+
+
+--
+
+>>Time since startup: 614322.0
+>>GPS Latitude: 0.0
+>>Compass Z: -3.93
+>>Compass X: 9.37
+>>Compass Y: -30.25
+>>GPS Longitude: 0.0
+>>Altitude: 0.61
+
+
+--
+
+>>Time since startup: 615130.0
+>>GPS Latitude: 0.0
+>>Compass Z: -2.22
+>>Compass X: 7.25
+>>Compass Y: -32.37
+>>GPS Longitude: 0.0
+>>Altitude: 0.36
+
+
+--
+
+>>Time since startup: 615938.0
+>>GPS Latitude: 0.0
+>>Compass Z: -6.5
+>>Compass X: 12.74
+>>Compass Y: -30.78
+>>GPS Longitude: 0.0
+>>Altitude: 0.84
+
+
+--
+
+>>Time since startup: 616746.0
+>>GPS Latitude: 0.0
+>>Compass Z: -16.08
+>>Compass X: 15.57
+>>Compass Y: -28.65
+>>GPS Longitude: 0.0
+>>Altitude: 1.08
+
+
+--
+
+>>Time since startup: 617564.0
+>>GPS Latitude: 0.0
+>>Compass Z: -17.96
+>>Compass X: 15.39
+>>Compass Y: -29.54
+>>GPS Longitude: 0.0
+>>Altitude: 1.14
+
+
+--
+
+>>Time since startup: 618382.0
+>>GPS Latitude: 0.0
+>>Compass Z: -13.68
+>>Compass X: 18.04
+>>Compass Y: -24.41
+>>GPS Longitude: 0.0
+>>Altitude: 1.31
+
+
+--
+
+>>Time since startup: 620019.0
+>>GPS Latitude: 0.0
+>>Compass Z: -20.69
+>>Compass X: 14.33
+>>Compass Y: -31.31
+>>GPS Longitude: 0.0
+>>Altitude: 1.04
+
+
+--
+
+>>Time since startup: 620837.0
+>>GPS Latitude: 0.0
+>>Compass Z: -22.75
+>>Compass X: 15.74
+>>Compass Y: -29.54
+>>GPS Longitude: 0.0
+>>Altitude: 1.13
+
+
+--
+
+>>Time since startup: 621655.0
+>>GPS Latitude: 0.0
+>>Compass Z: -20.35
+>>Compass X: 15.74
+>>Compass Y: -28.48
+>>GPS Longitude: 0.0
+>>Altitude: 1.13
+
+
+--
+
+>>Time since startup: 622473.0
+>>GPS Latitude: 0.0
+>>Compass Z: -22.75
+>>Compass X: 13.62
+>>Compass Y: -31.31
+>>GPS Longitude: 0.0
+>>Altitude: 0.96
+
+
+--
+
+>>Time since startup: 623291.0
+>>GPS Latitude: 0.0
+>>Compass Z: -22.75
+>>Compass X: 16.45
+>>Compass Y: -28.48
+>>GPS Longitude: 0.0
+>>Altitude: 1.31
+
+
+--
+
+>>Time since startup: 624109.0
+>>GPS Latitude: 0.0
+>>Compass Z: -20.69
+>>Compass X: 13.97
+>>Compass Y: -29.19
+>>GPS Longitude: 0.0
+>>Altitude: 1.25
+
+
+--
+
+>>Time since startup: 624928.0
+>>GPS Latitude: 0.0
+>>Compass Z: -23.26
+>>Compass X: 14.86
+>>Compass Y: -30.42
+>>GPS Longitude: 0.0
+>>Altitude: 1.37
+
+
+--
+
+>>Time since startup: 625751.0
+>>GPS Latitude: 0.0
+>>Compass Z: -20.18
+>>Compass X: 14.5
+>>Compass Y: -31.48
+>>GPS Longitude: 0.0
+>>Altitude: 1.46
+
+
+--
+
+>>Time since startup: 626570.0
+>>GPS Latitude: 0.0
+>>Compass Z: -21.89
+>>Compass X: 16.27
+>>Compass Y: -28.65
+>>GPS Longitude: 0.0
+>>Altitude: 1.64
+
+
+--
+
+>>Time since startup: 627388.0
+>>GPS Latitude: 0.0
+>>Compass Z: -21.21
+>>Compass X: 15.21
+>>Compass Y: -30.42
+>>GPS Longitude: 0.0
+>>Altitude: 1.15
+
+
+--
+
+>>Time since startup: 629030.0
+>>GPS Latitude: 0.0
+>>Compass Z: -17.96
+>>Compass X: 9.02
+>>Compass Y: -34.85
+>>GPS Longitude: 0.0
+>>Altitude: 1.14
+
+
+--
+
+>>Time since startup: 629838.0
+>>GPS Latitude: 0.0
+>>Compass Z: -28.22
+>>Compass X: 1.59
+>>Compass Y: -38.74
+>>GPS Longitude: 0.0
+>>Altitude: 1.75
+
+
+--
+
+>>Time since startup: 630646.0
+>>GPS Latitude: 0.0
+>>Compass Z: -33.18
+>>Compass X: -5.31
+>>Compass Y: -38.91
+>>GPS Longitude: 0.0
+>>Altitude: 0.01
+
+
+--
+
+>>Time since startup: 631464.0
+>>GPS Latitude: 0.0
+>>Compass Z: -40.87
+>>Compass X: -3.71
+>>Compass Y: -36.61
+>>GPS Longitude: 0.0
+>>Altitude: 0.23
+
+
+--
+
+>>Time since startup: 632288.0
+>>GPS Latitude: 0.0
+>>Compass Z: -40.19
+>>Compass X: -5.84
+>>Compass Y: -36.26
+>>GPS Longitude: 0.0
+>>Altitude: 0.24
+
+
+--
+
+>>Time since startup: 633112.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.24
+>>Compass X: -3.71
+>>Compass Y: -36.61
+>>GPS Longitude: 0.0
+>>Altitude: 0.35
+
+
+--
+
+>>Time since startup: 633936.0
+>>GPS Latitude: 0.0
+>>Compass Z: -35.4
+>>Compass X: -2.3
+>>Compass Y: -38.74
+>>GPS Longitude: 0.0
+>>Altitude: 0.59
+
+
+--
+
+>>Time since startup: 634758.0
+>>GPS Latitude: 0.0
+>>Compass Z: -33.35
+>>Compass X: -0.88
+>>Compass Y: -38.74
+>>GPS Longitude: 0.0
+>>Altitude: 0.56
+
+
+--
+
+>>Time since startup: 636384.0
+>>GPS Latitude: 0.0
+>>Compass Z: -29.07
+>>Compass X: 6.37
+>>Compass Y: -36.79
+>>GPS Longitude: 0.0
+>>Altitude: 1.27
+
+
+--
+
+>>Time since startup: 638026.0
+>>GPS Latitude: 0.0
+>>Compass Z: -47.03
+>>Compass X: -7.61
+>>Compass Y: -33.43
+>>GPS Longitude: 0.0
+>>Altitude: 0.34
+
+
+--
+
+>>Time since startup: 638848.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.83
+>>Compass X: -7.78
+>>Compass Y: -33.96
+>>GPS Longitude: 0.0
+>>Altitude: -0.1
+
+
+--
+
+>>Time since startup: 639672.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.66
+>>Compass X: -9.02
+>>Compass Y: -36.26
+>>GPS Longitude: 0.0
+>>Altitude: -0.33
+
+
+--
+
+>>Time since startup: 640496.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.35
+>>Compass X: -9.73
+>>Compass Y: -36.97
+>>GPS Longitude: 0.0
+>>Altitude: -0.52
+
+
+--
+
+>>Time since startup: 641319.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.01
+>>Compass X: -10.79
+>>Compass Y: -34.85
+>>GPS Longitude: 0.0
+>>Altitude: -0.42
+
+
+--
+
+>>Time since startup: 642143.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.48
+>>Compass X: -10.08
+>>Compass Y: -33.43
+>>GPS Longitude: 0.0
+>>Altitude: -0.14
+
+
+--
+
+>>Time since startup: 642967.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.94
+>>Compass X: -10.61
+>>Compass Y: -32.55
+>>GPS Longitude: 0.0
+>>Altitude: -0.34
+
+
+--
+
+>>Time since startup: 643785.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.77
+>>Compass X: -8.31
+>>Compass Y: -32.02
+>>GPS Longitude: 0.0
+>>Altitude: -0.42
+
+
+--
+
+>>Time since startup: 644608.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.74
+>>Compass X: -9.37
+>>Compass Y: -33.08
+>>GPS Longitude: 0.0
+>>Altitude: -0.58
+
+
+--
+
+>>Time since startup: 645426.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.74
+>>Compass X: -11.5
+>>Compass Y: -34.14
+>>GPS Longitude: 0.0
+>>Altitude: 0.05
+
+
+--
+
+>>Time since startup: 647074.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.25
+>>Compass X: -10.61
+>>Compass Y: -33.25
+>>GPS Longitude: 0.0
+>>Altitude: -0.17
+
+
+--
+
+>>Time since startup: 647892.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.11
+>>Compass X: -9.02
+>>Compass Y: -32.37
+>>GPS Longitude: 0.0
+>>Altitude: 0.01
+
+
+--
+
+>>Time since startup: 648710.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.08
+>>Compass X: -8.67
+>>Compass Y: -33.08
+>>GPS Longitude: 0.0
+>>Altitude: 0.14
+
+
+--
+
+>>Time since startup: 649534.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.11
+>>Compass X: -10.08
+>>Compass Y: -32.72
+>>GPS Longitude: 0.0
+>>Altitude: -0.04
+
+
+--
+
+>>Time since startup: 650358.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.28
+>>Compass X: -10.26
+>>Compass Y: -32.19
+>>GPS Longitude: 0.0
+>>Altitude: -0.21
+
+
+--
+
+>>Time since startup: 651182.0
+>>GPS Latitude: 0.0
+>>Compass Z: -52.85
+>>Compass X: -13.97
+>>Compass Y: -34.14
+>>GPS Longitude: 0.0
+>>Altitude: 0.02
+
+
+--
+
+>>Time since startup: 652005.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.79
+>>Compass X: -13.27
+>>Compass Y: -34.14
+>>GPS Longitude: 0.0
+>>Altitude: -0.24
+
+
+--
+
+>>Time since startup: 652830.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.31
+>>Compass X: -13.44
+>>Compass Y: -32.9
+>>GPS Longitude: 0.0
+>>Altitude: -0.49
+
+
+--
+
+>>Time since startup: 653654.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.14
+>>Compass X: -13.97
+>>Compass Y: -34.49
+>>GPS Longitude: 0.0
+>>Altitude: -0.13
+
+
+--
+
+>>Time since startup: 654478.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.94
+>>Compass X: -13.44
+>>Compass Y: -33.61
+>>GPS Longitude: 0.0
+>>Altitude: 0.17
+
+
+--
+
+>>Time since startup: 655302.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.43
+>>Compass X: -14.33
+>>Compass Y: -33.43
+>>GPS Longitude: 0.0
+>>Altitude: 0.01
+
+
+--
+
+>>Time since startup: 656121.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.08
+>>Compass X: -13.97
+>>Compass Y: -33.43
+>>GPS Longitude: 0.0
+>>Altitude: 0.07
+
+
+--
+
+>>Time since startup: 656945.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.79
+>>Compass X: -11.5
+>>Compass Y: -33.08
+>>GPS Longitude: 0.0
+>>Altitude: -0.12
+
+
+--
+
+>>Time since startup: 657769.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.14
+>>Compass X: -10.79
+>>Compass Y: -32.37
+>>GPS Longitude: 0.0
+>>Altitude: 0.18
+
+
+--
+
+>>Time since startup: 658587.0
+>>GPS Latitude: 0.0
+>>Compass Z: -53.87
+>>Compass X: -9.37
+>>Compass Y: -30.6
+>>GPS Longitude: 0.0
+>>Altitude: 0.26
+
+
+--
+
+>>Time since startup: 659410.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.14
+>>Compass X: -10.79
+>>Compass Y: -31.31
+>>GPS Longitude: 0.0
+>>Altitude: 0.11
+
+
+--
+
+>>Time since startup: 660233.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.65
+>>Compass X: -8.84
+>>Compass Y: -31.84
+>>GPS Longitude: 0.0
+>>Altitude: -0.2
+
+
+--
+
+>>Time since startup: 661057.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.6
+>>Compass X: -12.38
+>>Compass Y: -32.19
+>>GPS Longitude: 0.0
+>>Altitude: -0.09
+
+
+--
+
+>>Time since startup: 661880.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.77
+>>Compass X: -11.85
+>>Compass Y: -32.37
+>>GPS Longitude: 0.0
+>>Altitude: -0.02
+
+
+--
+
+>>Time since startup: 662704.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.43
+>>Compass X: -12.2
+>>Compass Y: -33.08
+>>GPS Longitude: 0.0
+>>Altitude: -0.02
+
+
+--
+
+>>Time since startup: 663529.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.43
+>>Compass X: -12.2
+>>Compass Y: -33.43
+>>GPS Longitude: 0.0
+>>Altitude: -0.43
+
+
+--
+
+>>Time since startup: 664353.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.48
+>>Compass X: -10.79
+>>Compass Y: -33.08
+>>GPS Longitude: 0.0
+>>Altitude: -0.14
+
+
+--
+
+>>Time since startup: 665177.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.74
+>>Compass X: -11.14
+>>Compass Y: -32.37
+>>GPS Longitude: 0.0
+>>Altitude: -0.14
+
+
+--
+
+>>Time since startup: 666001.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.11
+>>Compass X: -12.2
+>>Compass Y: -32.72
+>>GPS Longitude: 0.0
+>>Altitude: -0.36
+
+
+--
+
+>>Time since startup: 666825.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.28
+>>Compass X: -13.8
+>>Compass Y: -32.55
+>>GPS Longitude: 0.0
+>>Altitude: -0.21
+
+
+--
+
+>>Time since startup: 667649.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.99
+>>Compass X: -12.74
+>>Compass Y: -33.61
+>>GPS Longitude: 0.0
+>>Altitude: -0.29
+
+
+--
+
+>>Time since startup: 668482.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.97
+>>Compass X: -11.32
+>>Compass Y: -33.25
+>>GPS Longitude: 0.0
+>>Altitude: 0.02
+
+
+--
+
+>>Time since startup: 669306.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.79
+>>Compass X: -10.79
+>>Compass Y: -32.72
+>>GPS Longitude: 0.0
+>>Altitude: 0.27
+
+
+--
+
+>>Time since startup: 670130.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.65
+>>Compass X: -12.03
+>>Compass Y: -32.55
+>>GPS Longitude: 0.0
+>>Altitude: -0.12
+
+
+--
+
+>>Time since startup: 670954.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.77
+>>Compass X: -13.27
+>>Compass Y: -32.37
+>>GPS Longitude: 0.0
+>>Altitude: -0.32
+
+
+--
+
+>>Time since startup: 671778.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.99
+>>Compass X: -10.97
+>>Compass Y: -32.55
+>>GPS Longitude: 0.0
+>>Altitude: -0.01
+
+
+--
+
+>>Time since startup: 672602.0
+>>GPS Latitude: 0.0
+>>Compass Z: -49.08
+>>Compass X: -11.14
+>>Compass Y: -32.02
+>>GPS Longitude: 0.0
+>>Altitude: 0.01
+
+
+--
+
+>>Time since startup: 673426.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.14
+>>Compass X: -10.79
+>>Compass Y: -30.95
+>>GPS Longitude: 0.0
+>>Altitude: -0.2
+
+
+--
+
+>>Time since startup: 674249.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.14
+>>Compass X: -9.02
+>>Compass Y: -31.31
+>>GPS Longitude: 0.0
+>>Altitude: -0.15
+
+
+--
+
+>>Time since startup: 675073.0
+>>GPS Latitude: 0.0
+>>Compass Z: -40.87
+>>Compass X: -7.61
+>>Compass Y: -38.03
+>>GPS Longitude: 0.0
+>>Altitude: 0.69
+
+
+--
+
+>>Time since startup: 675897.0
+>>GPS Latitude: 0.0
+>>Compass Z: -40.36
+>>Compass X: -5.66
+>>Compass Y: -37.85
+>>GPS Longitude: 0.0
+>>Altitude: 0.81
+
+
+--
+
+>>Time since startup: 676720.0
+>>GPS Latitude: 0.0
+>>Compass Z: -41.39
+>>Compass X: -13.09
+>>Compass Y: -38.91
+>>GPS Longitude: 0.0
+>>Altitude: 0.83
+
+
+--
+
+>>Time since startup: 677544.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.41
+>>Compass X: -13.09
+>>Compass Y: -40.68
+>>GPS Longitude: 0.0
+>>Altitude: 0.24
+
+
+--
+
+>>Time since startup: 678368.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.32
+>>Compass X: -18.93
+>>Compass Y: -38.03
+>>GPS Longitude: 0.0
+>>Altitude: 0.42
+
+
+--
+
+>>Time since startup: 679192.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.81
+>>Compass X: -16.98
+>>Compass Y: -37.85
+>>GPS Longitude: 0.0
+>>Altitude: 0.83
+
+
+--
+
+>>Time since startup: 680016.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.15
+>>Compass X: -18.4
+>>Compass Y: -37.85
+>>GPS Longitude: 0.0
+>>Altitude: 0.67
+
+
+--
+
+>>Time since startup: 680840.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.74
+>>Compass X: -20.7
+>>Compass Y: -35.55
+>>GPS Longitude: 0.0
+>>Altitude: -0.05
+
+
+--
+
+>>Time since startup: 681664.0
+>>GPS Latitude: 0.0
+>>Compass Z: -47.2
+>>Compass X: -23.7
+>>Compass Y: -35.73
+>>GPS Longitude: 0.0
+>>Altitude: 0.39
+
+
+--
+
+>>Time since startup: 682488.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.18
+>>Compass X: -22.64
+>>Compass Y: -36.08
+>>GPS Longitude: 0.0
+>>Altitude: 0.52
+
+
+--
+
+>>Time since startup: 683312.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.15
+>>Compass X: -21.58
+>>Compass Y: -38.91
+>>GPS Longitude: 0.0
+>>Altitude: 0.38
+
+
+--
+
+>>Time since startup: 684136.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.78
+>>Compass X: -20.87
+>>Compass Y: -38.91
+>>GPS Longitude: 0.0
+>>Altitude: 0.55
+
+
+--
+
+>>Time since startup: 684960.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.11
+>>Compass X: -19.63
+>>Compass Y: -33.78
+>>GPS Longitude: 0.0
+>>Altitude: -0.04
+
+
+--
+
+>>Time since startup: 685784.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.06
+>>Compass X: -22.46
+>>Compass Y: -38.38
+>>GPS Longitude: 0.0
+>>Altitude: 0.41
+
+
+--
+
+>>Time since startup: 686602.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.52
+>>Compass X: -21.23
+>>Compass Y: -38.21
+>>GPS Longitude: 0.0
+>>Altitude: 0.62
+
+
+--
+
+>>Time since startup: 687420.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.47
+>>Compass X: -21.93
+>>Compass Y: -39.27
+>>GPS Longitude: 0.0
+>>Altitude: 0.26
+
+
+--
+
+>>Time since startup: 688244.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.81
+>>Compass X: -24.06
+>>Compass Y: -39.27
+>>GPS Longitude: 0.0
+>>Altitude: 0.26
+
+
+--
+
+>>Time since startup: 689068.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.69
+>>Compass X: -23.53
+>>Compass Y: -36.61
+>>GPS Longitude: 0.0
+>>Altitude: 0.39
+
+
+--
+
+>>Time since startup: 689892.0
+>>GPS Latitude: 0.0
+>>Compass Z: -48.57
+>>Compass X: -23.7
+>>Compass Y: -36.79
+>>GPS Longitude: 0.0
+>>Altitude: 0.3
+
+
+--
+
+>>Time since startup: 690716.0
+>>GPS Latitude: 0.0
+>>Compass Z: -47.03
+>>Compass X: -21.05
+>>Compass Y: -37.68
+>>GPS Longitude: 0.0
+>>Altitude: 0.2
+
+
+--
+
+>>Time since startup: 691540.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.52
+>>Compass X: -22.29
+>>Compass Y: -36.44
+>>GPS Longitude: 0.0
+>>Altitude: 0.41
+
+
+--
+
+>>Time since startup: 692364.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.86
+>>Compass X: -21.93
+>>Compass Y: -37.5
+>>GPS Longitude: 0.0
+>>Altitude: 0.71
+
+
+--
+
+>>Time since startup: 693188.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.93
+>>Compass X: -23.17
+>>Compass Y: -39.44
+>>GPS Longitude: 0.0
+>>Altitude: 0.86
+
+
+--
+
+>>Time since startup: 694012.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.78
+>>Compass X: -23.7
+>>Compass Y: -37.15
+>>GPS Longitude: 0.0
+>>Altitude: 0.28
+
+
+--
+
+>>Time since startup: 694836.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.66
+>>Compass X: -22.82
+>>Compass Y: -39.09
+>>GPS Longitude: 0.0
+>>Altitude: 0.55
+
+
+--
+
+>>Time since startup: 695660.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.01
+>>Compass X: -22.82
+>>Compass Y: -37.68
+>>GPS Longitude: 0.0
+>>Altitude: 0.37
+
+
+--
+
+>>Time since startup: 696484.0
+>>GPS Latitude: 0.0
+>>Compass Z: -45.66
+>>Compass X: -21.76
+>>Compass Y: -39.8
+>>GPS Longitude: 0.0
+>>Altitude: 0.8
+
+
+--
+
+>>Time since startup: 697308.0
+>>GPS Latitude: 0.0
+>>Compass Z: -44.3
+>>Compass X: -23.17
+>>Compass Y: -38.03
+>>GPS Longitude: 0.0
+>>Altitude: 0.7
+
+
+--
+
+>>Time since startup: 698132.0
+>>GPS Latitude: 0.0
+>>Compass Z: -47.03
+>>Compass X: -22.11
+>>Compass Y: -36.97
+>>GPS Longitude: 0.0
+>>Altitude: 0.55
+
+
+--
+
+>>Time since startup: 698966.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.01
+>>Compass X: -21.05
+>>Compass Y: -38.38
+>>GPS Longitude: 0.0
+>>Altitude: 0.62
+
+
+--
+
+>>Time since startup: 699790.0
+>>GPS Latitude: 0.0
+>>Compass Z: -43.78
+>>Compass X: -18.4
+>>Compass Y: -38.91
+>>GPS Longitude: 0.0
+>>Altitude: 0.79
+
+
+--
+
+>>Time since startup: 700614.0
+>>GPS Latitude: 0.0
+>>Compass Z: -42.93
+>>Compass X: -12.56
+>>Compass Y: -37.32
+>>GPS Longitude: 0.0
+>>Altitude: 0.71
+
+
+--
+
+>>Time since startup: 701438.0
+>>GPS Latitude: 0.0
+>>Compass Z: -46.35
+>>Compass X: -16.8
+>>Compass Y: -38.38
+>>GPS Longitude: 0.0
+>>Altitude: 0.28
+
+
+--
+
+>>Time since startup: 702262.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.64
+>>Compass X: -18.22
+>>Compass Y: -26.36
+>>GPS Longitude: 0.0
+>>Altitude: -0.26
+
+
+--
+
+>>Time since startup: 703081.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.95
+>>Compass X: -16.8
+>>Compass Y: -25.65
+>>GPS Longitude: 0.0
+>>Altitude: 0.12
+
+
+--
+
+>>Time since startup: 703905.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.88
+>>Compass X: -12.03
+>>Compass Y: -21.23
+>>GPS Longitude: 0.0
+>>Altitude: 0.68
+
+
+--
+
+>>Time since startup: 704723.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.64
+>>Compass X: -6.9
+>>Compass Y: -22.82
+>>GPS Longitude: 0.0
+>>Altitude: 1.02
+
+
+--
+
+>>Time since startup: 705547.0
+>>GPS Latitude: 0.0
+>>Compass Z: -55.75
+>>Compass X: -8.49
+>>Compass Y: -29.72
+>>GPS Longitude: 0.0
+>>Altitude: 0.76
+
+
+--
+
+>>Time since startup: 706371.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.04
+>>Compass X: -9.91
+>>Compass Y: -28.3
+>>GPS Longitude: 0.0
+>>Altitude: 0.92
+
+
+--
+
+>>Time since startup: 707193.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.95
+>>Compass X: -9.37
+>>Compass Y: -26.71
+>>GPS Longitude: 0.0
+>>Altitude: 1.18
+
+
+--
+
+>>Time since startup: 708011.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.44
+>>Compass X: -9.2
+>>Compass Y: -27.59
+>>GPS Longitude: 0.0
+>>Altitude: 1.13
+
+
+--
+
+>>Time since startup: 708835.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.46
+>>Compass X: -8.49
+>>Compass Y: -26.53
+>>GPS Longitude: 0.0
+>>Altitude: 1.02
+
+
+--
+
+>>Time since startup: 709652.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.73
+>>Compass X: -9.55
+>>Compass Y: -26.89
+>>GPS Longitude: 0.0
+>>Altitude: 0.95
+
+
+--
+
+>>Time since startup: 710476.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.9
+>>Compass X: -8.67
+>>Compass Y: -27.06
+>>GPS Longitude: 0.0
+>>Altitude: 0.75
+
+
+--
+
+>>Time since startup: 711300.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.61
+>>Compass X: -9.73
+>>Compass Y: -24.94
+>>GPS Longitude: 0.0
+>>Altitude: 0.61
+
+
+--
+
+>>Time since startup: 712124.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.49
+>>Compass X: -13.44
+>>Compass Y: -23.35
+>>GPS Longitude: 0.0
+>>Altitude: 0.16
+
+
+--
+
+>>Time since startup: 712942.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -7.96
+>>Compass Y: -22.46
+>>GPS Longitude: 0.0
+>>Altitude: 0.42
+
+
+--
+
+>>Time since startup: 713766.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -11.67
+>>Compass Y: -25.47
+>>GPS Longitude: 0.0
+>>Altitude: 0.35
+
+
+--
+
+>>Time since startup: 714590.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -10.26
+>>Compass Y: -25.82
+>>GPS Longitude: 0.0
+>>Altitude: 0.73
+
+
+--
+
+>>Time since startup: 715408.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.64
+>>Compass X: -1.59
+>>Compass Y: -22.82
+>>GPS Longitude: 0.0
+>>Altitude: 1.88
+
+
+--
+
+>>Time since startup: 716232.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.0
+>>Compass X: -10.44
+>>Compass Y: -24.94
+>>GPS Longitude: 0.0
+>>Altitude: 0.86
+
+
+--
+
+>>Time since startup: 717056.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -13.44
+>>Compass Y: -22.29
+>>GPS Longitude: 0.0
+>>Altitude: 0.41
+
+
+--
+
+>>Time since startup: 717874.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -9.02
+>>Compass Y: -23.88
+>>GPS Longitude: 0.0
+>>Altitude: 0.91
+
+
+--
+
+>>Time since startup: 718698.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.12
+>>Compass X: -10.61
+>>Compass Y: -24.76
+>>GPS Longitude: 0.0
+>>Altitude: 0.48
+
+
+--
+
+>>Time since startup: 719516.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.83
+>>Compass X: -9.2
+>>Compass Y: -25.47
+>>GPS Longitude: 0.0
+>>Altitude: 0.58
+
+
+--
+
+>>Time since startup: 720340.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.12
+>>Compass X: -10.61
+>>Compass Y: -24.06
+>>GPS Longitude: 0.0
+>>Altitude: 0.55
+
+
+--
+
+>>Time since startup: 721164.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.15
+>>Compass X: -10.61
+>>Compass Y: -23.35
+>>GPS Longitude: 0.0
+>>Altitude: 0.84
+
+
+--
+
+>>Time since startup: 721988.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.98
+>>Compass X: -10.08
+>>Compass Y: -24.59
+>>GPS Longitude: 0.0
+>>Altitude: 0.89
+
+
+--
+
+>>Time since startup: 722812.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.54
+>>Compass X: -11.32
+>>Compass Y: -24.06
+>>GPS Longitude: 0.0
+>>Altitude: 0.77
+
+
+--
+
+>>Time since startup: 723635.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.37
+>>Compass X: -11.85
+>>Compass Y: -24.59
+>>GPS Longitude: 0.0
+>>Altitude: 0.36
+
+
+--
+
+>>Time since startup: 724460.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.32
+>>Compass X: -12.2
+>>Compass Y: -25.65
+>>GPS Longitude: 0.0
+>>Altitude: 0.57
+
+
+--
+
+>>Time since startup: 725284.0
+>>GPS Latitude: 0.0
+>>Compass Z: -60.71
+>>Compass X: -10.79
+>>Compass Y: -24.23
+>>GPS Longitude: 0.0
+>>Altitude: 1.1
+
+
+--
+
+>>Time since startup: 726108.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.46
+>>Compass X: -10.97
+>>Compass Y: -25.82
+>>GPS Longitude: 0.0
+>>Altitude: 0.39
+
+
+--
+
+>>Time since startup: 726932.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.86
+>>Compass X: -15.57
+>>Compass Y: -24.41
+>>GPS Longitude: 0.0
+>>Altitude: 0.49
+
+
+--
+
+>>Time since startup: 727756.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.12
+>>Compass X: -19.46
+>>Compass Y: -26.53
+>>GPS Longitude: 0.0
+>>Altitude: 0.5
+
+
+--
+
+>>Time since startup: 728580.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.52
+>>Compass X: -19.1
+>>Compass Y: -24.06
+>>GPS Longitude: 0.0
+>>Altitude: 0.66
+
+
+--
+
+>>Time since startup: 729413.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.35
+>>Compass X: -16.8
+>>Compass Y: -24.23
+>>GPS Longitude: 0.0
+>>Altitude: 0.43
+
+
+--
+
+>>Time since startup: 730237.0
+>>GPS Latitude: 0.0
+>>Compass Z: -59.69
+>>Compass X: -11.14
+>>Compass Y: -24.23
+>>GPS Longitude: 0.0
+>>Altitude: 0.03
+
+
+--
+
+>>Time since startup: 731879.0
+>>GPS Latitude: 0.0
+>>Compass Z: -51.99
+>>Compass X: -9.91
+>>Compass Y: -30.42
+>>GPS Longitude: 0.0
+>>Altitude: 0.5
+
+
+--
+
+>>Time since startup: 732703.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.61
+>>Compass X: -11.85
+>>Compass Y: -27.77
+>>GPS Longitude: 0.0
+>>Altitude: 0.74
+
+
+--
+
+>>Time since startup: 733527.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.73
+>>Compass X: -15.92
+>>Compass Y: -30.07
+>>GPS Longitude: 0.0
+>>Altitude: 0.98
+
+
+--
+
+>>Time since startup: 734345.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.15
+>>Compass X: -13.8
+>>Compass Y: -27.59
+>>GPS Longitude: 0.0
+>>Altitude: 0.45
+
+
+--
+
+>>Time since startup: 735169.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -10.97
+>>Compass Y: -28.65
+>>GPS Longitude: 0.0
+>>Altitude: 0.56
+
+
+--
+
+>>Time since startup: 735993.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -12.74
+>>Compass Y: -27.59
+>>GPS Longitude: 0.0
+>>Altitude: 0.76
+
+
+--
+
+>>Time since startup: 736811.0
+>>GPS Latitude: 0.0
+>>Compass Z: -57.81
+>>Compass X: -9.2
+>>Compass Y: -25.47
+>>GPS Longitude: 0.0
+>>Altitude: 0.75
+
+
+--
+
+>>Time since startup: 737635.0
+>>GPS Latitude: 0.0
+>>Compass Z: -56.95
+>>Compass X: -10.44
+>>Compass Y: -25.65
+>>GPS Longitude: 0.0
+>>Altitude: 0.6
+
+
+--
+
+>>Time since startup: 738453.0
+>>GPS Latitude: 0.0
+>>Compass Z: -58.32
+>>Compass X: -12.2
+>>Compass Y: -26.36
+>>GPS Longitude: 0.0
+>>Altitude: 0.96
+
+
+--
+
+>>Time since startup: 739271.0
+>>GPS Latitude: 0.0
+>>Compass Z: -54.56
+>>Compass X: -1.59
+>>Compass Y: -27.06
+>>GPS Longitude: 0.0
+>>Altitude: 0.85
+
+
+--
+
+>>Time since startup: 740095.0
+>>GPS Latitude: 0.0
+>>Compass Z: -50.79
+>>Compass X: -3.01
+>>Compass Y: -28.48
+>>GPS Longitude: 0.0
+>>Altitude: 1.29

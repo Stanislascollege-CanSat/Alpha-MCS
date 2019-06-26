@@ -80,9 +80,9 @@ public class View_FlightPath extends ViewController {
     this.progress_700 = 20;
     this.progress_680 = 84;
 
-		this.lowestBorder = 2;
-		this.deployBorder1 = 5;
-		this.deployBorder2 = this.deployBorder1*0.8;
+		this.lowestBorder = 200;
+		this.deployBorder1 = 700;
+		this.deployBorder2 = this.deployBorder1*0.9;
 
     this.missionSucces = false;
     this.maxHeight = this.deployBorder1/this.calcSysHeight(20)*this.calcSysHeight(50);
@@ -177,15 +177,23 @@ public class View_FlightPath extends ViewController {
 		text(str(this.deployBorder2) + "m", this.dim.x - 100, this.dim.y*0.5 - 2);
 
 
-					    // if(mousePressed && this.userInteractionEnabled && this.tempTime % 60 == 0){
-					    //   //this.progressGoal = this.calcProgress(map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight));
-					    //   DataSetDeposit.mu_altitude.addDataPoint(new DataPoint(float(this.tempTime)/100, map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight)));
-					    // }
-					    // if(keyPressed){
-					    //   if(key == 'd'){
-					    //     this.babyCansDeployed = true;
-					    //   }
-					    // }
+
+
+//=================================== REMOVE BEFORE STARTING MISSION!! \/\/
+
+
+					    if(mousePressed && this.userInteractionEnabled && this.tempTime % 60 == 0){
+					      //this.progressGoal = this.calcProgress(map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight));
+					      DataSetDeposit.mu_altitude.addDataPoint(new DataPoint(float(this.tempTime)/100, map(height - mouseY, 0, this.calcSysHeight(50), 0, this.maxHeight)));
+					    }
+					    if(keyPressed){
+					      if(key == 'd'){
+					        this.babyCansDeployed = true;
+					      }
+					    }
+
+
+//=================================== REMOVE BEFORE STARTING MISSION!!  ^^
 
     if(DataSetDeposit.mu_altitude.size() > 0){
       if((float)DataSetDeposit.mu_altitude.getDataAt(DataSetDeposit.mu_altitude.size()-1).getY() >= 0){

@@ -32,9 +32,9 @@ public class View_DataCharts extends ViewController {
 
   public View_DataCharts(AppController a, float x, float y, float w, float h){
     super(a, x, y, w, h);
-    
+
     this.scrollBar = new VerticalScrollElement(this.appController, this, this.dim.x - 10, this.dim.y/2, this.dim.y, 0, this.dim.y);
-    
+
     this.charts = new ArrayList<Chart>();
     this.chartHeight = 500;
 
@@ -65,14 +65,14 @@ public class View_DataCharts extends ViewController {
     this.chart_gyroscope =        new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-10, 10),     "Gyroscope",        "Time",     "s",    "Angular velocity",           "rads/s");
     this.chart_compass =          new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-100, 100),     "Compass",          "Time",     "s",    "Magnetic field strength",    "uT");
     this.chart_airpressure =      new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 1000000),   "Air pressure",     "Time",     "s",    "Pressure",                   "Pa");
-    this.chart_airtemperature =   new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-10, 30),     "Air temperature",  "Time",     "s",    "Temperature",                "degC");
+    this.chart_airtemperature =   new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(-10, 55),     "Air temperature",  "Time",     "s",    "Temperature",                "degC");
     this.chart_altitude =         new Chart(100, 0, 0, 700, new ChartRange(0, 100), new ChartRange(-10, 10),   "Altitude",         "Time",     "s",    "Altitude",                   "m");
     this.chart_humidity =         new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 100),       "Humidity",         "Time",     "s",    "Humidity",                   "?");
     this.chart_TVOC =             new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 2000),       "TVOC",             "Time",     "s",    "TVOC",                       "?");
     this.chart_ECO2 =             new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 2000),       "ECO2",             "Time",     "s",    "ECO2",                       "?");
     // this.chart_GPSsatellites =    new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 10),       "GPS: satellites",  "Time",     "s",    "Satellites",                 "Units");
     // this.chart_batteryvoltage =   new Chart(100, 0, 0, this.chartHeight, new ChartRange(0, 100), new ChartRange(0, 7),        "Battery voltage",  "Time",     "s",    "Voltage",                    "Volt");
-    
+
 
     this.charts.add(this.chart_acceleration);
     this.charts.add(this.chart_gyroscope);
@@ -89,9 +89,9 @@ public class View_DataCharts extends ViewController {
     for(Chart c : this.charts){
       //c.autoScroll = true;
     }
-    
+
     this.viewResizeTriggered();
-    
+
     this.elements.add(this.scrollBar);
     this.elements.add(this.selectMuDataButton);
     this.elements.add(this.selectBetaDataButton);
@@ -161,14 +161,14 @@ public class View_DataCharts extends ViewController {
       this.chart_ECO2.addDataSet(DataSetDeposit.rho_ECO2);
     }
   }
-  
+
   public void viewResizeTriggered(){
 	  this.scrollBar.resize(this.dim.x - 10, this.dim.y/2, this.dim.y);
     this.selectBetaDataButton.resize(this.dim.x/2 - this.selectButtonWidth * 1.5 - 5, 20, this.selectButtonWidth);
     this.selectMuDataButton.resize(this.dim.x/2 - this.selectButtonWidth/2, 20, this.selectButtonWidth);
     this.selectRhoDataButton.resize(this.dim.x/2 + this.selectButtonWidth/2 + 5, 20, this.selectButtonWidth);
     this.horizontalSlider.resize(100, 50, this.dim.x - 210);
-	  
+
 	  float y = 120;
 	  for(int i = 0; i < this.charts.size(); ++i) {
 		  this.charts.get(i).resize(100, y + this.charts.get(i).dim.y/2, this.dim.x - 210, this.charts.get(i).dim.y);
@@ -191,19 +191,19 @@ public class View_DataCharts extends ViewController {
     //
     // Begin Content
     //
-    
+
     //this.scrollBar.show();
 
     for(Chart c : this.charts){
       c.setXRange(new ChartRange(this.horizontalSlider.getValue().min, this.horizontalSlider.getValue().max));
     }
-    
+
     translate(0, -this.scrollBar.getMinimumValue(), -1);
 
     for(Chart c : this.charts) {
     	c.show();
     }
-    
+
     translate(0, this.scrollBar.getMinimumValue(), 1);
 
     noStroke();
@@ -227,12 +227,12 @@ public class View_DataCharts extends ViewController {
     translate(-this.pos.x, -this.pos.y);
 
   }
-  
+
   public void mouseScrolled(float count){
     int selectedGraph = -1;
     if(ALT_PRESSED){
       for(int i = 0; i < this.charts.size(); ++i){
-        if((mouseX >= this.charts.get(i).pos.x) && (mouseX <= this.charts.get(i).pos.x + this.charts.get(i).dim.x) && 
+        if((mouseX >= this.charts.get(i).pos.x) && (mouseX <= this.charts.get(i).pos.x + this.charts.get(i).dim.x) &&
           ((mouseY + this.scrollBar.getMinimumValue()) >= this.charts.get(i).pos.y - this.charts.get(i).dim.y/2) && ((mouseY + this.scrollBar.getMinimumValue()) <= (this.charts.get(i).pos.y + this.charts.get(i).dim.y/2))){
             selectedGraph = i;
         }

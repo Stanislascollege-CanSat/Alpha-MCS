@@ -39,8 +39,8 @@ public class DataSet {
 	public String getQuantity() {
 		return this.quantity;
 	}
-	
-	
+
+
 	public DataPoint getDataAt(int x){
 		if(x >= 0 && x < this.data.size()){
 			return this.data.get(x);
@@ -88,6 +88,13 @@ public class DataSet {
 
 	public int size(){
 		return this.data.size();
+	}
+
+	public DataPoint getLatestDataPoint(){
+		if(this.data.size() > 0){
+			return this.data.get(this.data.size() - 1);
+		}
+		return new DataPoint(0, 0);
 	}
 
 
